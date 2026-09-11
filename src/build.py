@@ -1164,7 +1164,9 @@ PAGE_TITLES = {
     "about.html": "Who We Are",
     "get-involved.html": "Join Us",
     "events.html": "Upcoming Events",
-    "newsletter.html": "The Newsletter",
+    "newsletter.html": "Newsletter",
+    "newsletter/thes-happenings.html": "THES Official Newsletter (THES Happenings)",
+    "newsletter/pta-newsletter.html": "PTA Newsletter",
     "get-involved/committees.html": "Committees",
     "before-after-school-programs.html": "Before & After School Programs",
     "shop.html": "Shop",
@@ -1200,8 +1202,16 @@ PAGE_DESCRIPTIONS = {
         "our calendar — meetings, fundraisers, and school-wide celebrations."
     ),
     "newsletter.html": (
-        "Read THES Happenings, the Thunder Hill Elementary PTA's newsletter, for "
-        "the latest news and updates from our school community."
+        "Two ways to keep up with Thunder Hill Elementary — the school's own "
+        "newsletter and the PTA's own newsletter."
+    ),
+    "newsletter/thes-happenings.html": (
+        "Read THES Happenings, Thunder Hill Elementary's official newsletter, "
+        "for the latest news and updates from our school community."
+    ),
+    "newsletter/pta-newsletter.html": (
+        "The Thunder Hill Elementary PTA's own newsletter — PTA news and "
+        "celebrations."
     ),
     "get-involved/committees.html": (
         "Browse Thunder Hill Elementary PTA committees and find the one that "

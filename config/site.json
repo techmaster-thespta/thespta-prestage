@@ -30,6 +30,8 @@
     "get_involved": "get-involved",
     "about": "about",
     "newsletter": "newsletter",
+    "thes_happenings": "newsletter/thes-happenings",
+    "pta_newsletter": "newsletter/pta-newsletter",
     "committees": "get-involved/committees",
     "afterschool_programs": "before-after-school-programs",
     "shop": "shop",
@@ -52,7 +54,10 @@
     { "label": "Family Support Resources", "page_url": "family_support_resources", "children": [
       { "label": "Special Education & Family Support", "page_url": "special_education_family_support" }
     ] },
-    { "label": "THES Happenings", "page_url": "newsletter" },
+    { "label": "Newsletter", "page_url": "newsletter", "children": [
+      { "label": "THES Official Newsletter (THES Happenings)", "page_url": "thes_happenings" },
+      { "label": "PTA Newsletter", "page_url": "pta_newsletter" }
+    ] },
     { "label": "Shop", "page_url": "shop" }
   ],
   "volunteerForm": {
@@ -67,6 +72,7 @@
   },
   "newsletter_href": "https://app.smore.com/n/2jt1e",
   "newsletter_embed_src": "https://app.smore.com/n/2jt1e?embedded",
+  "pta_newsletter_id": "96617f62-9124-4f8b-971e-1275b472081e",
   "calendar": {
     "calendar_id": "729fff6a3c9b55b25ec82db33400efd852520f8b39f1386e617ceb9848c818b0@group.calendar.google.com",
     "timezone": "America/New_York"

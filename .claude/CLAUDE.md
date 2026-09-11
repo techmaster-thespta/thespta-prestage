@@ -78,10 +78,16 @@ config-only approach can't do it, rather than silently editing `src/`.
   a touch tap on a parent nav link (e.g. "Get Involved") could trigger
   `:focus-within` and pop its submenu open with no way to distinguish
   that from a deliberate caret tap, and a user reported the submenu
-  showing "from the beginning" with the caret doing nothing. The rest of
-  the site has no other JS, and there's no framework/bundler — if you add
-  more interactive UI, keep it as plain inline `<script>` in the relevant
-  template, following this same pattern.
+  showing "from the beginning" with the caret doing nothing. There's no
+  framework/bundler anywhere on this site — any other interactive UI is
+  plain inline `<script>` in the relevant template, following this same
+  pattern. The other real example: the PTA Newsletter page
+  (`src/templates/pages/newsletter/pta-newsletter.html.tmpl`) fetches
+  its content client-side from Givebacks' newsletter API by id
+  (`config/site.json`'s `pta_newsletter_id`) and injects it via
+  `srcdoc` on a same-page `<iframe>`, since that newsletter isn't a
+  fixed URL this site can just embed directly the way the Smore-hosted
+  THES Happenings newsletter is.
 - **Mobile-safety**: every grid uses `auto-fit`/`minmax(...)`, never a
   fixed multi-breakpoint layout. Avoid `position: absolute` outside the
   four already-vetted uses (the header dropdown submenu, the page-header

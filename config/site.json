@@ -54,9 +54,9 @@
     { "label": "Family Support Resources", "page_url": "family_support_resources", "children": [
       { "label": "Special Education & Family Support", "page_url": "special_education_family_support" }
     ] },
-    { "label": "Newsletter", "page_url": "newsletter", "children": [
-      { "label": "THES Official Newsletter (THES Happenings)", "page_url": "thes_happenings" },
-      { "label": "PTA Newsletter", "page_url": "pta_newsletter" }
+    { "label": "Newsletters", "page_url": "newsletter", "children": [
+      { "label": "PTA Newsletter", "page_url": "pta_newsletter" },
+      { "label": "THES Official Newsletter (THES Happenings)", "page_url": "thes_happenings" }
     ] },
     { "label": "Shop", "page_url": "shop" }
   ],

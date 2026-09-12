@@ -1164,7 +1164,7 @@ PAGE_TITLES = {
     "about.html": "Who We Are",
     "get-involved.html": "Join Us",
     "events.html": "Upcoming Events",
-    "newsletter.html": "Newsletter",
+    "newsletter.html": "Newsletters",
     "newsletter/thes-happenings.html": "THES Official Newsletter (THES Happenings)",
     "newsletter/pta-newsletter.html": "PTA Newsletter",
     "get-involved/committees.html": "Committees",

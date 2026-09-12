@@ -167,5 +167,21 @@
     "content_hash": null,
     "needs_review": false,
     "flyer_filename": null
+  },
+  {
+    "name": "THES SOAR Cart Donations",
+    "category": "direct",
+    "description": "Our Thunderbirds are working hard this year to demonstrate THES's SOAR behaviors! They're earning DOJO points for Showing Kindness, Including Others, Showing Respect to Others, and Being Responsible — and can use those points to shop at the SOAR cart every other week. The SOAR Team is looking for creative ways to keep the cart stocked.",
+    "how_to_join": "Use the Amazon Wish List below to have an item sent directly to the school.",
+    "cta_label": "View Amazon Wish List",
+    "cta_href": "https://www.amazon.com/hz/wishlist/ls/3IUI5UPKPMVRK/ref=hz_ls_biz_ex?channel_type=fb&content_source=fb&fb_content_id=Q9-wBQHFEfZFYU4ySMKKhLDTJN8OhL4LI2L0vIwO_vfhbNZvG2cndsmPe_rUEEC8dA&fbclid=IwYWZkawlyY0hhM0I5VjRwdGlkACPjo5qGYAxwZG9mBWZkaWQWUOQCvaG99lHHrWyofkex_F8kSg2ndmV4dG4DYWVtAjExAHNydGMGYXBwX2lkCjY2Mjg1NjgzNzkAAR5pFjEhzctoI9ID2wJsjWlCNFryAvXAm4D6xec4TF4PnWQcdfv8MoZ7O1n3PQ_aem_7gKp4UgevSDNBYpBjooX3g",
+    "secondary_label": null,
+    "secondary_href": null,
+    "enrollment_code": null,
+    "dates": [],
+    "contact": null,
+    "content_hash": null,
+    "needs_review": false,
+    "flyer_filename": null
   }
 ]

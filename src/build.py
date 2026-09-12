@@ -659,6 +659,7 @@ FUNDRAISER_CATEGORY_LABELS = {
     "seasonal": "Seasonal Sale",
     "annual": "Annual Drive",
     "everyday": "Everyday Giving",
+    "direct": "Direct Giving",
 }
 
 # (group key, categories folded into it, heading, blurb) — five raw
@@ -784,7 +785,12 @@ def build_fundraising_section(campaigns, context):
 
     # "Give Directly" leads the page — the most immediate, no-research-
     # needed way to help, ahead of the other campaigns that each take a
-    # minute to read and act on.
+    # minute to read and act on. Only the first "direct" entry (money,
+    # via Donate Now) gets the big single-CTA band treatment — any
+    # further ones (e.g. an in-kind item wish list) are a different
+    # *kind* of direct giving, not another way to give money, so they
+    # get their own card(s) in a grid right below the band instead of
+    # competing with it for the same treatment.
     if direct:
         d = direct[0]
         sections.append(
@@ -799,6 +805,21 @@ def build_fundraising_section(campaigns, context):
             "</section>"
         )
         tint = not tint
+
+        extra_direct = direct[1:]
+        if extra_direct:
+            cards = "\n".join(indent(render_fundraiser_card(c, context), 6) for c in extra_direct)
+            section_class = "thes__section thes__section--tint" if tint else "thes__section"
+            sections.append(
+                f'<section class="{section_class}">\n'
+                '  <div class="thes__wrap">\n'
+                '    <div class="thes__fund-grid">\n'
+                f"{cards}\n"
+                "    </div>\n"
+                "  </div>\n"
+                "</section>"
+            )
+            tint = not tint
 
     for categories, eyebrow, heading, blurb in FUNDRAISER_GROUPS:
         group_campaigns = [c for cat in categories for c in by_category.get(cat, [])]

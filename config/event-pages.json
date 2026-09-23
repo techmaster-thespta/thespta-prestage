@@ -45,5 +45,54 @@
     "register_href": "https://thespta.givebacks.gives/3acad9/Campaign/Details",
     "contact_name": "Natalie Miskimins",
     "contact_email": "president.thespta@gmail.com"
+  },
+  {
+    "slug": "fall-fest-trunk-or-treat",
+    "title": "THES PTA Fall Fest & Trunk or Treat 2026",
+    "nav_label": "Fall Fest & Trunk or Treat",
+    "eyebrow": "Free Family Event",
+    "tagline": "An evening of fall fun, food trucks, games, and trick-or-treating for the whole family.",
+    "summary": "The Thunder Hill Elementary PTA Fall Fest & Trunk or Treat is Friday, October 30, 2026, 5–8 PM at Thunder Hill Elementary School in Columbia, Maryland (Howard County). Free for families — rain date Sunday, November 1, 1–4 PM.",
+    "start": "2026-10-30T17:00",
+    "end": "2026-10-30T20:00",
+    "expires": "2026-11-01",
+    "location_name": "Thunder Hill Elementary School",
+    "flyer_filename": "events/fall-fest-trunk-or-treat-2026.png",
+    "flyer_alt": "THES PTA Fall Fest and Trunk or Treat flyer — Friday, October 30, 5 to 8 PM. Fall Fest 5 to 6:30 PM, Trunk or Treat 6:30 to 8 PM, rain date November 1, 1 to 4 PM. Music, festive fall activities, games, food trucks, raffles, contests, and more. Free THES PTA event; children must be accompanied by an adult.",
+    "about": [
+      "Join us for a free evening of fall fun for the whole Thunder Hill family! Fall Fest kicks things off with music, games, and festive activities, followed by Trunk or Treat, where families decorate their cars and hand out treats in the school parking lot.",
+      "This is a free THES PTA event — everyone is welcome."
+    ],
+    "sections": [
+      {
+        "heading": "What to Expect",
+        "items": [
+          "Fall Fest, 5:00 – 6:30 PM: music, festive fall activities, games, and contests",
+          "Food trucks, raffles, and much more",
+          "Trunk or Treat, 6:30 – 8:00 PM",
+          "Rain date: Sunday, November 1, 1:00 – 4:00 PM"
+        ]
+      },
+      {
+        "heading": "Good to Know",
+        "items": [
+          "Children must be accompanied by an adult",
+          "Parking will be limited",
+          "No scary or gory costumes, and no face mask coverings",
+          "Donate candy for Trunk or Treat October 12 – 30 in the Candy Robot box in the THES Main Office"
+        ]
+      },
+      {
+        "heading": "Volunteer or Host a Trunk",
+        "items": [
+          "Help run Fall Fest activities",
+          "Sign up your vehicle to decorate a trunk and hand out treats"
+        ],
+        "button_label": "Sign Up",
+        "button_href": "https://m.signupgenius.com/#!/showSignUp/10C084EA9A92BA2FCC70-64996490-thes?useFullSite=false"
+      }
+    ],
+    "register_href": "",
+    "contact_email": "president.thespta@gmail.com"
   }
 ]

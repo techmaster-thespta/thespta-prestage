@@ -13,6 +13,17 @@
   "county": "Howard County",
   "school_district": "Howard County Public School System",
   "email": "president.thespta@gmail.com",
+  "approved_emails": [
+    "phughes@HowardCountyMD.gov",
+    "cjnickell@HowardCountyMD.gov",
+    "kbillingsley@HowardCountyMD.gov",
+    "cgore@HowardCountyMD.gov",
+    "admin@cctarts.org",
+    "info@gotrcentralmd.org",
+    "columbia@icodeschool.com",
+    "scoutmaster.pack838@gmail.com",
+    "emikhenley@mail.com"
+  ],
   "meeting_schedule": "First Tuesday of each month, 6:30 PM · School Library",
   "membership_cost": "$11–$30 per year, depending on membership type",
   "membership_tiers": {

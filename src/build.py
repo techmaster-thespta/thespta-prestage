@@ -1893,6 +1893,44 @@ def build_document_title(page_name, site, nav_labels, event_page=None):
     return html.escape(f"{name} | {org} · {where}")
 
 
+EMAIL_PATTERN = re.compile(r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}")
+# Things the pattern above also matches that aren't email addresses.
+NOT_EMAILS = re.compile(r"@group\.calendar\.google\.com$|\.(png|jpe?g|gif|svg|webp|css|js)$", re.I)
+
+
+def is_allowed_email(address, site):
+    """PTA addresses (anything with "thespta" before the @, e.g.
+    president.thespta@gmail.com) are always fine; anything else has to be
+    approved one by one in config/site.json's `approved_emails`."""
+    local = address.split("@", 1)[0].lower()
+    approved = {a.lower() for a in site.get("approved_emails", [])}
+    return "thespta" in local or address.lower() in approved
+
+
+def redact_unapproved_emails(text, site, page_name, warned):
+    """The PTA's rule: the website never shows a personal email unless
+    it's been explicitly approved. Runs over every finished page, so it
+    also catches addresses arriving indirectly — a calendar event's
+    Description (synced hourly, no human in the loop), a flyer's details
+    typed into config — not just ones a person added on purpose. An
+    unapproved address is swapped for the PTA's main email (so the page
+    still makes sense: "contact the PTA") and reported once per build;
+    approve it by adding it to `approved_emails`."""
+    fallback = site.get("email", "")
+
+    def sub(m):
+        address = m.group(0)
+        if NOT_EMAILS.search(address) or is_allowed_email(address, site):
+            return address
+        if address.lower() not in warned:
+            warned.add(address.lower())
+            print(f"  ! unapproved email {address} (on {page_name}) replaced with {fallback} — "
+                  "add it to approved_emails in config/site.json only if the PTA approves showing it")
+        return fallback
+
+    return EMAIL_PATTERN.sub(sub, text)
+
+
 def colorize_title_words(text):
     """Alternate each word's color between the site's dark text tone and
     teal — the same two-tone treatment already used in the home hero
@@ -2061,6 +2099,7 @@ def main():
         stale.unlink()
     context_by_depth = {}
     built_page_names = []
+    warned_emails = set()
 
     for page_name, tmpl_path, event_page in page_jobs:
         depth = page_name.count("/")
@@ -2190,6 +2229,7 @@ def main():
             f"</head>\n<body>\n{text}\n</body>\n</html>\n"
         )
 
+        text = redact_unapproved_emails(text, site, page_name, warned_emails)
         out_path = PAGES_OUT / page_name
         out_path.parent.mkdir(parents=True, exist_ok=True)
         out_path.write_text(text)

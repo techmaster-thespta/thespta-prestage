@@ -49,8 +49,9 @@ Requires only Python 3 — no npm, no installs, nothing to configure.
 addresses the PTA has approved one by one appear on the site. The
 approved list is `approved_emails` in `config/site.json`. Any other
 address — even one typed into a calendar event's description — is
-automatically replaced with the PTA's main email when the site builds,
-and the build log names it so it can be approved or left hidden.
+automatically **hidden** (left off the page, nothing in its place) when
+the site builds, and the build log names it. Whoever next works on the
+site asks the PTA about it; to approve it, add it to `approved_emails`.
 
 **File:** `config/site.json`
 

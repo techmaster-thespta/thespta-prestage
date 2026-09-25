@@ -1907,28 +1907,43 @@ def is_allowed_email(address, site):
     return "thespta" in local or address.lower() in approved
 
 
-def redact_unapproved_emails(text, site, page_name, warned):
+def hide_unapproved_emails(text, site, page_name, pending):
     """The PTA's rule: the website never shows a personal email unless
-    it's been explicitly approved. Runs over every finished page, so it
-    also catches addresses arriving indirectly — a calendar event's
-    Description (synced hourly, no human in the loop), a flyer's details
-    typed into config — not just ones a person added on purpose. An
-    unapproved address is swapped for the PTA's main email (so the page
-    still makes sense: "contact the PTA") and reported once per build;
-    approve it by adding it to `approved_emails`."""
-    fallback = site.get("email", "")
+    the PTA approved that exact address. Runs over every finished page,
+    so it also catches addresses arriving indirectly — a calendar
+    event's Description (synced hourly, no human in the loop), flyer
+    details typed into config — not just ones added on purpose.
 
-    def sub(m):
+    An unapproved address is *hidden* — a mailto link around it is
+    dropped entirely, a bare address is removed — never swapped for a
+    different contact (the PTA asked for that explicitly). It's
+    collected in `pending` and listed after the build, so whoever is
+    working with the PTA can ask them about each one; approving means
+    adding it to `approved_emails` in config/site.json."""
+
+    def allowed(address):
+        return NOT_EMAILS.search(address) or is_allowed_email(address, site)
+
+    def note(address):
+        pending.setdefault(address.lower(), (address, set()))[1].add(page_name)
+
+    def drop_link(m):
+        address = m.group(1)
+        if allowed(address):
+            return m.group(0)
+        note(address)
+        return ""
+
+    text = re.sub(r'<a\b[^>]*href="mailto:([^"?]+)[^"]*"[^>]*>.*?</a>', drop_link, text, flags=re.S)
+
+    def drop_bare(m):
         address = m.group(0)
-        if NOT_EMAILS.search(address) or is_allowed_email(address, site):
+        if allowed(address):
             return address
-        if address.lower() not in warned:
-            warned.add(address.lower())
-            print(f"  ! unapproved email {address} (on {page_name}) replaced with {fallback} — "
-                  "add it to approved_emails in config/site.json only if the PTA approves showing it")
-        return fallback
+        note(address)
+        return ""
 
-    return EMAIL_PATTERN.sub(sub, text)
+    return EMAIL_PATTERN.sub(drop_bare, text)
 
 
 def colorize_title_words(text):
@@ -2099,7 +2114,7 @@ def main():
         stale.unlink()
     context_by_depth = {}
     built_page_names = []
-    warned_emails = set()
+    pending_emails = {}
 
     for page_name, tmpl_path, event_page in page_jobs:
         depth = page_name.count("/")
@@ -2229,7 +2244,7 @@ def main():
             f"</head>\n<body>\n{text}\n</body>\n</html>\n"
         )
 
-        text = redact_unapproved_emails(text, site, page_name, warned_emails)
+        text = hide_unapproved_emails(text, site, page_name, pending_emails)
         out_path = PAGES_OUT / page_name
         out_path.parent.mkdir(parents=True, exist_ok=True)
         out_path.write_text(text)
@@ -2307,6 +2322,10 @@ def main():
         )
         (PAGES_OUT / "robots.txt").write_text(robots_txt)
         print(f"  built {(PAGES_OUT / 'robots.txt').relative_to(ROOT)}")
+
+    for address, pages in pending_emails.values():
+        print(f"  ! email {address} is NOT approved — hidden on {', '.join(sorted(pages))}. "
+              "Ask the PTA; if they approve it, add it to approved_emails in config/site.json.")
 
     print(f"\nDone — {len(built_page_names)} pages written to /pages.")
     print("Push to main to deploy — GitHub Actions rebuilds, validates, and redeploys to GitHub Pages automatically.")

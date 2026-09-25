@@ -53,14 +53,17 @@ config-only approach can't do it, rather than silently editing `src/`.
 - **No personal emails on the site unless the PTA approved that exact
   address.** PTA addresses (`…thespta@…`) are always fine; every other
   address must be in `config/site.json`'s `approved_emails`, which the
-  PTA approves one address at a time. `redact_unapproved_emails()` in
+  PTA approves one address at a time. `hide_unapproved_emails()` in
   `build.py` runs over every finished page (so it also catches
   addresses arriving via calendar Descriptions or flyer details) and
-  swaps any unapproved address for the PTA's main email, printing a `!`
-  warning. When you add content with a contact email (a flyer review, a
-  new program, a board member), **ask the user before adding it to
-  `approved_emails`** — never approve one yourself — and report any `!
-  unapproved email` warning from a build.
+  **hides** any unapproved address — drops its mailto link or removes
+  the bare address, nothing shown in its place. Never swap in a
+  different address (e.g. the president's) — the PTA explicitly asked
+  not to. The build then prints `! email … is NOT approved — hidden on
+  …` for each one. The PTA gets no automatic notification: **whenever
+  you run a build, report every such line to the user and ask about
+  each address one by one** — approving means adding it to
+  `approved_emails`; never approve one yourself.
 
 - **No page can omit the header — it's structural, not a template
   convention.** `build.py`'s `main()` inserts the header right after

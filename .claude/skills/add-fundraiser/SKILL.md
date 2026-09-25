@@ -59,6 +59,18 @@ campaigns, not third-party providers running something at the school.
   on this site" — `render_fundraiser_card()` resolves it through the
   page's own context so the relative path/depth comes out right; any
   other value is treated as a literal external URL.
+- `calendar_match` (optional): words from a Google Calendar event title
+  (e.g. `"Joe Corbi"` for "Joe Corbi's Believe Fall Fundraiser"). The
+  entry then shows **only** in the "Current Fundraisers" section at the
+  top of Ways to Give, only while that calendar event is running or
+  coming up (see `config/fundraiser-occurrences.json`, synced from the
+  calendar), in place of that event's plain calendar card — for a
+  dated, yearly campaign with links/codes the calendar can't hold.
+  Several entries may share one `calendar_match` (Joe Corbi's and
+  Believe Kids both do). Any calendar event with "Fundraiser" in its
+  title shows up there automatically even without an entry.
+- `code_label` (optional): how to label `enrollment_code` (default
+  "Enrollment code"; e.g. "Parent/Seller code").
 - `enrollment_code` is only for a campaign with an actual sign-up code
   (RaiseRight) — `null` otherwise.
 - `flyer_filename` is the bare filename of that campaign's flyer image

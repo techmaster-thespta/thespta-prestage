@@ -1264,7 +1264,7 @@ FUNDRAISER_GROUPS = [
 ]
 
 
-def render_fundraiser_card(campaign, context):
+def render_fundraiser_card(campaign, context, status_html=""):
     """One fundraising campaign's card. Two shapes depending on the data:
     a dated campaign (Restaurant Nights) shows its date list directly in
     the always-visible summary — the dates *are* how a family joins, so
@@ -1282,6 +1282,7 @@ def render_fundraiser_card(campaign, context):
     # in that section would just repeat what the heading already said.
     if category != "direct":
         parts.append(f'<span class="thes__badge thes__badge--fund-{category}">{FUNDRAISER_CATEGORY_LABELS[category]}</span>')
+    parts.append(status_html)
     parts.append(f'<h3>{campaign["name"]}</h3>')
     parts.append(f'<p>{campaign["description"]}</p>')
 
@@ -1299,7 +1300,8 @@ def render_fundraiser_card(campaign, context):
         parts.append(f'<p class="thes__fund-howto">{campaign["how_to_join"]}</p>')
 
     if campaign.get("enrollment_code"):
-        parts.append(f'<p class="thes__fund-code">Enrollment code: <strong>{campaign["enrollment_code"]}</strong></p>')
+        code_label = campaign.get("code_label") or "Enrollment code"
+        parts.append(f'<p class="thes__fund-code">{code_label}: <strong>{campaign["enrollment_code"]}</strong></p>')
 
     buttons = []
     if campaign.get("cta_href"):
@@ -1347,7 +1349,75 @@ def render_fundraiser_card(campaign, context):
     return f'<div class="thes__fund-card">{"".join(parts)}{details_html}</div>'
 
 
-def build_fundraising_section(campaigns, context):
+def fundraiser_status_html(occurrence):
+    """"Happening now · through Oct 16" / "Coming up · Nov 3, 5–8 PM" —
+    the line that makes a Current Fundraisers card read as time-bound."""
+    if occurrence["status"] == "now":
+        end = occurrence["dates"].split(" – ")[-1]
+        if " " not in end:  # "Oct 3 – 10" -> "Oct 10"
+            end = f'{occurrence["dates"].split(" ")[0]} {end}'
+        label, when = "Happening now", (f"through {end}" if occurrence["end_date"] != occurrence["start_date"] else "today")
+    else:
+        label = "Coming up"
+        when = occurrence["dates"] if occurrence["when"] == "All Day" else f'{occurrence["dates"]}, {occurrence["when"]}'
+    return f'<p class="thes__fund-howto"><strong>{label}</strong> · {html.escape(when)}</p>'
+
+
+def render_calendar_fundraiser_card(occurrence, context):
+    """A Current Fundraisers card built straight from a calendar event —
+    for a fundraiser nobody has written a richer config entry for (see
+    `calendar_match` in config/fundraisers.json)."""
+    parts = [
+        '<span class="thes__badge thes__badge--fund-seasonal">Fundraiser</span>',
+        fundraiser_status_html(occurrence),
+        f'<h3>{html.escape(occurrence["title"])}</h3>',
+    ]
+    if occurrence.get("description"):
+        parts.append(f'<p>{occurrence["description"]}</p>')
+    if occurrence.get("signup_href"):
+        parts.append(f'<div class="thes__fund-actions">{render_event_signup(occurrence["signup_href"])}</div>')
+    parts.append(render_event_attachments(occurrence.get("attachments", []), occurrence["title"]))
+    return f'<div class="thes__fund-card">{"".join(parts)}</div>'
+
+
+def build_current_fundraisers_section(occurrences, linked_campaigns, context):
+    """"Current Fundraisers" — every calendar event with "fundraiser" in
+    its title that's running now or starts within the next ~60 days
+    (config/fundraiser-occurrences.json, from
+    scripts/sync_calendar_events.py), soonest first. A config entry
+    whose `calendar_match` appears in an occurrence's title (e.g. "Joe
+    Corbi" -> the Joe Corbi's and Believe Kids cards, with their
+    ShopFund links and seller code) replaces that occurrence's plain
+    calendar card, and only ever shows here, while the calendar says
+    it's on — so a yearly campaign's entry can stay in config between
+    seasons without showing up out of season. "" when nothing's current."""
+    cards = []
+    for occ in occurrences:
+        matched = [c for c in linked_campaigns if c["calendar_match"].lower() in occ["title"].lower()]
+        if matched:
+            cards += [render_fundraiser_card(c, context, fundraiser_status_html(occ)) for c in matched]
+        else:
+            cards.append(render_calendar_fundraiser_card(occ, context))
+    if not cards:
+        return ""
+    body = "\n".join(indent(c, 6) for c in cards)
+    return (
+        '<section class="thes__section">\n'
+        '  <div class="thes__wrap">\n'
+        '    <div class="thes__section-head">\n'
+        '      <span class="thes__eyebrow">Happening Now</span>\n'
+        "      <h2>Current Fundraisers</h2>\n"
+        "      <p>Running now or coming up soon — straight from the PTA calendar.</p>\n"
+        "    </div>\n"
+        '    <div class="thes__fund-grid">\n'
+        f"{body}\n"
+        "    </div>\n"
+        "  </div>\n"
+        "</section>"
+    )
+
+
+def build_fundraising_section(campaigns, context, occurrences=()):
     """Whole Fundraising page body: campaigns grouped into a couple of
     visually-balanced sections (see FUNDRAISER_GROUPS) plus a closing
     full-width "Give Directly" band — a single-card grid for a one-entry
@@ -1355,7 +1425,10 @@ def build_fundraising_section(campaigns, context):
     committees.html's "Not Sure Where to Help?" closer instead. Same
     empty-means-a-placeholder-message pattern as the other always-in-nav
     pages (afterschool programs, events)."""
-    if not campaigns:
+    linked = [c for c in campaigns if c.get("calendar_match")]
+    campaigns = [c for c in campaigns if not c.get("calendar_match")]
+    current = build_current_fundraisers_section(occurrences, linked, context)
+    if not campaigns and not current:
         return (TEMPLATES / "fundraising-empty.html.tmpl").read_text()
 
     by_category = {}
@@ -1363,8 +1436,8 @@ def build_fundraising_section(campaigns, context):
         by_category.setdefault(c["category"], []).append(c)
     direct = by_category.pop("direct", [])
 
-    sections = []
-    tint = True
+    sections = [current] if current else []
+    tint = bool(current)
 
     # "Give Directly" leads the page — the most immediate, no-research-
     # needed way to help, ahead of the other campaigns that each take a
@@ -2144,7 +2217,8 @@ def main():
             "flyers.json", "card-flyer.html.tmpl", "flyers-section.html.tmpl", "FLYER_CARDS", context
         )
         fundraising_section = build_fundraising_section(
-            load_json("fundraisers.json", default=[]), context
+            load_json("fundraisers.json", default=[]), context,
+            load_json("fundraiser-occurrences.json", default=[]),
         )
         afterschool_programs_section = build_afterschool_programs_section(
             load_json("afterschool-programs.json", default=[]), context

@@ -72,7 +72,7 @@ jobs:
           # `git status --porcelain` rather than `git diff --quiet`: an
           # archive run *creates* files under archive/, and untracked
           # files are invisible to git diff.
-          if [ -z "$(git status --porcelain -- config/events.json config/pta-meeting-occurrences.json config/hcpss-family-events.json config/announcements.json config/event-pages.json assets/flyers/ archive/)" ]; then
+          if [ -z "$(git status --porcelain -- config/events.json config/pta-meeting-occurrences.json config/fundraiser-occurrences.json config/hcpss-family-events.json config/announcements.json config/event-pages.json assets/flyers/ archive/)" ]; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else
             echo "changed=true" >> "$GITHUB_OUTPUT"
@@ -91,7 +91,7 @@ jobs:
         run: |
           git config user.name "thespta-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add -A config/events.json config/pta-meeting-occurrences.json config/hcpss-family-events.json config/announcements.json config/event-pages.json assets/flyers/ archive/ pages/
+          git add -A config/events.json config/pta-meeting-occurrences.json config/fundraiser-occurrences.json config/hcpss-family-events.json config/announcements.json config/event-pages.json assets/flyers/ archive/ pages/
           git commit -m "chore: sync events from calendar, regenerate pages [skip ci]"
           git push
 

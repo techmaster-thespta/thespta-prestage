@@ -275,6 +275,16 @@ never requires touching `header.html.tmpl` or `build.py`.
   further out than the general highlights window. Run by
   `.github/workflows/sync-events.yml` (hourly) and by `deploy.yml` (every
   push/manual run). See `docs/SOP.md` Task 4.
+- **Current Fundraisers** on Ways to Give: `sync_calendar_events.py`
+  also writes `config/fundraiser-occurrences.json` — every calendar
+  event with "fundraiser" in its title that's running today or starts
+  within 60 days, with a `status` of now/upcoming computed at sync time
+  (so the file changes, and the hourly sync redeploys, the day one
+  starts or ends). Its own pass, not a filter over `events.json`, which
+  only sees events *starting* today or later and so drops a multi-week
+  fundraiser already underway. `config/fundraisers.json` entries with
+  `calendar_match` render only there, only while matched. Both
+  workflows commit this file — keep them in sync.
 - `scripts/archive_expired.py` — moves expired entries (past their
   `expires` date, Eastern time) out of `config/announcements.json` and
   `config/event-pages.json` into `archive/` (plus their flyers into

@@ -62,7 +62,7 @@ jobs:
         run: |
           git config user.name "thespta-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add -A pages/ config/events.json config/pta-meeting-occurrences.json config/hcpss-family-events.json config/afterschool-programs.json config/fundraisers.json config/pta-meetings.json config/announcements.json config/event-pages.json assets/flyers/ archive/
+          git add -A pages/ config/events.json config/pta-meeting-occurrences.json config/fundraiser-occurrences.json config/hcpss-family-events.json config/afterschool-programs.json config/fundraisers.json config/pta-meetings.json config/announcements.json config/event-pages.json assets/flyers/ archive/
           if ! git diff --cached --quiet; then
             git commit -m "chore: sync content, regenerate pages [skip ci]"
             git push

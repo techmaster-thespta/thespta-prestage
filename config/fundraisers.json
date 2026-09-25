@@ -171,7 +171,7 @@
   {
     "name": "THES SOAR Cart Donations",
     "category": "direct",
-    "description": "Our Thunderbirds are working hard this year to demonstrate THES's SOAR behaviors! They're earning DOJO points for Showing Kindness, Including Others, Showing Respect to Others, and Being Responsible — and can use those points to shop at the SOAR cart every other week. The SOAR Team is looking for creative ways to keep the cart stocked.",
+    "description": "Our Thunderbirds are working hard this year to demonstrate THES's SOAR behaviors! They're earning DOJO points for Showing Kindness, Including Others, Showing Respect to Others, and Being Responsible \u2014 and can use those points to shop at the SOAR cart every other week. The SOAR Team is looking for creative ways to keep the cart stocked.",
     "how_to_join": "Use the Amazon Wish List below to have an item sent directly to the school.",
     "cta_label": "View Amazon Wish List",
     "cta_href": "https://www.amazon.com/hz/wishlist/ls/3IUI5UPKPMVRK",
@@ -183,5 +183,41 @@
     "content_hash": null,
     "needs_review": false,
     "flyer_filename": null
+  },
+  {
+    "name": "Joe Corbi's Pizza Kits & More",
+    "description": "Stock up on pizza kits, cookies, breads & more \u2014 perfect for busy family nights. Online and mobile ordering available.",
+    "category": "seasonal",
+    "how_to_join": "Create a free ShopFund / Believe Kids account (or log in to your Parent/Seller Dashboard), enter the PTA's code, and track your student's fundraising progress. Every purchase supports THES student activities, programs, and special events.",
+    "cta_label": "Create an Account",
+    "cta_href": "https://www.shopfund.com/Create-Account",
+    "secondary_label": "Log In",
+    "secondary_href": "https://www.shopfund.com/Login?returnurl=%252fDashboard&SkinSrc=%5BG%5DSkins/SkinShopBelieve/LoginBK",
+    "enrollment_code": "XVBG7",
+    "code_label": "Parent/Seller code",
+    "dates": [],
+    "contact": null,
+    "needs_review": false,
+    "calendar_match": "Joe Corbi",
+    "flyer_filename": "joe-corbis-believe-fall-2026.png",
+    "content_hash": "cc96ce4250bcc507560a7a074beaf4620adb8f5a5b8d1c51e4b3e7ac519bf018"
+  },
+  {
+    "name": "Believe Kids Gift Catalog",
+    "description": "Shop 100+ gift ideas \u2014 holiday gifts, jewelry, home d\u00e9cor, kitchen accessories, snacks, gift wrap & bags. Something for everyone, with online shopping available.",
+    "category": "seasonal",
+    "how_to_join": "Create a free ShopFund / Believe Kids account (or log in to your Parent/Seller Dashboard), enter the PTA's code, and track your student's fundraising progress. Every purchase supports THES student activities, programs, and special events.",
+    "cta_label": "Create an Account",
+    "cta_href": "https://www.shopfund.com/Create-Account",
+    "secondary_label": "Log In",
+    "secondary_href": "https://www.shopfund.com/Login?returnurl=%252fDashboard&SkinSrc=%5BG%5DSkins/SkinShopBelieve/LoginBK",
+    "enrollment_code": "XVBG7",
+    "code_label": "Parent/Seller code",
+    "dates": [],
+    "contact": null,
+    "needs_review": false,
+    "calendar_match": "Joe Corbi",
+    "flyer_filename": "fall-fundraisers-2026.png",
+    "content_hash": "df26c484c47731e69fc0f8816b41bf20e9aaef3bbb276d8d9ad1592ebf6eea86"
   }
 ]

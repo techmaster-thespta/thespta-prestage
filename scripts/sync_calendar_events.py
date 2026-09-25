@@ -456,6 +456,72 @@ def build_events_json(vevents, window_start, window_end, title_filter=None, max_
     return out
 
 
+FUNDRAISER_LOOKAHEAD_DAYS = 60  # "Coming up" on Ways to Give: starts within ~2 months
+FUNDRAISER_LOOKBACK_DAYS = 120  # how far back a still-running fundraiser may have started
+FUNDRAISER_TITLE_RE = re.compile(r"fundrais", re.I)
+
+
+def format_date_range(start_date, end_date):
+    """"Sep 25 – Oct 16", "Oct 3 – 10", or just "Nov 3" for one day."""
+    first = f"{MONTH_ABBR[start_date.month - 1]} {start_date.day}"
+    if end_date <= start_date:
+        return first
+    if end_date.month == start_date.month:
+        return f"{first} – {end_date.day}"
+    return f"{first} – {MONTH_ABBR[end_date.month - 1]} {end_date.day}"
+
+
+def build_fundraiser_occurrences(vevents, today, local_tz=None):
+    """Every calendar event with "fundraiser" in its title that's either
+    running today or starts within FUNDRAISER_LOOKAHEAD_DAYS — for the
+    "Current Fundraisers" section of the Ways to Give page.
+
+    Separate from build_events_json because that one only ever sees
+    occurrences that *start* on/after today, which drops exactly the
+    case this exists for: a multi-week fundraiser (Joe Corbi's, Sep 25 –
+    Oct 16) that's already running. `status` ("now"/"upcoming") is
+    computed here, not in the build, so the file itself changes the day
+    a fundraiser starts or ends — that change is what makes the hourly
+    sync-events.yml redeploy."""
+    window_start = dt.datetime.combine(today - dt.timedelta(days=FUNDRAISER_LOOKBACK_DAYS), dt.time.min)
+    window_end = dt.datetime.combine(today + dt.timedelta(days=FUNDRAISER_LOOKAHEAD_DAYS), dt.time.max)
+    out = []
+    for event in vevents:
+        title = event.get("SUMMARY", "")
+        if not FUNDRAISER_TITLE_RE.search(title):
+            continue
+        start_time = event["DTSTART"]
+        end_time = event.get("DTEND")
+        all_day = event.get("DTSTART_ALLDAY", False)
+        duration = (end_time - start_time) if end_time else None
+        signup_href, description = extract_signup_href(event.get("DESCRIPTION"))
+        for occ_start in expand_occurrences(event, window_start, window_end):
+            occ_end = occ_start + duration if duration else occ_start
+            start_date = occ_start.date()
+            # An all-day event's DTEND is exclusive (the day *after*).
+            end_date = (occ_end - dt.timedelta(days=1)).date() if all_day and duration else occ_end.date()
+            end_date = max(end_date, start_date)
+            if end_date < today or start_date > today + dt.timedelta(days=FUNDRAISER_LOOKAHEAD_DAYS):
+                continue
+            entry = {
+                "title": title,
+                "start_date": start_date.isoformat(),
+                "end_date": end_date.isoformat(),
+                "dates": format_date_range(start_date, end_date),
+                "when": format_when(occ_start, occ_start + duration if duration else None, all_day, event.get("LOCATION")),
+                "status": "now" if start_date <= today else "upcoming",
+            }
+            if description:
+                entry["description"] = truncate_description(description)
+            if signup_href:
+                entry["signup_href"] = signup_href
+            if event.get("ATTACH"):
+                entry["attachments"] = event["ATTACH"]
+            out.append(entry)
+    out.sort(key=lambda e: (e["start_date"], e["title"]))
+    return out
+
+
 def main():
     site = load_json("site.json")
     calendar_id = site["calendar"]["calendar_id"]
@@ -485,7 +551,12 @@ def main():
         vevents, window_start, pta_window_end, title_filter=is_pta_meeting_title, max_events=None
     )
 
+    today = dt.datetime.now(local_tz).date()
+    fundraiser_occurrences = build_fundraiser_occurrences(vevents, today)
+
     (CONFIG / "events.json").write_text(json.dumps(events, indent=2) + "\n")
+    (CONFIG / "fundraiser-occurrences.json").write_text(json.dumps(fundraiser_occurrences, indent=2) + "\n")
+    print(f"  synced {len(fundraiser_occurrences)} current/upcoming fundraiser(s) into config/fundraiser-occurrences.json")
     (CONFIG / "pta-meeting-occurrences.json").write_text(json.dumps(pta_meeting_occurrences, indent=2) + "\n")
     print(f"  synced {len(events)} upcoming event(s) from the calendar into config/events.json")
     print(

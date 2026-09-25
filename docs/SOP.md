@@ -491,6 +491,16 @@ the skill file for what each means. Flyers live in
 `assets/flyers/fundraising/` in this repo (same Drive-to-repo migration
 as Task 5c, for the same reason).
 
+**Current Fundraisers (automatic)**: the top of Ways to Give lists every
+Google Calendar event with **"Fundraiser" in its title** that's running
+now or starts within about 60 days, and drops it the day after it ends —
+just add the fundraiser to the calendar. For a richer card (sign-up
+links, a seller code), add an entry to `config/fundraisers.json` with
+`"calendar_match": "<words from the calendar title>"` (e.g. `"Joe
+Corbi"`): it replaces the plain calendar card and only shows while that
+calendar event is current, so it can stay in the file for next year.
+Restaurant nights keep their own card (no "Fundraiser" in their titles).
+
 ### Adding a flyer
 
 Same as Task 5c, just the other folder:

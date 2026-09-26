@@ -1,26 +1,11 @@
 [
   {
-    "day": "25",
-    "month": "Sep",
-    "date": "2026-09-25",
-    "title": "Joe Corbi's Believe Fall Fundraiser",
-    "when": "All Day",
-    "featured": true,
-    "attachments": [
-      {
-        "title": "20260925-joe-corbis-believe-fundraiser.png",
-        "href": "https://drive.google.com/open?id=1SVx35OvI6TtwA_IhRHi4SW1lC35L8liL"
-      }
-    ],
-    "description": "This will ensure that the items arrive before the Holiday Season as well as mailed to homes in time. It will run for 3 weeks."
-  },
-  {
     "day": "26",
     "month": "Sep",
     "date": "2026-09-26",
     "title": "Beautification Day \u2014 School Garden Cleanup",
     "when": "9:00 AM \u2013 12:00 PM \u00b7 Thunder Hill Elementary School gardens (behind the school)",
-    "featured": false,
+    "featured": true,
     "attachments": [
       {
         "title": "26-beautifucation.JPG",
@@ -110,5 +95,20 @@
       }
     ],
     "description": "Help clean up and refresh the school garden for the fall season. Meet at the school gardens behind the Thunder Hill building. Please bring: \u2022 Garden gloves \u2022 Clothes and shoes that can get dirty \u2022\u2026"
+  },
+  {
+    "day": "13",
+    "month": "Oct",
+    "date": "2026-10-13",
+    "title": "Restaurant Night Out \u2014 Pupatella",
+    "when": "11:30 AM \u2013 9:00 PM \u00b7 Pupatella, 9160 MD-108, Columbia, MD 21045, USA",
+    "featured": false,
+    "attachments": [
+      {
+        "title": "202609-pupatella.jpeg",
+        "href": "https://drive.google.com/file/d/1Dym6jms8HYY9V3FLxeXW42LEW2nZZsS7"
+      }
+    ],
+    "description": "Support THES while you dine at Pupatella! Details on ordering to come \u2014 check back closer to the date, or watch the PTA\u2019s Facebook/Instagram (@thunderhilles_pta)"
   }
 ]

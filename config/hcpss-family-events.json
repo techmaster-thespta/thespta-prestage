@@ -1,29 +1,29 @@
 [
   {
-    "day": "26",
-    "month": "Sep",
-    "date": "2026-09-26",
-    "title": "MORNING AT THE MUSEUM",
-    "when": "8:00 \u2013 10:00 AM",
-    "featured": true,
-    "description": "MORNING AT THE MUSEUM Saturday, September 26, 2026 8:00-10:00 a.m. National Air &amp; Space Museum Morning at the Museum (MATM) is a sensory-friendly program for children, teenagers, and young adults\u2026"
-  },
-  {
-    "day": "26",
-    "month": "Sep",
-    "date": "2026-09-26",
-    "title": "AMONG FRIENDS WITH AUTISM PLAY GROUP / ENTRE AMIGOS CON AUTISMO PLAY GROUP",
-    "when": "10:00 AM \u2013 12:00 PM",
-    "featured": false,
-    "description": "AMONG FRIENDS WITH AUTISM PLAY GROUP / ENTRE AMIGOS CON AUTISMO PLAY GROUP Saturdays 10:00 a.m.-12:00 p.m. May 23, June 27, July 25, August 22, September 26, 2026 Various locations throughout Anne\u2026"
-  },
-  {
     "day": "27",
     "month": "Sep",
     "date": "2026-09-27",
     "title": "HOWARD COUNTY ASSOCIATION FOR THE DEAF FALL FAMILY FUN DAY",
     "when": "12:00 \u2013 2:00 PM",
-    "featured": false,
+    "featured": true,
     "description": "HOWARD COUNTY ASSOCIATION FOR THE DEAF FALL FAMILY FUN DAY Sunday, September 27, 2026 12:00-2:00 p.m. Clarks Elioak Farm 10500 Clarksville Pike Ellicott City, MD 21042 Join an afternoon of fun with\u2026"
+  },
+  {
+    "day": "29",
+    "month": "Sep",
+    "date": "2026-09-29",
+    "title": "UNDERSTANDING ABLE ACCOUNTS & SPECIAL NEEDS TRUSTS",
+    "when": "6:00 \u2013 7:00 PM",
+    "featured": false,
+    "description": "UNDERSTANDING ABLE ACCOUNTS &amp; SPECIAL NEEDS TRUSTS Tuesday, September 29, 2026 6:00 p.m. Thursday, October 8, 2026 6:30 p.m. Virtual Event How can ABLE accounts and special needs trusts help you\u2026"
+  },
+  {
+    "day": "29",
+    "month": "Sep",
+    "date": "2026-09-29",
+    "title": "NAMI BASICS",
+    "when": "6:30 \u2013 9:30 PM",
+    "featured": false,
+    "description": "NAMI BASICS Tuesdays, September 29 to November 3, 2026 6:30-9:00 p.m. Virtual Event This 6-session educational program is for parents, caregivers and other family members who provide care for youth\u2026"
   }
 ]

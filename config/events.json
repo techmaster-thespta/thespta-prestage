@@ -1,26 +1,12 @@
 [
   {
-    "day": "26",
-    "month": "Sep",
-    "date": "2026-09-26",
-    "title": "Beautification Day \u2014 School Garden Cleanup",
-    "when": "9:00 AM \u2013 12:00 PM \u00b7 Thunder Hill Elementary School gardens (behind the school)",
-    "featured": true,
-    "attachments": [
-      {
-        "title": "26-beautifucation.JPG",
-        "href": "https://drive.google.com/file/d/1zsvBWRktz7CBBBEGiCXiNvWYESGOTRej"
-      }
-    ],
-    "description": "Help clean up and refresh the school garden for the fall season. Meet at the school gardens behind the Thunder Hill building. Please bring: \u2022 Garden gloves \u2022 Clothes and shoes that can get dirty \u2022\u2026"
-  },
-  {
     "day": "27",
     "month": "Sep",
     "date": "2026-09-27",
     "title": "THES Spirit Wear Online Sale Ends (Fall Store)",
     "when": "All Day",
-    "featured": false
+    "featured": true,
+    "description": "Join us for THES Spirit Wear Online Sale Ends (Fall Store) \u2014 see the full calendar for details."
   },
   {
     "day": "28",
@@ -110,5 +96,14 @@
       }
     ],
     "description": "Support THES while you dine at Pupatella! Details on ordering to come \u2014 check back closer to the date, or watch the PTA\u2019s Facebook/Instagram (@thunderhilles_pta)"
+  },
+  {
+    "day": "17",
+    "month": "Oct",
+    "date": "2026-10-17",
+    "title": "HAL Star Party",
+    "when": "7:30 \u2013 11:00 PM \u00b7 11685 Old Frederick Rd, Marriottsville, MD 21104, USA",
+    "featured": false,
+    "description": "Join the Howard Astronomical League ( HAL ) for a Stars Party! Star parties bring people together to share their fascination with space and the night sky. Public star parties are held on one Saturday\u2026"
   }
 ]

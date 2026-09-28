@@ -1,20 +1,11 @@
 [
   {
-    "day": "27",
-    "month": "Sep",
-    "date": "2026-09-27",
-    "title": "HOWARD COUNTY ASSOCIATION FOR THE DEAF FALL FAMILY FUN DAY",
-    "when": "12:00 \u2013 2:00 PM",
-    "featured": true,
-    "description": "HOWARD COUNTY ASSOCIATION FOR THE DEAF FALL FAMILY FUN DAY Sunday, September 27, 2026 12:00-2:00 p.m. Clarks Elioak Farm 10500 Clarksville Pike Ellicott City, MD 21042 Join an afternoon of fun with\u2026"
-  },
-  {
     "day": "29",
     "month": "Sep",
     "date": "2026-09-29",
     "title": "UNDERSTANDING ABLE ACCOUNTS & SPECIAL NEEDS TRUSTS",
     "when": "6:00 \u2013 7:00 PM",
-    "featured": false,
+    "featured": true,
     "description": "UNDERSTANDING ABLE ACCOUNTS &amp; SPECIAL NEEDS TRUSTS Tuesday, September 29, 2026 6:00 p.m. Thursday, October 8, 2026 6:30 p.m. Virtual Event How can ABLE accounts and special needs trusts help you\u2026"
   },
   {
@@ -25,5 +16,14 @@
     "when": "6:30 \u2013 9:30 PM",
     "featured": false,
     "description": "NAMI BASICS Tuesdays, September 29 to November 3, 2026 6:30-9:00 p.m. Virtual Event This 6-session educational program is for parents, caregivers and other family members who provide care for youth\u2026"
+  },
+  {
+    "day": "30",
+    "month": "Sep",
+    "date": "2026-09-30",
+    "title": "PLANNING FOR A LOVED ONE WITH SPECIAL NEEDS",
+    "when": "10:00 \u2013 11:00 AM",
+    "featured": false,
+    "description": "PLANNING FOR A LOVED ONE WITH SPECIAL NEEDS Wednesday, September 30, 2026 10:00-11:00 a.m. Virtual Event Every family wants to know their loved one will be cared for if they are no longer able to do\u2026"
   }
 ]

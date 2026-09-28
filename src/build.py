@@ -769,7 +769,20 @@ def format_event_time(t):
     return f"{hour}:{t.minute:02d} {suffix}"
 
 
+def is_all_day(event):
+    """An all-day event gives `start` (and `end`, if multi-day) as a bare
+    date — "2026-11-11" — instead of a date and time."""
+    return "T" not in event["start"]
+
+
 def format_event_when(event):
+    if is_all_day(event):
+        start = dt.date.fromisoformat(event["start"])
+        end = dt.date.fromisoformat(event["end"]) if event.get("end") else start
+        day = f"{start:%A, %B} {start.day}, {start.year}"
+        if end == start:
+            return f"{day} · All day"
+        return f"{day} – {end:%A, %B} {end.day}, {end.year}"
     start = dt.datetime.fromisoformat(event["start"])
     end = dt.datetime.fromisoformat(event["end"]) if event.get("end") else None
     day = f"{start:%A, %B} {start.day}, {start.year}"
@@ -834,6 +847,8 @@ def build_event_jsonld(event, site):
     domain = site["custom_domain"]
 
     def iso(value):
+        if "T" not in value:  # all-day: schema.org takes a plain date
+            return value
         return dt.datetime.fromisoformat(value).replace(tzinfo=tz).isoformat()
 
     line1 = event.get("address_line1") or site.get("address_line1", "")
@@ -880,10 +895,16 @@ def google_calendar_add_url(event, site):
         return dt.datetime.fromisoformat(value).strftime("%Y%m%dT%H%M%S")
 
     end = event.get("end") or event["start"]
+    if is_all_day(event):
+        # Google's all-day format: YYYYMMDD/YYYYMMDD with an exclusive end.
+        last = dt.date.fromisoformat(end) + dt.timedelta(days=1)
+        dates = f'{event["start"].replace("-", "")}/{last:%Y%m%d}'
+    else:
+        dates = f"{stamp(event['start'])}/{stamp(end)}"
     params = {
         "action": "TEMPLATE",
         "text": event["title"],
-        "dates": f"{stamp(event['start'])}/{stamp(end)}",
+        "dates": dates,
         "ctz": site["calendar"]["timezone"],
         "details": f'{event["summary"]}\n\nhttps://{site["custom_domain"]}/{event_page_name(event)}',
         "location": f'{event.get("location_name", "")}, {event_location_address(event, site)}',

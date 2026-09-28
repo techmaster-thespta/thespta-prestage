@@ -94,5 +94,43 @@
     ],
     "register_href": "",
     "contact_email": "president.thespta@gmail.com"
+  },
+  {
+    "slug": "veterans-day-celebration",
+    "title": "THES Veterans Day Celebration 2026",
+    "nav_label": "Veterans Day",
+    "eyebrow": "Honoring Our Veterans",
+    "tagline": "Help us honor the veterans and military family members in our Thunder Hill community.",
+    "summary": "Thunder Hill Elementary School in Columbia, Maryland (Howard County) honors its veteran and military families on Wednesday, November 11, 2026. Submit a family member for the slideshow and classroom visits by October 25.",
+    "start": "2026-11-11",
+    "expires": "2026-11-12",
+    "location_name": "Thunder Hill Elementary School",
+    "flyer_filename": "events/veterans-day-2026.png",
+    "flyer_alt": "Veterans Day at THES flyer — Wednesday, November 11, 2026. THES will have a celebration for all veteran families, with a photo slideshow and classroom visits. To include a veteran or military family member, complete the Veterans/Military Submission form (QR code on the flyer) by October 25th. If you submitted your information last year, you do not need to submit it again. Questions: meagan_lesinski@hcpss.org.",
+    "about": [
+      "Thunder Hill Elementary School will celebrate and honor our veteran and military families on Wednesday, November 11, 2026.",
+      "Families are invited to help us recognize the veterans and military family members in our community through our Veterans Day slideshow and classroom visits."
+    ],
+    "sections": [
+      {
+        "heading": "How to Take Part",
+        "items": [
+          "Photo slideshow: share a photo of your veteran or military family member to include in our school slideshow",
+          "Classroom visit: veterans and military family members are welcome to visit classrooms, if available",
+          "Honor & celebrate: help us recognize the brave people in our THES community"
+        ]
+      },
+      {
+        "heading": "Submit a Family Member",
+        "items": [
+          "Complete the Veterans/Military Submission Form by October 25",
+          "Scan the QR code on the flyer below to open the form",
+          "Submitted your information last year? You don't need to submit it again"
+        ]
+      }
+    ],
+    "register_href": "",
+    "contact_name": "Meagan Lesinski",
+    "contact_email": "meagan_lesinski@hcpss.org"
   }
 ]

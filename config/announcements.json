@@ -3,5 +3,6 @@
   { "text": "Fall Fest & Trunk or Treat is October 30 — view details!", "page_url": "event_fall_fest_trunk_or_treat", "expires": "2026-11-01" },
   { "text": "Become a business sponsor and support Thunder Hill!", "page_url": "become_sponsor" },
   { "text": "Holiday Market Nov 21 — shop local or become a vendor!", "page_url": "event_holiday_market", "expires": "2026-11-22" },
-  { "text": "HAL Star Party Sat, Oct 17 — free family stargazing!", "href": "https://howardastro.org/hal-star-parties-and-outreach/", "expires": "2026-10-18" }
+  { "text": "HAL Star Party Sat, Oct 17 — free family stargazing!", "href": "https://howardastro.org/hal-star-parties-and-outreach/", "expires": "2026-10-18" },
+  { "text": "Veterans Day at THES Nov 11 — submit a family member!", "page_url": "event_veterans_day_celebration", "expires": "2026-11-12" }
 ]

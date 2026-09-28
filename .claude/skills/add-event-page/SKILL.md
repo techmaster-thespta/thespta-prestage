@@ -65,7 +65,7 @@ optional. `nav_label` is the short name for the Events menu (defaults to
 it defaults to the day the event ends, so only set it to keep a page up
 longer (e.g. a recap) — always write it explicitly when adding an entry,
 computed from the real event date, never guessed. `start`/`end` are local time in `config/site.json`'s
-`calendar.timezone` (no offset — the build adds the right EST/EDT one).
+`calendar.timezone` (no offset — the build adds the right EST/EDT one); for an all-day event use a bare date (`"start": "2026-11-11"`).
 Location defaults to the school's address from `config/site.json`;
 override with `address_line1`/`address_line2` for an off-site event.
 `register_href`, when set, adds a "Register as a Vendor" button.

@@ -1,18 +1,18 @@
 [
   {
-    "day": "28",
+    "day": "30",
     "month": "Sep",
-    "date": "2026-09-28",
-    "title": "PTA Restaurant Night Out Chick-fil-a",
-    "when": "5:30 \u2013 7:30 PM",
+    "date": "2026-09-30",
+    "title": "Last Day of PTA Membership Drive (Free Lanyard)",
+    "when": "All Day",
     "featured": true,
     "attachments": [
       {
-        "title": "202609-chickfila.JPG",
-        "href": "https://drive.google.com/file/d/1wtUMC80p60sXY9RF7jp7YgKXsId8pDqb"
+        "title": "20260930-membership-drive-lanyard-deadline.png",
+        "href": "https://drive.google.com/open?id=1OfuG_ypdZfZNFDrZTwonAkzl0buQjsfX"
       }
     ],
-    "description": "Support THES while you dine! Place your order using the Chick-fil-a app and support this fundraiser!"
+    "description": "Join us for Last Day of PTA Membership Drive (Free Lanyard) \u2014 see the full calendar for details."
   },
   {
     "day": "30",
@@ -25,20 +25,6 @@
       {
         "title": "20260930-parent-designed-spirit-wear-ends.png",
         "href": "https://drive.google.com/open?id=1xmnk3azLmK1vSivBhK1X7r7H6-1AqP3g"
-      }
-    ]
-  },
-  {
-    "day": "30",
-    "month": "Sep",
-    "date": "2026-09-30",
-    "title": "Last Day of PTA Membership Drive (Free Lanyard)",
-    "when": "All Day",
-    "featured": false,
-    "attachments": [
-      {
-        "title": "20260930-membership-drive-lanyard-deadline.png",
-        "href": "https://drive.google.com/open?id=1OfuG_ypdZfZNFDrZTwonAkzl0buQjsfX"
       }
     ]
   },
@@ -111,5 +97,21 @@
       }
     ],
     "description": "Help clean up and refresh the school garden for the fall season. Meet at the school gardens behind the Thunder Hill building. Please bring: \u2022 Garden gloves \u2022 Clothes and shoes that can get dirty \u2022\u2026"
+  },
+  {
+    "day": "30",
+    "month": "Oct",
+    "date": "2026-10-30",
+    "title": "Fall Fest & Trunk or Treat",
+    "when": "5:00 \u2013 8:00 PM",
+    "featured": false,
+    "attachments": [
+      {
+        "title": "fall-fest-trunk-treat.PNG",
+        "href": "https://drive.google.com/file/d/1CqdliompwAuy2htMPwGQKcjoYYZdFj-3"
+      }
+    ],
+    "signup_href": "https://m.signupgenius.com/#!/showSignUp/10C084EA9A92BA2FCC70-64996490-thes?useFullSite=false",
+    "description": "Fun for the whole family! See the flyer for more information! And sign up here!"
   }
 ]

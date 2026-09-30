@@ -3,27 +3,27 @@
     "day": "30",
     "month": "Sep",
     "date": "2026-09-30",
-    "title": "PLANNING FOR A LOVED ONE WITH SPECIAL NEEDS",
-    "when": "10:00 \u2013 11:00 AM",
-    "featured": true,
-    "description": "PLANNING FOR A LOVED ONE WITH SPECIAL NEEDS Wednesday, September 30, 2026 10:00-11:00 a.m. Virtual Event Every family wants to know their loved one will be cared for if they are no longer able to do\u2026"
-  },
-  {
-    "day": "30",
-    "month": "Sep",
-    "date": "2026-09-30",
     "title": "WHAT TO DO DURING A TRAFFIC STOP PRACTICE SESSION FOR DRIVERS AND PASSENGERS",
     "when": "10:00 AM \u2013 2:00 PM",
-    "featured": false,
+    "featured": true,
     "description": "WHAT TO DO DURING A TRAFFIC STOP PRACTICE SESSION FOR DRIVERS AND PASSENGERS Wednesday, September 30, 2026 10:00 a.m.-2:00 p.m. 9755 Patuxent Woods Drive Columbia, MD 21046 Everyone feels anxiety\u2026"
   },
   {
     "day": "30",
     "month": "Sep",
     "date": "2026-09-30",
-    "title": "POSITIVE SOLUTIONS FOR FAMILIES",
+    "title": "PLANNING FOR A LOVED ONE WITH SPECIAL NEEDS",
+    "when": "10:00 \u2013 11:00 AM",
+    "featured": false,
+    "description": "PLANNING FOR A LOVED ONE WITH SPECIAL NEEDS Wednesday, September 30, 2026 10:00-11:00 a.m. Virtual Event Every family wants to know their loved one will be cared for if they are no longer able to do\u2026"
+  },
+  {
+    "day": "30",
+    "month": "Sep",
+    "date": "2026-09-30",
+    "title": "IEP BASICS",
     "when": "6:30 \u2013 8:00 PM",
     "featured": false,
-    "description": "POSITIVE SOLUTIONS FOR FAMILIES Wednesdays, September 30 to November 4, 2026 6:30-8:00 p.m. Virtual Event Positive Solutions for Families is an evidence-based, family-friendly workshop series to\u2026"
+    "description": "IEP BASICS Wednesday, September 30, 2026 6:30-8:00 p.m. Virtual Event Parents and caregivers will learn about their role in school meetings, gain advocacy tips and strategies, and get connected to\u2026"
   }
 ]

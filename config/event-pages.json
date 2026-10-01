@@ -132,5 +132,34 @@
     "register_href": "",
     "contact_name": "Meagan Lesinski",
     "contact_email": "meagan_lesinski@hcpss.org"
+  },
+  {
+    "slug": "kindergarten-play-date",
+    "title": "THES PTA Kindergarten Play Date 2026",
+    "nav_label": "Kindergarten Play Date",
+    "eyebrow": "Kindergarten Families",
+    "tagline": "Play on the playground and meet other kindergarten families!",
+    "summary": "The Thunder Hill Elementary PTA Kindergarten Play Date is Saturday, October 10, 2026, 11 AM–12 PM on the Thunder Hill Elementary School playground in Columbia, Maryland (Howard County). Kindergarten students and families can play, connect, and make new friends.",
+    "start": "2026-10-10T11:00",
+    "end": "2026-10-10T12:00",
+    "expires": "2026-10-11",
+    "location_name": "Thunder Hill Elementary School Playground",
+    "flyer_filename": "events/kindergarten-play-date-2026.png",
+    "flyer_alt": "THES PTA Kindergarten Play Date flyer — Saturday, October 10, 11:00 AM to 12:00 PM at the Thunder Hill Elementary School playground. Play on the playground and meet other kindergarten families: a fun opportunity for our kindergarten students and families to play, connect, and make new friends.",
+    "about": [
+      "Come join us for a Kindergarten Play Date at the school playground! It's a fun and relaxed opportunity for our kindergarten students and families to play, connect, meet new friends, and get to know one another."
+    ],
+    "sections": [
+      {
+        "heading": "What to Expect",
+        "items": [
+          "Play on the school playground",
+          "Meet other kindergarten families",
+          "A relaxed hour to connect and make new friends"
+        ]
+      }
+    ],
+    "register_href": "",
+    "contact_email": "president.thespta@gmail.com"
   }
 ]

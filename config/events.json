@@ -31,6 +31,21 @@
     "description": "Help clean up and refresh the school garden for the fall season. Meet at the school gardens behind the Thunder Hill building. Please bring: \u2022 Garden gloves \u2022 Clothes and shoes that can get dirty \u2022\u2026"
   },
   {
+    "day": "10",
+    "month": "Oct",
+    "date": "2026-10-10",
+    "title": "Kindergarten Play Date",
+    "when": "11:00 AM \u2013 12:00 PM",
+    "featured": false,
+    "attachments": [
+      {
+        "title": "20261010-KinderPlayDate.PNG",
+        "href": "https://drive.google.com/file/d/149ad_GZds0VOZZUrxnsy60jKEnSIKG1y"
+      }
+    ],
+    "description": "Come join us for a Kindergarten Play Date at the school playground! It\u2019s a fun and relaxed opportunity for our kindergarten students and families to play, connect, meet new friends, and get to know\u2026"
+  },
+  {
     "day": "13",
     "month": "Oct",
     "date": "2026-10-13",
@@ -99,20 +114,5 @@
       }
     ],
     "description": "Rain date for Fall Fest / Trunk or Treat, in case the original Oct 30 date is rained out."
-  },
-  {
-    "day": "03",
-    "month": "Nov",
-    "date": "2026-11-03",
-    "title": "Fundraiser - Main Event",
-    "when": "5:00 \u2013 8:00 PM",
-    "featured": false,
-    "attachments": [
-      {
-        "title": "202611-MainEvent.PNG",
-        "href": "https://drive.google.com/file/d/1M1BkKhQf7S14t--EV6ZD4GlxYSL0kXmR"
-      }
-    ],
-    "description": "Come out to Main Event at the Columbia Mall to play games with friends and family to support the THES PTA! 20% of all purchases (except alcohol from the restaurant, bowling, arcade, and laser tag\u2026"
   }
 ]

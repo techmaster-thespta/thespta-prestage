@@ -1,40 +1,11 @@
 [
   {
-    "day": "30",
-    "month": "Sep",
-    "date": "2026-09-30",
-    "title": "Last Day of PTA Membership Drive (Free Lanyard)",
-    "when": "All Day",
-    "featured": true,
-    "attachments": [
-      {
-        "title": "20260930-membership-drive-lanyard-deadline.png",
-        "href": "https://drive.google.com/open?id=1OfuG_ypdZfZNFDrZTwonAkzl0buQjsfX"
-      }
-    ],
-    "description": "Join us for Last Day of PTA Membership Drive (Free Lanyard) \u2014 see the full calendar for details."
-  },
-  {
-    "day": "30",
-    "month": "Sep",
-    "date": "2026-09-30",
-    "title": "PTA Spirit Wear Sale Ends (Parent-Designed Store)",
-    "when": "All Day",
-    "featured": false,
-    "attachments": [
-      {
-        "title": "20260930-parent-designed-spirit-wear-ends.png",
-        "href": "https://drive.google.com/open?id=1xmnk3azLmK1vSivBhK1X7r7H6-1AqP3g"
-      }
-    ]
-  },
-  {
     "day": "03",
     "month": "Oct",
     "date": "2026-10-03",
     "title": "Okland Mills Fall Fest",
     "when": "11:00 AM \u2013 3:00 PM",
-    "featured": false,
+    "featured": true,
     "attachments": [
       {
         "title": "OklandMills-FallFest.PNG",
@@ -113,5 +84,35 @@
     ],
     "signup_href": "https://m.signupgenius.com/#!/showSignUp/10C084EA9A92BA2FCC70-64996490-thes?useFullSite=false",
     "description": "Fun for the whole family! See the flyer for more information! And sign up here!"
+  },
+  {
+    "day": "01",
+    "month": "Nov",
+    "date": "2026-11-01",
+    "title": "Fall Fest / Trunk or Treat Rain Date",
+    "when": "1:00 \u2013 4:00 PM",
+    "featured": false,
+    "attachments": [
+      {
+        "title": "20261101-fall-fest-trunk-or-treat-rain-date.png",
+        "href": "https://drive.google.com/open?id=1OMBrO_yk0ui0HIaE-CTWik_P9WAZ5DNo"
+      }
+    ],
+    "description": "Rain date for Fall Fest / Trunk or Treat, in case the original Oct 30 date is rained out."
+  },
+  {
+    "day": "03",
+    "month": "Nov",
+    "date": "2026-11-03",
+    "title": "Fundraiser - Main Event",
+    "when": "5:00 \u2013 8:00 PM",
+    "featured": false,
+    "attachments": [
+      {
+        "title": "202611-MainEvent.PNG",
+        "href": "https://drive.google.com/file/d/1M1BkKhQf7S14t--EV6ZD4GlxYSL0kXmR"
+      }
+    ],
+    "description": "Come out to Main Event at the Columbia Mall to play games with friends and family to support the THES PTA! 20% of all purchases (except alcohol from the restaurant, bowling, arcade, and laser tag\u2026"
   }
 ]

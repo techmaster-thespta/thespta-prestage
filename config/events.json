@@ -1,27 +1,11 @@
 [
   {
-    "day": "03",
-    "month": "Oct",
-    "date": "2026-10-03",
-    "title": "Okland Mills Fall Fest",
-    "when": "11:00 AM \u2013 3:00 PM",
-    "featured": true,
-    "attachments": [
-      {
-        "title": "OklandMills-FallFest.PNG",
-        "href": "https://drive.google.com/file/d/1lGfTmX3Qln_3DlAw5pkBjRyCCM_HwyzU"
-      }
-    ],
-    "signup_href": "https://www.signupgenius.com/go/10C084EA9A92BA2FCC70-65957288-thes?utm_source=gemini#/",
-    "description": "\ud83c\udf42 Join THES PTA at the Oakland Mills Fall Festival on Saturday, October 3rd from 11 am - 3 pm (rain or shine)! \ud83c\udf42 We will have a booth in the Children\u2019s Area with games and activities!! \ud83c\udf42 It\u2019s a free\u2026"
-  },
-  {
     "day": "10",
     "month": "Oct",
     "date": "2026-10-10",
     "title": "Beautification Day \u2014 School Garden Cleanup",
     "when": "9:00 AM \u2013 12:00 PM \u00b7 Thunder Hill Elementary School gardens (behind the school)",
-    "featured": false,
+    "featured": true,
     "attachments": [
       {
         "title": "26-beautifucation.JPG",
@@ -114,5 +98,20 @@
       }
     ],
     "description": "Rain date for Fall Fest / Trunk or Treat, in case the original Oct 30 date is rained out."
+  },
+  {
+    "day": "03",
+    "month": "Nov",
+    "date": "2026-11-03",
+    "title": "Fundraiser - Main Event",
+    "when": "5:00 \u2013 8:00 PM",
+    "featured": false,
+    "attachments": [
+      {
+        "title": "202611-MainEvent.PNG",
+        "href": "https://drive.google.com/file/d/1M1BkKhQf7S14t--EV6ZD4GlxYSL0kXmR"
+      }
+    ],
+    "description": "Come out to Main Event at the Columbia Mall to play games with friends and family to support the THES PTA! 20% of all purchases (except alcohol from the restaurant, bowling, arcade, and laser tag\u2026"
   }
 ]

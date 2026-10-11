@@ -39,6 +39,15 @@
     "description": "Parents and students will learn strategies used to teach math facts together. Primary facts will include addition and subtraction, while intermediate facts include multiplication and division. Pizza\u2026"
   },
   {
+    "day": "21",
+    "month": "Oct",
+    "date": "2026-10-21",
+    "title": "Wear Orange for Unity Day!",
+    "when": "All Day",
+    "featured": false,
+    "description": "Everyone! Wear orange for unity day! Us united can do anything!"
+  },
+  {
     "day": "24",
     "month": "Oct",
     "date": "2026-10-24",
@@ -98,14 +107,5 @@
       }
     ],
     "description": "Come out to Main Event at the Columbia Mall to play games with friends and family to support the THES PTA! 20% of all purchases (except alcohol from the restaurant, bowling, arcade, and laser tag\u2026"
-  },
-  {
-    "day": "05",
-    "month": "Nov",
-    "date": "2026-11-05",
-    "title": "THES PTA General Meeting",
-    "when": "7:00 \u2013 8:00 PM \u00b7 Online",
-    "featured": false,
-    "description": "Join us throughout the school year! PTA meetings are a great way to stay informed, meet other families, and help make a difference in our Thunder Hill community. Everyone is welcome."
   }
 ]

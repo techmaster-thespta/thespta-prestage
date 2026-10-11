@@ -77,7 +77,10 @@ override with `address_line1`/`address_line2` for an off-site event.
    for the same event and make sure the date matches.
 2. Save the flyer image into `assets/flyers/events/` (this repo, not a
    Drive link — see the "images" constraint in `.claude/CLAUDE.md`) and
-   set `flyer_filename` to `events/<file>`.
+   set `flyer_filename` to `events/<file>`. For a second flyer (e.g. a
+   food-vendor update), add `"extra_flyers": [{"filename":
+   "events/<file>", "alt": "..."}]` — they render side by side with the
+   main one (stacked on phones) and are archived along with it.
 3. Add/edit/remove the entry in `config/event-pages.json`. Put the
    event's name, full date, and location — "in Columbia, Maryland
    (Howard County)" — in `summary`: that's the snippet people see in

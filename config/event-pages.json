@@ -68,9 +68,17 @@
         "heading": "What to Expect",
         "items": [
           "Fall Fest, 5:00 – 6:30 PM: music, festive fall activities, games, and contests",
-          "Food trucks, raffles, and much more",
+          "Food and drink vendors, raffles, and much more",
           "Trunk or Treat, 6:30 – 8:00 PM",
           "Rain date: Sunday, November 1, 1:00 – 4:00 PM"
+        ]
+      },
+      {
+        "heading": "Food & Drink Vendors",
+        "items": [
+          "Say Squeeze: lemonade, limeade, Brazilian lemonade, tea, and more",
+          "The Mercenary Chef: delicious food options for the whole family",
+          "Alyssa's Sweets & Treats: pastries, desserts, cakes, and more"
         ]
       },
       {
@@ -93,7 +101,13 @@
       }
     ],
     "register_href": "",
-    "contact_email": "president.thespta@gmail.com"
+    "contact_email": "president.thespta@gmail.com",
+    "extra_flyers": [
+      {
+        "filename": "events/fall-fest-food-vendors-2026.jpg",
+        "alt": "Fall Fest and Trunk or Treat food and drink vendors flyer: Say Squeeze (lemonade, limeade, Brazilian lemonade, tea and more), The Mercenary Chef (food options for the whole family), and Alyssa's Sweets & Treats (pastries, desserts, cakes and more). Friday, October 30, 2026, 5 to 8 PM at Thunder Hill Elementary School."
+      }
+    ]
   },
   {
     "slug": "veterans-day-celebration",

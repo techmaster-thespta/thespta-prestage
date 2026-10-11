@@ -59,7 +59,9 @@ def announcement_flyers(a):
 
 
 def event_page_flyers(e):
-    return [os.path.normpath(e["flyer_filename"])] if e.get("flyer_filename") else []
+    names = [e["flyer_filename"]] if e.get("flyer_filename") else []
+    names += [f["filename"] for f in e.get("extra_flyers", [])]
+    return [os.path.normpath(n) for n in names]
 
 
 def main():

@@ -883,7 +883,9 @@ def build_event_jsonld(event, site):
     if event.get("end"):
         data["endDate"] = iso(event["end"])
     if event.get("flyer_filename"):
-        data["image"] = [f"https://{domain}/flyers/{event['flyer_filename']}"]
+        data["image"] = [f"https://{domain}/flyers/{event['flyer_filename']}"] + [
+            f"https://{domain}/flyers/{f['filename']}" for f in event.get("extra_flyers", [])
+        ]
     return f'<script type="application/ld+json">{json.dumps(data)}</script>\n'
 
 
@@ -969,15 +971,30 @@ def render_event_page(event, site, context):
 
     flyer = ""
     if event.get("flyer_filename"):
-        flyer_url = f'{context["FLYER_BASE_URL"]}/{esc(event["flyer_filename"])}'
+        # `extra_flyers` ([{filename, alt}]) adds more flyers beside the
+        # main one — an auto-fit grid, so they stack on a phone.
+        flyers = [(event["flyer_filename"], event.get("flyer_alt") or event["title"] + " flyer")]
+        flyers += [(f["filename"], f.get("alt") or event["title"] + " flyer") for f in event.get("extra_flyers", [])]
+        imgs = []
+        for filename, alt in flyers:
+            flyer_url = f'{context["FLYER_BASE_URL"]}/{esc(filename)}'
+            imgs.append(
+                f'      <a href="{flyer_url}" target="_blank" rel="noopener">'
+                f'<img src="{flyer_url}" alt="{esc(alt)}" '
+                'loading="lazy" style="display:block; width:100%; max-width:900px; height:auto; margin:0 auto; '
+                'border-radius:14px; border:1px solid var(--border);"></a>'
+            )
+        body = "\n".join(imgs)
+        if len(imgs) > 1:
+            body = (
+                '      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); '
+                f'gap:20px; align-items:start;">\n{body}\n      </div>'
+            )
         flyer = (
             '  <section class="thes__section">\n'
             '    <div class="thes__wrap">\n'
-            '      <div class="thes__section-head"><h2>Event Flyer</h2></div>\n'
-            f'      <a href="{flyer_url}" target="_blank" rel="noopener">'
-            f'<img src="{flyer_url}" alt="{esc(event.get("flyer_alt") or event["title"] + " flyer")}" '
-            'loading="lazy" style="display:block; width:100%; max-width:900px; height:auto; margin:0 auto; '
-            'border-radius:14px; border:1px solid var(--border);"></a>\n'
+            f'      <div class="thes__section-head"><h2>Event Flyer{"s" if len(imgs) > 1 else ""}</h2></div>\n'
+            f"{body}\n"
             "    </div>\n"
             "  </section>"
         )

@@ -2084,6 +2084,7 @@ PAGE_TITLES = {
     "family-support-resources.html": "Family Support Resources",
     "family-support-resources/special-education-family-support.html": "Special Education & Family Support",
     "family-support-resources/student-parent-handbook.html": "HCPSS Student & Parent Handbook",
+    "family-support-resources/little-free-library.html": "Little Free Library",
 }
 
 # One line per page for <meta name="description"> — this is the summary
@@ -2161,6 +2162,10 @@ PAGE_DESCRIPTIONS = {
     "family-support-resources/student-parent-handbook.html": (
         "HCPSS's Student and Parent Handbook — school system practices, "
         "policies, and support services for every Howard County family."
+    ),
+    "family-support-resources/little-free-library.html": (
+        "Thunder Hill Elementary's Little Free Library — a free book-sharing "
+        "box in front of the school in Columbia, MD. Take a book, return a book."
     ),
 }
 

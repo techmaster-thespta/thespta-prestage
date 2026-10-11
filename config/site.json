@@ -56,7 +56,8 @@
     "pta_meetings": "pta-meetings",
     "family_support_resources": "family-support-resources",
     "special_education_family_support": "family-support-resources/special-education-family-support",
-    "hcpss_handbook": "family-support-resources/student-parent-handbook"
+    "hcpss_handbook": "family-support-resources/student-parent-handbook",
+    "little_free_library": "family-support-resources/little-free-library"
   },
   "nav": [
     { "label": "Home", "page_url": "home" },
@@ -73,7 +74,8 @@
     { "label": "Before & After School", "page_url": "afterschool_programs" },
     { "label": "Family Support Resources", "page_url": "family_support_resources", "children": [
       { "label": "Special Education & Family Support", "page_url": "special_education_family_support" },
-      { "label": "HCPSS Student & Parent Handbook", "page_url": "hcpss_handbook" }
+      { "label": "HCPSS Student & Parent Handbook", "page_url": "hcpss_handbook" },
+      { "label": "Little Free Library", "page_url": "little_free_library" }
     ] },
     { "label": "Newsletters", "page_url": "newsletter", "children": [
       { "label": "PTA Newsletter", "page_url": "pta_newsletter" },

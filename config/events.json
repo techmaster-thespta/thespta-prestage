@@ -1,41 +1,11 @@
 [
   {
-    "day": "10",
-    "month": "Oct",
-    "date": "2026-10-10",
-    "title": "Beautification Day \u2014 School Garden Cleanup",
-    "when": "9:00 AM \u2013 12:00 PM \u00b7 Thunder Hill Elementary School gardens (behind the school)",
-    "featured": true,
-    "attachments": [
-      {
-        "title": "26-beautifucation.JPG",
-        "href": "https://drive.google.com/file/d/1zsvBWRktz7CBBBEGiCXiNvWYESGOTRej"
-      }
-    ],
-    "description": "Help clean up and refresh the school garden for the fall season. Meet at the school gardens behind the Thunder Hill building. Please bring: \u2022 Garden gloves \u2022 Clothes and shoes that can get dirty \u2022\u2026"
-  },
-  {
-    "day": "10",
-    "month": "Oct",
-    "date": "2026-10-10",
-    "title": "Kindergarten Play Date",
-    "when": "11:00 AM \u2013 12:00 PM",
-    "featured": false,
-    "attachments": [
-      {
-        "title": "20261010-KinderPlayDate.PNG",
-        "href": "https://drive.google.com/file/d/149ad_GZds0VOZZUrxnsy60jKEnSIKG1y"
-      }
-    ],
-    "description": "Come join us for a Kindergarten Play Date at the school playground! It\u2019s a fun and relaxed opportunity for our kindergarten students and families to play, connect, meet new friends, and get to know\u2026"
-  },
-  {
     "day": "13",
     "month": "Oct",
     "date": "2026-10-13",
     "title": "Restaurant Night Out \u2014 Pupatella",
     "when": "11:30 AM \u2013 9:00 PM \u00b7 Pupatella, 9160 MD-108, Columbia, MD 21045, USA",
-    "featured": false,
+    "featured": true,
     "attachments": [
       {
         "title": "202609-pupatella.jpeg",
@@ -113,5 +83,29 @@
       }
     ],
     "description": "Come out to Main Event at the Columbia Mall to play games with friends and family to support the THES PTA! 20% of all purchases (except alcohol from the restaurant, bowling, arcade, and laser tag\u2026"
+  },
+  {
+    "day": "05",
+    "month": "Nov",
+    "date": "2026-11-05",
+    "title": "THES PTA General Meeting",
+    "when": "7:00 \u2013 8:00 PM \u00b7 Online",
+    "featured": false,
+    "description": "Join us throughout the school year! PTA meetings are a great way to stay informed, meet other families, and help make a difference in our Thunder Hill community. Everyone is welcome."
+  },
+  {
+    "day": "11",
+    "month": "Nov",
+    "date": "2026-11-11",
+    "title": "THES Veteran Day Celebration",
+    "when": "All Day",
+    "featured": false,
+    "attachments": [
+      {
+        "title": "202611-veteran-day.png",
+        "href": "https://drive.google.com/file/d/1jmTtrW-T-2BQLPrVujpWBhhBsjYabdA0"
+      }
+    ],
+    "description": "Thunder Hill Elementary School will celebrate and honor our veteran and military families on Wednesday, November 11, 2026. Families are invited to help us recognize veterans and military family\u2026"
   }
 ]

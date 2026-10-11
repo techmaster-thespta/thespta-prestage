@@ -153,6 +153,22 @@
     "flyer_filename": "raiseright.jpg"
   },
   {
+    "name": "Planet Aid Clothing Bin",
+    "category": "everyday",
+    "description": "Thunder Hill has a Planet Aid clothing donation bin in the school parking lot \u2014 an easy way to donate gently used clothing, shoes, and textiles while supporting our school and helping the environment.",
+    "how_to_join": "Drop off gently used clothing (all sizes), paired shoes, hats, belts, scarves, purses, backpacks, towels, sheets, blankets, curtains, and other household textiles anytime. Please don't donate wet, moldy, heavily soiled, or damaged items; carpet, rugs, or mattress pads; toys, books, or household hard goods; or trash.",
+    "cta_label": "Learn More About Planet Aid",
+    "cta_href": "https://www.planetaid.org/",
+    "secondary_label": null,
+    "secondary_href": null,
+    "enrollment_code": null,
+    "dates": [],
+    "contact": null,
+    "flyer_filename": "planet-aid.jpg",
+    "content_hash": "f4e79807c070bfec1605107cdbb5d956d28918360ae0da789e330e29d187cc1a",
+    "needs_review": false
+  },
+  {
     "name": "Make a Donation",
     "category": "direct",
     "description": "A one-time or recurring donation, no purchase required \u2014 every dollar goes straight to programs, grants, and classroom support.",

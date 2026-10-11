@@ -69,7 +69,7 @@
   {
     "name": "Disney's The Lion King JR",
     "provider": "Columbia Center for Theatrical Arts (CCTA)",
-    "description": "Thunder Hill Elementary's after-school theatre program, staging Disney's The Lion King JR. If any family is interested in the play but the cost is a concern, CCTA does offer scholarship opportunities for families who need financial assistance — apply here: https://forms.gle/gQcXsXwoJhv6uu5X8. CCTA can be reached at 410-381-0700 or admin@cctarts.org — they're happy to answer questions and help families learn more about available assistance.",
+    "description": "Thunder Hill Elementary's after-school theatre program, staging Disney's The Lion King JR. If any family is interested in the play but the cost is a concern, CCTA does offer scholarship opportunities for families who need financial assistance \u2014 apply here: https://forms.gle/gQcXsXwoJhv6uu5X8. CCTA can be reached at 410-381-0700 or admin@cctarts.org \u2014 they're happy to answer questions and help families learn more about available assistance.",
     "day_time": "Tuesdays, 3:55 \u2013 5:10 PM",
     "date_range": "Oct 20, Oct 27, Nov 10, Nov 17, Dec 1, Dec 8, Dec 15, Dec 22, Jan 5, Jan 12 (no class 11/3, 11/24, 1/19)",
     "grades": "K\u20135",
@@ -301,5 +301,23 @@
     "needs_review": false,
     "flyer_filename": "girl-scouts-troop-4709.png",
     "pta_sponsored": false
+  },
+  {
+    "name": "TechGirls",
+    "provider": "TechGirls (high school tutors)",
+    "pta_sponsored": false,
+    "description": "A free after-school STEM program for 4th- and 5th-grade girls: 10 hands-on workshops (like building stable bridges and making slime to explore chemical reactions), a field trip for students and parents, and a graduation celebration.",
+    "day_time": "Tuesdays, 3:55 PM (1.5 hours)",
+    "date_range": "Fall semester, starting Oct 20, 2026 \u00b7 Room 122",
+    "grades": "4\u20135 (girls)",
+    "price": "Free",
+    "sessions": [],
+    "show_date": null,
+    "contact": null,
+    "registration_href": "https://docs.google.com/forms/d/e/1FAIpQLSfMebiqXaiK3uJ0pSb507OixSZgovPuvg2B5TDFo9628iCG5A/viewform?usp=header",
+    "registration_note": "Register by Oct 16 \u2014 first come, first served (20 spots).",
+    "flyer_filename": null,
+    "content_hash": null,
+    "needs_review": false
   }
 ]

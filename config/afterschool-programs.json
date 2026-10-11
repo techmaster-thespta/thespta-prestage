@@ -304,9 +304,9 @@
   },
   {
     "name": "TechGirls",
-    "provider": "TechGirls (high school tutors)",
+    "provider": "CAPA-HC",
     "pta_sponsored": false,
-    "description": "A free after-school STEM program for 4th- and 5th-grade girls: 10 hands-on workshops (like building stable bridges and making slime to explore chemical reactions), a field trip for students and parents, and a graduation celebration.",
+    "description": "A free 10-week after-school STEM program for 4th- and 5th-grade girls, taught in small groups by trained high school tutors: robotics & circuits, biology & chemistry, physics & engineering, and coding. Includes a field trip, an end-of-semester showcase, and all materials.",
     "day_time": "Tuesdays, 3:55 PM (1.5 hours)",
     "date_range": "Fall semester, starting Oct 20, 2026 \u00b7 Room 122",
     "grades": "4\u20135 (girls)",
@@ -316,8 +316,8 @@
     "contact": null,
     "registration_href": "https://docs.google.com/forms/d/e/1FAIpQLSfMebiqXaiK3uJ0pSb507OixSZgovPuvg2B5TDFo9628iCG5A/viewform?usp=header",
     "registration_note": "Register by Oct 16 \u2014 first come, first served (20 spots).",
-    "flyer_filename": null,
-    "content_hash": null,
+    "flyer_filename": "techgirls.jpg",
+    "content_hash": "d9d92145940a3186a2e506cb36e7520db769dfd9ddd06859422aec01c5c33987",
     "needs_review": false
   }
 ]

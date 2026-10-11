@@ -169,6 +169,22 @@
     "needs_review": false
   },
   {
+    "name": "Donate Outgrown Kid Things",
+    "category": "everyday",
+    "description": "Before you send those outgrown kid things to their forever home, consider donating them to Thunder Hill!",
+    "how_to_join": "The recess cart is looking for coloring books, gently used games, LEGOs, Magna-Tiles, and more. The nurse's office could also use clean clothing for kids of all ages and sizes \u2014 especially pants! Thank you!",
+    "cta_label": null,
+    "cta_href": null,
+    "secondary_label": null,
+    "secondary_href": null,
+    "enrollment_code": null,
+    "dates": [],
+    "contact": null,
+    "flyer_filename": "outgrown-kid-things.jpg",
+    "content_hash": "3619a79aa4c369d7ac83ce00b3903152e554f6baf49281f574e9debfd30c9b86",
+    "needs_review": false
+  },
+  {
     "name": "Make a Donation",
     "category": "direct",
     "description": "A one-time or recurring donation, no purchase required \u2014 every dollar goes straight to programs, grants, and classroom support.",

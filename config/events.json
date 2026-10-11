@@ -24,6 +24,21 @@
     "description": "Join the Howard Astronomical League ( HAL ) for a Stars Party! Star parties bring people together to share their fascination with space and the night sky. Public star parties are held on one Saturday\u2026"
   },
   {
+    "day": "20",
+    "month": "Oct",
+    "date": "2026-10-20",
+    "title": "Math! Just the Facts!",
+    "when": "5:30 \u2013 7:00 PM",
+    "featured": false,
+    "attachments": [
+      {
+        "title": "261020-just-the-facts.PNG",
+        "href": "https://drive.google.com/file/d/1oraILk8xgE-ZnrryGaEqRBpTRn_6rA1k"
+      }
+    ],
+    "description": "Parents and students will learn strategies used to teach math facts together. Primary facts will include addition and subtraction, while intermediate facts include multiplication and division. Pizza\u2026"
+  },
+  {
     "day": "24",
     "month": "Oct",
     "date": "2026-10-24",
@@ -92,20 +107,5 @@
     "when": "7:00 \u2013 8:00 PM \u00b7 Online",
     "featured": false,
     "description": "Join us throughout the school year! PTA meetings are a great way to stay informed, meet other families, and help make a difference in our Thunder Hill community. Everyone is welcome."
-  },
-  {
-    "day": "11",
-    "month": "Nov",
-    "date": "2026-11-11",
-    "title": "THES Veteran Day Celebration",
-    "when": "All Day",
-    "featured": false,
-    "attachments": [
-      {
-        "title": "202611-veteran-day.png",
-        "href": "https://drive.google.com/file/d/1jmTtrW-T-2BQLPrVujpWBhhBsjYabdA0"
-      }
-    ],
-    "description": "Thunder Hill Elementary School will celebrate and honor our veteran and military families on Wednesday, November 11, 2026. Families are invited to help us recognize veterans and military family\u2026"
   }
 ]

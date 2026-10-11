@@ -14,6 +14,29 @@ live at `https://techmaster-thespta.github.io/thespta-prestage/`. See
 the `rebuild-now` skill's pattern for pushing this repo's current branch
 there and redeploying.
 
+## How we ship changes (staging first, always)
+
+1. **Every change goes to `thespta-prestage`'s `main` first** — build,
+   validate, push. The user checks it on the staging site.
+2. **Production (`thespta` `main`) only when the user says "push to
+   prod."** Never push to prod on your own, even for a one-line change.
+3. **For a routine change, apply it to each repo separately rather than
+   merging one repo into the other.** Each repo has its own history
+   (separate hourly calendar-sync commits), and staging can carry
+   content still being previewed that isn't approved for prod. A
+   whole-repo "release staging to production" merge has been done
+   before, but only when the user asks for exactly that.
+4. **Confirm a deploy via GitHub Actions, not by loading the site.**
+   Cloud sessions' network policy blocks `www.thespta.org` and
+   `*.github.io` (curl gets `CONNECT tunnel failed, 403`), so a curl
+   check reports "not live" even when it is. Check that the `deploy.yml`
+   run for your commit concluded `success`, then give the user the page
+   URL to eyeball.
+5. **A 403 on `git push` means the session lacks write access**, not a
+   network blip — the Claude GitHub App must be installed on
+   `techmaster-thespta` (and GitHub connected at claude.ai). Tell the
+   user rather than retrying in a loop.
+
 ## The one rule that matters most
 
 **Content changes are config-only. Do not edit `src/` unless the user

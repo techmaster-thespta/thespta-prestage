@@ -112,7 +112,10 @@ disappear everywhere automatically. This is by design — don't "fix" it by
 editing templates.
 
 **Rotation and dismissal**: with more than one entry, the banner
-auto-rotates between them, each fully readable for 4 seconds, with a smooth fade. A visitor
+auto-rotates between them, each fully readable for 4 seconds, with a smooth fade.
+The rotation order is shuffled on every page load, so every announcement
+gets a fair chance to be seen first — list order in the file doesn't set
+priority. A visitor
 who dismisses the banner (the × button) won't see it again on that browser
 *for the same set of announcements* — changing this file's content
 (adding, removing, or editing any entry) automatically un-dismisses the

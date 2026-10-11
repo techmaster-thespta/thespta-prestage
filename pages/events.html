@@ -660,11 +660,24 @@
 
   var slides = banner.querySelectorAll(".thes__announce-slide");
   if (slides.length < 2) return;
+  // Shuffle the rotation order on every page load, so the same first few
+  // announcements don't always get seen while the later ones rarely do.
+  var order = [];
+  for (var k = 0; k < slides.length; k++) order.push(k);
+  for (var k = order.length - 1; k > 0; k--) {
+    var r = Math.floor(Math.random() * (k + 1));
+    var tmp = order[k]; order[k] = order[r]; order[r] = tmp;
+  }
+  if (order[0] !== 0) {
+    slides[0].style.display = "none";
+    slides[order[0]].style.display = "flex";
+    slides[order[0]].style.opacity = "1";
+  }
   var i = 0;
   setInterval(function () {
-    var current = slides[i];
-    var nextIndex = (i + 1) % slides.length;
-    var next = slides[nextIndex];
+    var current = slides[order[i]];
+    var nextIndex = (i + 1) % order.length;
+    var next = slides[order[nextIndex]];
     current.style.opacity = "0";
     setTimeout(function () {
       current.style.display = "none";

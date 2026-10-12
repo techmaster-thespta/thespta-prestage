@@ -348,6 +348,9 @@
   .thes__card--yellow a { color: var(--yellow-text); }
   .thes__card--coral a { color: var(--coral); }
   .thes__card--navy a { color: var(--navy); }
+  .thes__sponsor-card { width: 100%; max-width: 340px; justify-self: center; justify-items: center; text-align: center; }
+  .thes__sponsor-logo { display: flex; align-items: center; justify-content: center; height: 120px; margin: 0 0 6px; }
+  .thes__sponsor-logo img { max-width: 100%; max-height: 120px; width: auto; height: auto; object-fit: contain; }
 
   /* ---- Icon-only item (impact grid, no card box) ---- */
   .thes__icon-item { display: grid; justify-items: center; gap: 8px; text-align: center; min-width: 0; }
@@ -626,7 +629,7 @@
 })();
 </script>
 
-<div class="thes__announce" id="thes-announce" data-hash="24351333b00f">
+<div class="thes__announce" id="thes-announce" data-hash="532442ef7239">
   <div class="thes__announce-inner">
     <div class="thes__announce-track" id="thes-announce-track">
 <a class="thes__announce-slide" style="display:flex;opacity:1;" href="fundraising.html"><svg class="thes__announce-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M19 5a10 10 0 0 1 0 14"/></svg><span class="thes__announce-text">Joe Corbi's & Believe Kids fundraiser — now thru Oct 16!</span><span class="thes__announce-arrow" aria-hidden="true">&rarr;</span></a>
@@ -638,6 +641,7 @@
 <a class="thes__announce-slide" href="before-after-school-programs.html"><svg class="thes__announce-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M19 5a10 10 0 0 1 0 14"/></svg><span class="thes__announce-text">TechGirls free STEM club, grades 4-5 — register by Oct 16</span><span class="thes__announce-arrow" aria-hidden="true">&rarr;</span></a>
 <a class="thes__announce-slide" href="events.html"><svg class="thes__announce-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M19 5a10 10 0 0 1 0 14"/></svg><span class="thes__announce-text">Math! Just the Facts! Tue, Oct 20, 5:30 PM — pizza served!</span><span class="thes__announce-arrow" aria-hidden="true">&rarr;</span></a>
 <a class="thes__announce-slide" href="events.html"><svg class="thes__announce-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M19 5a10 10 0 0 1 0 14"/></svg><span class="thes__announce-text">Wear Orange for Unity Day! Wednesday, Oct 21</span><span class="thes__announce-arrow" aria-hidden="true">&rarr;</span></a>
+<a class="thes__announce-slide" href="sponsors.html"><img class="thes__announce-icon" src="images/sponsor-bfunk-dance-company.png" alt=""><span class="thes__announce-text">Thank you to B. Funk Dance Company for sponsoring THES!</span><span class="thes__announce-arrow" aria-hidden="true">&rarr;</span></a>
     </div>
     <button type="button" class="thes__announce-close" id="thes-announce-close" aria-label="Dismiss announcement">&times;</button>
   </div>
@@ -723,7 +727,12 @@
       <p>Every sponsor gets a card here, and on our Home page.</p>
     </div>
     <div class="thes__grid thes__grid--narrow">
-        <div class="thes__card thes__card--placeholder"><h3>Your Business Here</h3><p>Become our next sponsor and get featured in this spot.</p></div>
+        <div class="thes__card thes__sponsor-card">
+          <a class="thes__sponsor-logo" href="https://www.bfunk.com/" target="_blank" rel="noopener"><img src="images/sponsor-bfunk-dance-company.png" alt="B. Funk Dance Company logo" loading="lazy"></a>
+          <span class="thes__badge thes__badge--age">Silver Sponsor</span>
+          <h3>B. Funk Dance Company</h3>
+          <a href="https://www.bfunk.com/" target="_blank" rel="noopener">Visit Sponsor &rarr;</a>
+        </div>
     </div>
   </div>
 </section>

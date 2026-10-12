@@ -1664,12 +1664,24 @@ def render_sponsor_card(sponsor, context):
     })
 
 
+SPONSOR_LEVEL_ORDER = ["presenting", "gold", "silver", "community"]
+
+
+def sort_sponsors(sponsors):
+    """Highest level first (Presenting, Gold, Silver, Community, then no
+    level); file order is kept within a level."""
+    def rank(s):
+        level = (s.get("tier") or "").strip().lower()
+        return SPONSOR_LEVEL_ORDER.index(level) if level in SPONSOR_LEVEL_ORDER else len(SPONSOR_LEVEL_ORDER)
+    return sorted(sponsors, key=rank)
+
+
 def build_home_sponsors_section(sponsors, context):
     """Home page "Our Sponsors" — omitted entirely when there are none,
     same empty-means-no-section rule as build_optional_section."""
     if not sponsors:
         return ""
-    cards = "\n".join(indent(render_sponsor_card(s, context), 8) for s in sponsors)
+    cards = "\n".join(indent(render_sponsor_card(s, context), 8) for s in sort_sponsors(sponsors))
     section_tmpl = (TEMPLATES / "sponsors-section.html.tmpl").read_text()
     return render(section_tmpl, {**context, "SPONSOR_CARDS": cards})
 
@@ -1684,7 +1696,7 @@ def build_sponsors_page_section(sponsors, context):
     section silently vanish because nobody's signed up yet. Shows a
     single dashed placeholder card in that case instead."""
     if sponsors:
-        cards = "\n".join(indent(render_sponsor_card(s, context), 8) for s in sponsors)
+        cards = "\n".join(indent(render_sponsor_card(s, context), 8) for s in sort_sponsors(sponsors))
     else:
         cards = indent(
             '<div class="thes__card thes__card--placeholder">'

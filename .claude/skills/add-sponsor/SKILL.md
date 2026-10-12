@@ -30,6 +30,10 @@ same card on the Home page and the Sponsors page):
   `"Silver"`, `"Community"`); shows as a "<tier> Sponsor" badge.
 - `blurb` — one short line about the business (optional).
 
+Cards are ordered and sized by `tier` automatically (Presenting biggest,
+then Gold, Silver, Community; file order kept within a level), each with
+its level color — no need to reorder `config/sponsors.json` by hand.
+
 Never put the sponsor's contact name, email, or phone from their order
 on the site — those are private. A thank-you banner announcement
 (`add-announcement` skill) can use the logo as its `icon_filename`.

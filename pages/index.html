@@ -341,7 +341,15 @@
   .thes__card--yellow a { color: var(--yellow-text); }
   .thes__card--coral a { color: var(--coral); }
   .thes__card--navy a { color: var(--navy); }
-  .thes__sponsor-card { width: 100%; max-width: 340px; justify-self: center; justify-items: center; text-align: center; }
+  /* Sponsor cards: a centered, wrapping row (not equal grid columns) so
+     higher levels can be bigger — Presenting > Gold > Silver > Community. */
+  .thes__sponsor-grid { display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; gap: 20px; }
+  .thes__sponsor-card { flex: 1 1 300px; max-width: 300px; min-width: 0; justify-items: center; text-align: center; --logo-h: 110px; }
+  .thes__sponsor-card--level-presenting { flex-basis: 420px; max-width: 420px; --logo-h: 170px; }
+  .thes__sponsor-card--level-gold { flex-basis: 360px; max-width: 360px; --logo-h: 140px; }
+  .thes__sponsor-card--level-silver { flex-basis: 300px; max-width: 300px; --logo-h: 110px; }
+  .thes__sponsor-card--level-community { flex-basis: 250px; max-width: 250px; --logo-h: 85px; }
+  .thes__sponsor-grid > .thes__card--placeholder { flex: 1 1 300px; max-width: 340px; }
   /* Sponsor level (matches the sponsorship tier colors): badge + thin top accent */
   .thes__sponsor-card--level-presenting { border-top: 4px solid var(--navy); }
   .thes__sponsor-card--level-gold { border-top: 4px solid var(--yellow); }
@@ -351,8 +359,8 @@
   .thes__badge.thes__badge--level-gold { background: var(--gold-tint); color: var(--yellow-text); }
   .thes__badge.thes__badge--level-silver { background: var(--silver-tint); color: var(--text-muted); }
   .thes__badge.thes__badge--level-community { background: var(--coral-tint); color: var(--coral); }
-  .thes__sponsor-logo { display: flex; align-items: center; justify-content: center; height: 120px; margin: 0 0 6px; }
-  .thes__sponsor-logo img { max-width: 100%; max-height: 120px; width: auto; height: auto; object-fit: contain; }
+  .thes__sponsor-logo { display: flex; align-items: center; justify-content: center; height: var(--logo-h); margin: 0 0 6px; }
+  .thes__sponsor-logo img { max-width: 100%; max-height: var(--logo-h); width: auto; height: auto; object-fit: contain; }
 
   /* ---- Icon-only item (impact grid, no card box) ---- */
   .thes__icon-item { display: grid; justify-items: center; gap: 8px; text-align: center; min-width: 0; }
@@ -880,7 +888,7 @@
         <span class="thes__eyebrow">With Thanks To</span>
         <h2>Our Sponsors</h2>
       </div>
-      <div class="thes__grid thes__grid--narrow">
+      <div class="thes__sponsor-grid">
         <div class="thes__card thes__sponsor-card thes__sponsor-card--level-gold">
           <a class="thes__sponsor-logo" href="https://www.mathnasium.com/math-centers/columbiamd" target="_blank" rel="noopener"><img src="images/sponsor-mathnasium.png" alt="Mathnasium logo" loading="lazy"></a>
           <span class="thes__badge thes__badge--level-gold">Gold Sponsor</span>

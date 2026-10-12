@@ -10,5 +10,11 @@
     "href": "https://www.bfunk.com/",
     "tier": "Silver",
     "logo_filename": "sponsor-bfunk-dance-company.png"
+  },
+  {
+    "name": "Lightning View Home Inspections",
+    "href": "https://www.lightningviewhomeinspections.com/",
+    "tier": "Community",
+    "logo_filename": "sponsor-lightning-view-home-inspections.png"
   }
 ]

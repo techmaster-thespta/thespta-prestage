@@ -44,5 +44,6 @@
     "expires": "2026-10-22"
   },
   {"text": "Thank you to B. Funk Dance Company for sponsoring THES!", "page_url": "sponsors", "icon_filename": "sponsor-bfunk-dance-company.png"},
-  {"text": "Thank you to Mathnasium for sponsoring THES!", "page_url": "sponsors"}
+  {"text": "Thank you to Mathnasium for sponsoring THES!", "page_url": "sponsors"},
+  {"text": "Thank you to Lightning View Home Inspections for sponsoring!", "page_url": "sponsors"}
 ]

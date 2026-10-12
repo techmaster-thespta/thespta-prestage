@@ -99,6 +99,8 @@ place to edit.
 | `teal_tint` | `#E1F3F3` | "Members Welcome" committee status badge |
 | `coral` | `#F2645A` | One of the "who benefits" icon colors; "Chair Needed" committee status badge |
 | `coral_tint` | `#FDE7E5` | "Chair Needed" committee status badge background |
+| `gold_tint` | `#FFF4C2` | Gold Sponsor badge background (sponsor cards) |
+| `silver` / `silver_tint` | `#9AA9B7` / `#EDF1F4` | Silver Sponsor card accent / badge background |
 | `bg_tint` | `#EAF6F1` | The alternating section background (a warm light teal) used sitewide for visual rhythm between white and tinted sections — never applied to hero/banner photos |
 | `text` / `text_muted` | `#172B3D` / `#566878` | Body text / secondary text |
 | `border` | `#DCE5EA` | Card borders (light blue-gray) |

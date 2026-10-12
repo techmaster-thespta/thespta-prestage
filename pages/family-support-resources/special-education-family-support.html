@@ -64,6 +64,9 @@
     --teal-tint: #E1F3F3;
     --coral: #F2645A;
     --coral-tint: #FDE7E5;
+    --gold-tint: #FFF4C2;
+    --silver: #9AA9B7;
+    --silver-tint: #EDF1F4;
     --bg-tint: #DDEFEF;
     --text: #172B3D;
     --text-muted: #566878;
@@ -347,6 +350,15 @@
   .thes__card--coral a { color: var(--coral); }
   .thes__card--navy a { color: var(--navy); }
   .thes__sponsor-card { width: 100%; max-width: 340px; justify-self: center; justify-items: center; text-align: center; }
+  /* Sponsor level (matches the sponsorship tier colors): badge + thin top accent */
+  .thes__sponsor-card--level-presenting { border-top: 4px solid var(--navy); }
+  .thes__sponsor-card--level-gold { border-top: 4px solid var(--yellow); }
+  .thes__sponsor-card--level-silver { border-top: 4px solid var(--silver); }
+  .thes__sponsor-card--level-community { border-top: 4px solid var(--coral); }
+  .thes__badge.thes__badge--level-presenting { background: var(--navy); color: #fff; }
+  .thes__badge.thes__badge--level-gold { background: var(--gold-tint); color: var(--yellow-text); }
+  .thes__badge.thes__badge--level-silver { background: var(--silver-tint); color: var(--text-muted); }
+  .thes__badge.thes__badge--level-community { background: var(--coral-tint); color: var(--coral); }
   .thes__sponsor-logo { display: flex; align-items: center; justify-content: center; height: 120px; margin: 0 0 6px; }
   .thes__sponsor-logo img { max-width: 100%; max-height: 120px; width: auto; height: auto; object-fit: contain; }
 

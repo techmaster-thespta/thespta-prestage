@@ -1642,7 +1642,7 @@ def render_sponsor_card(sponsor, context):
     `blurb` (one short line). A sponsor with none of them renders as the
     original name-and-link card."""
     esc = html.escape
-    logo_html = tier_html = blurb_html = ""
+    logo_html = tier_html = blurb_html = tier_class = ""
     if sponsor.get("logo_filename"):
         logo_html = (
             f'<a class="thes__sponsor-logo" href="{esc(sponsor["href"])}" target="_blank" rel="noopener">'
@@ -1650,13 +1650,17 @@ def render_sponsor_card(sponsor, context):
             f'alt="{esc(sponsor["name"])} logo" loading="lazy"></a>\n  '
         )
     if sponsor.get("tier"):
-        tier_html = f'<span class="thes__badge thes__badge--age">{esc(sponsor["tier"])} Sponsor</span>\n  '
+        tier_slug = re.sub(r"[^a-z]+", "-", sponsor["tier"].lower()).strip("-")
+        tier_class = f" thes__sponsor-card--level-{tier_slug}"
+        tier_html = (
+            f'<span class="thes__badge thes__badge--level-{tier_slug}">{esc(sponsor["tier"])} Sponsor</span>\n  '
+        )
     if sponsor.get("blurb"):
         blurb_html = f'<p>{esc(sponsor["blurb"])}</p>\n  '
     card_tmpl = (TEMPLATES / "card-sponsor.html.tmpl").read_text()
     return render(card_tmpl, {
         "name": esc(sponsor["name"]), "href": esc(sponsor["href"]),
-        "logo_html": logo_html, "tier_html": tier_html, "blurb_html": blurb_html,
+        "logo_html": logo_html, "tier_html": tier_html, "blurb_html": blurb_html, "tier_class": tier_class,
     })
 
 

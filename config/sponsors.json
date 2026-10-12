@@ -1,5 +1,11 @@
 [
   {
+    "name": "Mathnasium",
+    "href": "https://www.mathnasium.com/math-centers/columbiamd",
+    "tier": "Gold",
+    "logo_filename": "sponsor-mathnasium.png"
+  },
+  {
     "name": "B. Funk Dance Company",
     "href": "https://www.bfunk.com/",
     "tier": "Silver",

@@ -29,6 +29,9 @@ same card on the Home page and the Sponsors page):
   tiers without the word "Sponsor" (`"Presenting"`, `"Gold"`,
   `"Silver"`, `"Community"`); shows as a "<tier> Sponsor" badge.
 - `blurb` — one short line about the business (optional).
+- `show_name` — the text name is hidden when there's a logo (logos
+  usually include it; it stays in the alt text). Set `"show_name": true`
+  for a logo that doesn't show the business name.
 
 Cards are ordered and sized by `tier` automatically (Presenting biggest,
 then Gold, Silver, Community; file order kept within a level), each with

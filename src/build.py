@@ -1643,6 +1643,13 @@ def render_sponsor_card(sponsor, context):
     original name-and-link card."""
     esc = html.escape
     logo_html = tier_html = blurb_html = tier_class = ""
+    # A logo usually already shows the business name, so the text name is
+    # dropped when there's a logo (it stays in the logo's alt text); set
+    # "show_name": true for a logo that doesn't include the name.
+    name_html = ""
+    if not sponsor.get("logo_filename") or sponsor.get("show_name"):
+        name_html = f'<h3>{esc(sponsor["name"])}</h3>'
+
     if sponsor.get("logo_filename"):
         logo_html = (
             f'<a class="thes__sponsor-logo" href="{esc(sponsor["href"])}" target="_blank" rel="noopener">'
@@ -1660,7 +1667,7 @@ def render_sponsor_card(sponsor, context):
     card_tmpl = (TEMPLATES / "card-sponsor.html.tmpl").read_text()
     return render(card_tmpl, {
         "name": esc(sponsor["name"]), "href": esc(sponsor["href"]),
-        "logo_html": logo_html, "tier_html": tier_html, "blurb_html": blurb_html, "tier_class": tier_class,
+        "logo_html": logo_html, "tier_html": tier_html, "blurb_html": blurb_html, "tier_class": tier_class, "name_html": name_html,
     })
 
 

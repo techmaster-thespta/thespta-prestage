@@ -3,18 +3,21 @@
     "name": "Mathnasium",
     "href": "https://www.mathnasium.com/math-centers/columbiamd",
     "tier": "Gold",
-    "logo_filename": "sponsor-mathnasium.png"
+    "logo_filename": "sponsor-mathnasium.png",
+    "blurb": "Math learning center and tutoring in Columbia."
   },
   {
     "name": "B. Funk Dance Company",
     "href": "https://www.bfunk.com/",
     "tier": "Silver",
-    "logo_filename": "sponsor-bfunk-dance-company.png"
+    "logo_filename": "sponsor-bfunk-dance-company.png",
+    "blurb": "Dance studio and performance company."
   },
   {
     "name": "Lightning View Home Inspections",
     "href": "https://www.lightningviewhomeinspections.com/",
     "tier": "Community",
-    "logo_filename": "sponsor-lightning-view-home-inspections.png"
+    "logo_filename": "sponsor-lightning-view-home-inspections.png",
+    "blurb": "Home inspection services."
   }
 ]

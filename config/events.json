@@ -1,26 +1,11 @@
 [
   {
-    "day": "13",
-    "month": "Oct",
-    "date": "2026-10-13",
-    "title": "Restaurant Night Out \u2014 Pupatella",
-    "when": "11:30 AM \u2013 9:00 PM \u00b7 Pupatella, 9160 MD-108, Columbia, MD 21045, USA",
-    "featured": true,
-    "attachments": [
-      {
-        "title": "202609-pupatella.jpeg",
-        "href": "https://drive.google.com/file/d/1Dym6jms8HYY9V3FLxeXW42LEW2nZZsS7"
-      }
-    ],
-    "description": "Support THES while you dine at Pupatella! Details on ordering to come \u2014 check back closer to the date, or watch the PTA\u2019s Facebook/Instagram (@thunderhilles_pta)"
-  },
-  {
     "day": "17",
     "month": "Oct",
     "date": "2026-10-17",
     "title": "HAL Star Party",
     "when": "7:30 \u2013 11:00 PM \u00b7 11685 Old Frederick Rd, Marriottsville, MD 21104, USA",
-    "featured": false,
+    "featured": true,
     "description": "Join the Howard Astronomical League ( HAL ) for a Stars Party! Star parties bring people together to share their fascination with space and the night sky. Public star parties are held on one Saturday\u2026"
   },
   {
@@ -107,5 +92,14 @@
       }
     ],
     "description": "Come out to Main Event at the Columbia Mall to play games with friends and family to support the THES PTA! 20% of all purchases (except alcohol from the restaurant, bowling, arcade, and laser tag\u2026"
+  },
+  {
+    "day": "05",
+    "month": "Nov",
+    "date": "2026-11-05",
+    "title": "THES PTA General Meeting",
+    "when": "7:00 \u2013 8:00 PM \u00b7 Online",
+    "featured": false,
+    "description": "Join us throughout the school year! PTA meetings are a great way to stay informed, meet other families, and help make a difference in our Thunder Hill community. Everyone is welcome."
   }
 ]

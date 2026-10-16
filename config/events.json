@@ -33,6 +33,21 @@
     "description": "Everyone! Wear orange for unity day! Us united can do anything!"
   },
   {
+    "day": "23",
+    "month": "Oct",
+    "date": "2026-10-23",
+    "title": "Wild Lake Trunk or Treat",
+    "when": "6:00 \u2013 8:00 PM",
+    "featured": false,
+    "attachments": [
+      {
+        "title": "Wildlake-trunk-or-treat.PNG",
+        "href": "https://drive.google.com/file/d/1DgbJL3GoqH7ezCDXCp7CaACWwKtCc0l8"
+      }
+    ],
+    "description": "As THES is one of the schools local to Wilde Lake High School, we would like to invite you to our upcoming Trunk-or-Treat on October 23, 2026 from 6pm - 8pm on the Upper Lots of Wilde Lake High\u2026"
+  },
+  {
     "day": "24",
     "month": "Oct",
     "date": "2026-10-24",
@@ -92,14 +107,5 @@
       }
     ],
     "description": "Come out to Main Event at the Columbia Mall to play games with friends and family to support the THES PTA! 20% of all purchases (except alcohol from the restaurant, bowling, arcade, and laser tag\u2026"
-  },
-  {
-    "day": "05",
-    "month": "Nov",
-    "date": "2026-11-05",
-    "title": "THES PTA General Meeting",
-    "when": "7:00 \u2013 8:00 PM \u00b7 Online",
-    "featured": false,
-    "description": "Join us throughout the school year! PTA meetings are a great way to stay informed, meet other families, and help make a difference in our Thunder Hill community. Everyone is welcome."
   }
 ]

@@ -29,11 +29,6 @@
     "expires": "2026-11-12"
   },
   {
-    "text": "TechGirls free STEM club, grades 4-5 — register by Oct 16",
-    "page_url": "afterschool_programs",
-    "expires": "2026-10-16"
-  },
-  {
     "text": "Math! Just the Facts! Tue, Oct 20, 5:30 PM — pizza served!",
     "page_url": "events",
     "expires": "2026-10-21"
@@ -43,7 +38,17 @@
     "page_url": "events",
     "expires": "2026-10-22"
   },
-  {"text": "Thank you to B. Funk Dance Company for sponsoring THES!", "page_url": "sponsors", "icon_filename": "sponsor-bfunk-dance-company.png"},
-  {"text": "Thank you to Mathnasium for sponsoring THES!", "page_url": "sponsors"},
-  {"text": "Thank you to Lightning View Home Inspections for sponsoring!", "page_url": "sponsors"}
+  {
+    "text": "Thank you to B. Funk Dance Company for sponsoring THES!",
+    "page_url": "sponsors",
+    "icon_filename": "sponsor-bfunk-dance-company.png"
+  },
+  {
+    "text": "Thank you to Mathnasium for sponsoring THES!",
+    "page_url": "sponsors"
+  },
+  {
+    "text": "Thank you to Lightning View Home Inspections for sponsoring!",
+    "page_url": "sponsors"
+  }
 ]

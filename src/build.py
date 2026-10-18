@@ -2142,6 +2142,7 @@ PAGE_TITLES = {
     "family-support-resources/special-education-family-support.html": "Special Education & Family Support",
     "family-support-resources/student-parent-handbook.html": "HCPSS Student & Parent Handbook",
     "family-support-resources/little-free-library.html": "Little Free Library",
+    "family-support-resources/fathers-building-resilience.html": "Fathers: Building Resilience",
 }
 
 # One line per page for <meta name="description"> — this is the summary
@@ -2223,6 +2224,11 @@ PAGE_DESCRIPTIONS = {
     "family-support-resources/little-free-library.html": (
         "Thunder Hill Elementary's Little Free Library — a free book-sharing "
         "box in front of the school in Columbia, MD. Take a book, return a book."
+    ),
+    "family-support-resources/fathers-building-resilience.html": (
+        "Fathers: Building Resilience — a free 9-workshop series for fathers "
+        "and male caregivers at Oakland Mills Middle School in Columbia, MD, "
+        "Wednesdays Oct–Dec 2026. Food, childcare, and a $300 stipend."
     ),
 }
 

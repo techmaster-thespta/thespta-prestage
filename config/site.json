@@ -57,7 +57,8 @@
     "family_support_resources": "family-support-resources",
     "special_education_family_support": "family-support-resources/special-education-family-support",
     "hcpss_handbook": "family-support-resources/student-parent-handbook",
-    "little_free_library": "family-support-resources/little-free-library"
+    "little_free_library": "family-support-resources/little-free-library",
+    "fathers_building_resilience": "family-support-resources/fathers-building-resilience"
   },
   "nav": [
     { "label": "Home", "page_url": "home" },

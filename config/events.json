@@ -1,20 +1,11 @@
 [
   {
-    "day": "17",
-    "month": "Oct",
-    "date": "2026-10-17",
-    "title": "HAL Star Party",
-    "when": "7:30 \u2013 11:00 PM \u00b7 11685 Old Frederick Rd, Marriottsville, MD 21104, USA",
-    "featured": true,
-    "description": "Join the Howard Astronomical League ( HAL ) for a Stars Party! Star parties bring people together to share their fascination with space and the night sky. Public star parties are held on one Saturday\u2026"
-  },
-  {
     "day": "20",
     "month": "Oct",
     "date": "2026-10-20",
     "title": "Math! Just the Facts!",
     "when": "5:30 \u2013 7:00 PM",
-    "featured": false,
+    "featured": true,
     "attachments": [
       {
         "title": "261020-just-the-facts.PNG",
@@ -107,5 +98,14 @@
       }
     ],
     "description": "Come out to Main Event at the Columbia Mall to play games with friends and family to support the THES PTA! 20% of all purchases (except alcohol from the restaurant, bowling, arcade, and laser tag\u2026"
+  },
+  {
+    "day": "05",
+    "month": "Nov",
+    "date": "2026-11-05",
+    "title": "THES PTA General Meeting",
+    "when": "7:00 \u2013 8:00 PM \u00b7 Online",
+    "featured": false,
+    "description": "Join us throughout the school year! PTA meetings are a great way to stay informed, meet other families, and help make a difference in our Thunder Hill community. Everyone is welcome."
   }
 ]

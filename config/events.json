@@ -100,12 +100,18 @@
     "description": "Come out to Main Event at the Columbia Mall to play games with friends and family to support the THES PTA! 20% of all purchases (except alcohol from the restaurant, bowling, arcade, and laser tag\u2026"
   },
   {
-    "day": "05",
+    "day": "11",
     "month": "Nov",
-    "date": "2026-11-05",
-    "title": "THES PTA General Meeting",
-    "when": "7:00 \u2013 8:00 PM \u00b7 Online",
+    "date": "2026-11-11",
+    "title": "THES Veteran Day Celebration",
+    "when": "All Day",
     "featured": false,
-    "description": "Join us throughout the school year! PTA meetings are a great way to stay informed, meet other families, and help make a difference in our Thunder Hill community. Everyone is welcome."
+    "attachments": [
+      {
+        "title": "202611-veteran-day.png",
+        "href": "https://drive.google.com/file/d/1jmTtrW-T-2BQLPrVujpWBhhBsjYabdA0"
+      }
+    ],
+    "description": "Thunder Hill Elementary School will celebrate and honor our veteran and military families on Wednesday, November 11, 2026. Families are invited to help us recognize veterans and military family\u2026"
   }
 ]

@@ -19,5 +19,12 @@
     "tier": "Community",
     "logo_filename": "sponsor-lightning-view-home-inspections.png",
     "blurb": "Home inspection services."
+  },
+  {
+    "name": "Chambers",
+    "href": "https://www.chambersusa.com/",
+    "tier": "Community",
+    "logo_filename": "sponsor-chambers.png",
+    "show_name": true
   }
 ]

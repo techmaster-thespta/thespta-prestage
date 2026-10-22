@@ -19,11 +19,6 @@
     "expires": "2026-11-12"
   },
   {
-    "text": "Math! Just the Facts! Tue, Oct 20, 5:30 PM — pizza served!",
-    "page_url": "events",
-    "expires": "2026-10-21"
-  },
-  {
     "text": "Wear Orange for Unity Day! Wednesday, Oct 21",
     "page_url": "events",
     "expires": "2026-10-22"
@@ -40,10 +35,5 @@
   {
     "text": "Thank you to Lightning View Home Inspections for sponsoring!",
     "page_url": "sponsors"
-  },
-  {
-    "text": "Free fathers' workshop series starts Wed, Oct 21!",
-    "page_url": "fathers_building_resilience",
-    "expires": "2026-10-21"
   }
 ]

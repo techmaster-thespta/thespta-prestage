@@ -1,20 +1,11 @@
 [
   {
-    "day": "21",
-    "month": "Oct",
-    "date": "2026-10-21",
-    "title": "Wear Orange for Unity Day!",
-    "when": "All Day",
-    "featured": true,
-    "description": "Everyone! Wear orange for unity day! Us united can do anything!"
-  },
-  {
     "day": "23",
     "month": "Oct",
     "date": "2026-10-23",
     "title": "Wild Lake Trunk or Treat",
     "when": "6:00 \u2013 8:00 PM",
-    "featured": false,
+    "featured": true,
     "attachments": [
       {
         "title": "Wildlake-trunk-or-treat.PNG",
@@ -107,5 +98,20 @@
     "when": "7:00 \u2013 8:00 PM \u00b7 Online",
     "featured": false,
     "description": "Join us throughout the school year! PTA meetings are a great way to stay informed, meet other families, and help make a difference in our Thunder Hill community. Everyone is welcome."
+  },
+  {
+    "day": "18",
+    "month": "Nov",
+    "date": "2026-11-18",
+    "title": "Restaurant Night Out \u2014 Chipotle",
+    "when": "5:00 \u2013 9:00 PM \u00b7 Chipotle Mexican Grill, 6181 Old Dobbin Ln, Columbia, MD 21045, USA",
+    "featured": false,
+    "attachments": [
+      {
+        "title": "202611-chipotle-RNO.JPG",
+        "href": "https://drive.google.com/file/d/1l9sNKJupkbkqWRNbIFU5llQJ89kU-g3Q"
+      }
+    ],
+    "description": "\ud83c\udf2f Chipotle Restaurant Night Out \u2013 Support Thunder Hill Elementary PTA! Take a break from cooking and support our school! Join us for a delicious Chipotle meal while helping raise funds for Thunder\u2026"
   }
 ]

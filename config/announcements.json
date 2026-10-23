@@ -19,11 +19,6 @@
     "expires": "2026-11-12"
   },
   {
-    "text": "Wear Orange for Unity Day! Wednesday, Oct 21",
-    "page_url": "events",
-    "expires": "2026-10-22"
-  },
-  {
     "text": "Thank you to B. Funk Dance Company for sponsoring THES!",
     "page_url": "sponsors",
     "icon_filename": "sponsor-bfunk-dance-company.png"
@@ -36,6 +31,12 @@
     "text": "Thank you to Lightning View Home Inspections for sponsoring!",
     "page_url": "sponsors"
   },
-  {"text": "Thank you to Chambers for sponsoring THES!", "page_url": "sponsors"},
-  {"text": "Thank you to Cub Scout Pack 838 for sponsoring THES!", "page_url": "sponsors"}
+  {
+    "text": "Thank you to Chambers for sponsoring THES!",
+    "page_url": "sponsors"
+  },
+  {
+    "text": "Thank you to Cub Scout Pack 838 for sponsoring THES!",
+    "page_url": "sponsors"
+  }
 ]

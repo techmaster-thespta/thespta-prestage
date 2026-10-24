@@ -421,17 +421,48 @@ def render_event_attachments(attachments, event_title=""):
     return f'<div class="thes__event-attachments">{"".join(items)}</div>'
 
 
-def render_event_description(description):
+URL_IN_TEXT_RE = re.compile(r"https?://[^\s<]+")
+
+
+def linkify_text(text):
+    """Escapes plain description text and turns any web address left in
+    it into a clickable link labeled with just its site name — a raw
+    tracking URL can run hundreds of characters."""
+    out, last = [], 0
+    for m in URL_IN_TEXT_RE.finditer(text):
+        url = m.group(0).rstrip(".,!?)]}>'\"")
+        out.append(html.escape(text[last:m.start()], quote=False))
+        host = re.sub(r"^www\.", "", urllib.parse.urlsplit(url).netloc) or "link"
+        out.append(f'<a href="{html.escape(url)}" target="_blank" rel="noopener">{html.escape(host)}</a>')
+        last = m.start() + len(url)
+    out.append(html.escape(text[last:], quote=False))
+    return "".join(out)
+
+
+def render_event_description(description, full=None):
     """An event's own calendar Description, shown as a short blurb under
     its row on the Events page's quick-scan list — "" if it doesn't have
     one (true of most non-featured events), so the row just stays compact
     instead of showing filler text. Separate from the raw `description`
     field the featured-event card template uses directly — that one
     always has a value (falling back to a generic line), this one is
-    genuinely optional."""
+    genuinely optional.
+
+    When the sync had to shorten it (`full` is the untouched text), the
+    blurb becomes a native <details> toggle — "Show more +" reveals the
+    whole description, no script needed."""
     if not description:
         return ""
-    return f'<p class="thes__event-description">{description}</p>'
+    if not full or full == description:
+        return f'<p class="thes__event-description">{linkify_text(description)}</p>'
+    return (
+        '<details class="thes__event-description thes__expand">'
+        f'<summary><span class="thes__expand-short">{linkify_text(description)}</span> '
+        '<span class="thes__expand-toggle"><span class="thes__expand-open">Show more +</span>'
+        '<span class="thes__expand-close">Show less &minus;</span></span></summary>'
+        f'<div class="thes__expand-full">{linkify_text(full)}</div>'
+        "</details>"
+    )
 
 
 def render_event_signup(href):
@@ -479,7 +510,7 @@ def with_event_extras(event):
     return {
         **event,
         "ATTACHMENTS": render_event_attachments(event.get("attachments", []), event.get("title", "")),
-        "DESCRIPTION_BLOCK": render_event_description(event.get("description")),
+        "DESCRIPTION_BLOCK": render_event_description(event.get("description"), event.get("description_full")),
         "SIGNUP_BUTTON": render_event_signup(event.get("signup_href")),
         "MEET_BUTTON": render_event_meet(event.get("meet_href")),
     }
@@ -1411,7 +1442,7 @@ def render_calendar_fundraiser_card(occurrence, context):
         f'<h3>{html.escape(occurrence["title"])}</h3>',
     ]
     if occurrence.get("description"):
-        parts.append(f'<p>{occurrence["description"]}</p>')
+        parts.append(render_event_description(occurrence["description"], occurrence.get("description_full")))
     if occurrence.get("signup_href"):
         parts.append(f'<div class="thes__fund-actions">{render_event_signup(occurrence["signup_href"])}</div>')
     parts.append(render_event_attachments(occurrence.get("attachments", []), occurrence["title"]))

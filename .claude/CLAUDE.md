@@ -274,7 +274,8 @@ never requires touching `header.html.tmpl` or `build.py`.
   API key), including any file attached to an event (rendered as a
   clickable photo preview — confirmed empirically that Google's public
   feed includes `ATTACH` properties) and a "Sign Up" button for any event
-  whose Description mentions "sign up" near a URL — natural phrasing,
+  whose Description mentions "sign up", "register"/"registration", or
+  "RSVP" near a URL — natural phrasing,
   not a strict format (confirmed against a real event whose actual text
   was free-form prose, not a dedicated line). Calendar has no dedicated
   field for this the way it does for attachments, so `extract_signup_href`
@@ -282,7 +283,11 @@ never requires touching `header.html.tmpl` or `build.py`.
   site, leaving the surrounding sentence in place. A `meet.google.com`
   link anywhere in the Description becomes a yellow "Join Google Meet"
   button the same way (`extract_meet_href`) — no keyword needed there,
-  the domain alone is the signal. Also generates
+  the domain alone is the signal. A Description longer than
+  `DESCRIPTION_LIMIT` keeps its full text as `description_full`, and the
+  site shows a native `<details>` "Show more +" toggle for it
+  (`render_event_description` in `src/build.py`); any URL left in a
+  Description renders as a short clickable link. Also generates
   `config/pta-meeting-occurrences.json` — a *separate* pass over the same
   parsed calendar (not a filter over `config/events.json`), every
   upcoming occurrence whose title mentions "PTA" and "meeting", for the

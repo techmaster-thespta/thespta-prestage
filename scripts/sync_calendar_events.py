@@ -298,7 +298,11 @@ def format_when(start, end, all_day, location):
     return " · ".join(parts)
 
 
-SIGNUP_RE = re.compile(r"(?is)sign[\s-]?up\b.{0,60}?(https?://\S+)")
+# "sign up", "register"/"registration", or "RSVP" within ~60 characters
+# before a URL. "register" was added after a real event ended its
+# Description with "Only 4 spots left—register today!" + a link, and the
+# link was left in the text instead of becoming a button.
+SIGNUP_RE = re.compile(r"(?is)(?:sign[\s-]?up|register|registration|rsvp)\b.{0,60}?(https?://\S+)")
 
 
 def extract_signup_href(description):
@@ -330,6 +334,17 @@ def extract_signup_href(description):
 
 
 DESCRIPTION_LIMIT = 200
+
+
+def set_description(entry, text):
+    """Puts the (possibly shortened) description on an event entry, plus
+    the untouched full text as `description_full` when it had to be cut
+    — the site shows a "Show more" toggle for those (render_event_description
+    in src/build.py)."""
+    short = truncate_description(text)
+    entry["description"] = short
+    if short != text:
+        entry["description_full"] = text
 
 
 def truncate_description(text, limit=DESCRIPTION_LIMIT):
@@ -444,14 +459,14 @@ def build_events_json(vevents, window_start, window_end, title_filter=None, max_
             # The featured card always shows a description slot, so it
             # always gets one, even a generic one if the calendar didn't
             # set a real Description.
-            entry["description"] = truncate_description(
-                occ["description"] or f"Join us for {occ['title']} — see the full calendar for details."
+            set_description(
+                entry, occ["description"] or f"Join us for {occ['title']} — see the full calendar for details."
             )
         elif occ["description"]:
             # Every other event on the quick-scan list shows its own
             # calendar Description too, if it set one — otherwise the
             # row just stays compact (day/time/title), no filler text.
-            entry["description"] = truncate_description(occ["description"])
+            set_description(entry, occ["description"])
         out.append(entry)
     return out
 
@@ -512,7 +527,7 @@ def build_fundraiser_occurrences(vevents, today, local_tz=None):
                 "status": "now" if start_date <= today else "upcoming",
             }
             if description:
-                entry["description"] = truncate_description(description)
+                set_description(entry, description)
             if signup_href:
                 entry["signup_href"] = signup_href
             if event.get("ATTACH"):

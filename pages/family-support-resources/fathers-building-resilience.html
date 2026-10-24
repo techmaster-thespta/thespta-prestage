@@ -430,6 +430,14 @@
   .thes__event-row-body strong { font-size: 0.94rem; display: block; }
   .thes__event-row-body span { color: var(--text-muted); font-size: 0.84rem; }
   .thes__event-description { margin: 6px 0 0; color: var(--text-muted); font-size: 0.86rem; line-height: 1.5; }
+  /* Long calendar descriptions: native <details> "Show more +" toggle */
+  .thes__expand > summary { list-style: none; cursor: pointer; }
+  .thes__expand > summary::-webkit-details-marker { display: none; }
+  .thes .thes__expand-toggle { color: var(--teal); font-weight: 700; white-space: nowrap; }
+  .thes__expand-close, .thes__expand[open] .thes__expand-open, .thes__expand[open] .thes__expand-short { display: none; }
+  .thes__expand[open] .thes__expand-close { display: inline; }
+  .thes__expand-full { margin-top: 4px; }
+  .thes .thes__event-description a { color: var(--teal); text-decoration: underline; }
 
   /* ---- Flyer preview on an event (from a Calendar file attachment) ---- */
   .thes__event-attachments { margin-top: 8px; display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }

@@ -186,6 +186,7 @@ kind of flyer shows a picture, not just a link.
 
 **To add a "Sign Up" button to an event** (a SignUpGenius link, a Google
 Form, anything): open the event in Google Calendar and mention "sign up"
+(or "register", "registration", or "RSVP")
 somewhere near the link in its Description — natural phrasing is fine,
 it doesn't need to be an exact format. All of these work:
 

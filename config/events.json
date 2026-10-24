@@ -15,6 +15,15 @@
     "description": "Help clean up and refresh the school garden for the fall season. Meet at the school gardens behind the Thunder Hill building. Please bring: \u2022 Garden gloves \u2022 Clothes and shoes that can get dirty \u2022\u2026"
   },
   {
+    "day": "28",
+    "month": "Oct",
+    "date": "2026-10-28",
+    "title": "Untitled Event",
+    "when": "8:00 AM \u2013 3:00 PM \u00b7 iCode Columbia, MD, 9200 Old Annapolis Rd Ste B, Columbia, MD 21045, USA",
+    "featured": false,
+    "description": "iCode Columbia\u2019s 3D Innovators One-Day Camp gives students a fun, hands-on opportunity to explore 3D modeling, design their own creations, and bring them to life with 3D printing! With no school on\u2026"
+  },
+  {
     "day": "30",
     "month": "Oct",
     "date": "2026-10-30",
@@ -98,20 +107,5 @@
       }
     ],
     "description": "\ud83c\udf2f Chipotle Restaurant Night Out \u2013 Support Thunder Hill Elementary PTA! Take a break from cooking and support our school! Join us for a delicious Chipotle meal while helping raise funds for Thunder\u2026"
-  },
-  {
-    "day": "21",
-    "month": "Nov",
-    "date": "2026-11-21",
-    "title": "THES PTA Holiday Market",
-    "when": "11:00 AM \u2013 3:00 PM",
-    "featured": false,
-    "attachments": [
-      {
-        "title": "202611-HolidayMarket.JPG",
-        "href": "https://drive.google.com/file/d/1D5Z8plVVZlzqbb34qFLBX_TK7h1JO8MK"
-      }
-    ],
-    "description": "Join us for a festive day of shopping, community, and small businesses!"
   }
 ]

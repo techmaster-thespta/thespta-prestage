@@ -1,20 +1,11 @@
 [
   {
-    "day": "23",
-    "month": "Oct",
-    "date": "2026-10-23",
-    "title": "MCF\u2019S FAMILY LEADERSHIP PROGRAM",
-    "when": "All Day",
-    "featured": true,
-    "description": "MCF\u2019S FAMILY LEADERSHIP PROGRAM Friday, October 22 and Saturday, October 24, 2026 Hilton Garden Inn Columbia, MD Join us for this two-day training opportunity for Howard County parents and caregivers\u2026"
-  },
-  {
     "day": "24",
     "month": "Oct",
     "date": "2026-10-24",
     "title": "MASTERING YOUR CHILD\u2019S IEP",
     "when": "9:30 AM \u2013 2:00 PM",
-    "featured": false,
+    "featured": true,
     "description": "MASTERING YOUR CHILD\u2019S IEP Saturday, October 24, 2026 9:30 a.m.-2:00 p.m. NonProfit Collaborative 9770 Patuxent Woods Drive Columbia, MD 21046 Join us for an in-depth, hands-on workshop designed to\u2026"
   },
   {
@@ -25,5 +16,14 @@
     "when": "6:00 \u2013 7:00 PM",
     "featured": false,
     "description": "MAKING THE FUTURE MORE SECURE FOR LOVED ONES WITH SPECIAL NEEDS Tuesday, October 27, 2026 6:00 p.m. Virtual Event Gaining more peace of mind regarding \u201cWhat will happen when I\u2019m gone?\u201d by learning\u2026"
+  },
+  {
+    "day": "27",
+    "month": "Oct",
+    "date": "2026-10-27",
+    "title": "NAMI BASICS",
+    "when": "6:30 \u2013 9:30 PM",
+    "featured": false,
+    "description": "NAMI BASICS Tuesdays, September 29 to November 3, 2026 6:30-9:00 p.m. Virtual Event This 6-session educational program is for parents, caregivers and other family members who provide care for youth\u2026"
   }
 ]

@@ -1,26 +1,11 @@
 [
   {
-    "day": "23",
-    "month": "Oct",
-    "date": "2026-10-23",
-    "title": "Wild Lake Trunk or Treat",
-    "when": "6:00 \u2013 8:00 PM",
-    "featured": true,
-    "attachments": [
-      {
-        "title": "Wildlake-trunk-or-treat.PNG",
-        "href": "https://drive.google.com/file/d/1DgbJL3GoqH7ezCDXCp7CaACWwKtCc0l8"
-      }
-    ],
-    "description": "As THES is one of the schools local to Wilde Lake High School, we would like to invite you to our upcoming Trunk-or-Treat on October 23, 2026 from 6pm - 8pm on the Upper Lots of Wilde Lake High\u2026"
-  },
-  {
     "day": "24",
     "month": "Oct",
     "date": "2026-10-24",
     "title": "Beautification Day \u2014 School Garden Cleanup",
     "when": "9:00 AM \u2013 12:00 PM \u00b7 Thunder Hill Elementary School gardens (behind the school)",
-    "featured": false,
+    "featured": true,
     "attachments": [
       {
         "title": "26-beautifucation.JPG",
@@ -113,5 +98,20 @@
       }
     ],
     "description": "\ud83c\udf2f Chipotle Restaurant Night Out \u2013 Support Thunder Hill Elementary PTA! Take a break from cooking and support our school! Join us for a delicious Chipotle meal while helping raise funds for Thunder\u2026"
+  },
+  {
+    "day": "21",
+    "month": "Nov",
+    "date": "2026-11-21",
+    "title": "THES PTA Holiday Market",
+    "when": "11:00 AM \u2013 3:00 PM",
+    "featured": false,
+    "attachments": [
+      {
+        "title": "202611-HolidayMarket.JPG",
+        "href": "https://drive.google.com/file/d/1D5Z8plVVZlzqbb34qFLBX_TK7h1JO8MK"
+      }
+    ],
+    "description": "Join us for a festive day of shopping, community, and small businesses!"
   }
 ]

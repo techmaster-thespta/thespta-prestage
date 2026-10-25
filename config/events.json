@@ -1,27 +1,11 @@
 [
   {
-    "day": "24",
-    "month": "Oct",
-    "date": "2026-10-24",
-    "title": "Beautification Day \u2014 School Garden Cleanup",
-    "when": "9:00 AM \u2013 12:00 PM \u00b7 Thunder Hill Elementary School gardens (behind the school)",
-    "featured": true,
-    "attachments": [
-      {
-        "title": "26-beautifucation.JPG",
-        "href": "https://drive.google.com/file/d/1zsvBWRktz7CBBBEGiCXiNvWYESGOTRej"
-      }
-    ],
-    "description": "Help clean up and refresh the school garden for the fall season. Meet at the school gardens behind the Thunder Hill building. Please bring: \u2022 Garden gloves \u2022 Clothes and shoes that can get dirty \u2022\u2026",
-    "description_full": "Help clean up and refresh the school garden for the fall season. Meet at the school gardens behind the Thunder Hill building. Please bring: \u2022 Garden gloves \u2022 Clothes and shoes that can get dirty \u2022 Water bottle \u2022 Gardening tools, if you are willing to share \u2022 A can-do attitude Bonus: Anything you harvest, you can take home. Questions: Natalie Miskimins, THES PTA President \u2014 president.thespta@gmail.com"
-  },
-  {
     "day": "28",
     "month": "Oct",
     "date": "2026-10-28",
     "title": "Day Camp \u2013 iCode 3D Innovators",
     "when": "8:00 AM \u2013 3:00 PM \u00b7 iCode Columbia, MD, 9200 Old Annapolis Rd Ste B, Columbia, MD 21045, USA",
-    "featured": false,
+    "featured": true,
     "signup_href": "https://u54165274.ct.sendgrid.net/ls/click?upn=u001.NobhETKpEgMgerQmLUS0RzvDXc37gj-2BAwdayvnXtAXkvdwNwoMsLZ3PJ-2BjHGwsO13TNWrmcikYvwZKfR3lNdCQ-3D-3D8RK4_SAPOqwHy9g6DF0cO1eRUK6GWj7nPB-2BN8WEDOU-2BSgUs4831At9Z00-2F93Q9LpQYsuiJ2E-2BYuvAgatjVEpFlZsttxNtHxUc6mxlNWoBLWNajOaQjhs7s61E7-2FtuE00-2Bbl5WuI9uPamFfytLWPQVLP5mJViSIgx6QHEwUZViE8JEqEyNCSWQ2OFbhlJCVIytteFX33X0c740iVF0QiXvXH62TQkxAqhjW3vdMPnLwcvIxbzw-2F3vssF8JPpjWZ8-2FrJSyOnhmoLVPSEth0442syHC64va6PqLq6gX3KYT7uElenvJQRgg26p-2BxryVGo-2Bm0gfodapHw9uJT4BhcFiNKF6A1-2FwhUlXBSun8IdiHMYsvCtHTBXIRjvfxskv1KbJQ1PoHzZCMmGidX-2F0xdw6I-2FZeP0jOpxxZOf2go95Cz0ykrN8gAL6TigYP0HXZKTHAMz85HrM8ZjAgt7dnxAfHUbczmpCw-3D-3D",
     "description": "iCode Columbia\u2019s 3D Innovators One-Day Camp gives students a fun, hands-on opportunity to explore 3D modeling, design their own creations, and bring them to life with 3D printing! With no school on\u2026",
     "description_full": "iCode Columbia\u2019s 3D Innovators One-Day Camp gives students a fun, hands-on opportunity to explore 3D modeling, design their own creations, and bring them to life with 3D printing! With no school on Wednesday, October 28th, it\u2019s a great way to keep your child learning and engaged while school is closed. Only 4 spots left\u2014register today! For ages between 8-15!"
@@ -113,5 +97,20 @@
     ],
     "description": "\ud83c\udf2f Chipotle Restaurant Night Out \u2013 Support Thunder Hill Elementary PTA! Take a break from cooking and support our school! Join us for a delicious Chipotle meal while helping raise funds for Thunder\u2026",
     "description_full": "\ud83c\udf2f Chipotle Restaurant Night Out \u2013 Support Thunder Hill Elementary PTA! Take a break from cooking and support our school! Join us for a delicious Chipotle meal while helping raise funds for Thunder Hill Elementary PTA programs and activities. How to Participate: 1. Order through the Chipotle app or Chipotle.com. 2. Select Pickup at the participating Chipotle location. 3. Add your favorite meals to your order. 4. At checkout, enter the fundraiser code in the \u201cEnter a Promo Code\u201d field and click Apply. 5. Complete your purchase and pick up your order during the scheduled fundraiser hours. Important: Online orders must be placed through Chipotle\u2019s app or website. Delivery orders and third-party apps do not qualify. Your cart will show \u201cFundraiser -$0.01\u201d when the code is successfully applied. \u2764\ufe0f Every qualifying order helps support our students, teachers, and school community! Thank you for supporting THES PTA!"
+  },
+  {
+    "day": "21",
+    "month": "Nov",
+    "date": "2026-11-21",
+    "title": "THES PTA Holiday Market",
+    "when": "11:00 AM \u2013 3:00 PM",
+    "featured": false,
+    "attachments": [
+      {
+        "title": "202611-HolidayMarket.JPG",
+        "href": "https://drive.google.com/file/d/1D5Z8plVVZlzqbb34qFLBX_TK7h1JO8MK"
+      }
+    ],
+    "description": "Join us for a festive day of shopping, community, and small businesses!"
   }
 ]

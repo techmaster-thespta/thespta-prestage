@@ -41,5 +41,12 @@
     "tier": "Silver",
     "logo_filename": "sponsor-three-sprouts-landscaping.png",
     "blurb": "Landscaping: growing beauty, one yard at a time."
+  },
+  {
+    "name": "iCode Columbia",
+    "href": "https://www.icodeschool.com/columbia-md",
+    "tier": "Gold",
+    "logo_filename": "sponsor-icode-columbia.png",
+    "blurb": "STEM.org-accredited tech education center for ages 5–15: coding, robotics, game development, drones, 3D design, and camps."
   }
 ]

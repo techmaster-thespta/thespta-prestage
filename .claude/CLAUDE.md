@@ -384,7 +384,12 @@ never requires touching `header.html.tmpl` or `build.py`.
   (`build_organization_jsonld`) built from `site.json`'s
   name/address/email/social/location fields (with `alternateName`
   "THES PTA"/"Thunder Hill PTA" and `areaServed` Columbia + Howard
-  County). Home links (`page_urls.home`) resolve to the site root
+  County). The Sponsors page adds a second JSON-LD block
+  (`build_sponsors_jsonld`, joined to the Organization by `@id`) listing
+  every sponsor as a schema.org `sponsor`, and its meta description
+  names each sponsor (`sponsors_page_description`); sponsor cards always
+  show the business name as text under the logo, never only inside the
+  logo image. Home links (`page_urls.home`) resolve to the site root
   (`./`/`../`), never `index.html`, so Google stops finding the
   index.html duplicate — this is what lets Google's
   Knowledge Graph (and an AI assistant grounding an answer in search

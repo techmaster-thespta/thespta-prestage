@@ -1674,12 +1674,11 @@ def render_sponsor_card(sponsor, context):
     original name-and-link card."""
     esc = html.escape
     logo_html = tier_html = blurb_html = tier_class = ""
-    # A logo usually already shows the business name, so the text name is
-    # dropped when there's a logo (it stays in the logo's alt text); set
-    # "show_name": true for a logo that doesn't include the name.
-    name_html = ""
-    if not sponsor.get("logo_filename") or sponsor.get("show_name"):
-        name_html = f'<h3>{esc(sponsor["name"])}</h3>'
+    # The name is always real text under the logo, even when the logo
+    # already shows it: search engines and AI assistants read text, not
+    # the words inside an image, and this is what lets "who sponsors
+    # Thunder Hill PTA" (or a search for the business) find this page.
+    name_html = f'<h3>{esc(sponsor["name"])}</h3>\n  '
 
     if sponsor.get("logo_filename"):
         logo_html = (
@@ -2032,6 +2031,43 @@ def build_umami_snippet(website_id):
     return f'<script defer src="https://cloud.umami.is/script.js" data-website-id="{website_id}"></script>\n'
 
 
+def build_sponsors_jsonld(sponsors, site):
+    """schema.org `sponsor` list for the Sponsors page: the same
+    Organization as build_organization_jsonld (joined by its @id), with
+    each business as a sponsoring Organization — the machine-readable
+    version of the sponsor cards, for search engines and AI assistants.
+    "" when there are no sponsors."""
+    if not sponsors:
+        return ""
+    data = {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "@id": f'https://{site["custom_domain"]}/#organization',
+        "name": site.get("org_name", ""),
+        "sponsor": [
+            {k: v for k, v in {
+                "@type": "Organization",
+                "name": s["name"],
+                "url": s.get("href", ""),
+                "description": s.get("blurb", ""),
+            }.items() if v}
+            for s in sort_sponsors(sponsors)
+        ],
+    }
+    return f'<script type="application/ld+json">{json.dumps(data)}</script>\n'
+
+
+def sponsors_page_description(sponsors):
+    """The Sponsors page's meta description, naming every sponsor so the
+    search snippet itself says who they are."""
+    base = PAGE_DESCRIPTIONS["sponsors.html"]
+    names = [s["name"] for s in sort_sponsors(sponsors)]
+    if not names:
+        return base
+    listed = ", ".join(names[:-1]) + (", and " if len(names) > 2 else " and ") + names[-1] if len(names) > 1 else names[0]
+    return html.escape(f"Thank you to the local businesses sponsoring Thunder Hill Elementary PTA: {listed}.")
+
+
 def build_organization_jsonld(site):
     """schema.org Organization structured data, embedded as JSON-LD on
     every page — this is the machine-readable version of "who is this
@@ -2053,6 +2089,7 @@ def build_organization_jsonld(site):
     data = {
         "@context": "https://schema.org",
         "@type": "Organization",
+        "@id": f'https://{site["custom_domain"]}/#organization',
         "name": site.get("org_name", ""),
         "alternateName": ["THES PTA", f'{site.get("school_short_name", "")} PTA'],
         "description": (
@@ -2433,12 +2470,16 @@ def main():
         page_jsonld = organization_jsonld
         if event_page:
             page_jsonld += build_event_jsonld(event_page, site)
+        if page_name == "sponsors.html":
+            page_jsonld += build_sponsors_jsonld(load_json("sponsors.json", default=[]), site)
         document_title = build_document_title(page_name, site, nav_labels, event_page)
         analytics_snippet = build_analytics_snippet(context.get("google_analytics_id", ""))
         analytics_snippet += build_umami_snippet(context.get("umami_website_id", ""))
         page_description = PAGE_DESCRIPTIONS.get(page_name, PAGE_DESCRIPTIONS["index.html"])
         if event_page:
             page_description = html.escape(event_page["summary"])
+        if page_name == "sponsors.html":
+            page_description = sponsors_page_description(load_json("sponsors.json", default=[]))
         canonical_url = f'https://{site["custom_domain"]}/{"" if page_name == "index.html" else page_name}'
         text = (
             "<!DOCTYPE html>\n"

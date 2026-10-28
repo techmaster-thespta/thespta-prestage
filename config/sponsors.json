@@ -48,5 +48,12 @@
     "tier": "Gold",
     "logo_filename": "sponsor-icode-columbia.png",
     "blurb": "STEM.org-accredited tech education center for ages 5–15: coding, robotics, game development, drones, 3D design, and camps."
+  },
+  {
+    "name": "Associated Appraisers, LLC",
+    "href": "https://kimberlyjp86.wixsite.com/associatedappraisers",
+    "tier": "Silver",
+    "logo_filename": "sponsor-associated-appraisers.png",
+    "blurb": "Commercial, government, and residential property appraisals across Maryland, Virginia, and D.C. for over 50 years."
   }
 ]

@@ -16,8 +16,10 @@ sponsor shown in the "Our Sponsors" section of the Home page.
 { "name": "Columbia Family Dentistry", "href": "https://example.com" }
 ```
 
-Both fields required. `href` should be the sponsor's actual website; use
-`"#"` only if the user genuinely doesn't have one yet and says so.
+`name` is required. `href` should be the sponsor's actual website;
+leave it out entirely when the sponsor has none or the user asks not to
+link it — the card then shows no "Visit" link and the logo isn't
+clickable. Never use `"#"`.
 
 Optional fields (all rendered by `render_sponsor_card()` in `src/build.py`,
 same card on the Home page and the Sponsors page):

@@ -1680,11 +1680,21 @@ def render_sponsor_card(sponsor, context):
     # Thunder Hill PTA" (or a search for the business) find this page.
     name_html = f'<h3>{esc(sponsor["name"])}</h3>\n  '
 
+    # `href` is optional: a sponsor with no website (or one who'd rather
+    # not be linked) gets a card with no logo link and no "Visit" link.
+    href = sponsor.get("href", "")
+    visit_html = (
+        f'<a href="{esc(href)}" target="_blank" rel="noopener">Visit {esc(sponsor["name"])} &rarr;</a>'
+        if href else ""
+    )
     if sponsor.get("logo_filename"):
-        logo_html = (
-            f'<a class="thes__sponsor-logo" href="{esc(sponsor["href"])}" target="_blank" rel="noopener">'
+        img = (
             f'<img src="{context["IMAGES_BASE_URL"]}/{esc(sponsor["logo_filename"])}" '
-            f'alt="{esc(sponsor["name"])} logo" loading="lazy"></a>\n  '
+            f'alt="{esc(sponsor["name"])} logo" loading="lazy">'
+        )
+        logo_html = (
+            f'<a class="thes__sponsor-logo" href="{esc(href)}" target="_blank" rel="noopener">{img}</a>\n  '
+            if href else f'<div class="thes__sponsor-logo">{img}</div>\n  '
         )
     if sponsor.get("tier"):
         tier_slug = re.sub(r"[^a-z]+", "-", sponsor["tier"].lower()).strip("-")
@@ -1696,7 +1706,7 @@ def render_sponsor_card(sponsor, context):
         blurb_html = f'<p>{esc(sponsor["blurb"])}</p>\n  '
     card_tmpl = (TEMPLATES / "card-sponsor.html.tmpl").read_text()
     return render(card_tmpl, {
-        "name": esc(sponsor["name"]), "href": esc(sponsor["href"]),
+        "name": esc(sponsor["name"]), "visit_html": visit_html,
         "logo_html": logo_html, "tier_html": tier_html, "blurb_html": blurb_html, "tier_class": tier_class, "name_html": name_html,
     })
 

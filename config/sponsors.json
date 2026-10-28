@@ -60,5 +60,12 @@
     "tier": "Gold",
     "logo_filename": "sponsor-kidzart.png",
     "blurb": "Fun, kid-tested art classes for every skill level, plus Palette Up! painting events for adults and programs for birthdays, scouts, families, and special events."
+  },
+  {
+    "name": "Arbor Orthodontics",
+    "href": "https://arbororthodontics.com/",
+    "tier": "Community",
+    "logo_filename": "sponsor-arbor-orthodontics.png",
+    "blurb": "A new, locally owned practice bringing modern, board-certified orthodontic care to children, teens, and adults."
   }
 ]

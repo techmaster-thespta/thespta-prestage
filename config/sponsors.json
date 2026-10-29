@@ -67,5 +67,11 @@
     "tier": "Community",
     "logo_filename": "sponsor-arbor-orthodontics.png",
     "blurb": "A new, locally owned practice bringing modern, board-certified orthodontic care to children, teens, and adults."
+  },
+  {
+    "name": "Kapookids",
+    "href": "https://www.kapookids.com/about",
+    "tier": "Silver",
+    "blurb": "Inflatable rentals for schools, office events, backyards, and parks, entertaining children and celebrating kids' birthday parties."
   }
 ]

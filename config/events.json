@@ -1,22 +1,11 @@
 [
   {
-    "day": "28",
-    "month": "Oct",
-    "date": "2026-10-28",
-    "title": "Day Camp \u2013 iCode 3D Innovators",
-    "when": "8:00 AM \u2013 3:00 PM \u00b7 iCode Columbia, MD, 9200 Old Annapolis Rd Ste B, Columbia, MD 21045, USA",
-    "featured": true,
-    "signup_href": "https://u54165274.ct.sendgrid.net/ls/click?upn=u001.NobhETKpEgMgerQmLUS0RzvDXc37gj-2BAwdayvnXtAXkvdwNwoMsLZ3PJ-2BjHGwsO13TNWrmcikYvwZKfR3lNdCQ-3D-3D8RK4_SAPOqwHy9g6DF0cO1eRUK6GWj7nPB-2BN8WEDOU-2BSgUs4831At9Z00-2F93Q9LpQYsuiJ2E-2BYuvAgatjVEpFlZsttxNtHxUc6mxlNWoBLWNajOaQjhs7s61E7-2FtuE00-2Bbl5WuI9uPamFfytLWPQVLP5mJViSIgx6QHEwUZViE8JEqEyNCSWQ2OFbhlJCVIytteFX33X0c740iVF0QiXvXH62TQkxAqhjW3vdMPnLwcvIxbzw-2F3vssF8JPpjWZ8-2FrJSyOnhmoLVPSEth0442syHC64va6PqLq6gX3KYT7uElenvJQRgg26p-2BxryVGo-2Bm0gfodapHw9uJT4BhcFiNKF6A1-2FwhUlXBSun8IdiHMYsvCtHTBXIRjvfxskv1KbJQ1PoHzZCMmGidX-2F0xdw6I-2FZeP0jOpxxZOf2go95Cz0ykrN8gAL6TigYP0HXZKTHAMz85HrM8ZjAgt7dnxAfHUbczmpCw-3D-3D",
-    "description": "iCode Columbia\u2019s 3D Innovators One-Day Camp gives students a fun, hands-on opportunity to explore 3D modeling, design their own creations, and bring them to life with 3D printing! With no school on\u2026",
-    "description_full": "iCode Columbia\u2019s 3D Innovators One-Day Camp gives students a fun, hands-on opportunity to explore 3D modeling, design their own creations, and bring them to life with 3D printing! With no school on Wednesday, October 28th, it\u2019s a great way to keep your child learning and engaged while school is closed. Only 4 spots left\u2014register today! For ages between 8-15!"
-  },
-  {
     "day": "30",
     "month": "Oct",
     "date": "2026-10-30",
     "title": "Fall Fest & Trunk or Treat",
     "when": "5:00 \u2013 8:00 PM",
-    "featured": false,
+    "featured": true,
     "attachments": [
       {
         "title": "fall-fest-trunk-treat.PNG",
@@ -112,5 +101,13 @@
       }
     ],
     "description": "Join us for a festive day of shopping, community, and small businesses!"
+  },
+  {
+    "day": "17",
+    "month": "Dec",
+    "date": "2026-12-17",
+    "title": "Restaurant Night Out \u2014 BurgerFi",
+    "when": "11:00 AM \u2013 10:00 PM \u00b7 BurgerFi, 6181 Old Dobbin Ln, Columbia, MD 21045, USA",
+    "featured": false
   }
 ]

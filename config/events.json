@@ -34,6 +34,17 @@
     "day": "03",
     "month": "Nov",
     "date": "2026-11-03",
+    "title": "Day Camp \u2013 iCode \ud83c\udfa8 Artist's Studio: 2D & 3D Digital Design",
+    "when": "8:00 AM \u2013 3:00 PM \u00b7 iCode Columbia, MD, 9200 Old Annapolis Rd Ste B, Columbia, MD 21045, USA",
+    "featured": false,
+    "signup_href": "https://icodeschool.com/columbia-md/camps/",
+    "description": "iCode Columbia\u2019s Artist's Studio: 2D & 3D Digital Design One-Day Camp gives students a fun, hands-on opportunity to explore 3D modeling, design their own creations, and bring them to life with 3D\u2026",
+    "description_full": "iCode Columbia\u2019s Artist's Studio: 2D & 3D Digital Design One-Day Camp gives students a fun, hands-on opportunity to explore 3D modeling, design their own creations, and bring them to life with 3D printing! With no school on Wednesday, November 3rd, it\u2019s a great way to keep your child learning and engaged while school is closed. register today! For ages between 8-15!"
+  },
+  {
+    "day": "03",
+    "month": "Nov",
+    "date": "2026-11-03",
     "title": "Fundraiser - Main Event",
     "when": "5:00 \u2013 8:00 PM",
     "featured": false,
@@ -101,13 +112,5 @@
       }
     ],
     "description": "Join us for a festive day of shopping, community, and small businesses!"
-  },
-  {
-    "day": "17",
-    "month": "Dec",
-    "date": "2026-12-17",
-    "title": "Restaurant Night Out \u2014 BurgerFi",
-    "when": "11:00 AM \u2013 10:00 PM \u00b7 BurgerFi, 6181 Old Dobbin Ln, Columbia, MD 21045, USA",
-    "featured": false
   }
 ]

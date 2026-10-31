@@ -59,5 +59,112 @@
     "register_href": "",
     "contact_email": "president.thespta@gmail.com",
     "archived_on": "2026-10-31"
+  },
+  {
+    "slug": "fall-fest-trunk-or-treat",
+    "title": "THES PTA Fall Fest & Trunk or Treat 2026",
+    "nav_label": "Fall Fest & Trunk or Treat",
+    "eyebrow": "Free Family Event",
+    "tagline": "An evening of fall fun, food trucks, games, and trick-or-treating for the whole family.",
+    "summary": "The Thunder Hill Elementary PTA Fall Fest & Trunk or Treat is Friday, October 30, 2026, 5–8 PM at Thunder Hill Elementary School in Columbia, Maryland (Howard County). Free for families — rain date Sunday, November 1, 1–4 PM.",
+    "start": "2026-10-30T17:00",
+    "end": "2026-10-30T20:00",
+    "expires": "2026-10-30",
+    "location_name": "Thunder Hill Elementary School",
+    "flyer_filename": "events/fall-fest-trunk-or-treat-2026.png",
+    "flyer_alt": "THES PTA Fall Fest and Trunk or Treat flyer — Friday, October 30, 5 to 8 PM. Fall Fest 5 to 6:30 PM, Trunk or Treat 6:30 to 8 PM, rain date November 1, 1 to 4 PM. Music, festive fall activities, games, food trucks, raffles, contests, and more. Free THES PTA event; children must be accompanied by an adult.",
+    "about": [
+      "Join us for a free evening of fall fun for the whole Thunder Hill family! Fall Fest kicks things off with music, games, and festive activities, followed by Trunk or Treat, where families decorate their cars and hand out treats in the school parking lot.",
+      "This is a free THES PTA event — everyone is welcome."
+    ],
+    "sections": [
+      {
+        "heading": "What to Expect",
+        "items": [
+          "Fall Fest, 5:00 – 6:30 PM: DJ, arts and crafts, tattoos, games, inflatable slide, and outdoor bowling",
+          "Food trucks, food and drink vendors, a teacher and staff pumpkin raffle, and much more",
+          "Trunk or Treat, 6:30 – 8:00 PM",
+          "Rain date: Sunday, November 1, 1:00 – 4:00 PM"
+        ]
+      },
+      {
+        "heading": "Food & Drink Vendors",
+        "items": [
+          "Say Squeeze: lemonade, limeade, Brazilian lemonade, tea, and more",
+          "The Mercenary Chef: delicious food options for the whole family",
+          "Alyssa's Sweets & Treats: pastries, desserts, cakes, and more",
+          "Schmidty's Kettle Corn: delicious, freshly popped kettle corn"
+        ],
+        "note": "Food and drink vendors are at the front of THES; Alyssa's Sweets & Treats is also selling desserts on the blacktop."
+      },
+      {
+        "heading": "Community Tables",
+        "items": [
+          "Mathnasium – The Math Learning Center (THES PTA Gold Sponsor)",
+          "Texas Roadhouse: Reading Incentive Program and more",
+          "Movement Gym",
+          "Howard County Public Library and Best Brain (THES PTA Silver Sponsor): resources and materials",
+          "Three Sprouts Landscaping (THES PTA Silver Sponsor)",
+          "Arbor Orthodontics (THES PTA Community Sponsor)",
+          "Mindful Beginnings: after-school program",
+          "Howard County Bridges (The Bridge Program Inc.): after-school and Saturday programs",
+          "Howard Community College: Kids on Campus program",
+          "Mission BBQ: hosting a trunk at Trunk or Treat (not selling food)"
+        ],
+        "note": "Stop by their tables to learn about programs for Thunder Hill students and families."
+      },
+      {
+        "heading": "Thank You to Our Sponsors",
+        "items": [
+          "Gold: Mathnasium, iCode Columbia, Associated Appraisers, and KidzArt",
+          "Silver: B. Funk Dance Company, Cub Scout Pack 838, Three Sprouts Landscaping, Kapookids, and Best Brain",
+          "Community: Lightning View Home Inspections, Chambers, and Arbor Orthodontics"
+        ],
+        "note": "Every THES PTA sponsor helps make Fall Fest & Trunk or Treat possible.",
+        "button_label": "Meet Our Sponsors",
+        "button_href": "../sponsors.html"
+      },
+      {
+        "heading": "Good to Know",
+        "items": [
+          "Children must be accompanied by an adult",
+          "Parking will be limited",
+          "No scary or gory costumes, and no face mask coverings",
+          "Donate candy for Trunk or Treat October 12 – 30 in the Candy-Bot 3000 in the THES Main Office",
+          "Bring a bag for all your Trunk or Treat goodies!"
+        ]
+      },
+      {
+        "heading": "Trunk Decorating Contest",
+        "items": [
+          "Get creative and decorate your vehicle for the Trunk or Treat contest",
+          "Categories: Cutest, Most Creative, Funniest, and Best Overall",
+          "Winners receive a trophy",
+          "Attendees vote on their phones with a virtual ballot; QR codes will be posted around the event"
+        ]
+      },
+      {
+        "heading": "Volunteer or Host a Trunk",
+        "items": [
+          "Help run Fall Fest activities",
+          "Sign up your vehicle to decorate a trunk and hand out treats"
+        ],
+        "button_label": "Sign Up",
+        "button_href": "https://m.signupgenius.com/#!/showSignUp/10C084EA9A92BA2FCC70-64996490-thes?useFullSite=false"
+      }
+    ],
+    "register_href": "",
+    "contact_email": "president.thespta@gmail.com",
+    "extra_flyers": [
+      {
+        "filename": "events/fall-fest-trunk-or-treat-2026-vendors-v2.jpg",
+        "alt": "THES PTA Fall Fest and Trunk or Treat flyer: Friday, October 30, 2026 at Thunder Hill Elementary School. Fall Fest 5:00 to 6:30 PM, Trunk or Treat 6:30 to 8:00 PM. Fall crafts, DJ, games, inflatable slide, outdoor bowling, and food trucks. Food and drink vendors: Say Squeeze (refreshing lemonade, limeade, Brazilian lemonade, tea and more), The Mercenary Chef (delicious food options for the whole family), Alyssa's Sweets & Treats (pastries, desserts, cakes and more), and Schmidty's Kettle Corn (delicious, freshly popped kettle corn). Bring a bag for all your Trunk or Treat goodies!"
+      },
+      {
+        "filename": "events/fall-fest-decorating-contest-2026.jpg",
+        "alt": "THES PTA Fall Fest and Trunk or Treat Decorating Contest flyer: get creative and decorate your vehicle for the Trunk or Treat contest. Categories: Cutest, Most Creative, Funniest, and Best Overall. Winners receive a trophy. Attendees vote with a phone-friendly virtual ballot; QR codes will be posted around the event. Friday, October 30, 2026 — Fall Fest 5:00 to 6:30 PM, Trunk or Treat 6:30 to 8:00 PM."
+      }
+    ],
+    "archived_on": "2026-10-31"
   }
 ]

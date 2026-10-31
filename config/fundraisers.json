@@ -11,18 +11,6 @@
     "enrollment_code": null,
     "dates": [
       {
-        "date": "Sept 28",
-        "venue": "Chick-fil-A \u2014 Executive Park Drive, Columbia",
-        "time": "5:30 \u2013 7:30 PM",
-        "note": "Order through the Chick-fil-A app and tap \u201cSupport Community Care Event\u201d at checkout."
-      },
-      {
-        "date": "Oct 13",
-        "venue": "Pupatella \u2014 across from THES",
-        "time": "11:30 AM \u2013 9:00 PM",
-        "note": null
-      },
-      {
         "date": "Nov 18",
         "venue": "Chipotle \u2014 Old Dobbin Lane",
         "time": "5:00 PM \u2013 9:00 PM",
@@ -44,11 +32,11 @@
     "name": "THES Spirit Wear",
     "category": "seasonal",
     "description": "Thunder Hill gear \u2014 hoodies, tees, and more \u2014 with a portion of every purchase going back to the PTA.",
-    "how_to_join": "Shop either online store below \u2014 no minimum, ships straight to you.",
-    "cta_label": "Shop the Fall Store",
-    "cta_href": "https://thunderhillfall2026.itemorder.com/",
-    "secondary_label": "Shop the Parent-Designed Store",
-    "secondary_href": "https://chesapeakedistribution.com/collections/thunder-hill-elementary-school",
+    "how_to_join": "Shop the online store below \u2014 no minimum, ships straight to you.",
+    "cta_label": "Shop THES Spirit Wear",
+    "cta_href": "https://chesapeakedistribution.com/collections/thunder-hill-elementary-school",
+    "secondary_label": null,
+    "secondary_href": null,
     "enrollment_code": null,
     "dates": [],
     "contact": null,

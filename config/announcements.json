@@ -1,10 +1,5 @@
 [
   {
-    "text": "Fall Fest & Trunk or Treat is October 30 — view details!",
-    "page_url": "event_fall_fest_trunk_or_treat",
-    "expires": "2026-11-01"
-  },
-  {
     "text": "Become a business sponsor and support Thunder Hill!",
     "page_url": "become_sponsor"
   },
@@ -14,7 +9,7 @@
     "expires": "2026-11-22"
   },
   {
-    "text": "Veterans Day at THES Nov 11 — submit a family member!",
+    "text": "Veterans Day celebration at THES Wed, Nov 11",
     "page_url": "event_veterans_day_celebration",
     "expires": "2026-11-12"
   },
@@ -39,12 +34,38 @@
     "text": "Thank you to Cub Scout Pack 838 for sponsoring THES!",
     "page_url": "sponsors"
   },
-  {"text": "Thank you to Three Sprouts Landscaping for sponsoring THES!", "page_url": "sponsors"},
-  {"text": "Thank you to iCode Columbia for sponsoring THES!", "page_url": "sponsors"},
-  {"text": "Thank you to Associated Appraisers for sponsoring THES!", "page_url": "sponsors"},
-  {"text": "Thank you to KidzArt for sponsoring THES!", "page_url": "sponsors"},
-  {"text": "Thank you to Arbor Orthodontics for sponsoring THES!", "page_url": "sponsors"},
-  {"text": "Thank you to Kapookids for sponsoring THES!", "page_url": "sponsors"},
-  {"text": "KidzArt Session 2 starts Monday, Nov 2. Register now!", "page_url": "afterschool_programs", "expires": "2026-11-02"},
-  {"text": "No school Nov 3? iCode 2D & 3D design day camp, ages 8–15", "href": "https://icodeschool.com/columbia-md/camps/", "expires": "2026-11-03"}
+  {
+    "text": "Thank you to Three Sprouts Landscaping for sponsoring THES!",
+    "page_url": "sponsors"
+  },
+  {
+    "text": "Thank you to iCode Columbia for sponsoring THES!",
+    "page_url": "sponsors"
+  },
+  {
+    "text": "Thank you to Associated Appraisers for sponsoring THES!",
+    "page_url": "sponsors"
+  },
+  {
+    "text": "Thank you to KidzArt for sponsoring THES!",
+    "page_url": "sponsors"
+  },
+  {
+    "text": "Thank you to Arbor Orthodontics for sponsoring THES!",
+    "page_url": "sponsors"
+  },
+  {
+    "text": "Thank you to Kapookids for sponsoring THES!",
+    "page_url": "sponsors"
+  },
+  {
+    "text": "KidzArt Session 2 starts Monday, Nov 2. Register now!",
+    "page_url": "afterschool_programs",
+    "expires": "2026-11-02"
+  },
+  {
+    "text": "No school Nov 3? iCode 2D & 3D design day camp, ages 8–15",
+    "href": "https://icodeschool.com/columbia-md/camps/",
+    "expires": "2026-11-03"
+  }
 ]

@@ -191,22 +191,10 @@
     "provider": "Amazing Athletes (Howard County Recreation & Parks)",
     "description": "Master ball handling, shooting, passing, and game rules at your own pace, with friendly scrimmages that build teamwork and sportsmanship. Each class includes warm-ups, an activation game, three sport-specific skills, a scrimmage, and a cooldown \u2014 great whether you're brand-new or already play.",
     "day_time": "Wednesdays",
-    "date_range": "Two sessions (see below)",
+    "date_range": "Next session (see below)",
     "grades": "K\u20136",
     "price": "$119 per session",
     "sessions": [
-      {
-        "label": "Ages 5\u20137, Session 1",
-        "dates": "Starts Sep 9, 5:05\u20136:05 PM",
-        "classes": "6 classes",
-        "price": "$119"
-      },
-      {
-        "label": "Ages 8\u201311, Session 1",
-        "dates": "Starts Sep 9, 4:00\u20135:00 PM",
-        "classes": "6 classes",
-        "price": "$119"
-      },
       {
         "label": "Ages 5\u20137, Session 2",
         "dates": "Starts Nov 4, 5:05\u20136:05 PM",
@@ -234,16 +222,10 @@
     "provider": "Little & Junior TrackStars (Howard County Recreation & Parks)",
     "description": "Build fundamental athletic skills through running, jumping, and mental-focus drills \u2014 refining gross motor skills, balance, coordination, speed, and agility through interactive drills, games, and friendly competitive racing. All experience levels welcome.",
     "day_time": "Mondays, 4:00 \u2013 5:00 PM",
-    "date_range": "Two sessions (see below)",
+    "date_range": "Next session (see below)",
     "grades": "1\u20136",
     "price": "$115 per session",
     "sessions": [
-      {
-        "label": "Session 1",
-        "dates": "Starts Sep 28",
-        "classes": "6 classes",
-        "price": "$115"
-      },
       {
         "label": "Session 2",
         "dates": "Starts Nov 9",
@@ -263,8 +245,8 @@
   {
     "name": "Cub Scouts Pack 838",
     "provider": "Cub Scouts Pack 838",
-    "description": "Back to Scouting Night \u2014 come learn about Pack 838's activities, including camping, the Pinewood Derby, community service, and more. Open to boys and girls in grades K\u20135.",
-    "day_time": "Back to Scouting Night: Wed, Sept 16, 6:30\u20138:00 PM",
+    "description": "Pack 838 offers camping, the Pinewood Derby, community service, and more \u2014 and it's not too late to join. Open to boys and girls in grades K\u20135.",
+    "day_time": null,
     "date_range": null,
     "grades": "K\u20135",
     "price": null,
@@ -309,7 +291,7 @@
     "show_date": null,
     "contact": null,
     "registration_href": "https://docs.google.com/forms/d/e/1FAIpQLSfMebiqXaiK3uJ0pSb507OixSZgovPuvg2B5TDFo9628iCG5A/viewform?usp=header",
-    "registration_note": "Register by Oct 16 \u2014 first come, first served (20 spots).",
+    "registration_note": null,
     "flyer_filename": "techgirls.jpg",
     "content_hash": "d9d92145940a3186a2e506cb36e7520db769dfd9ddd06859422aec01c5c33987",
     "needs_review": false

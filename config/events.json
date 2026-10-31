@@ -1,26 +1,11 @@
 [
   {
-    "day": "01",
-    "month": "Nov",
-    "date": "2026-11-01",
-    "title": "Fall Fest / Trunk or Treat Rain Date",
-    "when": "1:00 \u2013 4:00 PM",
-    "featured": true,
-    "attachments": [
-      {
-        "title": "20261101-fall-fest-trunk-or-treat-rain-date.png",
-        "href": "https://drive.google.com/open?id=1OMBrO_yk0ui0HIaE-CTWik_P9WAZ5DNo"
-      }
-    ],
-    "description": "Rain date for Fall Fest / Trunk or Treat, in case the original Oct 30 date is rained out."
-  },
-  {
     "day": "03",
     "month": "Nov",
     "date": "2026-11-03",
     "title": "Day Camp \u2013 iCode \ud83c\udfa8 Artist's Studio: 2D & 3D Digital Design",
     "when": "8:00 AM \u2013 3:00 PM \u00b7 iCode Columbia, MD, 9200 Old Annapolis Rd Ste B, Columbia, MD 21045, USA",
-    "featured": false,
+    "featured": true,
     "signup_href": "https://icodeschool.com/columbia-md/camps/",
     "description": "iCode Columbia\u2019s Artist's Studio: 2D & 3D Digital Design One-Day Camp gives students a fun, hands-on opportunity to explore 3D modeling, design their own creations, and bring them to life with 3D\u2026",
     "description_full": "iCode Columbia\u2019s Artist's Studio: 2D & 3D Digital Design One-Day Camp gives students a fun, hands-on opportunity to explore 3D modeling, design their own creations, and bring them to life with 3D printing! With no school on Tuesday, November 3rd, it\u2019s a great way to keep your child learning and engaged while school is closed. register today! For ages between 8-15!"
@@ -40,6 +25,22 @@
     ],
     "description": "Come out to Main Event at the Columbia Mall to play games with friends and family to support the THES PTA! 20% of all purchases (except alcohol from the restaurant, bowling, arcade, and laser tag\u2026",
     "description_full": "Come out to Main Event at the Columbia Mall to play games with friends and family to support the THES PTA! 20% of all purchases (except alcohol from the restaurant, bowling, arcade, and laser tag will be donated. Drop your receipt at the THES PTA Table before you leave."
+  },
+  {
+    "day": "09",
+    "month": "Nov",
+    "date": "2026-11-09",
+    "title": "THES Reading Night \u2013 Calling All Thunderbirds!",
+    "when": "5:30 \u2013 6:30 PM",
+    "featured": false,
+    "attachments": [
+      {
+        "title": "202611-ReadingNight.PNG",
+        "href": "https://drive.google.com/file/d/19_JsT12zjTN1zdS7dM6FzDmL1HgjDuC1"
+      }
+    ],
+    "description": "Join us for THES Reading Night! A fun and educational evening for Thunderbird families to explore reading, strengthen literacy skills, and celebrate the joy of books. Activities include: * Primary\u2026",
+    "description_full": "Join us for THES Reading Night! A fun and educational evening for Thunderbird families to explore reading, strengthen literacy skills, and celebrate the joy of books. Activities include: * Primary Grades: Discover UFLI and learn how it helps build strong foundational reading skills. * Intermediate Grades: Explore the joy of reading and participate in creating a Book Study in partnership with the Howard County Library. Come together as a Thunderbird community to inspire lifelong readers and help every student SOAR to success! We look forward to seeing our Thunderbird families there!"
   },
   {
     "day": "11",

@@ -28,5 +28,36 @@
     "register_href": "",
     "contact_email": "president.thespta@gmail.com",
     "archived_on": "2026-10-12"
+  },
+  {
+    "slug": "candy-bot-3000",
+    "title": "THES PTA Candy-Bot 3000 Candy Drive 2026",
+    "nav_label": "Candy-Bot 3000 Candy Drive",
+    "eyebrow": "Candy Donations Needed",
+    "tagline": "Feed the Candy-Bot! Drop off individually wrapped candy at the THES front office, October 12–30, for Fall Fest & Trunk or Treat.",
+    "summary": "The Thunder Hill Elementary PTA Candy-Bot 3000 candy drive runs October 12–30, 2026 at Thunder Hill Elementary School in Columbia, Maryland (Howard County). Drop off individually wrapped candy at the front office to help stock the PTA's Fall Fest & Trunk or Treat on October 30.",
+    "start": "2026-10-12",
+    "end": "2026-10-30",
+    "expires": "2026-10-30",
+    "location_name": "Thunder Hill Elementary School — Front Office",
+    "flyer_filename": "events/candy-bot-3000-2026.jpg",
+    "flyer_alt": "THES PTA Candy-Bot 3000 flyer: candy donations needed for THES PTA Fall Fest & Trunk or Treat. Collection dates October 12 to 30. Where: THES front office. What to donate: individually wrapped candy. Students and families can drop off candy donations directly at the front office and help make Trunk or Treat extra sweet for our Thunderbirds. Thank you for your donations!",
+    "about": [
+      "Please feed the Candy-Bot 3000! The THES PTA is collecting candy for Fall Fest & Trunk or Treat on Friday, October 30.",
+      "Students and families can drop off candy donations directly at the front office and help us make Trunk or Treat extra sweet for our Thunderbirds. Thank you for your donations!"
+    ],
+    "sections": [
+      {
+        "heading": "How to Donate",
+        "items": [
+          "Collection dates: October 12–30",
+          "Where: the Candy-Bot 3000 in the THES front office",
+          "What to donate: individually wrapped candy"
+        ]
+      }
+    ],
+    "register_href": "",
+    "contact_email": "president.thespta@gmail.com",
+    "archived_on": "2026-10-31"
   }
 ]

@@ -74,5 +74,12 @@
     "tier": "Silver",
     "blurb": "Inflatable rentals for schools, office events, backyards, and parks, entertaining children and celebrating kids' birthday parties. “Play is the primary way children were designed to learn.”",
     "logo_filename": "sponsor-kapookids.png"
+  },
+  {
+    "name": "Best Brains Learning Centers",
+    "href": "https://www.facebook.com/bestbrainsofcolumbia",
+    "tier": "Silver",
+    "logo_filename": "sponsor-best-brains.png",
+    "blurb": "Expert tutoring and after-school programs for children as young as 3½: Math, English, Coding, and Abacus, plus summer programs, public speaking, creative writing, CogAT prep, and enrichment."
   }
 ]

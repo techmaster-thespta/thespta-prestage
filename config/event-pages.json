@@ -83,5 +83,52 @@
     "register_href": "",
     "contact_name": "Meagan Lesinski",
     "contact_email": "meagan_lesinski@hcpss.org"
+  },
+  {
+    "slug": "giving-tuesday",
+    "title": "THES PTA Giving Tuesday 2026",
+    "nav_label": "Giving Tuesday",
+    "eyebrow": "Give a Little. Make a Big Difference!",
+    "tagline": "This Giving Tuesday, help THES PTA keep creating the experiences and memories that make elementary school special.",
+    "summary": "Giving Tuesday is Tuesday, December 1, 2026. Support the Thunder Hill Elementary School PTA in Columbia, Maryland (Howard County) with a donation of any size — it funds Fall Fest, Winter Wonderland, International Night, STEM Night, Field Day, teacher appreciation, and more.",
+    "start": "2026-12-01",
+    "expires": "2026-12-01",
+    "location_name": "Thunder Hill Elementary School (donate online)",
+    "about": [
+      "What does THES PTA do? We help create the experiences and memories that make elementary school special! From the excitement of Fall Fest and Trunk or Treat to the smiles at our Ice Cream Social, the magic of Winter Wonderland, and the celebration of cultures at International Night, THES PTA works throughout the year to bring meaningful experiences to our students and families.",
+      "We also support our incredible teachers and staff through appreciation activities and provide opportunities that enrich the school experience for everyone.",
+      "These are more than just events. They are opportunities for children to make friends, discover new interests, celebrate their school community, create lasting memories, and feel connected to something special."
+    ],
+    "sections": [
+      {
+        "heading": "What Your Gift Supports",
+        "items": [
+          "Celebrate together at Fall Fest & Trunk or Treat",
+          "Enjoy our Welcome Back Ice Cream Social",
+          "Recognize and honor our veterans",
+          "Experience the magic of Winter Wonderland",
+          "Explore cultures and traditions at International Night",
+          "Discover, create, and learn at STEM Night",
+          "Explore future possibilities at Career Day",
+          "Build memories and friendships at Field Day",
+          "Celebrate our planet on Earth Day",
+          "Enjoy community fun at Spring Fling",
+          "Celebrate the end of another wonderful school year"
+        ]
+      },
+      {
+        "heading": "Give on Tuesday, December 1",
+        "items": [
+          "Every contribution, big or small, helps us keep creating wonderful experiences for our students, teachers, staff, and families",
+          "Your donation helps create the memories our children will carry with them long after elementary school"
+        ],
+        "note": "Thank you for supporting THES PTA and our Thunder Hill community!",
+        "button_label": "Donate Today",
+        "button_href": "https://1thes.givebacks.com/shop"
+      }
+    ],
+    "register_href": "",
+    "contact_name": "Natalie Miskimins",
+    "contact_email": "president.thespta@gmail.com"
   }
 ]

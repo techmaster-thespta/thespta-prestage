@@ -657,7 +657,7 @@
 <div class="thes__announce" id="thes-announce" data-hash="4a297a00c2a6">
   <div class="thes__announce-inner">
     <div class="thes__announce-track" id="thes-announce-track">
-<a class="thes__announce-slide" style="display:flex;opacity:1;" href="../events/giving-tuesday.html"><svg class="thes__announce-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M19 5a10 10 0 0 1 0 14"/></svg><span class="thes__announce-text">Giving Tuesday, Dec 1: give a little, make a big difference</span><span class="thes__announce-arrow" aria-hidden="true">&rarr;</span></a>
+<a class="thes__announce-slide" data-weight="4" style="display:flex;opacity:1;" href="../events/giving-tuesday.html"><svg class="thes__announce-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M19 5a10 10 0 0 1 0 14"/></svg><span class="thes__announce-text">Giving Tuesday, Dec 1: give a little, make a big difference</span><span class="thes__announce-arrow" aria-hidden="true">&rarr;</span></a>
 <a class="thes__announce-slide" href="../become-a-sponsor.html"><svg class="thes__announce-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M19 5a10 10 0 0 1 0 14"/></svg><span class="thes__announce-text">Become a business sponsor and support Thunder Hill!</span><span class="thes__announce-arrow" aria-hidden="true">&rarr;</span></a>
 <a class="thes__announce-slide" href="../events/holiday-market.html"><svg class="thes__announce-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M19 5a10 10 0 0 1 0 14"/></svg><span class="thes__announce-text">Holiday Market Nov 21 — shop local or become a vendor!</span><span class="thes__announce-arrow" aria-hidden="true">&rarr;</span></a>
 <a class="thes__announce-slide" href="../events/veterans-day-celebration.html"><svg class="thes__announce-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 5 6 9H2v6h4l5 4V5z"/><path d="M15.5 8.5a5 5 0 0 1 0 7"/><path d="M19 5a10 10 0 0 1 0 14"/></svg><span class="thes__announce-text">Veterans Day celebration at THES Wed, Nov 11</span><span class="thes__announce-arrow" aria-hidden="true">&rarr;</span></a>
@@ -705,11 +705,21 @@
   if (slides.length < 2) return;
   // Shuffle the rotation order on every page load, so the same first few
   // announcements don't always get seen while the later ones rarely do.
-  var order = [];
-  for (var k = 0; k < slides.length; k++) order.push(k);
+  // A slide with data-weight="N" comes up N times per rotation, spaced
+  // evenly, starting with the first turn.
+  var order = [], weighted = [];
+  for (var k = 0; k < slides.length; k++) {
+    var w = parseInt(slides[k].getAttribute("data-weight") || "1", 10);
+    if (w > 1) weighted.push([k, w]); else order.push(k);
+  }
   for (var k = order.length - 1; k > 0; k--) {
     var r = Math.floor(Math.random() * (k + 1));
     var tmp = order[k]; order[k] = order[r]; order[r] = tmp;
+  }
+  for (var j = 0; j < weighted.length; j++) {
+    var idx = weighted[j][0], times = weighted[j][1];
+    var gap = Math.max(2, Math.floor((order.length + times) / times));
+    for (var t = 0; t < times; t++) order.splice(Math.min(order.length, t * gap + j), 0, idx);
   }
   if (order[0] !== 0) {
     slides[0].style.display = "none";
@@ -721,6 +731,7 @@
     var current = slides[order[i]];
     var nextIndex = (i + 1) % order.length;
     var next = slides[order[nextIndex]];
+    if (next === current) { i = nextIndex; return; }
     current.style.opacity = "0";
     setTimeout(function () {
       current.style.display = "none";

@@ -648,6 +648,12 @@ def build_announcement_banner(announcements, context):
 
     def render_slide(a, i):
         active_style = ' style="display:flex;opacity:1;" ' if i == 0 else " "
+        # `weight` (default 1): how many times this slide comes up per
+        # rotation — the banner script spaces the extra turns evenly and
+        # leads with it, so a time-sensitive announcement gets seen.
+        weight = int(a.get("weight") or 1)
+        if weight > 1:
+            active_style = f' data-weight="{weight}"{active_style}'
         href = resolve_href(a)
         banner_image = resolve_banner_image(a)
         if banner_image:

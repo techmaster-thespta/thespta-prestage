@@ -78,6 +78,12 @@ If that event also has a `date` field, set `expires` to the day *after*
 that date (see below) — computed once, now, not left for a future rebuild
 to figure out.
 
+**Show it more often** — the rotation order is shuffled on every page
+load, so with many announcements any one of them comes up rarely. For a
+time-sensitive one the user wants seen, add `"weight": N` (e.g. `4`): it
+shows first and comes up N times per rotation, spaced evenly. Use it for
+one or two announcements at a time, and pair it with `expires`.
+
 **Expiration** — add `expires` (an ISO date, `"YYYY-MM-DD"`, the last
 day it shows, in Eastern time) to have an announcement automatically stop
 showing after that date. Within about an hour of expiring, the hourly

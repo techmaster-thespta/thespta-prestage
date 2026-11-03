@@ -2,7 +2,8 @@
   {
     "text": "Giving Tuesday, Dec 1: give a little, make a big difference",
     "page_url": "event_giving_tuesday",
-    "expires": "2026-12-01"
+    "expires": "2026-12-01",
+    "weight": 4
   },
   {
     "text": "Become a business sponsor and support Thunder Hill!",

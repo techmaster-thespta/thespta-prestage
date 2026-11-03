@@ -33,11 +33,21 @@
   if (slides.length < 2) return;
   // Shuffle the rotation order on every page load, so the same first few
   // announcements don't always get seen while the later ones rarely do.
-  var order = [];
-  for (var k = 0; k < slides.length; k++) order.push(k);
+  // A slide with data-weight="N" comes up N times per rotation, spaced
+  // evenly, starting with the first turn.
+  var order = [], weighted = [];
+  for (var k = 0; k < slides.length; k++) {
+    var w = parseInt(slides[k].getAttribute("data-weight") || "1", 10);
+    if (w > 1) weighted.push([k, w]); else order.push(k);
+  }
   for (var k = order.length - 1; k > 0; k--) {
     var r = Math.floor(Math.random() * (k + 1));
     var tmp = order[k]; order[k] = order[r]; order[r] = tmp;
+  }
+  for (var j = 0; j < weighted.length; j++) {
+    var idx = weighted[j][0], times = weighted[j][1];
+    var gap = Math.max(2, Math.floor((order.length + times) / times));
+    for (var t = 0; t < times; t++) order.splice(Math.min(order.length, t * gap + j), 0, idx);
   }
   if (order[0] !== 0) {
     slides[0].style.display = "none";
@@ -49,6 +59,7 @@
     var current = slides[order[i]];
     var nextIndex = (i + 1) % order.length;
     var next = slides[order[nextIndex]];
+    if (next === current) { i = nextIndex; return; }
     current.style.opacity = "0";
     setTimeout(function () {
       current.style.display = "none";

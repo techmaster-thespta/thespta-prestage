@@ -90,10 +90,10 @@
     "nav_label": "Giving Tuesday",
     "eyebrow": "Give a Little. Make a Big Difference!",
     "tagline": "This Giving Tuesday, help THES PTA keep creating the experiences and memories that make elementary school special.",
-    "summary": "Giving Tuesday is Tuesday, December 1, 2026. Support the Thunder Hill Elementary School PTA in Columbia, Maryland (Howard County) with a donation of any size — it funds Fall Fest, Winter Wonderland, International Night, STEM Night, Field Day, teacher appreciation, and more.",
+    "summary": "Giving Tuesday is Tuesday, December 1, 2026: an all-day online giving drive for the Thunder Hill Elementary School PTA in Columbia, Maryland (Howard County). A donation of any size funds Fall Fest, Winter Wonderland, International Night, STEM Night, Field Day, teacher and staff appreciation, and more.",
     "start": "2026-12-01",
     "expires": "2026-12-01",
-    "location_name": "Thunder Hill Elementary School (donate online)",
+    "location_name": "Online — donate anytime on December 1",
     "about": [
       "What does THES PTA do? We help create the experiences and memories that make elementary school special! From the excitement of Fall Fest and Trunk or Treat to the smiles at our Ice Cream Social, the magic of Winter Wonderland, and the celebration of cultures at International Night, THES PTA works throughout the year to bring meaningful experiences to our students and families.",
       "We also support our incredible teachers and staff through appreciation activities and provide opportunities that enrich the school experience for everyone.",
@@ -109,6 +109,7 @@
           "Experience the magic of Winter Wonderland",
           "Explore cultures and traditions at International Night",
           "Discover, create, and learn at STEM Night",
+          "Show our appreciation for THES teachers and staff",
           "Explore future possibilities at Career Day",
           "Build memories and friendships at Field Day",
           "Celebrate our planet on Earth Day",
@@ -119,7 +120,9 @@
       {
         "heading": "Give on Tuesday, December 1",
         "items": [
+          "Giving is online and open all day; donate from anywhere",
           "Every contribution, big or small, helps us keep creating wonderful experiences for our students, teachers, staff, and families",
+          "We're also giving back on Giving Tuesday, with a thank-you for our THES teachers and staff",
           "Your donation helps create the memories our children will carry with them long after elementary school"
         ],
         "note": "Thank you for supporting THES PTA and our Thunder Hill community!",
@@ -129,6 +132,9 @@
     ],
     "register_href": "",
     "contact_name": "Natalie Miskimins",
-    "contact_email": "president.thespta@gmail.com"
+    "contact_email": "president.thespta@gmail.com",
+    "online_href": "https://1thes.givebacks.com/shop",
+    "flyer_filename": "events/giving-tuesday-2026.png",
+    "flyer_alt": "Giving Tuesday flyer: Give a Little. Make a BIG Difference! Tuesday, Dec. 1, 2026. Support Thunder Hill Elementary School PTA! This Giving Tuesday, please consider making a donation to the Thunder Hill Elementary School PTA (THES PTA) to support the students, teachers, and staff at THES. THES PTA is a nonprofit organization that raises funds to provide meaningful experiences, enrichment opportunities, celebrations, and activities that bring our school community together throughout the year: Fall Fest & Trunk or Treat, Ice Cream Social, Veterans Day, Winter Wonderland, International Night, STEM Night, Teacher & Staff Appreciation, Career Day, Field Day, Earth Day, Spring Fling, End-of-Year Activities, and so much more! Every dollar makes a difference! Donate today: 1thes.givebacks.com/shop (QR code)."
   }
 ]

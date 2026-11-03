@@ -69,6 +69,9 @@ computed from the real event date, never guessed. `start`/`end` are local time i
 Location defaults to the school's address from `config/site.json`;
 override with `address_line1`/`address_line2` for an off-site event.
 `register_href`, when set, adds a "Register as a Vendor" button.
+For an online-only event (e.g. Giving Tuesday), set `online_href` to the
+event's URL: the Where line shows `location_name` plus that link instead
+of the school's address, and the search data marks it as an online event.
 
 ## Steps
 

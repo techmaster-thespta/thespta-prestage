@@ -897,6 +897,13 @@ def build_event_jsonld(event, site):
             "name": event.get("location_name") or site.get("school_name", ""),
             "address": build_postal_address(line1, line2),
         },
+    }
+    # An online-only event (`online_href` set, e.g. a donation drive):
+    # schema.org wants a VirtualLocation with the URL instead of a Place.
+    if event.get("online_href"):
+        data["eventAttendanceMode"] = "https://schema.org/OnlineEventAttendanceMode"
+        data["location"] = {"@type": "VirtualLocation", "url": event["online_href"]}
+    data |= {
         "organizer": {
             "@type": "Organization",
             "name": site.get("org_name", ""),
@@ -904,7 +911,7 @@ def build_event_jsonld(event, site):
         },
         "url": f"https://{domain}/{event_page_name(event)}",
     }
-    if site.get("county") and not event.get("address_line2"):
+    if site.get("county") and not event.get("address_line2") and not event.get("online_href"):
         # Only for on-site events at the school's own address — an
         # off-site event's county isn't known here.
         data["location"]["containedInPlace"] = {
@@ -940,7 +947,7 @@ def google_calendar_add_url(event, site):
         "dates": dates,
         "ctz": site["calendar"]["timezone"],
         "details": f'{event["summary"]}\n\nhttps://{site["custom_domain"]}/{event_page_name(event)}',
-        "location": f'{event.get("location_name", "")}, {event_location_address(event, site)}',
+        "location": event.get("online_href") or f'{event.get("location_name", "")}, {event_location_address(event, site)}',
     }
     return "https://calendar.google.com/calendar/render?" + urllib.parse.urlencode(params)
 
@@ -1033,6 +1040,12 @@ def render_event_page(event, site, context):
     location = f'{esc(event.get("location_name") or site.get("school_name", ""))}<br>{esc(event_location_address(event, site))}'
     if site.get("county") and not event.get("address_line2"):
         location += f' · {esc(site["county"])}'
+    if event.get("online_href"):
+        location = (
+            f'{esc(event.get("location_name") or "Online")}<br>'
+            f'<a href="{esc(event["online_href"])}" target="_blank" rel="noopener">'
+            f'{esc(urllib.parse.urlsplit(event["online_href"]).netloc + urllib.parse.urlsplit(event["online_href"]).path.rstrip("/"))}</a>'
+        )
     tmpl = (TEMPLATES / "event-page.html.tmpl").read_text()
     return render(tmpl, {
         **context,

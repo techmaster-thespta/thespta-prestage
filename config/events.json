@@ -1,38 +1,11 @@
 [
   {
-    "day": "03",
-    "month": "Nov",
-    "date": "2026-11-03",
-    "title": "Day Camp \u2013 iCode \ud83c\udfa8 Artist's Studio: 2D & 3D Digital Design",
-    "when": "8:00 AM \u2013 3:00 PM \u00b7 iCode Columbia, MD, 9200 Old Annapolis Rd Ste B, Columbia, MD 21045, USA",
-    "featured": true,
-    "signup_href": "https://icodeschool.com/columbia-md/camps/",
-    "description": "iCode Columbia\u2019s Artist's Studio: 2D & 3D Digital Design One-Day Camp gives students a fun, hands-on opportunity to explore 3D modeling, design their own creations, and bring them to life with 3D\u2026",
-    "description_full": "iCode Columbia\u2019s Artist's Studio: 2D & 3D Digital Design One-Day Camp gives students a fun, hands-on opportunity to explore 3D modeling, design their own creations, and bring them to life with 3D printing! With no school on Tuesday, November 3rd, it\u2019s a great way to keep your child learning and engaged while school is closed. register today! For ages between 8-15!"
-  },
-  {
-    "day": "03",
-    "month": "Nov",
-    "date": "2026-11-03",
-    "title": "Fundraiser - Main Event",
-    "when": "5:00 \u2013 8:00 PM",
-    "featured": false,
-    "attachments": [
-      {
-        "title": "202611-MainEvent.PNG",
-        "href": "https://drive.google.com/file/d/1M1BkKhQf7S14t--EV6ZD4GlxYSL0kXmR"
-      }
-    ],
-    "description": "Come out to Main Event at the Columbia Mall to play games with friends and family to support the THES PTA! 20% of all purchases (except alcohol from the restaurant, bowling, arcade, and laser tag\u2026",
-    "description_full": "Come out to Main Event at the Columbia Mall to play games with friends and family to support the THES PTA! 20% of all purchases (except alcohol from the restaurant, bowling, arcade, and laser tag will be donated. Drop your receipt at the THES PTA Table before you leave."
-  },
-  {
     "day": "09",
     "month": "Nov",
     "date": "2026-11-09",
     "title": "THES Reading Night \u2013 Calling All Thunderbirds!",
     "when": "5:30 \u2013 6:30 PM",
-    "featured": false,
+    "featured": true,
     "attachments": [
       {
         "title": "202611-ReadingNight.PNG",
@@ -113,5 +86,27 @@
     ],
     "description": "\ud83d\udc99\ud83d\udc9b GIVING TUESDAY \u2013 GIVE A LITTLE. MAKE A BIG DIFFERENCE! \ud83d\udc9b\ud83d\udc99 What does THES PTA do? We help create the experiences and memories that make elementary school special! From the excitement of Fall Fest\u2026",
     "description_full": "\ud83d\udc99\ud83d\udc9b GIVING TUESDAY \u2013 GIVE A LITTLE. MAKE A BIG DIFFERENCE! \ud83d\udc9b\ud83d\udc99 What does THES PTA do? We help create the experiences and memories that make elementary school special! From the excitement of Fall Fest and Trunk or Treat to the smiles at our Ice Cream Social, the magic of Winter Wonderland, and the celebration of cultures at International Night, THES PTA works throughout the year to bring meaningful experiences to our students and families. Through the support of our school community, we help provide opportunities for children to: \ud83c\udf83 Celebrate together at Fall Fest & Trunk or Treat \ud83c\udf66 Enjoy our Welcome Back Ice Cream Social \ud83c\uddfa\ud83c\uddf8 Recognize and honor our veterans \u2744\ufe0f Experience the magic of Winter Wonderland \ud83c\udf0e Explore cultures and traditions at International Night \ud83d\udd2c Discover, create, and learn at STEM Night \ud83d\udcbc Explore future possibilities at Career Day \ud83c\udfc3 Build memories and friendships at Field Day \ud83c\udf31 Celebrate our planet on Earth Day \ud83c\udf38 Enjoy community fun at Spring Fling \ud83c\udf89 Celebrate the end of another wonderful school year We also support our incredible teachers and staff through appreciation activities and provide opportunities that enrich the school experience for everyone. These are more than just events. They are opportunities for children to make friends, discover new interests, celebrate their school community, create lasting memories, and feel connected to something special. This Giving Tuesday, Tuesday, December 1, please consider making a donation to the Thunder Hill Elementary School PTA. Every contribution, big or small, helps us continue creating these wonderful experiences for our students, teachers, staff, and families. \ud83d\udc99 Your donation helps create the memories our children will carry with them long after elementary school! Give a Little. Make a BIG Difference! DONATE TODAY: https://1thes.givebacks.com/shop Thank you for supporting THES PTA and our Thunder Hill community!"
+  },
+  {
+    "day": "17",
+    "month": "Dec",
+    "date": "2026-12-17",
+    "title": "Restaurant Night Out \u2014 BurgerFi",
+    "when": "11:00 AM \u2013 10:00 PM \u00b7 BurgerFi, 6181 Old Dobbin Ln, Columbia, MD 21045, USA",
+    "featured": false
+  },
+  {
+    "day": "12",
+    "month": "Jan",
+    "date": "2027-01-12",
+    "title": "Restaurant Night Out \u2014 Eataliano",
+    "when": "All Day \u00b7 Eataliano",
+    "featured": false,
+    "attachments": [
+      {
+        "title": "20270112-restaurant-night-eataliano.png",
+        "href": "https://drive.google.com/open?id=1k4Ut-CFcWBubadhllUi_wkVAaJOjwhaO"
+      }
+    ]
   }
 ]

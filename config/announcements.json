@@ -27,12 +27,13 @@
   {
     "text": "Veterans Day celebration at THES Wed, Nov 11",
     "page_url": "event_veterans_day_celebration",
-    "expires": "2026-11-12"
+    "expires": "2026-11-11"
   },
   {
     "text": "HoCo Veterans Day Parade: Sun Nov 8, Downtown Columbia",
     "page_url": "event_veterans_day_celebration",
-    "expires": "2026-11-08"
+    "expires": "2026-11-08",
+    "weight": 4
   },
   {
     "text": "Thank you to B. Funk Dance Company for sponsoring THES!",

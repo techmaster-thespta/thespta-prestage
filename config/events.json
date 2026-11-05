@@ -41,6 +41,22 @@
     "description": "Join us throughout the school year! PTA meetings are a great way to stay informed, meet other families, and help make a difference in our Thunder Hill community. Everyone is welcome."
   },
   {
+    "day": "16",
+    "month": "Nov",
+    "date": "2026-11-16",
+    "title": "THES Book Fair",
+    "when": "All Day",
+    "featured": false,
+    "attachments": [
+      {
+        "title": "202911-thes-bookfair9.PNG",
+        "href": "https://drive.google.com/file/d/17tM1M2GTOWuLA9TTpkjc8muAk6bViVCr"
+      }
+    ],
+    "description": "Attention Parents! The highly anticipated THES Fall Book Fair is coming up on November 16\u201324! It is the perfect opportunity to stock up on new books and fuel your child's love for reading. To\u2026",
+    "description_full": "Attention Parents! The highly anticipated THES Fall Book Fair is coming up on November 16\u201324! It is the perfect opportunity to stock up on new books and fuel your child's love for reading. To celebrate, we are kicking off our monthly library challenge to help your child earn free books! Here is how to participate: 1. Snap a photo of your child reading at home, in a cozy spot, or on an adventure. 2. Send the picture to the library: jjordan1@hcpss.org 3. Your child will instantly earn one \"Camper Cash\" dollar to spend directly at the Book Fair! Mark your calendars for Nov. 16\u201324, get those cameras ready, and happy reading!"
+  },
+  {
     "day": "18",
     "month": "Nov",
     "date": "2026-11-18",
@@ -93,19 +109,11 @@
     "date": "2026-12-17",
     "title": "Restaurant Night Out \u2014 BurgerFi",
     "when": "11:00 AM \u2013 9:00 PM \u00b7 BurgerFi, 6181 Old Dobbin Ln, Columbia, MD 21045, USA",
-    "featured": false
-  },
-  {
-    "day": "12",
-    "month": "Jan",
-    "date": "2027-01-12",
-    "title": "Restaurant Night Out \u2014 Eataliano",
-    "when": "All Day \u00b7 Eataliano",
     "featured": false,
     "attachments": [
       {
-        "title": "20270112-restaurant-night-eataliano.png",
-        "href": "https://drive.google.com/open?id=1k4Ut-CFcWBubadhllUi_wkVAaJOjwhaO"
+        "title": "202612-r.JPGno-burguerfi",
+        "href": "https://drive.google.com/file/d/1iB4HXlV7rfYYQHfheA6WtImWBig7i2hf"
       }
     ]
   }

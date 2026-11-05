@@ -77,12 +77,29 @@
           "The Veterans/Military Submission Form closed on October 25",
           "Thank you to every family who shared a veteran or military family member"
         ],
-        "note": "Questions? Contact Meagan Lesinski below."
+        "note": "Questions? Contact Meagan Lesinski (details above)."
+      },
+      {
+        "heading": "Also This Week: Howard County Veterans Day Parade",
+        "items": [
+          "Sunday, November 8, 9:30 AM in Downtown Columbia",
+          "The 12th annual Howard County Veterans Parade & Celebration, presented by the Department of Community Resources and Services' Office of Veterans and Military Families and the Howard County Veterans Foundation",
+          "A chance to honor the more than 20,000 veterans and their families who call our community home"
+        ],
+        "note": "Come out, bring your family, and cheer on our veterans! This is a Howard County community event, not a THES PTA event.",
+        "button_label": "Learn More",
+        "button_href": "https://www.howardcountyveterans.org/parade/"
       }
     ],
     "register_href": "",
     "contact_name": "Meagan Lesinski",
-    "contact_email": "meagan_lesinski@hcpss.org"
+    "contact_email": "meagan_lesinski@hcpss.org",
+    "extra_flyers": [
+      {
+        "filename": "events/hoco-veterans-day-parade-2026.jpg",
+        "alt": "Howard County Veterans Foundation: 12th Annual Howard County Veterans Day Parade & Celebration. Citizen Soldiers, the cornerstone of our republic."
+      }
+    ]
   },
   {
     "slug": "giving-tuesday",

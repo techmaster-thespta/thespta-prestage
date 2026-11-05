@@ -186,5 +186,74 @@
     "register_href": "",
     "contact_name": "Natalie Miskimins",
     "contact_email": "president.thespta@gmail.com"
+  },
+  {
+    "slug": "book-fair",
+    "title": "THES Fall Scholastic Book Fair 2026",
+    "nav_label": "Book Fair",
+    "eyebrow": "Don't Miss It!",
+    "tagline": "Stock up on new books and fuel your child's love of reading at the THES Fall Book Fair in the school library.",
+    "summary": "The Thunder Hill Elementary Fall Scholastic Book Fair is November 16–24, 2026 in the THES Library in Columbia, Maryland (Howard County). Family shopping hours before and after school, an evening session Monday, Nov 23, and Book Fair eWallet for cashless shopping.",
+    "start": "2026-11-16",
+    "end": "2026-11-24",
+    "expires": "2026-11-24",
+    "location_name": "THES Library, Thunder Hill Elementary School",
+    "flyer_filename": "events/book-fair-fall-2026.jpg",
+    "flyer_alt": "Scholastic Book Fair: Don't Miss It! THES Library, Nov. 16–24.",
+    "extra_flyers": [
+      {
+        "filename": "events/book-fair-fall-2026-hours.jpg",
+        "alt": "It's Book Fair time! November 16–24. Student hours (students can come with a teacher's permission): Mon 11/16 to Fri 11/20, 9:10–3:30; Mon 11/23 and Tue 11/24, 9:10–12:40. Family hours (all students must attend with an adult): Mon 11/16, Tue 11/17, Wed 11/18 and Fri 11/20, 8:50–9:10 and 3:40–4:10; Thu 11/19, 8:50–9:10; Mon 11/23, 12:40–7 PM; Tue 11/24, 8:50–9:10. Book Fair eWallet: easy for families to set up, easy for others to contribute. Visit our school's Book Fair homepage: https://bookfairs.scholastic.com/bf/thunderhillelemschool1"
+      }
+    ],
+    "about": [
+      "The highly anticipated THES Fall Book Fair is coming up November 16–24 in the THES Library! It is the perfect opportunity to stock up on new books and fuel your child's love for reading — and every purchase earns funds for our school.",
+      "Students can shop during the school day with a teacher's permission. During family hours, all students must attend with an adult."
+    ],
+    "sections": [
+      {
+        "heading": "Family Shopping Hours",
+        "items": [
+          "Mon, Nov 16: 8:50–9:10 AM and 3:40–4:10 PM",
+          "Tue, Nov 17: 8:50–9:10 AM and 3:40–4:10 PM",
+          "Wed, Nov 18: 8:50–9:10 AM and 3:40–4:10 PM",
+          "Thu, Nov 19: 8:50–9:10 AM",
+          "Fri, Nov 20: 8:50–9:10 AM and 3:40–4:10 PM",
+          "Mon, Nov 23: 12:40–7:00 PM",
+          "Tue, Nov 24: 8:50–9:10 AM"
+        ],
+        "note": "All students must attend family hours with an adult."
+      },
+      {
+        "heading": "Student Shopping Hours",
+        "items": [
+          "Mon, Nov 16 – Fri, Nov 20: 9:10 AM – 3:30 PM",
+          "Mon, Nov 23 and Tue, Nov 24: 9:10 AM – 12:40 PM"
+        ],
+        "note": "Students can come during the school day with a teacher's permission."
+      },
+      {
+        "heading": "Book Fair eWallet",
+        "items": [
+          "Easy for families to set up, easy for others to contribute",
+          "Lets your child shop independently and choose the books they want to read",
+          "Any unspent funds stay in your Scholastic account for future fairs"
+        ],
+        "button_label": "Visit Our Book Fair Homepage",
+        "button_href": "https://bookfairs.scholastic.com/bf/thunderhillelemschool1"
+      },
+      {
+        "heading": "Earn Camper Cash: Library Reading Challenge",
+        "items": [
+          "Snap a photo of your child reading at home, in a cozy spot, or on an adventure",
+          "Send the picture to the library: jjordan1@hcpss.org",
+          "Your child instantly earns one \"Camper Cash\" dollar to spend at the Book Fair"
+        ],
+        "note": "This kicks off our monthly library challenge to help your child earn free books!"
+      }
+    ],
+    "register_href": "",
+    "contact_name": "Natalie Miskimins",
+    "contact_email": "president.thespta@gmail.com"
   }
 ]

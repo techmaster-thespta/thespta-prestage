@@ -1,21 +1,11 @@
 [
   {
-    "day": "07",
-    "month": "Nov",
-    "date": "2026-11-07",
-    "title": "FAMILY FUN DAY",
-    "when": "10:00 AM \u2013 12:00 PM",
-    "featured": true,
-    "description": "FAMILY FUN DAY Saturday, November 7, 2026 drop in anytime between 10:00 a.m.-12:00 p.m. Running Brook Elementary School 5215 W. Running Brook Rd. Columbia, MD The event will be held in the school\u2026",
-    "description_full": "FAMILY FUN DAY Saturday, November 7, 2026 drop in anytime between 10:00 a.m.-12:00 p.m. Running Brook Elementary School 5215 W. Running Brook Rd. Columbia, MD The event will be held in the school cafeteria, which is on the left side of the building. Come enjoy a morning of games, activities and movement in a safe and nurturing environment for children with a developmental delay or disability, up to the age of five. Staff from Early Intervention Services will be on hand to support you and your child. This event is for families who have children up to the age of five with an IEP or IFSP. Siblings are welcome. Contact FSRC@hcpss.org or EISFamily@hcpss.org with questions. The event will be cancelled if HCPSS has an inclement weather closure. This event is sponsored by HCPSS and aligns with the question about parents being connected with other families for mutual support in the MDSE survey that is sent to families of students with an IEP or IFSP annually. Free"
-  },
-  {
     "day": "09",
     "month": "Nov",
     "date": "2026-11-09",
     "title": "PARENT SUPPORT GROUP FOR PARENTS AND CAREGIVERS OF SCHOOL-AGED KIDS WITH BEHAVIORAL HEALTH CONCERNS (NO DIAGNOSIS REQUIRED)",
     "when": "7:30 \u2013 9:00 PM",
-    "featured": false,
+    "featured": true,
     "signup_href": "https://namihowardcounty.org/support-and-education/support-groups/",
     "description": "PARENT SUPPORT GROUP FOR PARENTS AND CAREGIVERS OF SCHOOL-AGED KIDS WITH BEHAVIORAL HEALTH CONCERNS (NO DIAGNOSIS REQUIRED) Monday, March 9, 2020 7:30-9:00pm Virtual This group meets the second\u2026",
     "description_full": "PARENT SUPPORT GROUP FOR PARENTS AND CAREGIVERS OF SCHOOL-AGED KIDS WITH BEHAVIORAL HEALTH CONCERNS (NO DIAGNOSIS REQUIRED) Monday, March 9, 2020 7:30-9:00pm Virtual This group meets the second Monday of each month from 7:30-9pm. NATIONAL ALLIANCE ON MENTAL ILLNESS (NAMI) Support groups for parents/caregivers of children and adolescents with behavioral health challenges. No diagnosis is necessary. Parent Support Group Transition Age Youth Support Group Family Support Group Register for any group at https: https://namihowardcounty.org/ (410) 772-9300 free"
@@ -30,5 +20,16 @@
     "signup_href": "https://docs.google.com/forms/d/e/1FAIpQLScYK1xvEVOWX7g1JmEzKhRqZNI_8rt-AX-cCX0glDOU0T5Abg/viewform",
     "description": "SELF-DIRECTED SERVICES INFORMATIONAL SESSION Tuesday, November 10, 2026 6-7:00 p.m. Virtual Event Support brokers will share what self-direction with DDA funding means, and how it can be implemented\u2026",
     "description_full": "SELF-DIRECTED SERVICES INFORMATIONAL SESSION Tuesday, November 10, 2026 6-7:00 p.m. Virtual Event Support brokers will share what self-direction with DDA funding means, and how it can be implemented. There will be plenty of time for your questions. Presented by Gail Godwin, Shared Support Maryland. Visit registration page. For questions, please contact Meghan at meghan_smallwood@hcpss.org or (443) 355-7733. This event is sponsored by HCPSS and aligns with the questions about the school system offering training about special education issues and providing information on agencies that can assist in the transition from school on the MDSE parent survey that is sent to families of students with an IEP or IFSP annually. Free"
+  },
+  {
+    "day": "12",
+    "month": "Nov",
+    "date": "2026-11-12",
+    "title": "STRENGTHENING CONNECTION: PARENT TRAINING FOR RAISING TEENS WITH ADHD",
+    "when": "1:00 \u2013 2:00 PM",
+    "featured": false,
+    "signup_href": "https://goto.webcasts.com/starthere.jsp?ei=1777708&amp;tp_key=222d170dde",
+    "description": "STRENGTHENING CONNECTION: PARENT TRAINING FOR RAISING TEENS WITH ADHD Thursday, November 12, 2026, 1:00 p.m. Virtual Event The adolescent and teen years can be especially complex for families\u2026",
+    "description_full": "STRENGTHENING CONNECTION: PARENT TRAINING FOR RAISING TEENS WITH ADHD Thursday, November 12, 2026, 1:00 p.m. Virtual Event The adolescent and teen years can be especially complex for families navigating ADHD and related conditions. Teens with ADHD are pushing for greater independence while also managing emotional dysregulation, negative self-esteem, executive functioning weaknesses at school, and ongoing pressure to keep up with their neurotypical peers. This developmental stage requires parents to develop and practice effective strategies to help reduce family conflict and strengthen parent-teen communication . Dave Anderson, Ph.D., Vice President of Public Engagement and Education at Child Mind Institute, will share practical, evidence-based parent training strategies to support healthy emotional and behavioral development. Attendees will leave with actionable tools to foster greater independence, improve daily functioning, and build stronger family relationships. Visit registration page. . Those registered will receive a link to the live event and a replay link after the event. Sponsored by ADDitude. Free"
   }
 ]

@@ -58,5 +58,12 @@
     "href": "https://icodeschool.com/columbia-md/camps/",
     "expires": "2026-11-03",
     "archived_on": "2026-11-04"
+  },
+  {
+    "text": "HoCo Veterans Day Parade: Sun Nov 8, Downtown Columbia",
+    "page_url": "event_veterans_day_celebration",
+    "expires": "2026-11-08",
+    "weight": 4,
+    "archived_on": "2026-11-09"
   }
 ]

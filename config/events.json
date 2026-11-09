@@ -1,27 +1,11 @@
 [
   {
-    "day": "08",
-    "month": "Nov",
-    "date": "2026-11-08",
-    "title": "Howard County Veterans Day Parade & Celebration",
-    "when": "9:30 AM \u2013 12:00 PM",
-    "featured": true,
-    "attachments": [
-      {
-        "title": "22611-hcvrtrran.JPG",
-        "href": "https://drive.google.com/file/d/1tgToFNVkXxSkdwuXzAmQ0bOY5yXssP5M"
-      }
-    ],
-    "description": "12th Annual Howard County Veterans Day Parade & Celebration Citizen Soldiers \u2013 The Cornerstone of Our Republic Join us in Downtown Columbia to honor the more than 20,000 veterans and their families\u2026",
-    "description_full": "12th Annual Howard County Veterans Day Parade & Celebration Citizen Soldiers \u2013 The Cornerstone of Our Republic Join us in Downtown Columbia to honor the more than 20,000 veterans and their families who call Howard County home. Presented by the Department of Community Resources and Services' Office of Veterans and Military Families and the Howard County Veterans Foundation. Come out, bring your family, and cheer on our veterans! Learn more: https://www.howardcountyveterans.org/parade/ Shared as a community event; not sponsored by the Thunder Hill PTA."
-  },
-  {
     "day": "09",
     "month": "Nov",
     "date": "2026-11-09",
     "title": "THES Reading Night \u2013 Calling All Thunderbirds!",
     "when": "5:30 \u2013 6:30 PM",
-    "featured": false,
+    "featured": true,
     "attachments": [
       {
         "title": "202611-ReadingNight.PNG",
@@ -118,5 +102,19 @@
     ],
     "description": "\ud83d\udc99\ud83d\udc9b GIVING TUESDAY \u2013 GIVE A LITTLE. MAKE A BIG DIFFERENCE! \ud83d\udc9b\ud83d\udc99 What does THES PTA do? We help create the experiences and memories that make elementary school special! From the excitement of Fall Fest\u2026",
     "description_full": "\ud83d\udc99\ud83d\udc9b GIVING TUESDAY \u2013 GIVE A LITTLE. MAKE A BIG DIFFERENCE! \ud83d\udc9b\ud83d\udc99 What does THES PTA do? We help create the experiences and memories that make elementary school special! From the excitement of Fall Fest and Trunk or Treat to the smiles at our Ice Cream Social, the magic of Winter Wonderland, and the celebration of cultures at International Night, THES PTA works throughout the year to bring meaningful experiences to our students and families. Through the support of our school community, we help provide opportunities for children to: \ud83c\udf83 Celebrate together at Fall Fest & Trunk or Treat \ud83c\udf66 Enjoy our Welcome Back Ice Cream Social \ud83c\uddfa\ud83c\uddf8 Recognize and honor our veterans \u2744\ufe0f Experience the magic of Winter Wonderland \ud83c\udf0e Explore cultures and traditions at International Night \ud83d\udd2c Discover, create, and learn at STEM Night \ud83d\udcbc Explore future possibilities at Career Day \ud83c\udfc3 Build memories and friendships at Field Day \ud83c\udf31 Celebrate our planet on Earth Day \ud83c\udf38 Enjoy community fun at Spring Fling \ud83c\udf89 Celebrate the end of another wonderful school year We also support our incredible teachers and staff through appreciation activities and provide opportunities that enrich the school experience for everyone. These are more than just events. They are opportunities for children to make friends, discover new interests, celebrate their school community, create lasting memories, and feel connected to something special. This Giving Tuesday, Tuesday, December 1, please consider making a donation to the Thunder Hill Elementary School PTA. Every contribution, big or small, helps us continue creating these wonderful experiences for our students, teachers, staff, and families. \ud83d\udc99 Your donation helps create the memories our children will carry with them long after elementary school! Give a Little. Make a BIG Difference! DONATE TODAY: https://1thes.givebacks.com/shop Thank you for supporting THES PTA and our Thunder Hill community!"
+  },
+  {
+    "day": "17",
+    "month": "Dec",
+    "date": "2026-12-17",
+    "title": "Restaurant Night Out \u2014 BurgerFi",
+    "when": "11:00 AM \u2013 9:00 PM \u00b7 BurgerFi, 6181 Old Dobbin Ln, Columbia, MD 21045, USA",
+    "featured": false,
+    "attachments": [
+      {
+        "title": "202612-r.JPGno-burguerfi",
+        "href": "https://drive.google.com/file/d/1iB4HXlV7rfYYQHfheA6WtImWBig7i2hf"
+      }
+    ]
   }
 ]

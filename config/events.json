@@ -1,27 +1,11 @@
 [
   {
-    "day": "09",
-    "month": "Nov",
-    "date": "2026-11-09",
-    "title": "THES Reading Night \u2013 Calling All Thunderbirds!",
-    "when": "5:30 \u2013 6:30 PM",
-    "featured": true,
-    "attachments": [
-      {
-        "title": "202611-ReadingNight.PNG",
-        "href": "https://drive.google.com/file/d/19_JsT12zjTN1zdS7dM6FzDmL1HgjDuC1"
-      }
-    ],
-    "description": "Join us for THES Reading Night! A fun and educational evening for Thunderbird families to explore reading, strengthen literacy skills, and celebrate the joy of books. Activities include: * Primary\u2026",
-    "description_full": "Join us for THES Reading Night! A fun and educational evening for Thunderbird families to explore reading, strengthen literacy skills, and celebrate the joy of books. Activities include: * Primary Grades: Discover UFLI and learn how it helps build strong foundational reading skills. * Intermediate Grades: Explore the joy of reading and participate in creating a Book Study in partnership with the Howard County Library. Come together as a Thunderbird community to inspire lifelong readers and help every student SOAR to success! We look forward to seeing our Thunderbird families there!"
-  },
-  {
     "day": "11",
     "month": "Nov",
     "date": "2026-11-11",
     "title": "THES Veteran Day Celebration",
     "when": "All Day",
-    "featured": false,
+    "featured": true,
     "attachments": [
       {
         "title": "202611-veteran-day.png",
@@ -114,6 +98,20 @@
       {
         "title": "202612-r.JPGno-burguerfi",
         "href": "https://drive.google.com/file/d/1iB4HXlV7rfYYQHfheA6WtImWBig7i2hf"
+      }
+    ]
+  },
+  {
+    "day": "12",
+    "month": "Jan",
+    "date": "2027-01-12",
+    "title": "Restaurant Night Out \u2014 Eataliano",
+    "when": "10:00 AM \u2013 9:30 PM \u00b7 Eataliano",
+    "featured": false,
+    "attachments": [
+      {
+        "title": "20270112-restaurant-night-eataliano.png",
+        "href": "https://drive.google.com/open?id=1k4Ut-CFcWBubadhllUi_wkVAaJOjwhaO"
       }
     ]
   }

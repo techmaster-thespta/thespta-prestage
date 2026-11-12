@@ -1,5 +1,11 @@
 [
   {
+    "text": "PTA Meeting tonight, 7 PM: tap to join on Google Meet",
+    "href": "https://meet.google.com/cfe-usdq-wmy",
+    "expires": "2026-11-12",
+    "weight": 6
+  },
+  {
     "text": "Giving Tuesday, Dec 1: give a little, make a big difference",
     "page_url": "event_giving_tuesday",
     "expires": "2026-12-01",

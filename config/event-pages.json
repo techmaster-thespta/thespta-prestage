@@ -217,5 +217,55 @@
     "register_href": "",
     "contact_name": "Natalie Miskimins",
     "contact_email": "president.thespta@gmail.com"
+  },
+  {
+    "slug": "pta-general-meeting",
+    "title": "THES PTA General Meeting: November 12, 2026",
+    "nav_label": "PTA Meeting Tonight",
+    "eyebrow": "Tonight, 7:00–8:00 PM on Google Meet",
+    "tagline": "Join us online tonight! Everyone is welcome: PTA members, THES parents and guardians, staff, and anyone interested.",
+    "summary": "The Thunder Hill Elementary PTA General Meeting is Thursday, November 12, 2026, 7–8 PM, online on Google Meet, for families in Columbia, Maryland (Howard County). Join at meet.google.com/cfe-usdq-wmy or by phone at +1 320-515-2100, PIN 736609624.",
+    "start": "2026-11-12T19:00",
+    "end": "2026-11-12T20:00",
+    "expires": "2026-11-12",
+    "location_name": "Online on Google Meet",
+    "online_href": "https://meet.google.com/cfe-usdq-wmy",
+    "about": [
+      "PTA meetings are a great way to stay informed, meet other families, and help make a difference in our Thunder Hill community. We'd love to see you, hear your ideas, and have you be part of all the wonderful things happening at THES!"
+    ],
+    "sections": [
+      {
+        "heading": "How to Join",
+        "items": [
+          "On a computer or phone: tap Join on Google Meet below (no account needed in most browsers)",
+          "By phone: call +1 320-515-2100 and enter PIN 736609624",
+          "Meeting link: meet.google.com/cfe-usdq-wmy"
+        ],
+        "button_label": "Join on Google Meet",
+        "button_href": "https://meet.google.com/cfe-usdq-wmy"
+      },
+      {
+        "heading": "On the Agenda",
+        "items": [
+          "Veterans Day celebration recap",
+          "Holiday Market",
+          "STEM Night",
+          "The Lion King Jr.",
+          "Winter Wonderland",
+          "Fundraising and staff appreciation",
+          "…and so much more!"
+        ]
+      },
+      {
+        "heading": "Help Wanted: International Night Chair",
+        "items": [
+          "We're looking for a Committee Chair for International Night on Thursday, April 29",
+          "Interested? Email president.thespta@gmail.com"
+        ]
+      }
+    ],
+    "register_href": "",
+    "contact_name": "Natalie Miskimins",
+    "contact_email": "president.thespta@gmail.com"
   }
 ]

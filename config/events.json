@@ -1,27 +1,11 @@
 [
   {
-    "day": "11",
-    "month": "Nov",
-    "date": "2026-11-11",
-    "title": "THES Veteran Day Celebration",
-    "when": "All Day",
-    "featured": true,
-    "attachments": [
-      {
-        "title": "202611-veteran-day.png",
-        "href": "https://drive.google.com/file/d/1jmTtrW-T-2BQLPrVujpWBhhBsjYabdA0"
-      }
-    ],
-    "description": "Thunder Hill Elementary School will celebrate and honor our veteran and military families on Wednesday, November 11, 2026. Families are invited to help us recognize veterans and military family\u2026",
-    "description_full": "Thunder Hill Elementary School will celebrate and honor our veteran and military families on Wednesday, November 11, 2026. Families are invited to help us recognize veterans and military family members through our Veterans Day slideshow and classroom visits. If you would like a family member included, please complete the Veterans/Military Submission Form by October 25. Please note: If you submitted your veteran\u2019s information last year, you do not need to submit it again. Questions? Contact meagan_lesinski@hcpss.org"
-  },
-  {
     "day": "12",
     "month": "Nov",
     "date": "2026-11-12",
     "title": "THES PTA General Meeting",
     "when": "7:00 \u2013 8:00 PM \u00b7 Online",
-    "featured": false,
+    "featured": true,
     "description": "Join us throughout the school year! PTA meetings are a great way to stay informed, meet other families, and help make a difference in our Thunder Hill community. Everyone is welcome."
   },
   {
@@ -114,5 +98,20 @@
         "href": "https://drive.google.com/open?id=1k4Ut-CFcWBubadhllUi_wkVAaJOjwhaO"
       }
     ]
+  },
+  {
+    "day": "26",
+    "month": "Jan",
+    "date": "2027-01-26",
+    "title": "Lion King Jr Performance",
+    "when": "7:00 \u2013 9:00 PM \u00b7 THES Cafeteria",
+    "featured": false,
+    "attachments": [
+      {
+        "title": "20270126-lion-king-jr-performance.png",
+        "href": "https://drive.google.com/open?id=1_6OmWTNrgNK7tP6Gci1LVhb4dlQej-_C"
+      }
+    ],
+    "description": "Disney's The Lion King JR \u2014 the culmination of Thunder Hill Elementary's after-school theatre program with the Columbia Center for Theatrical Arts (CCTA)."
   }
 ]

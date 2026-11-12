@@ -65,5 +65,11 @@
     "expires": "2026-11-08",
     "weight": 4,
     "archived_on": "2026-11-09"
+  },
+  {
+    "text": "Veterans Day celebration at THES Wed, Nov 11",
+    "page_url": "event_veterans_day_celebration",
+    "expires": "2026-11-11",
+    "archived_on": "2026-11-12"
   }
 ]

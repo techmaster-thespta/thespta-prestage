@@ -47,61 +47,6 @@
     "contact_email": "president.thespta@gmail.com"
   },
   {
-    "slug": "veterans-day-celebration",
-    "title": "THES Veterans Day Celebration 2026",
-    "nav_label": "Veterans Day",
-    "eyebrow": "Honoring Our Veterans",
-    "tagline": "Help us honor the veterans and military family members in our Thunder Hill community.",
-    "summary": "Thunder Hill Elementary School in Columbia, Maryland (Howard County) honors its veteran and military families on Wednesday, November 11, 2026, with a photo slideshow and classroom visits.",
-    "start": "2026-11-11",
-    "expires": "2026-11-11",
-    "location_name": "Thunder Hill Elementary School",
-    "flyer_filename": "events/veterans-day-2026.png",
-    "flyer_alt": "Veterans Day at THES flyer — Wednesday, November 11, 2026. THES will have a celebration for all veteran families, with a photo slideshow and classroom visits. To include a veteran or military family member, complete the Veterans/Military Submission form (QR code on the flyer) by October 25th. If you submitted your information last year, you do not need to submit it again. Questions: meagan_lesinski@hcpss.org.",
-    "about": [
-      "Thunder Hill Elementary School will celebrate and honor our veteran and military families on Wednesday, November 11, 2026.",
-      "Families are invited to help us recognize the veterans and military family members in our community through our Veterans Day slideshow and classroom visits."
-    ],
-    "sections": [
-      {
-        "heading": "How to Take Part",
-        "items": [
-          "Photo slideshow: honoring the veteran and military family members of our THES community",
-          "Classroom visit: veterans and military family members are welcome to visit classrooms, if available",
-          "Honor & celebrate: help us recognize the brave people in our THES community"
-        ]
-      },
-      {
-        "heading": "Submissions Closed",
-        "items": [
-          "The Veterans/Military Submission Form closed on October 25",
-          "Thank you to every family who shared a veteran or military family member"
-        ],
-        "note": "Questions? Contact Meagan Lesinski (details above)."
-      },
-      {
-        "heading": "Also This Week: Howard County Veterans Day Parade",
-        "items": [
-          "Sunday, November 8, 9:30 AM in Downtown Columbia",
-          "The 12th annual Howard County Veterans Parade & Celebration, presented by the Department of Community Resources and Services' Office of Veterans and Military Families and the Howard County Veterans Foundation",
-          "A chance to honor the more than 20,000 veterans and their families who call our community home"
-        ],
-        "note": "Come out, bring your family, and cheer on our veterans! This is a Howard County community event, not a THES PTA event.",
-        "button_label": "Learn More",
-        "button_href": "https://www.howardcountyveterans.org/parade/"
-      }
-    ],
-    "register_href": "",
-    "contact_name": "Meagan Lesinski",
-    "contact_email": "meagan_lesinski@hcpss.org",
-    "extra_flyers": [
-      {
-        "filename": "events/hoco-veterans-day-parade-2026.jpg",
-        "alt": "Howard County Veterans Foundation: 12th Annual Howard County Veterans Day Parade & Celebration. Citizen Soldiers, the cornerstone of our republic."
-      }
-    ]
-  },
-  {
     "slug": "giving-tuesday",
     "title": "THES PTA Giving Tuesday 2026",
     "nav_label": "Giving Tuesday",

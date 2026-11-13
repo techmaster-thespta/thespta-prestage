@@ -71,5 +71,12 @@
     "page_url": "event_veterans_day_celebration",
     "expires": "2026-11-11",
     "archived_on": "2026-11-12"
+  },
+  {
+    "text": "PTA Meeting tonight, 7 PM: tap to join on Google Meet",
+    "href": "https://meet.google.com/cfe-usdq-wmy",
+    "expires": "2026-11-12",
+    "weight": 6,
+    "archived_on": "2026-11-13"
   }
 ]

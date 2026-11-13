@@ -217,59 +217,5 @@
     "register_href": "",
     "contact_name": "Natalie Miskimins",
     "contact_email": "president.thespta@gmail.com"
-  },
-  {
-    "slug": "pta-general-meeting",
-    "title": "THES PTA General Meeting: November 12, 2026",
-    "nav_label": "PTA Meeting Tonight",
-    "eyebrow": "Tonight, 7:00–8:00 PM on Google Meet",
-    "tagline": "Join us online tonight! Everyone is welcome: PTA members, THES parents and guardians, staff, and anyone interested.",
-    "summary": "The Thunder Hill Elementary PTA General Meeting is Thursday, November 12, 2026, 7–8 PM, online on Google Meet, for families in Columbia, Maryland (Howard County). Join at meet.google.com/cfe-usdq-wmy or by phone at +1 320-515-2100, PIN 736609624.",
-    "start": "2026-11-12T19:00",
-    "end": "2026-11-12T20:00",
-    "expires": "2026-11-12",
-    "location_name": "Online on Google Meet",
-    "online_href": "https://meet.google.com/cfe-usdq-wmy",
-    "about": [
-      "Join the THES PTA for our November General Meeting! We invite all parents, guardians, teachers, staff, and community members to join us virtually to hear updates, learn about upcoming events and activities, and find out how you can get involved in supporting our Thunder Hill Elementary School community.",
-      "Your voice, ideas, and support make a difference! Whether you're a current PTA member or simply interested in learning more, everyone is welcome. We hope to see you there!"
-    ],
-    "sections": [
-      {
-        "heading": "How to Join",
-        "items": [
-          "On a computer or phone: tap Join on Google Meet below",
-          "By phone: call +1 320-515-2100 and enter PIN 736 609 624#",
-          "Meeting link: meet.google.com/cfe-usdq-wmy"
-        ],
-        "button_label": "Join on Google Meet",
-        "button_href": "https://meet.google.com/cfe-usdq-wmy",
-        "note": "More dial-in numbers: tel.meet/cfe-usdq-wmy?pin=6671049534216"
-      },
-      {
-        "heading": "On the Agenda",
-        "items": [
-          "Veterans Day celebration recap",
-          "Holiday Market",
-          "STEM Night",
-          "The Lion King Jr.",
-          "Winter Wonderland",
-          "Fundraising and staff appreciation",
-          "…and so much more!"
-        ]
-      },
-      {
-        "heading": "Help Wanted: International Night Chair",
-        "items": [
-          "We're looking for a Committee Chair for International Night on Thursday, April 29",
-          "Interested? Email president.thespta@gmail.com"
-        ]
-      }
-    ],
-    "register_href": "",
-    "contact_name": "Natalie Miskimins",
-    "contact_email": "president.thespta@gmail.com",
-    "flyer_filename": "events/pta-general-meeting-2026-11-12.jpg",
-    "flyer_alt": "THES PTA General Meeting: all are welcome and invited to attend! Join the THES PTA for our November General Meeting. We invite all parents, guardians, teachers, staff, and community members to join us virtually to hear updates, learn about upcoming events and activities, and find out how you can get involved. Thursday, November 12, 2026, 7:00–8:00 PM, virtual meeting via Google Meet. Join the meeting: https://meet.google.com/cfe-usdq-wmy. Join by phone: +1 320-515-2100, PIN 736 609 624#. Your voice, ideas, and support make a difference!"
   }
 ]

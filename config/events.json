@@ -1,28 +1,11 @@
 [
   {
-    "day": "12",
-    "month": "Nov",
-    "date": "2026-11-12",
-    "title": "THES PTA General Meeting",
-    "when": "7:00 \u2013 8:00 PM \u00b7 Online",
-    "featured": true,
-    "attachments": [
-      {
-        "title": "202611-PTA-General-Meeting.jpeg",
-        "href": "https://drive.google.com/file/d/1Dgdfe1Rm-eUUt9ICleNemSFrE_WICwYb"
-      }
-    ],
-    "meet_href": "https://meet.google.com/cfe-usdq-wmy",
-    "description": "Join us throughout the school year! PTA meetings are a great way to stay informed, meet other families, and help make a difference in our Thunder Hill community. Everyone is welcome. Join on Google\u2026",
-    "description_full": "Join us throughout the school year! PTA meetings are a great way to stay informed, meet other families, and help make a difference in our Thunder Hill community. Everyone is welcome. Join on Google Meet Or join by phone: +1 320-515-2100, PIN 736609624"
-  },
-  {
     "day": "16",
     "month": "Nov",
     "date": "2026-11-16",
     "title": "THES Book Fair",
     "when": "All Day",
-    "featured": false,
+    "featured": true,
     "attachments": [
       {
         "title": "202911-thes-bookfair9.PNG",
@@ -121,5 +104,19 @@
       }
     ],
     "description": "Disney's The Lion King JR \u2014 the culmination of Thunder Hill Elementary's after-school theatre program with the Columbia Center for Theatrical Arts (CCTA)."
+  },
+  {
+    "day": "12",
+    "month": "Feb",
+    "date": "2027-02-12",
+    "title": "Winter Pastry Fundraiser",
+    "when": "All Day",
+    "featured": false,
+    "attachments": [
+      {
+        "title": "20270212-winter-pastry-fundraiser.png",
+        "href": "https://drive.google.com/open?id=1ioApDY5OlEN8-ntp0iFWyjUFdfw0jNGx"
+      }
+    ]
   }
 ]

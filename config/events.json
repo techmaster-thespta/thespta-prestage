@@ -32,6 +32,22 @@
     "description_full": "\ud83c\udf2f Chipotle Restaurant Night Out \u2013 Support Thunder Hill Elementary PTA! Take a break from cooking and support our school! Join us for a delicious Chipotle meal while helping raise funds for Thunder Hill Elementary PTA programs and activities. How to Participate: 1. Order through the Chipotle app or Chipotle.com. 2. Select Pickup at the participating Chipotle location. 3. Add your favorite meals to your order. 4. At checkout, enter the fundraiser code in the \u201cEnter a Promo Code\u201d field and click Apply. 5. Complete your purchase and pick up your order during the scheduled fundraiser hours. Important: Online orders must be placed through Chipotle\u2019s app or website. Delivery orders and third-party apps do not qualify. Your cart will show \u201cFundraiser -$0.01\u201d when the code is successfully applied. \u2764\ufe0f Every qualifying order helps support our students, teachers, and school community! Thank you for supporting THES PTA!"
   },
   {
+    "day": "20",
+    "month": "Nov",
+    "date": "2026-11-20",
+    "title": "Coffee & Conversation with THES Administration",
+    "when": "8:30 \u2013 9:10 AM \u00b7 Thunder Hill Elementary School, 9357 Mellenbrook Rd, Columbia, MD 21045, USA",
+    "featured": false,
+    "attachments": [
+      {
+        "title": "20261120-coffeeAndConversationJPG",
+        "href": "https://drive.google.com/file/d/1F9uHNvqbWo4gjtHTCYVyFU3qPnmkKhw7"
+      }
+    ],
+    "description": "Join the Thunder Hill Elementary School administration team for Coffee & Conversation! Enjoy a casual morning of coffee and conversation with our school administrators. This is a great opportunity to\u2026",
+    "description_full": "Join the Thunder Hill Elementary School administration team for Coffee & Conversation! Enjoy a casual morning of coffee and conversation with our school administrators. This is a great opportunity to connect, ask questions, share ideas, and learn more about what\u2019s happening at Thunder Hill Elementary School. Childcare will be provided for Thunderbirds in Kindergarten through 5th grade. Please RSVP using the QR code on the event flyer. We look forward to seeing you there! No"
+  },
+  {
     "day": "21",
     "month": "Nov",
     "date": "2026-11-21",
@@ -105,20 +121,5 @@
         "href": "https://drive.google.com/file/d/19dLv3JU60asIAfhMOA5U7CsHW8vw-E6r"
       }
     ]
-  },
-  {
-    "day": "26",
-    "month": "Jan",
-    "date": "2027-01-26",
-    "title": "Lion King Jr Performance",
-    "when": "7:00 \u2013 9:00 PM \u00b7 THES Cafeteria",
-    "featured": false,
-    "attachments": [
-      {
-        "title": "20270126-lion-king-jr-performance.png",
-        "href": "https://drive.google.com/open?id=1_6OmWTNrgNK7tP6Gci1LVhb4dlQej-_C"
-      }
-    ],
-    "description": "Disney's The Lion King JR \u2014 the culmination of Thunder Hill Elementary's after-school theatre program with the Columbia Center for Theatrical Arts (CCTA)."
   }
 ]

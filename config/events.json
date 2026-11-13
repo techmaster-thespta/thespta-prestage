@@ -47,6 +47,22 @@
     "description": "Join us for a festive day of shopping, community, and small businesses!"
   },
   {
+    "day": "24",
+    "month": "Nov",
+    "date": "2026-11-24",
+    "title": "Pick up Day for Joe Corbi & Believe Kids",
+    "when": "3:00 \u2013 6:00 PM",
+    "featured": false,
+    "attachments": [
+      {
+        "title": "2026-11-JoeCorbi-Pickup.png",
+        "href": "https://drive.google.com/file/d/19fPikg-jMP6uF1Bu9u4xV45RAsHtb6QG"
+      }
+    ],
+    "description": "Joe Corbi\u2019s & Believe Kids Fundraiser \u2013 Pickup Day! Thank you, THES families, for supporting our PTA fundraiser! Families who placed orders can pick up their items on Tuesday, November 24, from\u2026",
+    "description_full": "Joe Corbi\u2019s & Believe Kids Fundraiser \u2013 Pickup Day! Thank you, THES families, for supporting our PTA fundraiser! Families who placed orders can pick up their items on Tuesday, November 24, from 3:00\u20136:00 PM at the Thunder Hill Elementary School Gym. Please enter through the gym doors, where PTA volunteers will be available to greet you and assist with order pickup. Questions? Contact Natalie Miskimins at president.thespta@gmail.com. Thank you for helping support our students, staff, and school community!"
+  },
+  {
     "day": "01",
     "month": "Dec",
     "date": "2026-12-01",
@@ -104,19 +120,5 @@
       }
     ],
     "description": "Disney's The Lion King JR \u2014 the culmination of Thunder Hill Elementary's after-school theatre program with the Columbia Center for Theatrical Arts (CCTA)."
-  },
-  {
-    "day": "12",
-    "month": "Feb",
-    "date": "2027-02-12",
-    "title": "Winter Pastry Fundraiser",
-    "when": "All Day",
-    "featured": false,
-    "attachments": [
-      {
-        "title": "20270212-winter-pastry-fundraiser.png",
-        "href": "https://drive.google.com/open?id=1ioApDY5OlEN8-ntp0iFWyjUFdfw0jNGx"
-      }
-    ]
   }
 ]

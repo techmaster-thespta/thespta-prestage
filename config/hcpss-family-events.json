@@ -1,22 +1,11 @@
 [
   {
-    "day": "14",
-    "month": "Nov",
-    "date": "2026-11-14",
-    "title": "UNDERSTANDING ABLE ACCOUNTS & SPECIAL NEEDS TRUST",
-    "when": "6:00 \u2013 7:00 PM",
-    "featured": true,
-    "signup_href": "https://zoom.us/meeting/register/DiYMS_odRb270p8vAMR8bA#/registration",
-    "description": "UNDERSTANDING ABLE ACCOUNTS &amp; SPECIAL NEEDS TRUSTS Saturday, November 14, 2026 6:00 p.m. Virtual Event How can ABLE accounts and special needs trusts help you plan for your loved one\u2019s future?\u2026",
-    "description_full": "UNDERSTANDING ABLE ACCOUNTS &amp; SPECIAL NEEDS TRUSTS Saturday, November 14, 2026 6:00 p.m. Virtual Event How can ABLE accounts and special needs trusts help you plan for your loved one\u2019s future? Join Donald T. Brown, ChFC, ChSNC, of Special Needs Funding Coach to discuss: \u2022 Protecting government benefits \u2022 Eligibility requirements and guidelines for use \u2022 Funding options This webinar explains these planning tools in a practical, easy to understand way. Questions are welcome. Visit registration page. Free"
-  },
-  {
     "day": "16",
     "month": "Nov",
     "date": "2026-11-16",
     "title": "WHEN ADVOCACY BECOMES PARENTHOOD",
     "when": "6:00 \u2013 7:00 PM",
-    "featured": false,
+    "featured": true,
     "signup_href": "https://secure.qgiv.com/for/downsyndromeassocmaryland/event/annualeducationseries/",
     "description": "WHEN ADVOCACY BECOMES PARENTHOOD Monday, November 16, 2026 6:00 p.m. Virtual Event When Advocacy Becomes Parenthood is a practical conversation about navigating special education from a parent\u2019s\u2026",
     "description_full": "WHEN ADVOCACY BECOMES PARENTHOOD Monday, November 16, 2026 6:00 p.m. Virtual Event When Advocacy Becomes Parenthood is a practical conversation about navigating special education from a parent\u2019s perspective. Anthony Tilghman will share strategies families can use to communicate concerns clearly, document meetings and follow-up, prepare for school conversations, and build stronger communication between home and school while keeping the child\u2019s needs at the center. Mr. Tilghman is a Maryland parent advocate, author, nonprofit founder, and former municipal commissioner whose work centers on education equity, disability inclusion, youth development, and family engagement. As the father of a young daughter with autism, he combines lived experience with public service and community leadership. Visit registration page. Sponsored by the Down Syndrome Association of Maryland, this event is open to any family of a child with a developmental delay or disability. Free"
@@ -31,5 +20,16 @@
     "signup_href": "https://register.gotowebinar.com/register/570317139881253211",
     "description": "MARYLAND ABLE - A FINANCIAL TOOL TO PROMOTE HEALTH, INDEPENDENCE, AND FINANCIAL STABILITY Tuesday, November 17, 2026 \ufeff10:00-11:15 a.m. Virtual Event For people with disabilities who receive\u2026",
     "description_full": "MARYLAND ABLE - A FINANCIAL TOOL TO PROMOTE HEALTH, INDEPENDENCE, AND FINANCIAL STABILITY Tuesday, November 17, 2026 \ufeff10:00-11:15 a.m. Virtual Event For people with disabilities who receive means-tested benefits such as SSI and Medicaid, saving for the future can be challenging without potentially affecting important benefits. ABLE accounts provide an opportunity for eligible individuals to save, invest, and pay for qualified disability expenses while maintaining greater financial independence. Join Kelly Nelson, Outreach and Communications Manager for Maryland ABLE, for a practical overview of how ABLE accounts work. Kelly will discuss eligibility, opening and managing an account, qualified disability expenses, tax-advantaged savings and investment options, online gifting, and tools that make accessing funds easier. Whether you are an individual with a disability, family member, caregiver, or professional advisor, this presentation will provide a clearer understanding of how an ABLE account can support greater financial security and independence.Visit registration page. For questions, please contace Jeff Stauffer at jeff@elvilleassociates.com or 443-832-2910. Sponsored by Elville and Associates and Maryland ABLE. Free"
+  },
+  {
+    "day": "17",
+    "month": "Nov",
+    "date": "2026-11-17",
+    "title": "PARENT PANEL: SELF-DIRECTED SERVICES",
+    "when": "6:00 \u2013 7:00 PM",
+    "featured": false,
+    "meet_href": "https://meet.google.com/fqy-fsxe-bsr",
+    "description": "PARENT PANEL: SELF-DIRECTED SERVICES Tuesday, November 17, 2026 6-7:00 p.m. Virtual Event Parents and caregivers of students exiting with a Maryland Certificate of Program Completion will have an\u2026",
+    "description_full": "PARENT PANEL: SELF-DIRECTED SERVICES Tuesday, November 17, 2026 6-7:00 p.m. Virtual Event Parents and caregivers of students exiting with a Maryland Certificate of Program Completion will have an opportunity to hear from former HCPSS parents about topics including self-direction, experiences with adult agencies, and other transition-related areas. Visit meeting link. Or dial: 9560 PIN: -914-(US) +1 727754 464 593# For questions, please contact Meghan Smallwood at meghan_smallwood@hcpss.org or (443) 355-7733. This event is sponsored by HCPSS and aligns with the questions about the school system offering training about special education issues and providing information on agencies that can assist in the transition from school on the MDSE parent survey that is sent to families of students with an IEP or IFSP annually. Free"
   }
 ]

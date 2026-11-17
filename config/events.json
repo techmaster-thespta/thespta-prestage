@@ -1,43 +1,11 @@
 [
   {
-    "day": "16",
-    "month": "Nov",
-    "date": "2026-11-16",
-    "title": "THES American Education Week",
-    "when": "All Day \u00b7 Thunder Hill Elementary School, 9357 Mellenbrook Rd, Columbia, MD 21045, USA",
-    "featured": true,
-    "attachments": [
-      {
-        "title": "2002611-american-education-week.png",
-        "href": "https://drive.google.com/file/d/1VaZenMqr0WjVfCLbQ91fQQj43C0FN2fA"
-      }
-    ],
-    "description": "American Education Week | November 16\u201320, 2026 Join Thunder Hill Elementary School as we celebrate American Education Week! Families are invited to visit their child\u2019s classroom during designated\u2026",
-    "description_full": "American Education Week | November 16\u201320, 2026 Join Thunder Hill Elementary School as we celebrate American Education Week! Families are invited to visit their child\u2019s classroom during designated times to experience learning in action. Classroom Visit Schedule: * Monday, Nov. 16: Grade 3 Field Trip & Book Fair Begins * Tuesday, Nov. 17: First Grade (9:45\u201310:55 AM), Second Grade (10:00\u201311:00 AM), Kindergarten (11:25 AM\u201312:10 PM) * Wednesday, Nov. 18: Educational Support Professionals Day * Thursday, Nov. 19: Fifth Grade (9:25\u201310:25 AM), Third Grade (10:45\u201311:30 AM), Kindergarten (1:40\u20132:40 PM), Fourth Grade (2:10\u20133:20 PM) * Friday, Nov. 20: Coffee & Conversation with the THES Administrative Team (8:30\u20139:10 AM). Childcare available for Thunderbirds in Kindergarten through 5th Grade. RSVP requested. Please bring a canned good to support our food drive! Important: Younger siblings are not permitted during classroom visits. Visits are not allowed during lunch or recess. We look forward to welcoming our THES families!"
-  },
-  {
-    "day": "16",
-    "month": "Nov",
-    "date": "2026-11-16",
-    "title": "THES Book Fair",
-    "when": "All Day",
-    "featured": false,
-    "attachments": [
-      {
-        "title": "202911-thes-bookfair9.PNG",
-        "href": "https://drive.google.com/file/d/17tM1M2GTOWuLA9TTpkjc8muAk6bViVCr"
-      }
-    ],
-    "description": "Attention Parents! The highly anticipated THES Fall Book Fair is coming up on November 16\u201324! It is the perfect opportunity to stock up on new books and fuel your child's love for reading. To\u2026",
-    "description_full": "Attention Parents! The highly anticipated THES Fall Book Fair is coming up on November 16\u201324! It is the perfect opportunity to stock up on new books and fuel your child's love for reading. To celebrate, we are kicking off our monthly library challenge to help your child earn free books! Here is how to participate: 1. Snap a photo of your child reading at home, in a cozy spot, or on an adventure. 2. Send the picture to the library: jjordan1@hcpss.org 3. Your child will instantly earn one \"Camper Cash\" dollar to spend directly at the Book Fair! Mark your calendars for Nov. 16\u201324, get those cameras ready, and happy reading!"
-  },
-  {
     "day": "18",
     "month": "Nov",
     "date": "2026-11-18",
     "title": "Restaurant Night Out \u2014 Chipotle",
     "when": "5:00 \u2013 9:00 PM \u00b7 Chipotle Mexican Grill, 6181 Old Dobbin Ln, Columbia, MD 21045, USA",
-    "featured": false,
+    "featured": true,
     "attachments": [
       {
         "title": "202611-chipotle-RNO.JPG",
@@ -125,5 +93,33 @@
     ],
     "description": "\ud83d\udc99\ud83d\udc9b GIVING TUESDAY \u2013 GIVE A LITTLE. MAKE A BIG DIFFERENCE! \ud83d\udc9b\ud83d\udc99 What does THES PTA do? We help create the experiences and memories that make elementary school special! From the excitement of Fall Fest\u2026",
     "description_full": "\ud83d\udc99\ud83d\udc9b GIVING TUESDAY \u2013 GIVE A LITTLE. MAKE A BIG DIFFERENCE! \ud83d\udc9b\ud83d\udc99 What does THES PTA do? We help create the experiences and memories that make elementary school special! From the excitement of Fall Fest and Trunk or Treat to the smiles at our Ice Cream Social, the magic of Winter Wonderland, and the celebration of cultures at International Night, THES PTA works throughout the year to bring meaningful experiences to our students and families. Through the support of our school community, we help provide opportunities for children to: \ud83c\udf83 Celebrate together at Fall Fest & Trunk or Treat \ud83c\udf66 Enjoy our Welcome Back Ice Cream Social \ud83c\uddfa\ud83c\uddf8 Recognize and honor our veterans \u2744\ufe0f Experience the magic of Winter Wonderland \ud83c\udf0e Explore cultures and traditions at International Night \ud83d\udd2c Discover, create, and learn at STEM Night \ud83d\udcbc Explore future possibilities at Career Day \ud83c\udfc3 Build memories and friendships at Field Day \ud83c\udf31 Celebrate our planet on Earth Day \ud83c\udf38 Enjoy community fun at Spring Fling \ud83c\udf89 Celebrate the end of another wonderful school year We also support our incredible teachers and staff through appreciation activities and provide opportunities that enrich the school experience for everyone. These are more than just events. They are opportunities for children to make friends, discover new interests, celebrate their school community, create lasting memories, and feel connected to something special. This Giving Tuesday, Tuesday, December 1, please consider making a donation to the Thunder Hill Elementary School PTA. Every contribution, big or small, helps us continue creating these wonderful experiences for our students, teachers, staff, and families. \ud83d\udc99 Your donation helps create the memories our children will carry with them long after elementary school! Give a Little. Make a BIG Difference! DONATE TODAY: https://1thes.givebacks.com/shop Thank you for supporting THES PTA and our Thunder Hill community!"
+  },
+  {
+    "day": "17",
+    "month": "Dec",
+    "date": "2026-12-17",
+    "title": "Restaurant Night Out \u2014 BurgerFi",
+    "when": "11:00 AM \u2013 9:00 PM \u00b7 BurgerFi, 6181 Old Dobbin Ln, Columbia, MD 21045, USA",
+    "featured": false,
+    "attachments": [
+      {
+        "title": "202612-r.JPGno-burguerfi",
+        "href": "https://drive.google.com/file/d/1iB4HXlV7rfYYQHfheA6WtImWBig7i2hf"
+      }
+    ]
+  },
+  {
+    "day": "12",
+    "month": "Jan",
+    "date": "2027-01-12",
+    "title": "Restaurant Night Out \u2014 Eataliano",
+    "when": "10:00 AM \u2013 9:30 PM \u00b7 Eataliano",
+    "featured": false,
+    "attachments": [
+      {
+        "title": "2026-eataliano-rno.jpeg",
+        "href": "https://drive.google.com/file/d/19dLv3JU60asIAfhMOA5U7CsHW8vw-E6r"
+      }
+    ]
   }
 ]

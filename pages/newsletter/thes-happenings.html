@@ -636,8 +636,6 @@
   .thes .thes__vmap-booth.thes__vmap-booth--hall { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2px; padding: 4px 2px; min-height: 54px; background: var(--gold-tint); border-color: var(--yellow-text); line-height: 1.1; }
   .thes__vmap-booth--hall b { font-size: clamp(0.68rem, 2.4vw, 0.85rem); }
   .thes__vmap-booth--hall span { font-size: clamp(0.55rem, 2vw, 0.72rem); font-weight: 600; overflow-wrap: anywhere; }
-  .thes__vmap-group .thes__vmap-name { flex: 0 1 auto; }
-  .thes__vmap-spot { flex: none; font-size: 0.78rem; font-weight: 700; color: #fff; background: var(--navy); border-radius: 6px; padding: 2px 8px; white-space: nowrap; }
   .thes__vmap-detail { max-width: 760px; margin: 12px auto 0; padding: 12px 14px; border-radius: 10px; background: #fff; border: 1px solid var(--border); color: var(--text-muted); text-align: center; }
   .thes__vmap-detail.is-on { color: var(--navy); font-weight: 700; border-color: var(--navy); }
   .thes__vmap-legend { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; margin: 12px auto 24px; font-size: 0.85rem; color: var(--text-muted); }
@@ -653,8 +651,11 @@
   .thes__vmap-item { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; padding: 8px 10px; border: 1px solid var(--border); border-radius: 8px; background: #fff; }
   .thes__vmap-item[data-booth] { cursor: pointer; }
   .thes__vmap-item.is-selected { border-color: var(--navy); background: var(--gold-tint); }
-  .thes__vmap-num { flex: none; min-width: 30px; height: 30px; display: inline-flex; align-items: center; justify-content: center; border-radius: 6px; background: var(--navy); color: #fff; font-weight: 700; font-size: 0.85rem; }
+  .thes__vmap-num { flex: none; width: 2.6em; height: 30px; display: inline-flex; align-items: center; justify-content: center; border-radius: 6px; background: var(--navy); color: #fff; font-weight: 700; font-size: 0.85rem; font-variant-numeric: tabular-nums; }
   .thes__vmap-num--none { background: var(--teal-tint); color: var(--teal); }
+  .thes__vmap-body { flex: 1 1 0; min-width: 0; display: flex; flex-direction: column; gap: 3px; }
+  .thes__vmap-tags { display: flex; flex-wrap: wrap; gap: 4px; }
+  .thes__vmap-tags:empty { display: none; }
   .thes__vmap-name { flex: 1 1 0; min-width: 0; font-weight: 600; color: var(--navy); }
   .thes__vmap-tag { font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; padding: 2px 8px; border-radius: 999px; background: var(--bg-tint); color: var(--text-muted); }
   .thes__vmap-tag--food { background: var(--coral-tint); color: var(--coral); }

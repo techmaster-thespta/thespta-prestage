@@ -800,6 +800,12 @@ def event_page_name(event):
     return f"{EVENT_PAGES_DIR}/{event['slug']}.html"
 
 
+def vendor_map_page_name(event):
+    """The standalone vendor map page for an event with `vendor_map` set —
+    a subpage of the event's own page, shareable by link / QR code."""
+    return f"{EVENT_PAGES_DIR}/{event['slug']}/vendor-map.html"
+
+
 def format_event_time(t):
     hour = t.hour % 12 or 12
     suffix = "AM" if t.hour < 12 else "PM"
@@ -1049,6 +1055,52 @@ def render_vendor_map(filename):
     })
 
 
+def render_vendor_map_link(event):
+    """On an event page with `vendor_map` set: a short section with a big
+    button to the standalone map page (vendor_map_page_name). Relative
+    link — the event page lives at events/<slug>.html, the map at
+    events/<slug>/vendor-map.html."""
+    if not event.get("vendor_map"):
+        return ""
+    href = f"{event['slug']}/vendor-map.html"
+    return (
+        '  <section class="thes__section" id="vendor-map">\n'
+        '    <div class="thes__wrap" style="text-align:center;">\n'
+        '      <div class="thes__section-head"><h2>Vendor Map</h2>'
+        "<p>Find every vendor in the gym, the hallway, and around the school. "
+        "Tap a booth or search by name, right from your phone.</p></div>\n"
+        f'      <a class="thes__btn thes__btn--teal" href="{href}">Open the Vendor Map &rarr;</a>\n'
+        "    </div>\n"
+        "  </section>"
+    )
+
+
+def render_vendor_map_page(event, site, context):
+    """The standalone vendor map page (vendor_map_page_name): page header,
+    the interactive map (render_vendor_map), and a link back to the event
+    page. Its breadcrumb trails Events / <event> / Vendor Map."""
+    esc = html.escape
+    name = event.get("nav_label") or event["title"]
+    event_href = f"../{event['slug']}.html"
+    breadcrumb = (
+        '<nav class="thes__breadcrumb" aria-label="Breadcrumb">'
+        f'<a href="{context["page_urls.events"]}">Events</a><span aria-hidden="true"> / </span>'
+        f'<a href="{event_href}">{esc(name)}</a><span aria-hidden="true"> / </span>'
+        '<span aria-current="page">Vendor Map</span></nav>'
+    )
+    tmpl = (TEMPLATES / "vendor-map-page.html.tmpl").read_text()
+    return render(tmpl, {
+        **context,
+        "VMAP_BREADCRUMB": breadcrumb,
+        "VMAP_EYEBROW": esc(format_event_when(event)),
+        "VMAP_PAGE_TITLE": colorize_title_words(esc(f"{name} Vendor Map")),
+        "VMAP_TAGLINE": esc(f"{event.get('location_name') or site.get('school_name', '')}"),
+        "VMAP_SECTION": render_vendor_map(event.get("vendor_map")),
+        "VMAP_EVENT_HREF": event_href,
+        "VMAP_EVENT_NAME": esc(name),
+    })
+
+
 def render_event_page(event, site, context):
     """One opt-in event page's body — the same shared template for every
     entry in config/event-pages.json, filled in from that entry."""
@@ -1151,7 +1203,7 @@ def render_event_page(event, site, context):
         "EVENT_ABOUT": about,
         "EVENT_SECTIONS": "\n".join(section_cards),
         "EVENT_FLYER": flyer,
-        "EVENT_VENDOR_MAP": render_vendor_map(event.get("vendor_map")),
+        "EVENT_VENDOR_MAP": render_vendor_map_link(event),
     })
 
 
@@ -2466,13 +2518,16 @@ def main():
         (str(p.relative_to(TEMPLATES / "pages")).removesuffix(".tmpl"), p, None) for p in page_templates
     ]
     page_jobs += [(event_page_name(e), TEMPLATES / "event-page.html.tmpl", e) for e in event_pages]
+    page_jobs += [
+        (vendor_map_page_name(e), TEMPLATES / "vendor-map-page.html.tmpl", e) for e in event_pages if e.get("vendor_map")
+    ]
 
     PAGES_OUT.mkdir(exist_ok=True)
     # pages/events/ holds nothing but generated featured-event pages, so
     # it's cleared on every build — otherwise an expired/archived event's
     # old HTML would linger in pages/ and keep getting deployed (both
     # workflows copy pages/ wholesale into the site).
-    for stale in (PAGES_OUT / EVENT_PAGES_DIR).glob("*.html"):
+    for stale in [*(PAGES_OUT / EVENT_PAGES_DIR).glob("*.html"), *(PAGES_OUT / EVENT_PAGES_DIR).glob("*/*.html")]:
         stale.unlink()
     context_by_depth = {}
     built_page_names = []
@@ -2545,7 +2600,10 @@ def main():
         page_context = context
         if page_name in PAGE_TITLES:
             page_context = {**context, "PAGE_TITLE": colorize_title_words(PAGE_TITLES[page_name])}
-        if event_page:
+        is_vendor_map_page = tmpl_path.name == "vendor-map-page.html.tmpl"
+        if is_vendor_map_page:
+            text = render_vendor_map_page(event_page, site, context)
+        elif event_page:
             text = render_event_page(event_page, site, context)
         else:
             text = render(tmpl_path.read_text(), page_context)
@@ -2583,16 +2641,20 @@ def main():
         # parent directories — "get-involved/committees.html" should say
         # "Committees", not "Get-Involved/Committees".
         page_jsonld = organization_jsonld
-        if event_page:
+        if event_page and not is_vendor_map_page:
             page_jsonld += build_event_jsonld(event_page, site)
         if page_name == "sponsors.html":
             page_jsonld += build_sponsors_jsonld(load_json("sponsors.json", default=[]), site)
         document_title = build_document_title(page_name, site, nav_labels, event_page)
+        if is_vendor_map_page:
+            document_title = html.escape(f'Vendor Map · {event_page["title"]} | {site.get("org_name", "")}')
         analytics_snippet = build_analytics_snippet(context.get("google_analytics_id", ""))
         analytics_snippet += build_umami_snippet(context.get("umami_website_id", ""))
         page_description = PAGE_DESCRIPTIONS.get(page_name, PAGE_DESCRIPTIONS["index.html"])
         if event_page:
             page_description = html.escape(event_page["summary"])
+        if is_vendor_map_page:
+            page_description = html.escape(f'Interactive vendor map for the {event_page["title"]}: find every booth and vendor by name.')
         if page_name == "sponsors.html":
             page_description = sponsors_page_description(load_json("sponsors.json", default=[]))
         canonical_url = f'https://{site["custom_domain"]}/{"" if page_name == "index.html" else page_name}'

@@ -70,9 +70,11 @@ Location defaults to the school's address from `config/site.json`;
 override with `address_line1`/`address_line2` for an off-site event.
 `register_href`, when set, adds a "Register as a Vendor" button.
 **Vendor map** (e.g. the Holiday Market): set `"vendor_map":
-"vendor-maps/<file>.json"` on the entry to show a phone-friendly,
-tappable, searchable booth map on the page (`render_vendor_map` in
-`src/build.py`). The data file under `config/vendor-maps/` holds every
+"vendor-maps/<file>.json"` on the entry to get a phone-friendly,
+tappable, searchable booth map on its own subpage,
+`events/<slug>/vendor-map.html` (shareable by link / QR code), with an
+"Open the Vendor Map" button on the event page (`render_vendor_map`,
+`render_vendor_map_page` in `src/build.py`). The data file under `config/vendor-maps/` holds every
 booth's `number`, `name`, `tags` (food / children / outlet) and its
 `col`/`row` on the gym grid, plus `areas` (hallway, cafeteria, ...).
 **When vendors move, edit only that file:** change the `name`/`tags` on

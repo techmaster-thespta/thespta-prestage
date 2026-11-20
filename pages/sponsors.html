@@ -314,6 +314,10 @@
   @media (max-width: 699px) {
     .thes__pagehead-media { height: clamp(140px, 42vw, 220px); }
   }
+  /* A text-only page header (no photo), e.g. the vendor map page, which
+     people open from a QR code and want to reach the map right away. */
+  .thes__pagehead.thes__pagehead--compact { display: block; aspect-ratio: auto; max-width: 1120px; }
+  .thes__pagehead--compact .thes__pagehead-text { padding-bottom: 0; }
 
   /* ---- Buttons ---- */
   .thes__btn {

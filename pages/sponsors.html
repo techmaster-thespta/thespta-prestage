@@ -616,11 +616,11 @@
   .thes__vmap-tools { display: grid; gap: 10px; margin: 0 auto 14px; max-width: 760px; }
   .thes .thes__vmap-search { width: 100%; font: inherit; padding: 12px 14px; border: 1px solid var(--border); border-radius: 10px; background: #fff; color: var(--text); }
   .thes__vmap-chips { display: flex; flex-wrap: wrap; gap: 8px; }
-  /* On phones the category chips sit in one swipeable row so the map stays near the top. */
+  /* On phones the filter chips wrap into compact, centered bubbles that
+     all fit on one screen; no sideways swiping. */
   @media (max-width: 699px) {
-    .thes__vmap-chips { flex-wrap: nowrap; overflow-x: auto; padding-bottom: 4px; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
-    .thes__vmap-chips::-webkit-scrollbar { display: none; }
-    .thes .thes__vmap-chip { flex: none; white-space: nowrap; }
+    .thes__vmap-chips { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; }
+    .thes .thes__vmap-chips .thes__vmap-chip { min-width: 0; font-size: 0.78rem; padding: 6px 4px; line-height: 1.15; min-height: 38px; white-space: normal; }
   }
   .thes .thes__vmap-chip { font: inherit; font-size: 0.85rem; font-weight: 700; padding: 6px 14px; border-radius: 999px; border: 1px solid var(--border); background: #fff; color: var(--navy); cursor: pointer; }
   .thes .thes__vmap-chip.is-on { background: var(--navy); border-color: var(--navy); color: #fff; }

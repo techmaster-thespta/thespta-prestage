@@ -661,5 +661,13 @@
         "instagram": "https://www.instagram.com/tams_gems1619"
       }
     }
-  ]
+  ],
+  "category_chips": {
+    "Food & Treats": "Food",
+    "Jewelry & Accessories": "Jewelry",
+    "Handmade Crafts & Gifts": "Handmade",
+    "Kids & Activities": "Kids",
+    "Beauty & Wellness": "Beauty",
+    "Family Services": "Services"
+  }
 }

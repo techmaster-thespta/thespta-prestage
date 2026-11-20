@@ -1016,6 +1016,8 @@ def vendor_filter_attrs(vendor):
         tags.append(vendor_category_slug(vendor["category"]))
     if "food" in tags and vendor.get("category") != "Food & Treats":
         tags.append(vendor_category_slug("Food & Treats"))  # food booths without a response still count
+    if "children" in tags and vendor.get("category") != "Kids & Activities":
+        tags.append(vendor_category_slug("Kids & Activities"))  # children's booths count under Kids too
     words = " ".join([vendor["name"], vendor.get("category", ""), vendor.get("about", ""),
                       *[VENDOR_TAG_LABELS.get(t, t) for t in vendor.get("tags", [])]]).lower()
     return f'data-tags="{esc(" ".join(tags))}" data-search="{esc(words)}"'
@@ -1027,7 +1029,9 @@ def vendor_chips_html(data, extra=()):
     used = {v.get("category") for v in [*data.get("booths", []), *data.get("unassigned", [])]}
     cats = [c for c in data.get("categories", []) if c in used]
     chips = ['<button type="button" class="thes__vmap-chip is-on" data-filter="">All</button>']
-    chips += [f'<button type="button" class="thes__vmap-chip" data-filter="{vendor_category_slug(c)}">{esc(c)}</button>' for c in cats]
+    short = data.get("category_chips", {})  # short button labels, so every chip fits on one phone screen
+    chips += [f'<button type="button" class="thes__vmap-chip" data-filter="{vendor_category_slug(c)}" '
+              f'aria-label="{esc(c)}">{esc(short.get(c, c))}</button>' for c in cats]
     chips += [f'<button type="button" class="thes__vmap-chip" data-filter="{esc(f)}">{esc(label)}</button>' for f, label in extra]
     return "\n          ".join(chips)
 
@@ -1136,7 +1140,7 @@ def render_vendor_map(filename):
     return render(tmpl, {
         "VMAP_TITLE": esc(data.get("title", "Vendor Map")),
         "VMAP_NOTE": esc(data.get("note", "")) + esc(updated),
-        "VMAP_CHIPS": vendor_chips_html(data, [("children", "Children's"), ("pta sponsor", "PTA & Sponsors")]),
+        "VMAP_CHIPS": vendor_chips_html(data, [("pta sponsor", "PTA & Sponsors")]),
         "VMAP_COLS": str(cols),
         "VMAP_ROWS": str(rows),
         "VMAP_CELLS": "\n        ".join(cells),

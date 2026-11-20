@@ -1055,6 +1055,66 @@ def render_vendor_map(filename):
     })
 
 
+def render_vendor_list(filename):
+    """Public vendor list for a featured event page with `vendor_list` set
+    (same config/vendor-maps/<file>.json the map reads) — names only, no
+    booth numbers or layout, so it can go public while the map itself
+    stays private. Vendors are alphabetical and paged client-side (all
+    shown without JS); tables in `areas` that carry a sponsor/PTA tag, or
+    every item of an area marked `"public_list": "tables"`/"activities",
+    are listed after them. "" when unset or the file is missing."""
+    if not filename:
+        return ""
+    data = load_json(filename) if (CONFIG / filename).exists() else None
+    if not data:
+        print(f"  ! vendor list config/{filename} not found — no list rendered")
+        return ""
+    esc = html.escape
+    seen, vendors = set(), []
+    for b in data.get("booths", []):
+        name = re.sub(r"\s*\(booth \d+ of \d+\)\s*$", "", b["name"]).strip()
+        if name.lower() in seen:
+            continue
+        seen.add(name.lower())
+        vendors.append((name, [t for t in b.get("tags", []) if t != "outlet"]))
+    vendors.sort(key=lambda v: re.sub(r"^the\s+", "", v[0].lower()))
+
+    def item(name, tags):
+        tag_html = "".join(
+            f'<span class="thes__vmap-tag thes__vmap-tag--{esc(t)}">{esc(VENDOR_TAG_LABELS[t])}</span>'
+            for t in tags if t in VENDOR_TAG_LABELS
+        )
+        words = " ".join([name, *[VENDOR_TAG_LABELS.get(t, t) for t in tags]]).lower()
+        return (f'<li class="thes__vmap-item" data-search="{esc(words)}">'
+                f'<span class="thes__vmap-name">{esc(name)}</span>{tag_html}</li>')
+
+    groups = [(f"Vendors ({len(vendors)})", [item(n, t) for n, t in vendors], True)]
+    tables, activities = [], []
+    for area in data.get("areas", []):
+        for it in area.get("items", []):
+            if it.get("tags") or area.get("public_list") == "tables":
+                tables.append(item(it["name"], it.get("tags", [])))
+            else:
+                where = re.sub(r"\s*\(.*\)\s*$", "", area["name"])
+                activities.append(item(f'{it["name"]} · {where}', it.get("tags", [])))
+    if tables:
+        groups.append(("Sponsor, Community & PTA Tables", tables, False))
+    if activities:
+        groups.append(("Also at the Market", activities, False))
+    html_groups = "\n".join(
+        f'<div class="thes__vlist-group"{" data-paged" if paged else ""}><h3>{esc(title)}</h3>'
+        f'<ul class="thes__vmap-list">{"".join(items)}</ul></div>'
+        for title, items, paged in groups
+    )
+    tmpl = (TEMPLATES / "vendor-list.html.tmpl").read_text()
+    return render(tmpl, {
+        "VLIST_TITLE": "Vendors & Tables",
+        "VLIST_NOTE": esc("Who you'll find at the market. Vendors are subject to change."),
+        "VLIST_GROUPS": html_groups,
+        "VLIST_PER_PAGE": str(int(data.get("list_per_page", 12))),
+    })
+
+
 def render_vendor_map_link(event):
     """On an event page with `vendor_map` set: a short section with a big
     button to the standalone map page (vendor_map_page_name). Relative
@@ -1203,7 +1263,7 @@ def render_event_page(event, site, context):
         "EVENT_ABOUT": about,
         "EVENT_SECTIONS": "\n".join(section_cards),
         "EVENT_FLYER": flyer,
-        "EVENT_VENDOR_MAP": render_vendor_map_link(event),
+        "EVENT_VENDOR_MAP": render_vendor_list(event.get("vendor_list")) + render_vendor_map_link(event),
     })
 
 

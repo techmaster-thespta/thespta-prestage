@@ -1,0 +1,69 @@
+  <section class="thes__section" id="vendors">
+    <div class="thes__wrap">
+      <div class="thes__section-head">
+        <h2>{{VLIST_TITLE}}</h2>
+        <p>{{VLIST_NOTE}}</p>
+      </div>
+      <div class="thes__vmap-tools">
+        <input type="search" class="thes__vmap-search" id="thes-vlist-search" placeholder="Search vendors, e.g. candles, cookies, books" aria-label="Search vendors">
+      </div>
+      <div class="thes__vlist" id="thes-vlist">
+{{VLIST_GROUPS}}
+      </div>
+      <p class="thes__vmap-empty" id="thes-vlist-empty" hidden>No vendors match that search.</p>
+      <div class="thes__vlist-pager" id="thes-vlist-pager" hidden>
+        <button type="button" class="thes__vmap-chip" id="thes-vlist-prev">&larr; Prev</button>
+        <span id="thes-vlist-page" aria-live="polite"></span>
+        <button type="button" class="thes__vmap-chip" id="thes-vlist-next">Next &rarr;</button>
+      </div>
+    </div>
+  </section>
+<script>
+(function () {
+  var root = document.getElementById("vendors");
+  if (!root) return;
+  var PER_PAGE = {{VLIST_PER_PAGE}};
+  var vendors = root.querySelectorAll('.thes__vlist-group[data-paged] .thes__vmap-item');
+  var all = root.querySelectorAll('.thes__vmap-item');
+  var search = document.getElementById("thes-vlist-search");
+  var pager = document.getElementById("thes-vlist-pager");
+  var label = document.getElementById("thes-vlist-page");
+  var prev = document.getElementById("thes-vlist-prev");
+  var next = document.getElementById("thes-vlist-next");
+  var empty = document.getElementById("thes-vlist-empty");
+  var page = 0;
+
+  function render() {
+    var q = (search.value || "").trim().toLowerCase();
+    var shown = 0;
+    if (q) {
+      // Searching shows every match across all groups, no paging.
+      for (var i = 0; i < all.length; i++) {
+        var ok = all[i].getAttribute("data-search").indexOf(q) !== -1;
+        all[i].hidden = !ok; if (ok) shown++;
+      }
+      pager.hidden = true;
+    } else {
+      for (var j = 0; j < all.length; j++) all[j].hidden = false;
+      var pages = Math.max(1, Math.ceil(vendors.length / PER_PAGE));
+      if (page >= pages) page = pages - 1;
+      for (var k = 0; k < vendors.length; k++) {
+        vendors[k].hidden = Math.floor(k / PER_PAGE) !== page;
+      }
+      shown = all.length;
+      pager.hidden = pages < 2;
+      label.textContent = "Page " + (page + 1) + " of " + pages;
+      prev.disabled = page === 0;
+      next.disabled = page === pages - 1;
+    }
+    var groups = root.querySelectorAll(".thes__vlist-group");
+    for (var g = 0; g < groups.length; g++) groups[g].hidden = !groups[g].querySelector(".thes__vmap-item:not([hidden])");
+    empty.hidden = shown !== 0;
+  }
+
+  prev.addEventListener("click", function () { page--; render(); root.scrollIntoView({ behavior: "smooth" }); });
+  next.addEventListener("click", function () { page++; render(); root.scrollIntoView({ behavior: "smooth" }); });
+  search.addEventListener("input", function () { page = 0; render(); });
+  render();
+})();
+</script>

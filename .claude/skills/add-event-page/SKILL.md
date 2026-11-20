@@ -83,6 +83,15 @@ the booth number (a swap is two edits), then set `updated` to today.
 printable layout image as an `extra_flyers` entry, labeled as possibly
 out of date.
 
+**Public vendor list**: `"vendor_list": "vendor-maps/<file>.json"` (the
+same file) adds a paged, searchable "Vendors & Tables" list to the event
+page itself: vendor names A–Z with no booth numbers, then hallway/PTA/
+sponsor tables (items with a tag, or areas with `"public_list":
+"tables"`), then other activities. `vendor_list` and `vendor_map` are
+independent, so the list can be public while the map stays unpublished.
+For the 2026 Holiday Market the map is staging-only until the user says
+"push the map to prod now".
+
 For an online-only event (e.g. Giving Tuesday), set `online_href` to the
 event's URL: the Where line shows `location_name` plus that link instead
 of the school's address, and the search data marks it as an online event.

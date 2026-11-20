@@ -647,6 +647,12 @@
   .thes__vmap-tag--children { background: var(--teal-tint); color: var(--teal); }
   .thes__vmap-tag--pta, .thes__vmap-tag--sponsor { background: var(--gold-tint); color: var(--yellow-text); }
   .thes__vmap-empty { text-align: center; color: var(--text-muted); }
+  /* [hidden] must win over the display rules above (search, filters, paging). */
+  .thes [hidden].thes__vmap-item, .thes [hidden].thes__vmap-group, .thes [hidden].thes__vlist-group, .thes [hidden].thes__vlist-pager, .thes [hidden].thes__vmap-empty { display: none; }
+  .thes__vlist { display: grid; gap: 22px; max-width: 760px; margin: 0 auto; }
+  .thes__vlist-group h3 { font-size: 1.05rem; margin: 0 0 8px; }
+  .thes__vlist-pager { display: flex; align-items: center; justify-content: center; gap: 14px; margin: 18px auto 0; color: var(--text-muted); font-size: 0.9rem; }
+  .thes .thes__vmap-chip:disabled { opacity: 0.4; cursor: default; }
 </style>
 
 
@@ -859,6 +865,77 @@
     </div>
   </section>
 
+  <section class="thes__section" id="vendors">
+    <div class="thes__wrap">
+      <div class="thes__section-head">
+        <h2>Vendors & Tables</h2>
+        <p>Who you&#x27;ll find at the market. Vendors are subject to change.</p>
+      </div>
+      <div class="thes__vmap-tools">
+        <input type="search" class="thes__vmap-search" id="thes-vlist-search" placeholder="Search vendors, e.g. candles, cookies, books" aria-label="Search vendors">
+      </div>
+      <div class="thes__vlist" id="thes-vlist">
+<div class="thes__vlist-group" data-paged><h3>Vendors (44)</h3><ul class="thes__vmap-list"><li class="thes__vmap-item" data-search="a taste of home"><span class="thes__vmap-name">A Taste of Home</span></li><li class="thes__vmap-item" data-search="althea&#x27;s almost famous food"><span class="thes__vmap-name">Althea&#x27;s Almost Famous</span><span class="thes__vmap-tag thes__vmap-tag--food">Food</span></li><li class="thes__vmap-item" data-search="alyssa&#x27;s sweets &amp; treats food"><span class="thes__vmap-name">Alyssa&#x27;s Sweets &amp; Treats</span><span class="thes__vmap-tag thes__vmap-tag--food">Food</span></li><li class="thes__vmap-item" data-search="arbonne"><span class="thes__vmap-name">Arbonne</span></li><li class="thes__vmap-item" data-search="bean &amp; butter"><span class="thes__vmap-name">Bean &amp; Butter</span></li><li class="thes__vmap-item" data-search="blooming creations"><span class="thes__vmap-name">Blooming Creations</span></li><li class="thes__vmap-item" data-search="the book nook"><span class="thes__vmap-name">The Book Nook</span></li><li class="thes__vmap-item" data-search="bricks &amp; beyond children&#x27;s"><span class="thes__vmap-name">Bricks &amp; Beyond</span><span class="thes__vmap-tag thes__vmap-tag--children">Children&#x27;s</span></li><li class="thes__vmap-item" data-search="color street"><span class="thes__vmap-name">Color Street</span></li><li class="thes__vmap-item" data-search="community resources"><span class="thes__vmap-name">Community Resources</span></li><li class="thes__vmap-item" data-search="the cozy candle co."><span class="thes__vmap-name">The Cozy Candle Co.</span></li><li class="thes__vmap-item" data-search="crafts by carley"><span class="thes__vmap-name">Crafts by Carley</span></li><li class="thes__vmap-item" data-search="daisy embroidery"><span class="thes__vmap-name">Daisy Embroidery</span></li><li class="thes__vmap-item" data-search="dream designs"><span class="thes__vmap-name">Dream Designs</span></li><li class="thes__vmap-item" data-search="handmade by heidi"><span class="thes__vmap-name">Handmade by Heidi</span></li><li class="thes__vmap-item" data-search="happy hands crafts"><span class="thes__vmap-name">Happy Hands Crafts</span></li><li class="thes__vmap-item" data-search="icryo columbia"><span class="thes__vmap-name">iCRYO Columbia</span></li><li class="thes__vmap-item" data-search="jw treasures"><span class="thes__vmap-name">JW Treasures</span></li><li class="thes__vmap-item" data-search="katy&#x27;s kreations"><span class="thes__vmap-name">Katy&#x27;s Kreations</span></li><li class="thes__vmap-item" data-search="kid creations children&#x27;s"><span class="thes__vmap-name">Kid Creations</span><span class="thes__vmap-tag thes__vmap-tag--children">Children&#x27;s</span></li><li class="thes__vmap-item" data-search="kreative dezerts food"><span class="thes__vmap-name">Kreative Dezerts</span><span class="thes__vmap-tag thes__vmap-tag--food">Food</span></li><li class="thes__vmap-item" data-search="little learners books"><span class="thes__vmap-name">Little Learners Books</span></li><li class="thes__vmap-item" data-search="local artisans"><span class="thes__vmap-name">Local Artisans</span></li><li class="thes__vmap-item" data-search="local authors"><span class="thes__vmap-name">Local Authors</span></li><li class="thes__vmap-item" data-search="lularoe"><span class="thes__vmap-name">LuLaRoe</span></li><li class="thes__vmap-item" data-search="mary kay"><span class="thes__vmap-name">Mary Kay</span></li><li class="thes__vmap-item" data-search="mk market"><span class="thes__vmap-name">MK Market</span></li><li class="thes__vmap-item" data-search="nature&#x27;s nook"><span class="thes__vmap-name">Nature&#x27;s Nook</span></li><li class="thes__vmap-item" data-search="norwex"><span class="thes__vmap-name">Norwex</span></li><li class="thes__vmap-item" data-search="pampered chef"><span class="thes__vmap-name">Pampered Chef</span></li><li class="thes__vmap-item" data-search="playful paradise children&#x27;s"><span class="thes__vmap-name">Playful Paradise</span><span class="thes__vmap-tag thes__vmap-tag--children">Children&#x27;s</span></li><li class="thes__vmap-item" data-search="pmc &amp; our family baked goods food"><span class="thes__vmap-name">PMC &amp; Our Family Baked Goods</span><span class="thes__vmap-tag thes__vmap-tag--food">Food</span></li><li class="thes__vmap-item" data-search="the rizzo collection"><span class="thes__vmap-name">The Rizzo Collection</span></li><li class="thes__vmap-item" data-search="scentsy"><span class="thes__vmap-name">Scentsy</span></li><li class="thes__vmap-item" data-search="selah sugar food"><span class="thes__vmap-name">Selah Sugar</span><span class="thes__vmap-tag thes__vmap-tag--food">Food</span></li><li class="thes__vmap-item" data-search="sew creative"><span class="thes__vmap-name">Sew Creative</span></li><li class="thes__vmap-item" data-search="shaded by tamika"><span class="thes__vmap-name">Shaded by Tamika</span></li><li class="thes__vmap-item" data-search="sugar &amp; shine designs"><span class="thes__vmap-name">Sugar &amp; Shine Designs</span></li><li class="thes__vmap-item" data-search="sweetlife honey"><span class="thes__vmap-name">Sweetlife Honey</span></li><li class="thes__vmap-item" data-search="thirty-one gifts"><span class="thes__vmap-name">Thirty-One Gifts</span></li><li class="thes__vmap-item" data-search="tupperware"><span class="thes__vmap-name">Tupperware</span></li><li class="thes__vmap-item" data-search="yanna makes"><span class="thes__vmap-name">Yanna Makes</span></li><li class="thes__vmap-item" data-search="ym cookie co. food"><span class="thes__vmap-name">YM Cookie Co.</span><span class="thes__vmap-tag thes__vmap-tag--food">Food</span></li><li class="thes__vmap-item" data-search="younique"><span class="thes__vmap-name">Younique</span></li></ul></div>
+<div class="thes__vlist-group"><h3>Sponsor, Community &amp; PTA Tables</h3><ul class="thes__vmap-list"><li class="thes__vmap-item" data-search="mindful beginnings"><span class="thes__vmap-name">Mindful Beginnings</span></li><li class="thes__vmap-item" data-search="mathnasium – the math learning center pta sponsor"><span class="thes__vmap-name">Mathnasium – The Math Learning Center</span><span class="thes__vmap-tag thes__vmap-tag--sponsor">PTA Sponsor</span></li><li class="thes__vmap-item" data-search="thes pta information &amp; activities thes pta"><span class="thes__vmap-name">THES PTA Information &amp; Activities</span><span class="thes__vmap-tag thes__vmap-tag--pta">THES PTA</span></li><li class="thes__vmap-item" data-search="thes pta raffle prizes &amp; giveaways thes pta"><span class="thes__vmap-name">THES PTA Raffle Prizes &amp; Giveaways</span><span class="thes__vmap-tag thes__vmap-tag--pta">THES PTA</span></li><li class="thes__vmap-item" data-search="three sprouts landscaping pta sponsor"><span class="thes__vmap-name">Three Sprouts Landscaping</span><span class="thes__vmap-tag thes__vmap-tag--sponsor">PTA Sponsor</span></li></ul></div>
+<div class="thes__vlist-group"><h3>Also at the Market</h3><ul class="thes__vmap-list"><li class="thes__vmap-item" data-search="free arts &amp; crafts for kids · cafeteria"><span class="thes__vmap-name">Free arts &amp; crafts for kids · Cafeteria</span></li><li class="thes__vmap-item" data-search="eat &amp; enjoy food from the food trucks · cafeteria"><span class="thes__vmap-name">Eat &amp; enjoy food from the food trucks · Cafeteria</span></li><li class="thes__vmap-item" data-search="photo booth · front foyer"><span class="thes__vmap-name">Photo booth · Front Foyer</span></li><li class="thes__vmap-item" data-search="moonbounce · front of school"><span class="thes__vmap-name">Moonbounce · Front of School</span></li></ul></div>
+      </div>
+      <p class="thes__vmap-empty" id="thes-vlist-empty" hidden>No vendors match that search.</p>
+      <div class="thes__vlist-pager" id="thes-vlist-pager" hidden>
+        <button type="button" class="thes__vmap-chip" id="thes-vlist-prev">&larr; Prev</button>
+        <span id="thes-vlist-page" aria-live="polite"></span>
+        <button type="button" class="thes__vmap-chip" id="thes-vlist-next">Next &rarr;</button>
+      </div>
+    </div>
+  </section>
+<script>
+(function () {
+  var root = document.getElementById("vendors");
+  if (!root) return;
+  var PER_PAGE = 12;
+  var vendors = root.querySelectorAll('.thes__vlist-group[data-paged] .thes__vmap-item');
+  var all = root.querySelectorAll('.thes__vmap-item');
+  var search = document.getElementById("thes-vlist-search");
+  var pager = document.getElementById("thes-vlist-pager");
+  var label = document.getElementById("thes-vlist-page");
+  var prev = document.getElementById("thes-vlist-prev");
+  var next = document.getElementById("thes-vlist-next");
+  var empty = document.getElementById("thes-vlist-empty");
+  var page = 0;
+
+  function render() {
+    var q = (search.value || "").trim().toLowerCase();
+    var shown = 0;
+    if (q) {
+      // Searching shows every match across all groups, no paging.
+      for (var i = 0; i < all.length; i++) {
+        var ok = all[i].getAttribute("data-search").indexOf(q) !== -1;
+        all[i].hidden = !ok; if (ok) shown++;
+      }
+      pager.hidden = true;
+    } else {
+      for (var j = 0; j < all.length; j++) all[j].hidden = false;
+      var pages = Math.max(1, Math.ceil(vendors.length / PER_PAGE));
+      if (page >= pages) page = pages - 1;
+      for (var k = 0; k < vendors.length; k++) {
+        vendors[k].hidden = Math.floor(k / PER_PAGE) !== page;
+      }
+      shown = all.length;
+      pager.hidden = pages < 2;
+      label.textContent = "Page " + (page + 1) + " of " + pages;
+      prev.disabled = page === 0;
+      next.disabled = page === pages - 1;
+    }
+    var groups = root.querySelectorAll(".thes__vlist-group");
+    for (var g = 0; g < groups.length; g++) groups[g].hidden = !groups[g].querySelector(".thes__vmap-item:not([hidden])");
+    empty.hidden = shown !== 0;
+  }
+
+  prev.addEventListener("click", function () { page--; render(); root.scrollIntoView({ behavior: "smooth" }); });
+  next.addEventListener("click", function () { page++; render(); root.scrollIntoView({ behavior: "smooth" }); });
+  search.addEventListener("input", function () { page = 0; render(); });
+  render();
+})();
+</script>
   <section class="thes__section" id="vendor-map">
     <div class="thes__wrap" style="text-align:center;">
       <div class="thes__section-head"><h2>Vendor Map</h2><p>Find every vendor in the gym, the hallway, and around the school. Tap a booth or search by name, right from your phone.</p></div>

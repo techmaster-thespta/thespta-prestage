@@ -1,5 +1,5 @@
 {
-  "_how_to_edit": "Vendor moved to another booth? Change the name (and tags) on that booth number in 'booths', then set 'updated' to today's date. A booth's spot on the gym map comes from its 'col'/'row' (each booth is 'booth_span' columns wide) and only changes if the room layout changes. Tags: food, children, outlet.",
+  "_how_to_edit": "Vendor moved to another booth? Change the name (and tags) on that booth number in 'booths', then set 'updated' to today's date. A booth's spot on the gym map comes from its 'col'/'row' (each booth is 'booth_span' columns wide) and only changes if the room layout changes. Tags: food, children, outlet. This same file feeds the public vendor list on the event page (names only, alphabetical, no booth numbers).",
   "title": "Vendor Map",
   "updated": "2026-11-20",
   "note": "Layout is subject to change. Tap a booth on the map, or search for a vendor below.",
@@ -447,7 +447,8 @@
             "sponsor"
           ]
         }
-      ]
+      ],
+      "public_list": "tables"
     },
     {
       "name": "Cafeteria",

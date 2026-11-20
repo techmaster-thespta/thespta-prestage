@@ -648,6 +648,12 @@
   .thes__vmap-tag--children { background: var(--teal-tint); color: var(--teal); }
   .thes__vmap-tag--pta, .thes__vmap-tag--sponsor { background: var(--gold-tint); color: var(--yellow-text); }
   .thes__vmap-empty { text-align: center; color: var(--text-muted); }
+  /* [hidden] must win over the display rules above (search, filters, paging). */
+  .thes [hidden].thes__vmap-item, .thes [hidden].thes__vmap-group, .thes [hidden].thes__vlist-group, .thes [hidden].thes__vlist-pager, .thes [hidden].thes__vmap-empty { display: none; }
+  .thes__vlist { display: grid; gap: 22px; max-width: 760px; margin: 0 auto; }
+  .thes__vlist-group h3 { font-size: 1.05rem; margin: 0 0 8px; }
+  .thes__vlist-pager { display: flex; align-items: center; justify-content: center; gap: 14px; margin: 18px auto 0; color: var(--text-muted); font-size: 0.9rem; }
+  .thes .thes__vmap-chip:disabled { opacity: 0.4; cursor: default; }
 </style>
 
 

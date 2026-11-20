@@ -1095,9 +1095,18 @@ def render_vendor_map(filename):
         groups.append(("Booth to Be Confirmed", [list_item(v) for v in unassigned]))
     for area in data.get("areas", []):
         groups.append((area["name"], [list_item(i) for i in area.get("items", [])]))
+    pager = (
+        '<div class="thes__vlist-pager" id="thes-vmap-pager" hidden>'
+        '<button type="button" class="thes__vmap-chip" id="thes-vmap-prev">&larr; Prev</button>'
+        '<span id="thes-vmap-page" aria-live="polite"></span>'
+        '<button type="button" class="thes__vmap-chip" id="thes-vmap-next">Next &rarr;</button></div>'
+    )
+    # The gym list is long, so it pages (see vendor-map.html.tmpl); the
+    # other groups are short and always show in full.
     lists = "\n".join(
-        f'<div class="thes__vmap-group"><h3>{esc(name)}</h3><ul class="thes__vmap-list">{"".join(items)}</ul></div>'
-        for name, items in groups
+        f'<div class="thes__vmap-group"{" data-paged" if i == 0 else ""}><h3>{esc(name)}</h3>'
+        f'<ul class="thes__vmap-list">{"".join(items)}</ul>{pager if i == 0 else ""}</div>'
+        for i, (name, items) in enumerate(groups)
     )
     updated = ""
     if data.get("updated"):
@@ -1112,6 +1121,7 @@ def render_vendor_map(filename):
         "VMAP_ROWS": str(rows),
         "VMAP_CELLS": "\n        ".join(cells),
         "VMAP_LISTS": lists,
+        "VMAP_PER_PAGE": str(int(data.get("map_list_per_page", 10))),
     })
 
 

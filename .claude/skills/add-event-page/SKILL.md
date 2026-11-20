@@ -87,7 +87,12 @@ out of date.
 same file) adds a paged, searchable "Vendors & Tables" list to the event
 page itself: vendor names A–Z with no booth numbers, then hallway/PTA/
 sponsor tables (items with a tag, or areas with `"public_list":
-"tables"`), then other activities. `vendor_list` and `vendor_map` are
+"tables"`), then other activities. Each vendor (a booth, or an entry in
+`unassigned` for confirmed vendors without a booth yet) can carry
+`category` (one of the file's `categories`, which become filter chips),
+`about` (1–2 sentences) and `links` (website/instagram/facebook/tiktok),
+taken from the vendor's own spotlight response; never publish their
+contact name or email. `vendor_list` and `vendor_map` are
 independent, so the list can be public while the map stays unpublished.
 For the 2026 Holiday Market the map is staging-only until the user says
 "push the map to prod now".

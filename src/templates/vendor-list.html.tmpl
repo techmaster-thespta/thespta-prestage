@@ -5,7 +5,10 @@
         <p>{{VLIST_NOTE}}</p>
       </div>
       <div class="thes__vmap-tools">
-        <input type="search" class="thes__vmap-search" id="thes-vlist-search" placeholder="Search vendors, e.g. candles, cookies, books" aria-label="Search vendors">
+        <input type="search" class="thes__vmap-search" id="thes-vlist-search" placeholder="Search vendors, e.g. jewelry, cookies, crochet" aria-label="Search vendors">
+        <div class="thes__vmap-chips" role="group" aria-label="Filter vendors by category">
+          {{VLIST_CHIPS}}
+        </div>
       </div>
       <div class="thes__vlist" id="thes-vlist">
 {{VLIST_GROUPS}}
@@ -24,7 +27,6 @@
   if (!root) return;
   var PER_PAGE = {{VLIST_PER_PAGE}};
   var vendors = root.querySelectorAll('.thes__vlist-group[data-paged] .thes__vmap-item');
-  var all = root.querySelectorAll('.thes__vmap-item');
   var search = document.getElementById("thes-vlist-search");
   var pager = document.getElementById("thes-vlist-pager");
   var label = document.getElementById("thes-vlist-page");
@@ -33,34 +35,52 @@
   var empty = document.getElementById("thes-vlist-empty");
   var page = 0;
 
+  var filter = "";
+  var chips = root.querySelectorAll(".thes__vmap-chip[data-filter]");
+  var others = root.querySelectorAll('.thes__vlist-group:not([data-paged]) .thes__vmap-item');
+
+  function matches(it, q) {
+    if (q && it.getAttribute("data-search").indexOf(q) === -1) return false;
+    if (!filter) return true;
+    var tags = " " + it.getAttribute("data-tags") + " ";
+    return filter.split(" ").some(function (f) { return tags.indexOf(" " + f + " ") !== -1; });
+  }
+
   function render() {
     var q = (search.value || "").trim().toLowerCase();
-    var shown = 0;
-    if (q) {
-      // Searching shows every match across all groups, no paging.
-      for (var i = 0; i < all.length; i++) {
-        var ok = all[i].getAttribute("data-search").indexOf(q) !== -1;
-        all[i].hidden = !ok; if (ok) shown++;
-      }
-      pager.hidden = true;
-    } else {
-      for (var j = 0; j < all.length; j++) all[j].hidden = false;
-      var pages = Math.max(1, Math.ceil(vendors.length / PER_PAGE));
-      if (page >= pages) page = pages - 1;
-      for (var k = 0; k < vendors.length; k++) {
-        vendors[k].hidden = Math.floor(k / PER_PAGE) !== page;
-      }
-      shown = all.length;
-      pager.hidden = pages < 2;
-      label.textContent = "Page " + (page + 1) + " of " + pages;
-      prev.disabled = page === 0;
-      next.disabled = page === pages - 1;
+    var hits = [];
+    for (var i = 0; i < vendors.length; i++) {
+      vendors[i].hidden = true;
+      if (matches(vendors[i], q)) hits.push(vendors[i]);
     }
+    // Searching shows every match at once; otherwise page through them.
+    var pages = q ? 1 : Math.max(1, Math.ceil(hits.length / PER_PAGE));
+    if (page >= pages) page = pages - 1;
+    for (var j = 0; j < hits.length; j++) {
+      if (q || Math.floor(j / PER_PAGE) === page) hits[j].hidden = false;
+    }
+    var shown = hits.length;
+    for (var k = 0; k < others.length; k++) {
+      var ok = matches(others[k], q);
+      others[k].hidden = !ok; if (ok) shown++;
+    }
+    pager.hidden = pages < 2;
+    label.textContent = "Page " + (page + 1) + " of " + pages;
+    prev.disabled = page === 0;
+    next.disabled = page === pages - 1;
     var groups = root.querySelectorAll(".thes__vlist-group");
     for (var g = 0; g < groups.length; g++) groups[g].hidden = !groups[g].querySelector(".thes__vmap-item:not([hidden])");
     empty.hidden = shown !== 0;
   }
 
+  for (var c = 0; c < chips.length; c++) {
+    chips[c].addEventListener("click", function () {
+      for (var x = 0; x < chips.length; x++) chips[x].classList.remove("is-on");
+      this.classList.add("is-on");
+      filter = this.getAttribute("data-filter");
+      page = 0; render();
+    });
+  }
   prev.addEventListener("click", function () { page--; render(); root.scrollIntoView({ behavior: "smooth" }); });
   next.addEventListener("click", function () { page++; render(); root.scrollIntoView({ behavior: "smooth" }); });
   search.addEventListener("input", function () { page = 0; render(); });

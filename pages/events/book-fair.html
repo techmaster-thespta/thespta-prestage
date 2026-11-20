@@ -649,6 +649,21 @@
   .thes__vmap-empty { text-align: center; color: var(--text-muted); }
   /* [hidden] must win over the display rules above (search, filters, paging). */
   .thes [hidden].thes__vmap-item, .thes [hidden].thes__vmap-group, .thes [hidden].thes__vlist-group, .thes [hidden].thes__vlist-pager, .thes [hidden].thes__vmap-empty { display: none; }
+  .thes__vmap-tag { white-space: nowrap; line-height: 1.5; display: inline-block; }
+  .thes__vmap-tag--cat { background: var(--teal-tint); color: var(--navy); }
+  .thes__vlist-details .thes__vmap-name { flex: 1 1 12em; }
+  .thes__vmap-more { flex-basis: 100%; font-size: 0.92rem; color: var(--text); }
+  .thes__vmap-more p { margin: 6px 0 0; }
+  .thes__vmap-links { display: flex; flex-wrap: wrap; gap: 6px 14px; margin-top: 6px; }
+  .thes .thes__vmap-links a { color: var(--teal); font-weight: 700; text-decoration: none; }
+  .thes__vmap-item .thes__vmap-more { display: none; }
+  .thes__vmap-detail .thes__vmap-more, .thes__vlist-details .thes__vmap-more { display: block; text-align: left; }
+  .thes__vlist-details { flex: 1 1 100%; }
+  .thes__vlist-details summary { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; cursor: pointer; list-style: none; }
+  .thes__vlist-details summary::-webkit-details-marker { display: none; }
+  .thes__vlist-more { margin-left: auto; font-size: 0.8rem; font-weight: 700; color: var(--teal); }
+  .thes__vlist-more::after { content: " +"; }
+  .thes__vlist-details[open] .thes__vlist-more::after { content: " \2212"; }
   .thes__vlist { display: grid; gap: 22px; max-width: 760px; margin: 0 auto; }
   .thes__vlist-group h3 { font-size: 1.05rem; margin: 0 0 8px; }
   .thes__vlist-pager { display: flex; align-items: center; justify-content: center; gap: 14px; margin: 18px auto 0; color: var(--text-muted); font-size: 0.9rem; }

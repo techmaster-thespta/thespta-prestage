@@ -1,5 +1,5 @@
 {
-  "_how_to_edit": "Vendor moved to another booth? Change the name (and tags) on that booth number in 'booths', then set 'updated' to today's date. A booth's spot on the gym map comes from its 'col'/'row' (each booth is 'booth_span' columns wide) and only changes if the room layout changes. Tags: food, children, outlet. This same file feeds the public vendor list on the event page (names only, alphabetical, no booth numbers).",
+  "_how_to_edit": "Vendor moved to another booth? Change the name (and tags/category/about/links) on that booth number in 'booths', then set 'updated' to today. 'unassigned' holds confirmed vendors whose booth isn't known yet: when one gets a booth, move its entry into that booth (keep number/col/row). A booth's spot on the gym map comes from 'col'/'row' (each booth is 'booth_span' columns wide). Tags: food, children, outlet. 'category' must be one of 'categories'. This same file feeds the public vendor list on the event page (names, categories, about, links; no booth numbers).",
   "title": "Vendor Map",
   "updated": "2026-11-20",
   "note": "Layout is subject to change. Tap a booth on the map, or search for a vendor below.",
@@ -87,12 +87,18 @@
     },
     {
       "number": 3,
-      "name": "Kreative Dezerts",
+      "name": "Kreative Dezzerts",
       "tags": [
         "food"
       ],
       "col": 8,
-      "row": 1
+      "row": 1,
+      "category": "Food & Treats",
+      "about": "Baked goods and treats, plus custom cakes that bring the \"WOW\" factor to any party.",
+      "links": {
+        "instagram": "https://www.instagram.com/kreative_dezzerts",
+        "facebook": "https://www.facebook.com/share/1A73H2Af9K/"
+      }
     },
     {
       "number": 4,
@@ -117,21 +123,38 @@
         "food"
       ],
       "col": 14,
-      "row": 1
+      "row": 1,
+      "category": "Food & Treats",
+      "about": "Mini cakes, brownies, and cookies from the sweetest business in town.",
+      "links": {
+        "instagram": "https://www.instagram.com/cakesbyselahsugar"
+      }
     },
     {
       "number": 7,
       "name": "Yanna Makes (booth 2 of 2)",
       "tags": [],
       "col": 16,
-      "row": 1
+      "row": 1,
+      "category": "Handmade Crafts & Gifts",
+      "about": "Handcrafted bags and totes, cosmetic pouches, decorative pillows, book and journal covers, and unique gifts made with beautiful, often sustainably sourced fabrics.",
+      "links": {
+        "website": "https://yannamakesstudio.etsy.com",
+        "instagram": "https://www.instagram.com/yannamakes"
+      }
     },
     {
       "number": 8,
       "name": "Yanna Makes (booth 1 of 2)",
       "tags": [],
       "col": 18,
-      "row": 1
+      "row": 1,
+      "category": "Handmade Crafts & Gifts",
+      "about": "Handcrafted bags and totes, cosmetic pouches, decorative pillows, book and journal covers, and unique gifts made with beautiful, often sustainably sourced fabrics.",
+      "links": {
+        "website": "https://yannamakesstudio.etsy.com",
+        "instagram": "https://www.instagram.com/yannamakes"
+      }
     },
     {
       "number": 9,
@@ -376,7 +399,14 @@
         "outlet"
       ],
       "col": 1,
-      "row": 3
+      "row": 3,
+      "category": "Food & Treats",
+      "about": "Jamaican patties.",
+      "links": {
+        "website": "https://www.ilovethisjerk.com",
+        "instagram": "https://www.instagram.com/altheasalmostfamous",
+        "facebook": "https://www.facebook.com/altheasalmostfamous"
+      }
     },
     {
       "number": 41,
@@ -399,7 +429,12 @@
         "food"
       ],
       "col": 14,
-      "row": 9
+      "row": 9,
+      "category": "Food & Treats",
+      "about": "Pies, cookies, breads, and desserts.",
+      "links": {
+        "instagram": "https://www.instagram.com/alyssassweetsntreats"
+      }
     },
     {
       "number": 44,
@@ -476,6 +511,144 @@
           "name": "Moonbounce"
         }
       ]
+    }
+  ],
+  "categories": [
+    "Food & Treats",
+    "Jewelry & Accessories",
+    "Handmade Crafts & Gifts",
+    "Kids & Activities",
+    "Beauty & Wellness",
+    "Family Services"
+  ],
+  "unassigned": [
+    {
+      "name": "The Habitual Bling Inc.",
+      "tags": [
+        "outlet"
+      ],
+      "category": "Jewelry & Accessories",
+      "about": "Affordable, eye-catching statement jewelry. Most pieces are $8, with more exclusive pieces at $35. Sparkle is a habit!",
+      "links": {
+        "website": "https://shop.paparazzipremiere.com/1144702/register",
+        "tiktok": "https://www.tiktok.com/@msinspiration3"
+      }
+    },
+    {
+      "name": "K. Carey Photography",
+      "tags": [],
+      "category": "Family Services",
+      "about": "Timeless children's portrait photography. Stop by to see portraits and learn about portrait sessions.",
+      "links": {
+        "website": "https://kcareyphotography.com",
+        "instagram": "https://www.instagram.com/kcareyphotography",
+        "facebook": "https://www.facebook.com/kcareyphotog"
+      }
+    },
+    {
+      "name": "Brandon Dean's Childcare",
+      "tags": [],
+      "category": "Family Services",
+      "about": "In-home sitter for occasional care. Limited childcare gift certificates for sale, plus a raffle for complimentary care.",
+      "links": {
+        "website": "https://brandondeanschildcare.weebly.com",
+        "instagram": "https://www.instagram.com/BrandonDeansChildcare",
+        "facebook": "https://www.facebook.com/BrandonDeansChildcare/"
+      }
+    },
+    {
+      "name": "Journals by Design",
+      "tags": [],
+      "category": "Handmade Crafts & Gifts",
+      "about": "One-of-a-kind journals made from new and recycled materials. \"Where the soul meets the paper.\"",
+      "links": {
+        "website": "https://journalsbydesign.myshopify.com/",
+        "instagram": "https://www.instagram.com/susiesjournalsbydesign/",
+        "facebook": "https://www.facebook.com/profile.php?id=61591554077722"
+      }
+    },
+    {
+      "name": "Mae Creations",
+      "tags": [],
+      "category": "Kids & Activities",
+      "about": "Plaster ready-to-paint kits, complete with paint and brushes.",
+      "links": {}
+    },
+    {
+      "name": "Cupcakes, Corks & Confetti",
+      "tags": [],
+      "category": "Kids & Activities",
+      "about": "Family and kid-friendly activity and snack gift kits, curated for the THES crowd.",
+      "links": {
+        "website": "https://www.bookcccevents.com",
+        "instagram": "https://www.instagram.com/cupcakes_corks_confetti"
+      }
+    },
+    {
+      "name": "Chrysalis Craft Club",
+      "tags": [],
+      "category": "Kids & Activities",
+      "about": "Snow Pal Sensory Jars, DIY Pet Rock Penguin Jars, cozy knits, and a Chrysalis Dollar Prize Pop for kids. Founded by a local early childhood educator offering art classes, enrichment, and parties.",
+      "links": {
+        "website": "https://www.chrysaliscraftclub.com",
+        "instagram": "https://www.instagram.com/chrysaliscraftclub",
+        "facebook": "https://www.facebook.com/profile.php?id=61588746796129"
+      }
+    },
+    {
+      "name": "FefeMo Designs",
+      "tags": [],
+      "category": "Jewelry & Accessories",
+      "about": "Handmade earrings, designed with a love of jewelry.",
+      "links": {}
+    },
+    {
+      "name": "Lightbridge Academy of Columbia",
+      "tags": [],
+      "category": "Family Services",
+      "about": "A new early childhood education center coming soon to Columbia. Program and enrollment info, a holiday-themed children's activity, and small giveaways.",
+      "links": {
+        "website": "https://lightbridgeacademy.com/columbia-md/"
+      }
+    },
+    {
+      "name": "XOXO LOL CLUB",
+      "tags": [],
+      "category": "Beauty & Wellness",
+      "about": "Reusable press-on nails, manifestation and intention-setting kits, ancestor remembrance kits, and Feng Shui-inspired accessories.",
+      "links": {
+        "instagram": "https://www.instagram.com/xoxololclub"
+      }
+    },
+    {
+      "name": "New York Life Insurance",
+      "tags": [
+        "outlet"
+      ],
+      "category": "Family Services",
+      "about": "Financial gifts for children and grandchildren, free child safety ID cards made on the spot (no child information is kept), and a raffle.",
+      "links": {
+        "website": "https://www.newyorklife.com/agent/cpervaiz01"
+      }
+    },
+    {
+      "name": "Sweet Loops by Stef",
+      "tags": [],
+      "category": "Handmade Crafts & Gifts",
+      "about": "Handmade crochet kitchen and spa pieces, cozy scarves and ear warmers, keychains, and bag charms, individually or as gift sets.",
+      "links": {
+        "instagram": "https://www.instagram.com/sweettloopsbystef"
+      }
+    },
+    {
+      "name": "Tam's Gems",
+      "tags": [],
+      "category": "Jewelry & Accessories",
+      "about": "Handmade jewelry.",
+      "links": {
+        "website": "https://tamsgems.store",
+        "instagram": "https://www.instagram.com/tams_gems1619"
+      }
     }
   ]
 }

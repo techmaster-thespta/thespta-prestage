@@ -13,12 +13,14 @@
         <div class="thes__vmap" style="grid-template-columns:repeat({{VMAP_COLS}}, minmax(0, 1fr));grid-template-rows:repeat({{VMAP_ROWS}}, auto);">
         {{VMAP_CELLS}}
         </div>
+        {{VMAP_HALL}}
       </div>
       <div class="thes__vmap-detail" id="thes-vmap-detail" aria-live="polite">Tap a numbered booth to see who's there.</div>
       <div class="thes__vmap-legend">
         <span><b class="thes__vmap-key"></b>Vendor</span>
         <span><b class="thes__vmap-key thes__vmap-key--food"></b>Food</span>
         <span><b class="thes__vmap-key thes__vmap-key--children"></b>Children's</span>
+        <span><b class="thes__vmap-key thes__vmap-key--hall"></b>Hallway table</span>
         <span><b class="thes__vmap-key thes__vmap-key--plug"></b>Has outlet</span>
       </div>
       <div class="thes__vmap-groups" id="thes-vmap-groups">

@@ -1078,23 +1078,42 @@ def render_vendor_map(filename):
             f'{int(b["number"])}{bolt}</button>'
         )
 
-    def list_item(v, booth=None):
-        num = (f'<span class="thes__vmap-num">{int(booth)}</span>' if booth
-               else '<span class="thes__vmap-num thes__vmap-num--none" aria-hidden="true">&bull;</span>')
-        data_booth = f' data-booth="{int(booth)}"' if booth else ""
+    # Hallway tables (an area with `map_strip`) get their own tappable row
+    # under the gym, using the same booth button class so tap/filter/search
+    # highlighting works on them too.
+    hall_html = ""
+    for area in data.get("areas", []):
+        if not area.get("map_strip"):
+            continue
+        tiles = "".join(
+            f'<button type="button" class="thes__vmap-booth thes__vmap-booth--hall" data-booth="{esc(i["spot"])}" '
+            f'aria-label="{esc(i["spot"])}: {esc(i["name"])}"><b>{esc(i["spot"])}</b>'
+            f'<span>{esc(i.get("map_label") or i["name"])}</span></button>'
+            for i in area.get("items", []) if i.get("spot")
+        )
+        hall_html += (f'<div class="thes__vmap-hall"><div class="thes__vmap-hall-title">{esc(area["map_strip"])}</div>'
+                      f'<div class="thes__vmap-hall-row">{tiles}</div></div>')
+
+    def list_item(v, spot=None, where=""):
+        # The booth goes right after the name, so the list maps to the
+        # grid at a glance without tapping anything.
+        data_booth = f' data-booth="{esc(str(spot))}"' if spot else ""
+        where_html = f'<span class="thes__vmap-spot">{esc(where)}</span>' if where else ""
         more = vendor_more_html(v)
         more_html = f'<div class="thes__vmap-more">{more}</div>' if more else ""
         return (
             f'<li class="thes__vmap-item"{data_booth} {vendor_filter_attrs(v)}>'
-            f'{num}<span class="thes__vmap-name">{esc(v["name"])}</span>{vendor_tag_html(v)}{more_html}</li>'
+            f'<span class="thes__vmap-name">{esc(v["name"])}</span>{where_html}{vendor_tag_html(v)}{more_html}</li>'
         )
 
-    groups = [(gym.get("name", "School Gym"), [list_item(b, b["number"]) for b in booths])]
+    groups = [(gym.get("name", "School Gym"), [list_item(b, b["number"], f'Booth {int(b["number"])}') for b in booths])]
     unassigned = sorted(data.get("unassigned", []), key=lambda v: v["name"].lower())
     if unassigned:
-        groups.append(("Booth to Be Confirmed", [list_item(v) for v in unassigned]))
+        groups.append(("Booth to Be Confirmed", [list_item(v, where="Booth TBD") for v in unassigned]))
     for area in data.get("areas", []):
-        groups.append((area["name"], [list_item(i) for i in area.get("items", [])]))
+        groups.append((area["name"], [
+            list_item(i, i.get("spot"), f'Hallway {i["spot"]}' if i.get("spot") else "") for i in area.get("items", [])
+        ]))
     pager = (
         '<div class="thes__vlist-pager" id="thes-vmap-pager" hidden>'
         '<button type="button" class="thes__vmap-chip" id="thes-vmap-prev">&larr; Prev</button>'
@@ -1120,6 +1139,7 @@ def render_vendor_map(filename):
         "VMAP_COLS": str(cols),
         "VMAP_ROWS": str(rows),
         "VMAP_CELLS": "\n        ".join(cells),
+        "VMAP_HALL": hall_html,
         "VMAP_LISTS": lists,
         "VMAP_PER_PAGE": str(int(data.get("map_list_per_page", 10))),
     })

@@ -1,5 +1,5 @@
 {
-  "_how_to_edit": "Vendor moved to another booth? Change the name (and tags/category/about/links) on that booth number in 'booths', then set 'updated' to today. 'unassigned' holds confirmed vendors whose booth isn't known yet: when one gets a booth, move its entry into that booth (keep number/col/row). A booth's spot on the gym map comes from 'col'/'row' (each booth is 'booth_span' columns wide). Tags: food, children, outlet. 'category' must be one of 'categories'. This same file feeds the public vendor list on the event page (names, categories, about, links; no booth numbers).",
+  "_how_to_edit": "Vendor moved to another booth? Change the name (and tags/category/about/links) on that booth number in 'booths', then set 'updated' to today. 'unassigned' holds confirmed vendors whose booth isn't known yet: when one gets a booth, move its entry into that booth (keep number/col/row). A booth's spot on the gym map comes from 'col'/'row' (each booth is 'booth_span' columns wide). Tags: food, children, outlet. 'category' must be one of 'categories'. This same file feeds the public vendor list on the event page (names, categories, about, links; no booth numbers). Hallway tables: an area with 'map_strip' is drawn as a row under the gym entrance; each item's 'spot' (H1, H2, ...) and short 'map_label' set its tile.",
   "title": "Vendor Map",
   "updated": "2026-11-20",
   "note": "Layout is subject to change. Tap a booth on the map, or search for a vendor below.",
@@ -456,34 +456,45 @@
       "name": "Hallway outside the Gym (Main Lobby)",
       "items": [
         {
-          "name": "Mindful Beginnings"
+          "name": "Mindful Beginnings",
+          "spot": "H1",
+          "map_label": "Mindful Beginnings"
         },
         {
           "name": "Mathnasium – The Math Learning Center",
           "tags": [
             "sponsor"
-          ]
+          ],
+          "spot": "H2",
+          "map_label": "Mathnasium"
         },
         {
           "name": "THES PTA Information & Activities",
           "tags": [
             "pta"
-          ]
+          ],
+          "spot": "H3",
+          "map_label": "PTA Info & Activities"
         },
         {
           "name": "THES PTA Raffle Prizes & Giveaways",
           "tags": [
             "pta"
-          ]
+          ],
+          "spot": "H4",
+          "map_label": "PTA Raffle & Giveaways"
         },
         {
           "name": "Three Sprouts Landscaping",
           "tags": [
             "sponsor"
-          ]
+          ],
+          "spot": "H5",
+          "map_label": "Three Sprouts"
         }
       ],
-      "public_list": "tables"
+      "public_list": "tables",
+      "map_strip": "Hallway, Main Lobby (outside the gym entrance)"
     },
     {
       "name": "Cafeteria",

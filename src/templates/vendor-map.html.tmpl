@@ -1,0 +1,99 @@
+  <section class="thes__section" id="vendor-map">
+    <div class="thes__wrap">
+      <div class="thes__section-head">
+        <h2>{{VMAP_TITLE}}</h2>
+        <p>{{VMAP_NOTE}}</p>
+      </div>
+      <div class="thes__vmap-tools">
+        <input type="search" class="thes__vmap-search" id="thes-vmap-search" placeholder="Search vendors, e.g. candles, cookies, 23" aria-label="Search vendors">
+        <div class="thes__vmap-chips" role="group" aria-label="Filter vendors">
+          <button type="button" class="thes__vmap-chip is-on" data-filter="">All</button>
+          <button type="button" class="thes__vmap-chip" data-filter="food">Food</button>
+          <button type="button" class="thes__vmap-chip" data-filter="children">Children's</button>
+          <button type="button" class="thes__vmap-chip" data-filter="pta sponsor">PTA &amp; Sponsors</button>
+        </div>
+      </div>
+      <div class="thes__vmap-frame">
+        <div class="thes__vmap" style="grid-template-columns:repeat({{VMAP_COLS}}, minmax(0, 1fr));grid-template-rows:repeat({{VMAP_ROWS}}, auto);">
+        {{VMAP_CELLS}}
+        </div>
+      </div>
+      <div class="thes__vmap-detail" id="thes-vmap-detail" aria-live="polite">Tap a numbered booth to see who's there.</div>
+      <div class="thes__vmap-legend">
+        <span><b class="thes__vmap-key"></b>Vendor</span>
+        <span><b class="thes__vmap-key thes__vmap-key--food"></b>Food</span>
+        <span><b class="thes__vmap-key thes__vmap-key--children"></b>Children's</span>
+        <span><b class="thes__vmap-key thes__vmap-key--plug"></b>Has outlet</span>
+      </div>
+      <div class="thes__vmap-groups" id="thes-vmap-groups">
+{{VMAP_LISTS}}
+      </div>
+      <p class="thes__vmap-empty" id="thes-vmap-empty" hidden>No vendors match that search.</p>
+    </div>
+  </section>
+<script>
+(function () {
+  var root = document.getElementById("vendor-map");
+  if (!root) return;
+  var booths = root.querySelectorAll(".thes__vmap-booth");
+  var items = root.querySelectorAll(".thes__vmap-item");
+  var detail = document.getElementById("thes-vmap-detail");
+  var search = document.getElementById("thes-vmap-search");
+  var empty = document.getElementById("thes-vmap-empty");
+  var chips = root.querySelectorAll(".thes__vmap-chip");
+  var filter = "";
+
+  function select(num, scrollToMap) {
+    for (var i = 0; i < booths.length; i++) booths[i].classList.toggle("is-selected", booths[i].getAttribute("data-booth") === num);
+    for (var j = 0; j < items.length; j++) items[j].classList.toggle("is-selected", items[j].getAttribute("data-booth") === num);
+    var b = root.querySelector('.thes__vmap-booth[data-booth="' + num + '"]');
+    if (!b) return;
+    var tags = b.getAttribute("data-tags");
+    detail.textContent = "Booth " + num + ": " + b.getAttribute("data-name") + (tags ? " (" + tags + ")" : "");
+    detail.classList.add("is-on");
+    if (scrollToMap) b.scrollIntoView({ behavior: "smooth", block: "center" });
+  }
+
+  function apply() {
+    var q = (search.value || "").trim().toLowerCase();
+    var shown = 0, matched = {};
+    for (var i = 0; i < items.length; i++) {
+      var it = items[i];
+      var okText = !q || it.getAttribute("data-search").indexOf(q) !== -1;
+      var tags = " " + it.getAttribute("data-tags") + " ";
+      var okTag = !filter || filter.split(" ").some(function (f) { return tags.indexOf(" " + f + " ") !== -1; });
+      var ok = okText && okTag;
+      it.hidden = !ok;
+      if (ok) { shown++; if (it.getAttribute("data-booth")) matched[it.getAttribute("data-booth")] = true; }
+    }
+    var active = q || filter;
+    for (var k = 0; k < booths.length; k++) {
+      var on = matched[booths[k].getAttribute("data-booth")];
+      booths[k].classList.toggle("is-dim", !!active && !on);
+      booths[k].classList.toggle("is-match", !!active && !!on);
+    }
+    var groups = root.querySelectorAll(".thes__vmap-group");
+    for (var g = 0; g < groups.length; g++) groups[g].hidden = !groups[g].querySelector(".thes__vmap-item:not([hidden])");
+    empty.hidden = shown !== 0;
+  }
+
+  for (var i = 0; i < booths.length; i++) {
+    booths[i].addEventListener("click", function () { select(this.getAttribute("data-booth"), false); });
+  }
+  for (var j = 0; j < items.length; j++) {
+    if (!items[j].getAttribute("data-booth")) continue;
+    items[j].setAttribute("tabindex", "0");
+    items[j].addEventListener("click", function () { select(this.getAttribute("data-booth"), true); });
+    items[j].addEventListener("keydown", function (e) { if (e.key === "Enter") select(this.getAttribute("data-booth"), true); });
+  }
+  search.addEventListener("input", apply);
+  for (var c = 0; c < chips.length; c++) {
+    chips[c].addEventListener("click", function () {
+      for (var x = 0; x < chips.length; x++) chips[x].classList.remove("is-on");
+      this.classList.add("is-on");
+      filter = this.getAttribute("data-filter");
+      apply();
+    });
+  }
+})();
+</script>

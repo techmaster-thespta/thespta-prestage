@@ -599,6 +599,48 @@
   .thes__social-links a { display: inline-flex; }
   .thes__social-links a:hover { color: #fff; text-decoration: none; }
   .thes__footer-bottom { border-top: 1px solid rgba(255,255,255,0.15); text-align: center; padding: 14px; font-size: 0.78rem; color: rgba(255,255,255,0.6); }
+  /* Vendor map (featured event pages with `vendor_map`): a simple CSS
+     grid of numbered booth buttons, no absolute positioning. Colors use
+     two-class selectors so `.thes a`/button resets can't override them. */
+  .thes__vmap-tools { display: grid; gap: 10px; margin: 0 auto 14px; max-width: 760px; }
+  .thes .thes__vmap-search { width: 100%; font: inherit; padding: 12px 14px; border: 1px solid var(--border); border-radius: 10px; background: #fff; color: var(--text); }
+  .thes__vmap-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+  .thes .thes__vmap-chip { font: inherit; font-size: 0.85rem; font-weight: 700; padding: 6px 14px; border-radius: 999px; border: 1px solid var(--border); background: #fff; color: var(--navy); cursor: pointer; }
+  .thes .thes__vmap-chip.is-on { background: var(--navy); border-color: var(--navy); color: #fff; }
+  .thes__vmap-frame { max-width: 760px; margin: 0 auto; background: var(--bg-tint); border: 2px solid var(--navy); border-radius: 12px; padding: 8px; }
+  .thes__vmap { display: grid; gap: 4px; }
+  .thes .thes__vmap-booth { font: inherit; font-weight: 700; font-size: clamp(0.72rem, 2.6vw, 0.95rem); min-height: 40px; padding: 0; border-radius: 6px; border: 1px solid var(--border); background: #fff; color: var(--navy); cursor: pointer; transition: opacity 0.15s, transform 0.15s; }
+  .thes .thes__vmap-booth.thes__vmap-booth--food { background: var(--coral-tint); border-color: var(--coral); }
+  .thes .thes__vmap-booth.thes__vmap-booth--children { background: var(--teal-tint); border-color: var(--teal); }
+  .thes .thes__vmap-booth.is-dim { opacity: 0.25; }
+  .thes .thes__vmap-booth.is-match { box-shadow: 0 0 0 2px var(--teal); }
+  .thes .thes__vmap-booth.is-selected { background: var(--yellow); border-color: var(--navy); color: var(--navy); transform: scale(1.12); z-index: 1; opacity: 1; box-shadow: 0 0 0 2px var(--navy); }
+  .thes__vmap-plug { display: inline-block; width: 6px; height: 6px; margin-left: 2px; vertical-align: super; border-radius: 50%; background: var(--yellow-text); }
+  .thes__vmap-label { display: flex; align-items: center; justify-content: center; text-align: center; font-size: clamp(0.6rem, 2.2vw, 0.78rem); font-weight: 700; color: var(--text-muted); line-height: 1.15; padding: 2px; }
+  .thes__vmap-label--aisle { min-height: 22px; color: var(--teal); letter-spacing: 0.04em; text-transform: uppercase; font-size: clamp(0.55rem, 2vw, 0.7rem); }
+  .thes__vmap-label--entrance { background: var(--navy); color: #fff; border-radius: 6px; }
+  .thes__vmap-detail { max-width: 760px; margin: 12px auto 0; padding: 12px 14px; border-radius: 10px; background: #fff; border: 1px solid var(--border); color: var(--text-muted); text-align: center; }
+  .thes__vmap-detail.is-on { color: var(--navy); font-weight: 700; border-color: var(--navy); }
+  .thes__vmap-legend { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; margin: 12px auto 24px; font-size: 0.85rem; color: var(--text-muted); }
+  .thes__vmap-legend span { display: inline-flex; align-items: center; gap: 6px; }
+  .thes__vmap-key { display: inline-flex; align-items: flex-start; justify-content: flex-end; padding: 2px; width: 16px; height: 16px; border-radius: 4px; border: 1px solid var(--border); background: #fff; }
+  .thes__vmap-key--food { background: var(--coral-tint); border-color: var(--coral); }
+  .thes__vmap-key--children { background: var(--teal-tint); border-color: var(--teal); }
+  .thes__vmap-key--plug::after { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--yellow-text); }
+  .thes__vmap-groups { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 18px; max-width: 1000px; margin: 0 auto; }
+  .thes__vmap-group h3 { font-size: 1.05rem; margin: 0 0 8px; }
+  .thes__vmap-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+  .thes__vmap-item { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; padding: 8px 10px; border: 1px solid var(--border); border-radius: 8px; background: #fff; }
+  .thes__vmap-item[data-booth] { cursor: pointer; }
+  .thes__vmap-item.is-selected { border-color: var(--navy); background: var(--gold-tint); }
+  .thes__vmap-num { flex: none; min-width: 30px; height: 30px; display: inline-flex; align-items: center; justify-content: center; border-radius: 6px; background: var(--navy); color: #fff; font-weight: 700; font-size: 0.85rem; }
+  .thes__vmap-num--none { background: var(--teal-tint); color: var(--teal); }
+  .thes__vmap-name { flex: 1 1 0; min-width: 0; font-weight: 600; color: var(--navy); }
+  .thes__vmap-tag { font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; padding: 2px 8px; border-radius: 999px; background: var(--bg-tint); color: var(--text-muted); }
+  .thes__vmap-tag--food { background: var(--coral-tint); color: var(--coral); }
+  .thes__vmap-tag--children { background: var(--teal-tint); color: var(--teal); }
+  .thes__vmap-tag--pta, .thes__vmap-tag--sponsor { background: var(--gold-tint); color: var(--yellow-text); }
+  .thes__vmap-empty { text-align: center; color: var(--text-muted); }
 </style>
 
 

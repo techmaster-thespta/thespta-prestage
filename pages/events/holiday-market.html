@@ -16,7 +16,7 @@
 <link rel="canonical" href="https://www.thespta.org/events/holiday-market.html">
 <title>THES PTA Holiday Market 2026 · Columbia, MD | Thunder Hill Elementary PTA</title>
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "@id": "https://www.thespta.org/#organization", "name": "Thunder Hill Elementary PTA", "alternateName": ["THES PTA", "Thunder Hill PTA"], "description": "The parent-teacher association of Thunder Hill Elementary School, a Howard County Public School System elementary school in Columbia, Maryland.", "areaServed": [{"@type": "City", "name": "Columbia, Maryland"}, {"@type": "AdministrativeArea", "name": "Howard County, Maryland"}], "url": "https://www.thespta.org/", "logo": "https://www.thespta.org/images/hero-banner.jpg", "email": "president.thespta@gmail.com", "address": {"@type": "PostalAddress", "streetAddress": "9357 Mellenbrook Road", "addressLocality": "Columbia", "addressRegion": "MD", "postalCode": "21045", "addressCountry": "US"}, "sameAs": ["https://www.facebook.com/share/195cbRL7Qp/?mibextid=wwXIfr", "https://www.instagram.com/thunderhilles_pta?igsi=MTVsYW5reXl0MXd5Yw=="]}</script>
-<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Event", "name": "THES PTA Holiday Market 2026", "description": "The Thunder Hill Elementary PTA Holiday Market is Saturday, November 21, 2026, 11 AM\u20133 PM at Thunder Hill Elementary School in Columbia, Maryland (Howard County). Shop local makers and small businesses \u2014 vendor spaces available now.", "startDate": "2026-11-21T11:00:00-05:00", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "Thunder Hill Elementary School", "address": {"@type": "PostalAddress", "streetAddress": "9357 Mellenbrook Road", "addressLocality": "Columbia", "addressRegion": "MD", "postalCode": "21045", "addressCountry": "US"}, "containedInPlace": {"@type": "AdministrativeArea", "name": "Howard County, Maryland"}}, "organizer": {"@type": "Organization", "name": "Thunder Hill Elementary PTA", "url": "https://www.thespta.org/"}, "url": "https://www.thespta.org/events/holiday-market.html", "endDate": "2026-11-21T15:00:00-05:00", "image": ["https://www.thespta.org/flyers/events/holiday-market-2026.png"]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Event", "name": "THES PTA Holiday Market 2026", "description": "The Thunder Hill Elementary PTA Holiday Market is Saturday, November 21, 2026, 11 AM\u20133 PM at Thunder Hill Elementary School in Columbia, Maryland (Howard County). Shop local makers and small businesses \u2014 vendor spaces available now.", "startDate": "2026-11-21T11:00:00-05:00", "eventStatus": "https://schema.org/EventScheduled", "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode", "location": {"@type": "Place", "name": "Thunder Hill Elementary School", "address": {"@type": "PostalAddress", "streetAddress": "9357 Mellenbrook Road", "addressLocality": "Columbia", "addressRegion": "MD", "postalCode": "21045", "addressCountry": "US"}, "containedInPlace": {"@type": "AdministrativeArea", "name": "Howard County, Maryland"}}, "organizer": {"@type": "Organization", "name": "Thunder Hill Elementary PTA", "url": "https://www.thespta.org/"}, "url": "https://www.thespta.org/events/holiday-market.html", "endDate": "2026-11-21T15:00:00-05:00", "image": ["https://www.thespta.org/flyers/events/holiday-market-2026.png", "https://www.thespta.org/flyers/events/holiday-market-2026-vendor-layout.png"]}</script>
 </head>
 <body>
 <!--
@@ -601,6 +601,48 @@
   .thes__social-links a { display: inline-flex; }
   .thes__social-links a:hover { color: #fff; text-decoration: none; }
   .thes__footer-bottom { border-top: 1px solid rgba(255,255,255,0.15); text-align: center; padding: 14px; font-size: 0.78rem; color: rgba(255,255,255,0.6); }
+  /* Vendor map (featured event pages with `vendor_map`): a simple CSS
+     grid of numbered booth buttons, no absolute positioning. Colors use
+     two-class selectors so `.thes a`/button resets can't override them. */
+  .thes__vmap-tools { display: grid; gap: 10px; margin: 0 auto 14px; max-width: 760px; }
+  .thes .thes__vmap-search { width: 100%; font: inherit; padding: 12px 14px; border: 1px solid var(--border); border-radius: 10px; background: #fff; color: var(--text); }
+  .thes__vmap-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+  .thes .thes__vmap-chip { font: inherit; font-size: 0.85rem; font-weight: 700; padding: 6px 14px; border-radius: 999px; border: 1px solid var(--border); background: #fff; color: var(--navy); cursor: pointer; }
+  .thes .thes__vmap-chip.is-on { background: var(--navy); border-color: var(--navy); color: #fff; }
+  .thes__vmap-frame { max-width: 760px; margin: 0 auto; background: var(--bg-tint); border: 2px solid var(--navy); border-radius: 12px; padding: 8px; }
+  .thes__vmap { display: grid; gap: 4px; }
+  .thes .thes__vmap-booth { font: inherit; font-weight: 700; font-size: clamp(0.72rem, 2.6vw, 0.95rem); min-height: 40px; padding: 0; border-radius: 6px; border: 1px solid var(--border); background: #fff; color: var(--navy); cursor: pointer; transition: opacity 0.15s, transform 0.15s; }
+  .thes .thes__vmap-booth.thes__vmap-booth--food { background: var(--coral-tint); border-color: var(--coral); }
+  .thes .thes__vmap-booth.thes__vmap-booth--children { background: var(--teal-tint); border-color: var(--teal); }
+  .thes .thes__vmap-booth.is-dim { opacity: 0.25; }
+  .thes .thes__vmap-booth.is-match { box-shadow: 0 0 0 2px var(--teal); }
+  .thes .thes__vmap-booth.is-selected { background: var(--yellow); border-color: var(--navy); color: var(--navy); transform: scale(1.12); z-index: 1; opacity: 1; box-shadow: 0 0 0 2px var(--navy); }
+  .thes__vmap-plug { display: inline-block; width: 6px; height: 6px; margin-left: 2px; vertical-align: super; border-radius: 50%; background: var(--yellow-text); }
+  .thes__vmap-label { display: flex; align-items: center; justify-content: center; text-align: center; font-size: clamp(0.6rem, 2.2vw, 0.78rem); font-weight: 700; color: var(--text-muted); line-height: 1.15; padding: 2px; }
+  .thes__vmap-label--aisle { min-height: 22px; color: var(--teal); letter-spacing: 0.04em; text-transform: uppercase; font-size: clamp(0.55rem, 2vw, 0.7rem); }
+  .thes__vmap-label--entrance { background: var(--navy); color: #fff; border-radius: 6px; }
+  .thes__vmap-detail { max-width: 760px; margin: 12px auto 0; padding: 12px 14px; border-radius: 10px; background: #fff; border: 1px solid var(--border); color: var(--text-muted); text-align: center; }
+  .thes__vmap-detail.is-on { color: var(--navy); font-weight: 700; border-color: var(--navy); }
+  .thes__vmap-legend { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px; margin: 12px auto 24px; font-size: 0.85rem; color: var(--text-muted); }
+  .thes__vmap-legend span { display: inline-flex; align-items: center; gap: 6px; }
+  .thes__vmap-key { display: inline-flex; align-items: flex-start; justify-content: flex-end; padding: 2px; width: 16px; height: 16px; border-radius: 4px; border: 1px solid var(--border); background: #fff; }
+  .thes__vmap-key--food { background: var(--coral-tint); border-color: var(--coral); }
+  .thes__vmap-key--children { background: var(--teal-tint); border-color: var(--teal); }
+  .thes__vmap-key--plug::after { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--yellow-text); }
+  .thes__vmap-groups { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr)); gap: 18px; max-width: 1000px; margin: 0 auto; }
+  .thes__vmap-group h3 { font-size: 1.05rem; margin: 0 0 8px; }
+  .thes__vmap-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+  .thes__vmap-item { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; padding: 8px 10px; border: 1px solid var(--border); border-radius: 8px; background: #fff; }
+  .thes__vmap-item[data-booth] { cursor: pointer; }
+  .thes__vmap-item.is-selected { border-color: var(--navy); background: var(--gold-tint); }
+  .thes__vmap-num { flex: none; min-width: 30px; height: 30px; display: inline-flex; align-items: center; justify-content: center; border-radius: 6px; background: var(--navy); color: #fff; font-weight: 700; font-size: 0.85rem; }
+  .thes__vmap-num--none { background: var(--teal-tint); color: var(--teal); }
+  .thes__vmap-name { flex: 1 1 0; min-width: 0; font-weight: 600; color: var(--navy); }
+  .thes__vmap-tag { font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; padding: 2px 8px; border-radius: 999px; background: var(--bg-tint); color: var(--text-muted); }
+  .thes__vmap-tag--food { background: var(--coral-tint); color: var(--coral); }
+  .thes__vmap-tag--children { background: var(--teal-tint); color: var(--teal); }
+  .thes__vmap-tag--pta, .thes__vmap-tag--sponsor { background: var(--gold-tint); color: var(--yellow-text); }
+  .thes__vmap-empty { text-align: center; color: var(--text-muted); }
 </style>
 
 
@@ -813,10 +855,169 @@
     </div>
   </section>
 
+  <section class="thes__section" id="vendor-map">
+    <div class="thes__wrap">
+      <div class="thes__section-head">
+        <h2>Vendor Map</h2>
+        <p>Layout is subject to change. Tap a booth on the map, or search for a vendor below. Updated November 20, 2026.</p>
+      </div>
+      <div class="thes__vmap-tools">
+        <input type="search" class="thes__vmap-search" id="thes-vmap-search" placeholder="Search vendors, e.g. candles, cookies, 23" aria-label="Search vendors">
+        <div class="thes__vmap-chips" role="group" aria-label="Filter vendors">
+          <button type="button" class="thes__vmap-chip is-on" data-filter="">All</button>
+          <button type="button" class="thes__vmap-chip" data-filter="food">Food</button>
+          <button type="button" class="thes__vmap-chip" data-filter="children">Children's</button>
+          <button type="button" class="thes__vmap-chip" data-filter="pta sponsor">PTA &amp; Sponsors</button>
+        </div>
+      </div>
+      <div class="thes__vmap-frame">
+        <div class="thes__vmap" style="grid-template-columns:repeat(10, minmax(0, 1fr));grid-template-rows:repeat(7, auto);">
+        <div class="thes__vmap-label thes__vmap-label--plain" style="grid-column:1 / span 1;grid-row:1;">Exit</div>
+        <div class="thes__vmap-label thes__vmap-label--plain" style="grid-column:10 / span 1;grid-row:1;">Exit</div>
+        <div class="thes__vmap-label thes__vmap-label--aisle" style="grid-column:2 / span 8;grid-row:3;">Aisle: one-way walking path</div>
+        <div class="thes__vmap-label thes__vmap-label--aisle" style="grid-column:2 / span 8;grid-row:5;">Aisle: one-way walking path</div>
+        <div class="thes__vmap-label thes__vmap-label--plain" style="grid-column:1 / span 1;grid-row:7;">To Hallway</div>
+        <div class="thes__vmap-label thes__vmap-label--plain" style="grid-column:10 / span 1;grid-row:7;">To Hallway</div>
+        <div class="thes__vmap-label thes__vmap-label--entrance" style="grid-column:4 / span 3;grid-row:7;">Gym Entrance (from Main Lobby)</div>
+        <button type="button" class="thes__vmap-booth thes__vmap-booth--regular" style="grid-column:2;grid-row:1;" data-booth="1" data-name="Sugar &amp; Shine Designs" data-tags="" aria-label="Booth 1: Sugar &amp; Shine Designs">1</button>
+        <button type="button" class="thes__vmap-booth thes__vmap-booth--regular" style="grid-column:3;grid-row:1;" data-booth="2" data-name="Mary Kay" data-tags="" aria-label="Booth 2: Mary Kay">2</button>
+        <button type="button" class="thes__vmap-booth thes__vmap-booth--food" style="grid-column:4;grid-row:1;" data-booth="3" data-name="Kreative Dezerts" data-tags="Food" aria-label="Booth 3: Kreative Dezerts">3</button>
+        <button type="button" class="thes__vmap-booth thes__vmap-booth--regular" style="grid-column:5;grid-row:1;" data-booth="4" data-name="Shaded by Tamika" data-tags="Outlet" aria-label="Booth 4: Shaded by Tamika">4<i class="thes__vmap-plug" aria-hidden="true"></i></button>
+        <button type="button" class="thes__vmap-booth thes__vmap-booth--regular" style="grid-column:6;grid-row:1;" data-booth="5" data-name="Color Street" data-tags="" aria-label="Booth 5: Color Street">5</button>
+        <button type="button" class="thes__vmap-booth thes__vmap-booth--food" style="grid-column:7;grid-row:1;" data-booth="6" data-name="Selah Sugar" data-tags="Food" aria-label="Booth 6: Selah Sugar">6</button>
+        <button type="button" class="thes__vmap-booth thes__vmap-booth--regular" style="grid-column:8;grid-row:1;" data-booth="7" data-name="Yanna Makes (booth 2 of 2)" data-tags="" aria-label="Booth 7: Yanna Makes (booth 2 of 2)">7</button>
+        <button type="button" class="thes__vmap-booth thes__vmap-booth--regular" style="grid-column:9;grid-row:1;" data-booth="8" data-name="Yanna Makes (booth 1 of 2)" data-tags="" aria-label="Booth 8: Yanna Makes (booth 1 of 2)">8</button>
+        <button type="button" class="thes__vmap-booth thes__vmap-booth--regular" style="grid-column:10;grid-row:2;" data-booth="9" data-name="iCRYO Columbia" data-tags="Outlet" aria-label="Booth 9: iCRYO Columbia">9<i class="thes__vmap-plug" aria-hidden="true"></i></button>
+        <button type="button" class="thes__vmap-booth thes__vmap-booth--regular" style="grid-column:10;grid-row:3;" data-booth="10" data-name="A Taste of Home" data-tags="Outlet" aria-label="Booth 10: A Taste of Home">10<i class="thes__vmap-plug" aria-hidden="true"></i></button>
+        <button type="button" class="thes__vmap-booth thes__vmap-booth--food" style="grid-column:10;grid-row:4;" data-booth="11" data-name="PMC &amp; Our Family Baked Goods" data-tags="Food" aria-label="Booth 11: PMC &amp; Our Family Baked Goods">11</button>
+        <button type="button" class="thes__vmap-booth thes__vmap-booth--food" style="grid-column:10;grid-row:5;" data-booth="12" data-name="YM Cookie Co." data-tags="Food" aria-label="Booth 12: YM Cookie Co.">12</button>
+        <button type="button" class="thes__vmap-booth thes__vmap-booth--regular" style="grid-column:10;grid-row:6;" data-booth="13" data-name="Sweetlife Honey" data-tags="" aria-label="Booth 13: Sweetlife Honey">13</button>
+        <button type="button" class="thes__vmap-booth thes__vmap-booth--regular" style="grid-column:9;grid-row:6;" data-booth="14" data-name="Happy Hands Crafts" data-tags="" aria-label="Booth 14: Happy Hands Crafts">14</button>
+        <button type="button" class="thes__vmap-booth thes__vmap-booth--children" style="grid-column:8;grid-row:6;" data-booth="15" data-name="Bricks &amp; Beyond" data-tags="Children&#x27;s" aria-label="Booth 15: Bricks &amp; Beyond">15</button>
+        <button type="button" class="thes__vmap-booth thes__vmap-booth--regular" style="grid-column:7;grid-row:6;" data-booth="16" data-name="The Book Nook" data-tags="" aria-label="Booth 16: The Book Nook">16</button>
+        <button type="button" class="thes__vmap-booth thes__vmap-booth--children" style="grid-column:6;grid-row:6;" data-booth="17" data-name="Playful Paradise" data-tags="Children&#x27;s" aria-label="Booth 17: Playful Paradise">17</button>
+        <button type="button" class="thes__vmap-booth thes__vmap-booth--children" style="grid-column:5;grid-row:6;" data-booth="18" data-name="Kid Creations" data-tags="Children&#x27;s" aria-label="Booth 18: Kid Creations">18</button>
+        <button type="button" class="thes__vmap-booth thes__vmap-booth--regular" style="grid-column:4;grid-row:6;" data-booth="19" data-name="Little Learners Books" data-tags="" aria-label="Booth 19: Little Learners Books">19</button>
+        <button type="button" class="thes__vmap-booth thes__vmap-booth--regular" style="grid-column:3;grid-row:6;" data-booth="20" data-name="Dream Designs" data-tags="" aria-label="Booth 20: Dream Designs">20</button>
+        <button type="button" class="thes__vmap-booth thes__vmap-booth--regular" style="grid-column:2;grid-row:6;" data-booth="21" data-name="Daisy Embroidery" data-tags="" aria-label="Booth 21: Daisy Embroidery">21</button>
+        <button type="button" class="thes__vmap-booth thes__vmap-booth--regular" style="grid-column:9;grid-row:2;" data-booth="22" data-name="Tupperware" data-tags="" aria-label="Booth 22: Tupperware">22</button>
+        <button type="button" class="thes__vmap-booth thes__vmap-booth--regular" style="grid-column:8;grid-row:2;" data-booth="23" data-name="Pampered Chef" data-tags="" aria-label="Booth 23: Pampered Chef">23</button>
+        <button type="button" class="thes__vmap-booth thes__vmap-booth--regular" style="grid-column:7;grid-row:2;" data-booth="24" data-name="Thirty-One Gifts" data-tags="" aria-label="Booth 24: Thirty-One Gifts">24</button>
+        <button type="button" class="thes__vmap-booth thes__vmap-booth--regular" style="grid-column:6;grid-row:2;" data-booth="25" data-name="Scentsy" data-tags="" aria-label="Booth 25: Scentsy">25</button>
+        <button type="button" class="thes__vmap-booth thes__vmap-booth--regular" style="grid-column:5;grid-row:2;" data-booth="26" data-name="LuLaRoe" data-tags="" aria-label="Booth 26: LuLaRoe">26</button>
+        <button type="button" class="thes__vmap-booth thes__vmap-booth--regular" style="grid-column:4;grid-row:2;" data-booth="27" data-name="Katy&#x27;s Kreations" data-tags="" aria-label="Booth 27: Katy&#x27;s Kreations">27</button>
+        <button type="button" class="thes__vmap-booth thes__vmap-booth--regular" style="grid-column:3;grid-row:2;" data-booth="28" data-name="Norwex" data-tags="" aria-label="Booth 28: Norwex">28</button>
+        <button type="button" class="thes__vmap-booth thes__vmap-booth--regular" style="grid-column:3;grid-row:4;" data-booth="29" data-name="Arbonne" data-tags="" aria-label="Booth 29: Arbonne">29</button>
+        <button type="button" class="thes__vmap-booth thes__vmap-booth--regular" style="grid-column:4;grid-row:4;" data-booth="30" data-name="Younique" data-tags="" aria-label="Booth 30: Younique">30</button>
+        <button type="button" class="thes__vmap-booth thes__vmap-booth--regular" style="grid-column:5;grid-row:4;" data-booth="31" data-name="Sew Creative" data-tags="" aria-label="Booth 31: Sew Creative">31</button>
+        <button type="button" class="thes__vmap-booth thes__vmap-booth--regular" style="grid-column:6;grid-row:4;" data-booth="32" data-name="The Cozy Candle Co." data-tags="" aria-label="Booth 32: The Cozy Candle Co.">32</button>
+        <button type="button" class="thes__vmap-booth thes__vmap-booth--regular" style="grid-column:7;grid-row:4;" data-booth="33" data-name="Handmade by Heidi" data-tags="" aria-label="Booth 33: Handmade by Heidi">33</button>
+        <button type="button" class="thes__vmap-booth thes__vmap-booth--regular" style="grid-column:8;grid-row:4;" data-booth="34" data-name="Crafts by Carley" data-tags="" aria-label="Booth 34: Crafts by Carley">34</button>
+        <button type="button" class="thes__vmap-booth thes__vmap-booth--regular" style="grid-column:9;grid-row:4;" data-booth="35" data-name="Local Artisans" data-tags="" aria-label="Booth 35: Local Artisans">35</button>
+        <button type="button" class="thes__vmap-booth thes__vmap-booth--regular" style="grid-column:1;grid-row:6;" data-booth="36" data-name="JW Treasures" data-tags="" aria-label="Booth 36: JW Treasures">36</button>
+        <button type="button" class="thes__vmap-booth thes__vmap-booth--regular" style="grid-column:1;grid-row:5;" data-booth="37" data-name="MK Market" data-tags="" aria-label="Booth 37: MK Market">37</button>
+        <button type="button" class="thes__vmap-booth thes__vmap-booth--regular" style="grid-column:1;grid-row:4;" data-booth="38" data-name="Bean &amp; Butter" data-tags="Outlet" aria-label="Booth 38: Bean &amp; Butter">38<i class="thes__vmap-plug" aria-hidden="true"></i></button>
+        <button type="button" class="thes__vmap-booth thes__vmap-booth--regular" style="grid-column:1;grid-row:3;" data-booth="39" data-name="The Rizzo Collection" data-tags="Outlet" aria-label="Booth 39: The Rizzo Collection">39<i class="thes__vmap-plug" aria-hidden="true"></i></button>
+        <button type="button" class="thes__vmap-booth thes__vmap-booth--food" style="grid-column:1;grid-row:2;" data-booth="40" data-name="Althea&#x27;s Almost Famous" data-tags="Food, Outlet" aria-label="Booth 40: Althea&#x27;s Almost Famous">40<i class="thes__vmap-plug" aria-hidden="true"></i></button>
+        <button type="button" class="thes__vmap-booth thes__vmap-booth--regular" style="grid-column:2;grid-row:7;" data-booth="41" data-name="Blooming Creations" data-tags="" aria-label="Booth 41: Blooming Creations">41</button>
+        <button type="button" class="thes__vmap-booth thes__vmap-booth--regular" style="grid-column:3;grid-row:7;" data-booth="42" data-name="Nature&#x27;s Nook" data-tags="" aria-label="Booth 42: Nature&#x27;s Nook">42</button>
+        <button type="button" class="thes__vmap-booth thes__vmap-booth--food" style="grid-column:7;grid-row:7;" data-booth="43" data-name="Alyssa&#x27;s Sweets &amp; Treats" data-tags="Food" aria-label="Booth 43: Alyssa&#x27;s Sweets &amp; Treats">43</button>
+        <button type="button" class="thes__vmap-booth thes__vmap-booth--regular" style="grid-column:8;grid-row:7;" data-booth="44" data-name="Local Authors" data-tags="" aria-label="Booth 44: Local Authors">44</button>
+        <button type="button" class="thes__vmap-booth thes__vmap-booth--regular" style="grid-column:9;grid-row:7;" data-booth="45" data-name="Community Resources" data-tags="" aria-label="Booth 45: Community Resources">45</button>
+        </div>
+      </div>
+      <div class="thes__vmap-detail" id="thes-vmap-detail" aria-live="polite">Tap a numbered booth to see who's there.</div>
+      <div class="thes__vmap-legend">
+        <span><b class="thes__vmap-key"></b>Vendor</span>
+        <span><b class="thes__vmap-key thes__vmap-key--food"></b>Food</span>
+        <span><b class="thes__vmap-key thes__vmap-key--children"></b>Children's</span>
+        <span><b class="thes__vmap-key thes__vmap-key--plug"></b>Has outlet</span>
+      </div>
+      <div class="thes__vmap-groups" id="thes-vmap-groups">
+<div class="thes__vmap-group"><h3>School Gym</h3><ul class="thes__vmap-list"><li class="thes__vmap-item" data-booth="1" data-tags="" data-search="sugar &amp; shine designs 1"><span class="thes__vmap-num">1</span><span class="thes__vmap-name">Sugar &amp; Shine Designs</span></li><li class="thes__vmap-item" data-booth="2" data-tags="" data-search="mary kay 2"><span class="thes__vmap-num">2</span><span class="thes__vmap-name">Mary Kay</span></li><li class="thes__vmap-item" data-booth="3" data-tags="food" data-search="kreative dezerts 3 food"><span class="thes__vmap-num">3</span><span class="thes__vmap-name">Kreative Dezerts</span><span class="thes__vmap-tag thes__vmap-tag--food">Food</span></li><li class="thes__vmap-item" data-booth="4" data-tags="outlet" data-search="shaded by tamika 4 outlet"><span class="thes__vmap-num">4</span><span class="thes__vmap-name">Shaded by Tamika</span></li><li class="thes__vmap-item" data-booth="5" data-tags="" data-search="color street 5"><span class="thes__vmap-num">5</span><span class="thes__vmap-name">Color Street</span></li><li class="thes__vmap-item" data-booth="6" data-tags="food" data-search="selah sugar 6 food"><span class="thes__vmap-num">6</span><span class="thes__vmap-name">Selah Sugar</span><span class="thes__vmap-tag thes__vmap-tag--food">Food</span></li><li class="thes__vmap-item" data-booth="7" data-tags="" data-search="yanna makes (booth 2 of 2) 7"><span class="thes__vmap-num">7</span><span class="thes__vmap-name">Yanna Makes (booth 2 of 2)</span></li><li class="thes__vmap-item" data-booth="8" data-tags="" data-search="yanna makes (booth 1 of 2) 8"><span class="thes__vmap-num">8</span><span class="thes__vmap-name">Yanna Makes (booth 1 of 2)</span></li><li class="thes__vmap-item" data-booth="9" data-tags="outlet" data-search="icryo columbia 9 outlet"><span class="thes__vmap-num">9</span><span class="thes__vmap-name">iCRYO Columbia</span></li><li class="thes__vmap-item" data-booth="10" data-tags="outlet" data-search="a taste of home 10 outlet"><span class="thes__vmap-num">10</span><span class="thes__vmap-name">A Taste of Home</span></li><li class="thes__vmap-item" data-booth="11" data-tags="food" data-search="pmc &amp; our family baked goods 11 food"><span class="thes__vmap-num">11</span><span class="thes__vmap-name">PMC &amp; Our Family Baked Goods</span><span class="thes__vmap-tag thes__vmap-tag--food">Food</span></li><li class="thes__vmap-item" data-booth="12" data-tags="food" data-search="ym cookie co. 12 food"><span class="thes__vmap-num">12</span><span class="thes__vmap-name">YM Cookie Co.</span><span class="thes__vmap-tag thes__vmap-tag--food">Food</span></li><li class="thes__vmap-item" data-booth="13" data-tags="" data-search="sweetlife honey 13"><span class="thes__vmap-num">13</span><span class="thes__vmap-name">Sweetlife Honey</span></li><li class="thes__vmap-item" data-booth="14" data-tags="" data-search="happy hands crafts 14"><span class="thes__vmap-num">14</span><span class="thes__vmap-name">Happy Hands Crafts</span></li><li class="thes__vmap-item" data-booth="15" data-tags="children" data-search="bricks &amp; beyond 15 children&#x27;s"><span class="thes__vmap-num">15</span><span class="thes__vmap-name">Bricks &amp; Beyond</span><span class="thes__vmap-tag thes__vmap-tag--children">Children&#x27;s</span></li><li class="thes__vmap-item" data-booth="16" data-tags="" data-search="the book nook 16"><span class="thes__vmap-num">16</span><span class="thes__vmap-name">The Book Nook</span></li><li class="thes__vmap-item" data-booth="17" data-tags="children" data-search="playful paradise 17 children&#x27;s"><span class="thes__vmap-num">17</span><span class="thes__vmap-name">Playful Paradise</span><span class="thes__vmap-tag thes__vmap-tag--children">Children&#x27;s</span></li><li class="thes__vmap-item" data-booth="18" data-tags="children" data-search="kid creations 18 children&#x27;s"><span class="thes__vmap-num">18</span><span class="thes__vmap-name">Kid Creations</span><span class="thes__vmap-tag thes__vmap-tag--children">Children&#x27;s</span></li><li class="thes__vmap-item" data-booth="19" data-tags="" data-search="little learners books 19"><span class="thes__vmap-num">19</span><span class="thes__vmap-name">Little Learners Books</span></li><li class="thes__vmap-item" data-booth="20" data-tags="" data-search="dream designs 20"><span class="thes__vmap-num">20</span><span class="thes__vmap-name">Dream Designs</span></li><li class="thes__vmap-item" data-booth="21" data-tags="" data-search="daisy embroidery 21"><span class="thes__vmap-num">21</span><span class="thes__vmap-name">Daisy Embroidery</span></li><li class="thes__vmap-item" data-booth="22" data-tags="" data-search="tupperware 22"><span class="thes__vmap-num">22</span><span class="thes__vmap-name">Tupperware</span></li><li class="thes__vmap-item" data-booth="23" data-tags="" data-search="pampered chef 23"><span class="thes__vmap-num">23</span><span class="thes__vmap-name">Pampered Chef</span></li><li class="thes__vmap-item" data-booth="24" data-tags="" data-search="thirty-one gifts 24"><span class="thes__vmap-num">24</span><span class="thes__vmap-name">Thirty-One Gifts</span></li><li class="thes__vmap-item" data-booth="25" data-tags="" data-search="scentsy 25"><span class="thes__vmap-num">25</span><span class="thes__vmap-name">Scentsy</span></li><li class="thes__vmap-item" data-booth="26" data-tags="" data-search="lularoe 26"><span class="thes__vmap-num">26</span><span class="thes__vmap-name">LuLaRoe</span></li><li class="thes__vmap-item" data-booth="27" data-tags="" data-search="katy&#x27;s kreations 27"><span class="thes__vmap-num">27</span><span class="thes__vmap-name">Katy&#x27;s Kreations</span></li><li class="thes__vmap-item" data-booth="28" data-tags="" data-search="norwex 28"><span class="thes__vmap-num">28</span><span class="thes__vmap-name">Norwex</span></li><li class="thes__vmap-item" data-booth="29" data-tags="" data-search="arbonne 29"><span class="thes__vmap-num">29</span><span class="thes__vmap-name">Arbonne</span></li><li class="thes__vmap-item" data-booth="30" data-tags="" data-search="younique 30"><span class="thes__vmap-num">30</span><span class="thes__vmap-name">Younique</span></li><li class="thes__vmap-item" data-booth="31" data-tags="" data-search="sew creative 31"><span class="thes__vmap-num">31</span><span class="thes__vmap-name">Sew Creative</span></li><li class="thes__vmap-item" data-booth="32" data-tags="" data-search="the cozy candle co. 32"><span class="thes__vmap-num">32</span><span class="thes__vmap-name">The Cozy Candle Co.</span></li><li class="thes__vmap-item" data-booth="33" data-tags="" data-search="handmade by heidi 33"><span class="thes__vmap-num">33</span><span class="thes__vmap-name">Handmade by Heidi</span></li><li class="thes__vmap-item" data-booth="34" data-tags="" data-search="crafts by carley 34"><span class="thes__vmap-num">34</span><span class="thes__vmap-name">Crafts by Carley</span></li><li class="thes__vmap-item" data-booth="35" data-tags="" data-search="local artisans 35"><span class="thes__vmap-num">35</span><span class="thes__vmap-name">Local Artisans</span></li><li class="thes__vmap-item" data-booth="36" data-tags="" data-search="jw treasures 36"><span class="thes__vmap-num">36</span><span class="thes__vmap-name">JW Treasures</span></li><li class="thes__vmap-item" data-booth="37" data-tags="" data-search="mk market 37"><span class="thes__vmap-num">37</span><span class="thes__vmap-name">MK Market</span></li><li class="thes__vmap-item" data-booth="38" data-tags="outlet" data-search="bean &amp; butter 38 outlet"><span class="thes__vmap-num">38</span><span class="thes__vmap-name">Bean &amp; Butter</span></li><li class="thes__vmap-item" data-booth="39" data-tags="outlet" data-search="the rizzo collection 39 outlet"><span class="thes__vmap-num">39</span><span class="thes__vmap-name">The Rizzo Collection</span></li><li class="thes__vmap-item" data-booth="40" data-tags="food outlet" data-search="althea&#x27;s almost famous 40 food outlet"><span class="thes__vmap-num">40</span><span class="thes__vmap-name">Althea&#x27;s Almost Famous</span><span class="thes__vmap-tag thes__vmap-tag--food">Food</span></li><li class="thes__vmap-item" data-booth="41" data-tags="" data-search="blooming creations 41"><span class="thes__vmap-num">41</span><span class="thes__vmap-name">Blooming Creations</span></li><li class="thes__vmap-item" data-booth="42" data-tags="" data-search="nature&#x27;s nook 42"><span class="thes__vmap-num">42</span><span class="thes__vmap-name">Nature&#x27;s Nook</span></li><li class="thes__vmap-item" data-booth="43" data-tags="food" data-search="alyssa&#x27;s sweets &amp; treats 43 food"><span class="thes__vmap-num">43</span><span class="thes__vmap-name">Alyssa&#x27;s Sweets &amp; Treats</span><span class="thes__vmap-tag thes__vmap-tag--food">Food</span></li><li class="thes__vmap-item" data-booth="44" data-tags="" data-search="local authors 44"><span class="thes__vmap-num">44</span><span class="thes__vmap-name">Local Authors</span></li><li class="thes__vmap-item" data-booth="45" data-tags="" data-search="community resources 45"><span class="thes__vmap-num">45</span><span class="thes__vmap-name">Community Resources</span></li></ul></div>
+<div class="thes__vmap-group"><h3>Hallway outside the Gym (Main Lobby)</h3><ul class="thes__vmap-list"><li class="thes__vmap-item" data-tags="" data-search="mindful beginnings "><span class="thes__vmap-num thes__vmap-num--none" aria-hidden="true">&bull;</span><span class="thes__vmap-name">Mindful Beginnings</span></li><li class="thes__vmap-item" data-tags="sponsor" data-search="mathnasium – the math learning center  pta sponsor"><span class="thes__vmap-num thes__vmap-num--none" aria-hidden="true">&bull;</span><span class="thes__vmap-name">Mathnasium – The Math Learning Center</span><span class="thes__vmap-tag thes__vmap-tag--sponsor">PTA Sponsor</span></li><li class="thes__vmap-item" data-tags="pta" data-search="thes pta information &amp; activities  thes pta"><span class="thes__vmap-num thes__vmap-num--none" aria-hidden="true">&bull;</span><span class="thes__vmap-name">THES PTA Information &amp; Activities</span><span class="thes__vmap-tag thes__vmap-tag--pta">THES PTA</span></li><li class="thes__vmap-item" data-tags="pta" data-search="thes pta raffle prizes &amp; giveaways  thes pta"><span class="thes__vmap-num thes__vmap-num--none" aria-hidden="true">&bull;</span><span class="thes__vmap-name">THES PTA Raffle Prizes &amp; Giveaways</span><span class="thes__vmap-tag thes__vmap-tag--pta">THES PTA</span></li><li class="thes__vmap-item" data-tags="sponsor" data-search="three sprouts landscaping  pta sponsor"><span class="thes__vmap-num thes__vmap-num--none" aria-hidden="true">&bull;</span><span class="thes__vmap-name">Three Sprouts Landscaping</span><span class="thes__vmap-tag thes__vmap-tag--sponsor">PTA Sponsor</span></li></ul></div>
+<div class="thes__vmap-group"><h3>Cafeteria</h3><ul class="thes__vmap-list"><li class="thes__vmap-item" data-tags="" data-search="free arts &amp; crafts for kids "><span class="thes__vmap-num thes__vmap-num--none" aria-hidden="true">&bull;</span><span class="thes__vmap-name">Free arts &amp; crafts for kids</span></li><li class="thes__vmap-item" data-tags="" data-search="eat &amp; enjoy food from the food trucks "><span class="thes__vmap-num thes__vmap-num--none" aria-hidden="true">&bull;</span><span class="thes__vmap-name">Eat &amp; enjoy food from the food trucks</span></li></ul></div>
+<div class="thes__vmap-group"><h3>Front Foyer (School Entrance)</h3><ul class="thes__vmap-list"><li class="thes__vmap-item" data-tags="" data-search="photo booth "><span class="thes__vmap-num thes__vmap-num--none" aria-hidden="true">&bull;</span><span class="thes__vmap-name">Photo booth</span></li></ul></div>
+<div class="thes__vmap-group"><h3>Front of School (Outdoor Area)</h3><ul class="thes__vmap-list"><li class="thes__vmap-item" data-tags="" data-search="moonbounce "><span class="thes__vmap-num thes__vmap-num--none" aria-hidden="true">&bull;</span><span class="thes__vmap-name">Moonbounce</span></li></ul></div>
+      </div>
+      <p class="thes__vmap-empty" id="thes-vmap-empty" hidden>No vendors match that search.</p>
+    </div>
+  </section>
+<script>
+(function () {
+  var root = document.getElementById("vendor-map");
+  if (!root) return;
+  var booths = root.querySelectorAll(".thes__vmap-booth");
+  var items = root.querySelectorAll(".thes__vmap-item");
+  var detail = document.getElementById("thes-vmap-detail");
+  var search = document.getElementById("thes-vmap-search");
+  var empty = document.getElementById("thes-vmap-empty");
+  var chips = root.querySelectorAll(".thes__vmap-chip");
+  var filter = "";
+
+  function select(num, scrollToMap) {
+    for (var i = 0; i < booths.length; i++) booths[i].classList.toggle("is-selected", booths[i].getAttribute("data-booth") === num);
+    for (var j = 0; j < items.length; j++) items[j].classList.toggle("is-selected", items[j].getAttribute("data-booth") === num);
+    var b = root.querySelector('.thes__vmap-booth[data-booth="' + num + '"]');
+    if (!b) return;
+    var tags = b.getAttribute("data-tags");
+    detail.textContent = "Booth " + num + ": " + b.getAttribute("data-name") + (tags ? " (" + tags + ")" : "");
+    detail.classList.add("is-on");
+    if (scrollToMap) b.scrollIntoView({ behavior: "smooth", block: "center" });
+  }
+
+  function apply() {
+    var q = (search.value || "").trim().toLowerCase();
+    var shown = 0, matched = {};
+    for (var i = 0; i < items.length; i++) {
+      var it = items[i];
+      var okText = !q || it.getAttribute("data-search").indexOf(q) !== -1;
+      var tags = " " + it.getAttribute("data-tags") + " ";
+      var okTag = !filter || filter.split(" ").some(function (f) { return tags.indexOf(" " + f + " ") !== -1; });
+      var ok = okText && okTag;
+      it.hidden = !ok;
+      if (ok) { shown++; if (it.getAttribute("data-booth")) matched[it.getAttribute("data-booth")] = true; }
+    }
+    var active = q || filter;
+    for (var k = 0; k < booths.length; k++) {
+      var on = matched[booths[k].getAttribute("data-booth")];
+      booths[k].classList.toggle("is-dim", !!active && !on);
+      booths[k].classList.toggle("is-match", !!active && !!on);
+    }
+    var groups = root.querySelectorAll(".thes__vmap-group");
+    for (var g = 0; g < groups.length; g++) groups[g].hidden = !groups[g].querySelector(".thes__vmap-item:not([hidden])");
+    empty.hidden = shown !== 0;
+  }
+
+  for (var i = 0; i < booths.length; i++) {
+    booths[i].addEventListener("click", function () { select(this.getAttribute("data-booth"), false); });
+  }
+  for (var j = 0; j < items.length; j++) {
+    if (!items[j].getAttribute("data-booth")) continue;
+    items[j].setAttribute("tabindex", "0");
+    items[j].addEventListener("click", function () { select(this.getAttribute("data-booth"), true); });
+    items[j].addEventListener("keydown", function (e) { if (e.key === "Enter") select(this.getAttribute("data-booth"), true); });
+  }
+  search.addEventListener("input", apply);
+  for (var c = 0; c < chips.length; c++) {
+    chips[c].addEventListener("click", function () {
+      for (var x = 0; x < chips.length; x++) chips[x].classList.remove("is-on");
+      this.classList.add("is-on");
+      filter = this.getAttribute("data-filter");
+      apply();
+    });
+  }
+})();
+</script>
+
+
   <section class="thes__section">
     <div class="thes__wrap">
-      <div class="thes__section-head"><h2>Event Flyer</h2></div>
+      <div class="thes__section-head"><h2>Event Flyers</h2></div>
+      <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(260px, 1fr)); gap:20px; align-items:start;">
       <a href="../flyers/events/holiday-market-2026.png" target="_blank" rel="noopener"><img src="../flyers/events/holiday-market-2026.png" alt="Thunder Hill Elementary PTA Holiday Market! Let&#x27;s get into the holiday season together! Saturday, November 21, 2026, 11:00 AM – 3:00 PM at Thunder Hill Elementary School, 9357 Mellenbrook Road, Columbia, MD 21045. Local vendors, handmade goods, unique gifts and more. Free giveaways and raffle prizes, free kid arts and craft activities. Free event! Shop local, support small businesses, support the THES PTA!" loading="lazy" style="display:block; width:100%; max-width:900px; height:auto; margin:0 auto; border-radius:14px; border:1px solid var(--border);"></a>
+      <a href="../flyers/events/holiday-market-2026-vendor-layout.png" target="_blank" rel="noopener"><img src="../flyers/events/holiday-market-2026-vendor-layout.png" alt="Holiday Market vendor layout (printable version, subject to change): 44 vendors in the school gym, PTA and sponsor tables in the hallway outside the gym (main lobby), free arts and crafts and food trucks in the cafeteria, photo booth in the front foyer, and a moonbounce in front of the school." loading="lazy" style="display:block; width:100%; max-width:900px; height:auto; margin:0 auto; border-radius:14px; border:1px solid var(--border);"></a>
+      </div>
     </div>
   </section>
 

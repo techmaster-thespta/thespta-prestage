@@ -1,0 +1,461 @@
+{
+  "_how_to_edit": "Vendor moved to another booth? Change the name (and tags) on that booth number in 'booths'. A booth's spot on the gym map comes from its 'col'/'row' and normally never changes. Tags: food, children, outlet. Set 'updated' to today's date after any change.",
+  "title": "Vendor Map",
+  "updated": "2026-11-20",
+  "note": "Layout is subject to change. Tap a booth on the map, or search for a vendor below.",
+  "gym": {
+    "name": "School Gym",
+    "columns": 10,
+    "rows": 7,
+    "labels": [
+      {
+        "text": "Exit",
+        "col": 1,
+        "row": 1
+      },
+      {
+        "text": "Exit",
+        "col": 10,
+        "row": 1
+      },
+      {
+        "text": "Aisle: one-way walking path",
+        "col": 2,
+        "row": 3,
+        "span": 8,
+        "kind": "aisle"
+      },
+      {
+        "text": "Aisle: one-way walking path",
+        "col": 2,
+        "row": 5,
+        "span": 8,
+        "kind": "aisle"
+      },
+      {
+        "text": "To Hallway",
+        "col": 1,
+        "row": 7
+      },
+      {
+        "text": "To Hallway",
+        "col": 10,
+        "row": 7
+      },
+      {
+        "text": "Gym Entrance (from Main Lobby)",
+        "col": 4,
+        "row": 7,
+        "span": 3,
+        "kind": "entrance"
+      }
+    ]
+  },
+  "booths": [
+    {
+      "number": 1,
+      "name": "Sugar & Shine Designs",
+      "tags": [],
+      "col": 2,
+      "row": 1
+    },
+    {
+      "number": 2,
+      "name": "Mary Kay",
+      "tags": [],
+      "col": 3,
+      "row": 1
+    },
+    {
+      "number": 3,
+      "name": "Kreative Dezerts",
+      "tags": [
+        "food"
+      ],
+      "col": 4,
+      "row": 1
+    },
+    {
+      "number": 4,
+      "name": "Shaded by Tamika",
+      "tags": [
+        "outlet"
+      ],
+      "col": 5,
+      "row": 1
+    },
+    {
+      "number": 5,
+      "name": "Color Street",
+      "tags": [],
+      "col": 6,
+      "row": 1
+    },
+    {
+      "number": 6,
+      "name": "Selah Sugar",
+      "tags": [
+        "food"
+      ],
+      "col": 7,
+      "row": 1
+    },
+    {
+      "number": 7,
+      "name": "Yanna Makes (booth 2 of 2)",
+      "tags": [],
+      "col": 8,
+      "row": 1
+    },
+    {
+      "number": 8,
+      "name": "Yanna Makes (booth 1 of 2)",
+      "tags": [],
+      "col": 9,
+      "row": 1
+    },
+    {
+      "number": 9,
+      "name": "iCRYO Columbia",
+      "tags": [
+        "outlet"
+      ],
+      "col": 10,
+      "row": 2
+    },
+    {
+      "number": 10,
+      "name": "A Taste of Home",
+      "tags": [
+        "outlet"
+      ],
+      "col": 10,
+      "row": 3
+    },
+    {
+      "number": 11,
+      "name": "PMC & Our Family Baked Goods",
+      "tags": [
+        "food"
+      ],
+      "col": 10,
+      "row": 4
+    },
+    {
+      "number": 12,
+      "name": "YM Cookie Co.",
+      "tags": [
+        "food"
+      ],
+      "col": 10,
+      "row": 5
+    },
+    {
+      "number": 13,
+      "name": "Sweetlife Honey",
+      "tags": [],
+      "col": 10,
+      "row": 6
+    },
+    {
+      "number": 14,
+      "name": "Happy Hands Crafts",
+      "tags": [],
+      "col": 9,
+      "row": 6
+    },
+    {
+      "number": 15,
+      "name": "Bricks & Beyond",
+      "tags": [
+        "children"
+      ],
+      "col": 8,
+      "row": 6
+    },
+    {
+      "number": 16,
+      "name": "The Book Nook",
+      "tags": [],
+      "col": 7,
+      "row": 6
+    },
+    {
+      "number": 17,
+      "name": "Playful Paradise",
+      "tags": [
+        "children"
+      ],
+      "col": 6,
+      "row": 6
+    },
+    {
+      "number": 18,
+      "name": "Kid Creations",
+      "tags": [
+        "children"
+      ],
+      "col": 5,
+      "row": 6
+    },
+    {
+      "number": 19,
+      "name": "Little Learners Books",
+      "tags": [],
+      "col": 4,
+      "row": 6
+    },
+    {
+      "number": 20,
+      "name": "Dream Designs",
+      "tags": [],
+      "col": 3,
+      "row": 6
+    },
+    {
+      "number": 21,
+      "name": "Daisy Embroidery",
+      "tags": [],
+      "col": 2,
+      "row": 6
+    },
+    {
+      "number": 22,
+      "name": "Tupperware",
+      "tags": [],
+      "col": 9,
+      "row": 2
+    },
+    {
+      "number": 23,
+      "name": "Pampered Chef",
+      "tags": [],
+      "col": 8,
+      "row": 2
+    },
+    {
+      "number": 24,
+      "name": "Thirty-One Gifts",
+      "tags": [],
+      "col": 7,
+      "row": 2
+    },
+    {
+      "number": 25,
+      "name": "Scentsy",
+      "tags": [],
+      "col": 6,
+      "row": 2
+    },
+    {
+      "number": 26,
+      "name": "LuLaRoe",
+      "tags": [],
+      "col": 5,
+      "row": 2
+    },
+    {
+      "number": 27,
+      "name": "Katy's Kreations",
+      "tags": [],
+      "col": 4,
+      "row": 2
+    },
+    {
+      "number": 28,
+      "name": "Norwex",
+      "tags": [],
+      "col": 3,
+      "row": 2
+    },
+    {
+      "number": 29,
+      "name": "Arbonne",
+      "tags": [],
+      "col": 3,
+      "row": 4
+    },
+    {
+      "number": 30,
+      "name": "Younique",
+      "tags": [],
+      "col": 4,
+      "row": 4
+    },
+    {
+      "number": 31,
+      "name": "Sew Creative",
+      "tags": [],
+      "col": 5,
+      "row": 4
+    },
+    {
+      "number": 32,
+      "name": "The Cozy Candle Co.",
+      "tags": [],
+      "col": 6,
+      "row": 4
+    },
+    {
+      "number": 33,
+      "name": "Handmade by Heidi",
+      "tags": [],
+      "col": 7,
+      "row": 4
+    },
+    {
+      "number": 34,
+      "name": "Crafts by Carley",
+      "tags": [],
+      "col": 8,
+      "row": 4
+    },
+    {
+      "number": 35,
+      "name": "Local Artisans",
+      "tags": [],
+      "col": 9,
+      "row": 4
+    },
+    {
+      "number": 36,
+      "name": "JW Treasures",
+      "tags": [],
+      "col": 1,
+      "row": 6
+    },
+    {
+      "number": 37,
+      "name": "MK Market",
+      "tags": [],
+      "col": 1,
+      "row": 5
+    },
+    {
+      "number": 38,
+      "name": "Bean & Butter",
+      "tags": [
+        "outlet"
+      ],
+      "col": 1,
+      "row": 4
+    },
+    {
+      "number": 39,
+      "name": "The Rizzo Collection",
+      "tags": [
+        "outlet"
+      ],
+      "col": 1,
+      "row": 3
+    },
+    {
+      "number": 40,
+      "name": "Althea's Almost Famous",
+      "tags": [
+        "food",
+        "outlet"
+      ],
+      "col": 1,
+      "row": 2
+    },
+    {
+      "number": 41,
+      "name": "Blooming Creations",
+      "tags": [],
+      "col": 2,
+      "row": 7
+    },
+    {
+      "number": 42,
+      "name": "Nature's Nook",
+      "tags": [],
+      "col": 3,
+      "row": 7
+    },
+    {
+      "number": 43,
+      "name": "Alyssa's Sweets & Treats",
+      "tags": [
+        "food"
+      ],
+      "col": 7,
+      "row": 7
+    },
+    {
+      "number": 44,
+      "name": "Local Authors",
+      "tags": [],
+      "col": 8,
+      "row": 7
+    },
+    {
+      "number": 45,
+      "name": "Community Resources",
+      "tags": [],
+      "col": 9,
+      "row": 7
+    }
+  ],
+  "areas": [
+    {
+      "name": "Hallway outside the Gym (Main Lobby)",
+      "items": [
+        {
+          "name": "Mindful Beginnings"
+        },
+        {
+          "name": "Mathnasium – The Math Learning Center",
+          "tags": [
+            "sponsor"
+          ]
+        },
+        {
+          "name": "THES PTA Information & Activities",
+          "tags": [
+            "pta"
+          ]
+        },
+        {
+          "name": "THES PTA Raffle Prizes & Giveaways",
+          "tags": [
+            "pta"
+          ]
+        },
+        {
+          "name": "Three Sprouts Landscaping",
+          "tags": [
+            "sponsor"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Cafeteria",
+      "items": [
+        {
+          "name": "Free arts & crafts for kids"
+        },
+        {
+          "name": "Eat & enjoy food from the food trucks"
+        }
+      ]
+    },
+    {
+      "name": "Front Foyer (School Entrance)",
+      "items": [
+        {
+          "name": "Photo booth"
+        }
+      ]
+    },
+    {
+      "name": "Front of School (Outdoor Area)",
+      "items": [
+        {
+          "name": "Moonbounce"
+        }
+      ]
+    }
+  ]
+}

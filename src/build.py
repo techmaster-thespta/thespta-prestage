@@ -964,6 +964,91 @@ CHECK_ICON = (
 )
 
 
+VENDOR_TAG_LABELS = {"food": "Food", "children": "Children's", "outlet": "Outlet", "pta": "THES PTA", "sponsor": "PTA Sponsor"}
+
+
+def render_vendor_map(filename):
+    """Interactive vendor map for a featured event page with `vendor_map`
+    set (a file under config/, e.g. "vendor-maps/holiday-market-2026.json").
+    Booth spots are a simple CSS grid (no absolute positioning), each a
+    tappable numbered button colored by its tags; below it, a searchable
+    list of every vendor grouped by area. The small inline script ties the
+    two together (tap a booth -> details, search -> highlight), same plain
+    addEventListener pattern as the header. The data file is the only thing
+    to edit when vendors move. "" when no map is set or the file is missing."""
+    if not filename:
+        return ""
+    data = load_json(filename) if (CONFIG / filename).exists() else None
+    if not data:
+        print(f"  ! vendor map config/{filename} not found — no map rendered")
+        return ""
+    esc = html.escape
+    gym = data.get("gym", {})
+    cols, rows = int(gym.get("columns", 10)), int(gym.get("rows", 7))
+
+    def tag_attr(tags):
+        return esc(" ".join(tags))
+
+    def search_attr(*parts):
+        return esc(" ".join(parts).lower())
+
+    cells = []
+    for lab in gym.get("labels", []):
+        kind = lab.get("kind", "")
+        cells.append(
+            f'<div class="thes__vmap-label thes__vmap-label--{esc(kind or "plain")}" '
+            f'style="grid-column:{int(lab["col"])} / span {int(lab.get("span", 1))};grid-row:{int(lab["row"])};">'
+            f'{esc(lab["text"])}</div>'
+        )
+    booths = sorted(data.get("booths", []), key=lambda b: b["number"])
+    for b in booths:
+        tags = b.get("tags", [])
+        kind = "food" if "food" in tags else "children" if "children" in tags else "regular"
+        tag_text = ", ".join(VENDOR_TAG_LABELS[t] for t in tags if t in VENDOR_TAG_LABELS)
+        bolt = '<i class="thes__vmap-plug" aria-hidden="true"></i>' if "outlet" in tags else ""
+        cells.append(
+            f'<button type="button" class="thes__vmap-booth thes__vmap-booth--{kind}" '
+            f'style="grid-column:{int(b["col"])};grid-row:{int(b["row"])};" data-booth="{int(b["number"])}" '
+            f'data-name="{esc(b["name"])}" data-tags="{esc(tag_text)}" '
+            f'aria-label="Booth {int(b["number"])}: {esc(b["name"])}">'
+            f'{int(b["number"])}{bolt}</button>'
+        )
+
+    def list_item(name, tags, booth=None):
+        tag_html = "".join(
+            f'<span class="thes__vmap-tag thes__vmap-tag--{esc(t)}">{esc(VENDOR_TAG_LABELS[t])}</span>'
+            for t in tags if t in VENDOR_TAG_LABELS and t != "outlet"
+        )
+        num = f'<span class="thes__vmap-num">{int(booth)}</span>' if booth else '<span class="thes__vmap-num thes__vmap-num--none" aria-hidden="true">&bull;</span>'
+        data_booth = f' data-booth="{int(booth)}"' if booth else ""
+        return (
+            f'<li class="thes__vmap-item"{data_booth} data-tags="{tag_attr(tags)}" '
+            f'data-search="{search_attr(name, str(booth or ""), *[VENDOR_TAG_LABELS.get(t, t) for t in tags])}">'
+            f'{num}<span class="thes__vmap-name">{esc(name)}</span>{tag_html}</li>'
+        )
+
+    groups = [(gym.get("name", "School Gym"), [list_item(b["name"], b.get("tags", []), b["number"]) for b in booths])]
+    for area in data.get("areas", []):
+        groups.append((area["name"], [list_item(i["name"], i.get("tags", [])) for i in area.get("items", [])]))
+    lists = "\n".join(
+        f'<div class="thes__vmap-group"><h3>{esc(name)}</h3><ul class="thes__vmap-list">{"".join(items)}</ul></div>'
+        for name, items in groups
+    )
+    updated = ""
+    if data.get("updated"):
+        d = dt.date.fromisoformat(data["updated"])
+        updated = f' Updated {d:%B} {d.day}, {d.year}.'
+    tmpl = (TEMPLATES / "vendor-map.html.tmpl").read_text()
+    return render(tmpl, {
+        "VMAP_TITLE": esc(data.get("title", "Vendor Map")),
+        "VMAP_NOTE": esc(data.get("note", "")) + esc(updated),
+        "VMAP_COLS": str(cols),
+        "VMAP_ROWS": str(rows),
+        "VMAP_CELLS": "\n        ".join(cells),
+        "VMAP_LISTS": lists,
+    })
+
+
 def render_event_page(event, site, context):
     """One opt-in event page's body — the same shared template for every
     entry in config/event-pages.json, filled in from that entry."""
@@ -1066,6 +1151,7 @@ def render_event_page(event, site, context):
         "EVENT_ABOUT": about,
         "EVENT_SECTIONS": "\n".join(section_cards),
         "EVENT_FLYER": flyer,
+        "EVENT_VENDOR_MAP": render_vendor_map(event.get("vendor_map")),
     })
 
 

@@ -44,7 +44,14 @@
     ],
     "register_href": "https://thespta.givebacks.gives/3acad9/Campaign/Details",
     "contact_name": "Natalie Miskimins",
-    "contact_email": "president.thespta@gmail.com"
+    "contact_email": "president.thespta@gmail.com",
+    "vendor_map": "vendor-maps/holiday-market-2026.json",
+    "extra_flyers": [
+      {
+        "filename": "events/holiday-market-2026-vendor-layout.png",
+        "alt": "Holiday Market vendor layout (printable version, subject to change): 44 vendors in the school gym, PTA and sponsor tables in the hallway outside the gym (main lobby), free arts and crafts and food trucks in the cafeteria, photo booth in the front foyer, and a moonbounce in front of the school."
+      }
+    ]
   },
   {
     "slug": "giving-tuesday",

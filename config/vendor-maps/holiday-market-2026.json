@@ -1,52 +1,71 @@
 {
-  "_how_to_edit": "Vendor moved to another booth? Change the name (and tags) on that booth number in 'booths'. A booth's spot on the gym map comes from its 'col'/'row' and normally never changes. Tags: food, children, outlet. Set 'updated' to today's date after any change.",
+  "_how_to_edit": "Vendor moved to another booth? Change the name (and tags) on that booth number in 'booths', then set 'updated' to today's date. A booth's spot on the gym map comes from its 'col'/'row' (each booth is 'booth_span' columns wide) and only changes if the room layout changes. Tags: food, children, outlet.",
   "title": "Vendor Map",
   "updated": "2026-11-20",
   "note": "Layout is subject to change. Tap a booth on the map, or search for a vendor below.",
   "gym": {
     "name": "School Gym",
-    "columns": 10,
-    "rows": 7,
+    "columns": 22,
+    "rows": 9,
+    "booth_span": 2,
     "labels": [
       {
         "text": "Exit",
         "col": 1,
-        "row": 1
+        "row": 1,
+        "span": 2
       },
       {
         "text": "Exit",
-        "col": 10,
-        "row": 1
+        "col": 21,
+        "row": 1,
+        "span": 2
       },
       {
         "text": "Aisle: one-way walking path",
-        "col": 2,
-        "row": 3,
-        "span": 8,
+        "col": 4,
+        "row": 2,
+        "span": 16,
         "kind": "aisle"
       },
       {
         "text": "Aisle: one-way walking path",
-        "col": 2,
-        "row": 5,
-        "span": 8,
+        "col": 4,
+        "row": 4,
+        "span": 16,
+        "kind": "aisle"
+      },
+      {
+        "text": "Aisle: one-way walking path",
+        "col": 4,
+        "row": 6,
+        "span": 16,
+        "kind": "aisle"
+      },
+      {
+        "text": "Aisle: one-way walking path",
+        "col": 4,
+        "row": 8,
+        "span": 16,
         "kind": "aisle"
       },
       {
         "text": "To Hallway",
         "col": 1,
-        "row": 7
+        "row": 9,
+        "span": 2
       },
       {
         "text": "To Hallway",
-        "col": 10,
-        "row": 7
+        "col": 21,
+        "row": 9,
+        "span": 2
       },
       {
         "text": "Gym Entrance (from Main Lobby)",
-        "col": 4,
-        "row": 7,
-        "span": 3,
+        "col": 8,
+        "row": 9,
+        "span": 6,
         "kind": "entrance"
       }
     ]
@@ -56,14 +75,14 @@
       "number": 1,
       "name": "Sugar & Shine Designs",
       "tags": [],
-      "col": 2,
+      "col": 4,
       "row": 1
     },
     {
       "number": 2,
       "name": "Mary Kay",
       "tags": [],
-      "col": 3,
+      "col": 6,
       "row": 1
     },
     {
@@ -72,7 +91,7 @@
       "tags": [
         "food"
       ],
-      "col": 4,
+      "col": 8,
       "row": 1
     },
     {
@@ -81,14 +100,14 @@
       "tags": [
         "outlet"
       ],
-      "col": 5,
+      "col": 10,
       "row": 1
     },
     {
       "number": 5,
       "name": "Color Street",
       "tags": [],
-      "col": 6,
+      "col": 12,
       "row": 1
     },
     {
@@ -97,21 +116,21 @@
       "tags": [
         "food"
       ],
-      "col": 7,
+      "col": 14,
       "row": 1
     },
     {
       "number": 7,
       "name": "Yanna Makes (booth 2 of 2)",
       "tags": [],
-      "col": 8,
+      "col": 16,
       "row": 1
     },
     {
       "number": 8,
       "name": "Yanna Makes (booth 1 of 2)",
       "tags": [],
-      "col": 9,
+      "col": 18,
       "row": 1
     },
     {
@@ -120,8 +139,8 @@
       "tags": [
         "outlet"
       ],
-      "col": 10,
-      "row": 2
+      "col": 21,
+      "row": 3
     },
     {
       "number": 10,
@@ -129,8 +148,8 @@
       "tags": [
         "outlet"
       ],
-      "col": 10,
-      "row": 3
+      "col": 21,
+      "row": 4
     },
     {
       "number": 11,
@@ -138,8 +157,8 @@
       "tags": [
         "food"
       ],
-      "col": 10,
-      "row": 4
+      "col": 21,
+      "row": 5
     },
     {
       "number": 12,
@@ -147,22 +166,22 @@
       "tags": [
         "food"
       ],
-      "col": 10,
-      "row": 5
+      "col": 21,
+      "row": 6
     },
     {
       "number": 13,
       "name": "Sweetlife Honey",
       "tags": [],
-      "col": 10,
-      "row": 6
+      "col": 21,
+      "row": 7
     },
     {
       "number": 14,
       "name": "Happy Hands Crafts",
       "tags": [],
-      "col": 9,
-      "row": 6
+      "col": 18,
+      "row": 7
     },
     {
       "number": 15,
@@ -170,15 +189,15 @@
       "tags": [
         "children"
       ],
-      "col": 8,
-      "row": 6
+      "col": 16,
+      "row": 7
     },
     {
       "number": 16,
       "name": "The Book Nook",
       "tags": [],
-      "col": 7,
-      "row": 6
+      "col": 14,
+      "row": 7
     },
     {
       "number": 17,
@@ -186,8 +205,8 @@
       "tags": [
         "children"
       ],
-      "col": 6,
-      "row": 6
+      "col": 12,
+      "row": 7
     },
     {
       "number": 18,
@@ -195,141 +214,141 @@
       "tags": [
         "children"
       ],
-      "col": 5,
-      "row": 6
+      "col": 10,
+      "row": 7
     },
     {
       "number": 19,
       "name": "Little Learners Books",
       "tags": [],
-      "col": 4,
-      "row": 6
+      "col": 8,
+      "row": 7
     },
     {
       "number": 20,
       "name": "Dream Designs",
       "tags": [],
-      "col": 3,
-      "row": 6
+      "col": 6,
+      "row": 7
     },
     {
       "number": 21,
       "name": "Daisy Embroidery",
       "tags": [],
-      "col": 2,
-      "row": 6
+      "col": 4,
+      "row": 7
     },
     {
       "number": 22,
       "name": "Tupperware",
       "tags": [],
-      "col": 9,
-      "row": 2
+      "col": 17,
+      "row": 3
     },
     {
       "number": 23,
       "name": "Pampered Chef",
       "tags": [],
-      "col": 8,
-      "row": 2
+      "col": 15,
+      "row": 3
     },
     {
       "number": 24,
       "name": "Thirty-One Gifts",
       "tags": [],
-      "col": 7,
-      "row": 2
+      "col": 13,
+      "row": 3
     },
     {
       "number": 25,
       "name": "Scentsy",
       "tags": [],
-      "col": 6,
-      "row": 2
+      "col": 11,
+      "row": 3
     },
     {
       "number": 26,
       "name": "LuLaRoe",
       "tags": [],
-      "col": 5,
-      "row": 2
+      "col": 9,
+      "row": 3
     },
     {
       "number": 27,
       "name": "Katy's Kreations",
       "tags": [],
-      "col": 4,
-      "row": 2
+      "col": 7,
+      "row": 3
     },
     {
       "number": 28,
       "name": "Norwex",
       "tags": [],
-      "col": 3,
-      "row": 2
+      "col": 5,
+      "row": 3
     },
     {
       "number": 29,
       "name": "Arbonne",
       "tags": [],
-      "col": 3,
-      "row": 4
+      "col": 5,
+      "row": 5
     },
     {
       "number": 30,
       "name": "Younique",
       "tags": [],
-      "col": 4,
-      "row": 4
+      "col": 7,
+      "row": 5
     },
     {
       "number": 31,
       "name": "Sew Creative",
       "tags": [],
-      "col": 5,
-      "row": 4
+      "col": 9,
+      "row": 5
     },
     {
       "number": 32,
       "name": "The Cozy Candle Co.",
       "tags": [],
-      "col": 6,
-      "row": 4
+      "col": 11,
+      "row": 5
     },
     {
       "number": 33,
       "name": "Handmade by Heidi",
       "tags": [],
-      "col": 7,
-      "row": 4
+      "col": 13,
+      "row": 5
     },
     {
       "number": 34,
       "name": "Crafts by Carley",
       "tags": [],
-      "col": 8,
-      "row": 4
+      "col": 15,
+      "row": 5
     },
     {
       "number": 35,
       "name": "Local Artisans",
       "tags": [],
-      "col": 9,
-      "row": 4
+      "col": 17,
+      "row": 5
     },
     {
       "number": 36,
       "name": "JW Treasures",
       "tags": [],
       "col": 1,
-      "row": 6
+      "row": 7
     },
     {
       "number": 37,
       "name": "MK Market",
       "tags": [],
       "col": 1,
-      "row": 5
+      "row": 6
     },
     {
       "number": 38,
@@ -338,7 +357,7 @@
         "outlet"
       ],
       "col": 1,
-      "row": 4
+      "row": 5
     },
     {
       "number": 39,
@@ -347,7 +366,7 @@
         "outlet"
       ],
       "col": 1,
-      "row": 3
+      "row": 4
     },
     {
       "number": 40,
@@ -357,21 +376,21 @@
         "outlet"
       ],
       "col": 1,
-      "row": 2
+      "row": 3
     },
     {
       "number": 41,
       "name": "Blooming Creations",
       "tags": [],
-      "col": 2,
-      "row": 7
+      "col": 4,
+      "row": 9
     },
     {
       "number": 42,
       "name": "Nature's Nook",
       "tags": [],
-      "col": 3,
-      "row": 7
+      "col": 6,
+      "row": 9
     },
     {
       "number": 43,
@@ -379,22 +398,22 @@
       "tags": [
         "food"
       ],
-      "col": 7,
-      "row": 7
+      "col": 14,
+      "row": 9
     },
     {
       "number": 44,
       "name": "Local Authors",
       "tags": [],
-      "col": 8,
-      "row": 7
+      "col": 16,
+      "row": 9
     },
     {
       "number": 45,
       "name": "Community Resources",
       "tags": [],
-      "col": 9,
-      "row": 7
+      "col": 18,
+      "row": 9
     }
   ],
   "areas": [

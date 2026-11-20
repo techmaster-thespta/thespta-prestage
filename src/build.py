@@ -1008,7 +1008,7 @@ def render_vendor_map(filename):
         bolt = '<i class="thes__vmap-plug" aria-hidden="true"></i>' if "outlet" in tags else ""
         cells.append(
             f'<button type="button" class="thes__vmap-booth thes__vmap-booth--{kind}" '
-            f'style="grid-column:{int(b["col"])};grid-row:{int(b["row"])};" data-booth="{int(b["number"])}" '
+            f'style="grid-column:{int(b["col"])} / span {int(b.get("span", gym.get("booth_span", 1)))};grid-row:{int(b["row"])};" data-booth="{int(b["number"])}" '
             f'data-name="{esc(b["name"])}" data-tags="{esc(tag_text)}" '
             f'aria-label="Booth {int(b["number"])}: {esc(b["name"])}">'
             f'{int(b["number"])}{bolt}</button>'

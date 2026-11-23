@@ -78,5 +78,11 @@
     "expires": "2026-11-12",
     "weight": 6,
     "archived_on": "2026-11-13"
+  },
+  {
+    "text": "Holiday Market Nov 21 — shop local or become a vendor!",
+    "page_url": "event_holiday_market",
+    "expires": "2026-11-22",
+    "archived_on": "2026-11-23"
   }
 ]

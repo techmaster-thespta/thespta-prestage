@@ -1,38 +1,11 @@
 [
   {
-    "day": "23",
-    "month": "Nov",
-    "date": "2026-11-23",
-    "title": "THES Parent Teacher Conferences",
-    "when": "All Day",
-    "featured": true,
-    "attachments": [
-      {
-        "title": "202611-parent-teacher-conf.JPG",
-        "href": "https://drive.google.com/file/d/1dUIg4LC8GCUTDKLpbK_vtH5BwJVgnfGg"
-      }
-    ],
-    "description": "Thunder Hill Elementary School families are invited to participate in Fall Parent-Teacher Conferences to discuss student progress and learning. Conference Schedule: * Monday, November 23: In-person\u2026",
-    "description_full": "Thunder Hill Elementary School families are invited to participate in Fall Parent-Teacher Conferences to discuss student progress and learning. Conference Schedule: * Monday, November 23: In-person conferences only. * Tuesday, November 24 & Wednesday, November 25: Virtual conferences only. Important Information: * Fall conferences will focus on English Language Arts (ELA). * Math conferences with Ms. Parson (4th Grade Advanced Academic Program) and Ms. Kozikowski (2nd Grade Math Differentiated) will also be available. * Additional math conferences will take place in February. * Related Arts teachers will offer limited conference appointments and designated office hours. How to Schedule: 1. Visit https://www.hcpss.org/connect/ 2. Select \u201cConference\u201d from the left-hand menu. 3. Choose \u201cParent Scheduled Conferences.\u201d 4. Select an available time slot. Conference scheduling is now open through HCPSS Connect. Families needing assistance with scheduling should contact the THES front office."
-  },
-  {
-    "day": "23",
-    "month": "Nov",
-    "date": "2026-11-23",
-    "title": "iCode Columbia \u2013 Battle of the Bots: Tournament of Champions",
-    "when": "All Day \u00b7 iCode Columbia, MD, 9200 Old Annapolis Rd Ste B, Columbia, MD 21045, USA",
-    "featured": false,
-    "signup_href": "https://icodeschool.com/columbia-md/camps/",
-    "description": "Young engineers will explore robotics, programming, sensors, gears, and mechanical engineering while designing and building their own battle bots! Campers will work in teams and compete in exciting\u2026",
-    "description_full": "Young engineers will explore robotics, programming, sensors, gears, and mechanical engineering while designing and building their own battle bots! Campers will work in teams and compete in exciting challenges, including robot sumo wrestling, tug-of-war, and head-to-head competitions. Half-Day Camp Registration:"
-  },
-  {
     "day": "24",
     "month": "Nov",
     "date": "2026-11-24",
     "title": "iCode Columbia \u2013 Drone Code: Programming Drones lo",
     "when": "All Day \u00b7 iCode Columbia, MD, 9200 Old Annapolis Rd Ste B, Columbia, MD 21045, USA",
-    "featured": false,
+    "featured": true,
     "signup_href": "https://icodeschool.com/columbia-md/camps/",
     "description": "Take coding to new heights! Campers will explore flight mechanics, aerodynamics, and introductory Python programming while learning to control drones. Students will create flight patterns and\u2026",
     "description_full": "Take coding to new heights! Campers will explore flight mechanics, aerodynamics, and introductory Python programming while learning to control drones. Students will create flight patterns and navigate obstacle courses, developing problem-solving and decision-making skills along the way. Half-Day Camp Registration:"
@@ -96,5 +69,37 @@
     "signup_href": "https://icodeschool.com/columbia-md/camps/",
     "description": "Turn a love of Roblox into an opportunity to learn coding and game design! Students will create their own virtual worlds, explore Lua programming, and learn how games are developed and monetized. A\u2026",
     "description_full": "Turn a love of Roblox into an opportunity to learn coding and game design! Students will create their own virtual worlds, explore Lua programming, and learn how games are developed and monetized. A hands-on experience that encourages creativity and technical skills. Time: 9:00 AM \u2013 4:00 PM Ages: 9\u201315 Price: $99 Registration:"
+  },
+  {
+    "day": "01",
+    "month": "Dec",
+    "date": "2026-12-01",
+    "title": "GIVING TUESDAY \u2013 GIVE A LITTLE. MAKE A BIG DIFFERENCE!",
+    "when": "All Day",
+    "featured": false,
+    "attachments": [
+      {
+        "title": "2026-Giving-Tuesday8.PNG",
+        "href": "https://drive.google.com/file/d/188URGfhZQoPd9fy1Uhsvulm_Dl7g_H72"
+      }
+    ],
+    "description": "\ud83d\udc99\ud83d\udc9b GIVING TUESDAY \u2013 GIVE A LITTLE. MAKE A BIG DIFFERENCE! \ud83d\udc9b\ud83d\udc99 What does THES PTA do? We help create the experiences and memories that make elementary school special! From the excitement of Fall Fest\u2026",
+    "description_full": "\ud83d\udc99\ud83d\udc9b GIVING TUESDAY \u2013 GIVE A LITTLE. MAKE A BIG DIFFERENCE! \ud83d\udc9b\ud83d\udc99 What does THES PTA do? We help create the experiences and memories that make elementary school special! From the excitement of Fall Fest and Trunk or Treat to the smiles at our Ice Cream Social, the magic of Winter Wonderland, and the celebration of cultures at International Night, THES PTA works throughout the year to bring meaningful experiences to our students and families. Through the support of our school community, we help provide opportunities for children to: \ud83c\udf83 Celebrate together at Fall Fest & Trunk or Treat \ud83c\udf66 Enjoy our Welcome Back Ice Cream Social \ud83c\uddfa\ud83c\uddf8 Recognize and honor our veterans \u2744\ufe0f Experience the magic of Winter Wonderland \ud83c\udf0e Explore cultures and traditions at International Night \ud83d\udd2c Discover, create, and learn at STEM Night \ud83d\udcbc Explore future possibilities at Career Day \ud83c\udfc3 Build memories and friendships at Field Day \ud83c\udf31 Celebrate our planet on Earth Day \ud83c\udf38 Enjoy community fun at Spring Fling \ud83c\udf89 Celebrate the end of another wonderful school year We also support our incredible teachers and staff through appreciation activities and provide opportunities that enrich the school experience for everyone. These are more than just events. They are opportunities for children to make friends, discover new interests, celebrate their school community, create lasting memories, and feel connected to something special. This Giving Tuesday, Tuesday, December 1, please consider making a donation to the Thunder Hill Elementary School PTA. Every contribution, big or small, helps us continue creating these wonderful experiences for our students, teachers, staff, and families. \ud83d\udc99 Your donation helps create the memories our children will carry with them long after elementary school! Give a Little. Make a BIG Difference! DONATE TODAY: https://1thes.givebacks.com/shop Thank you for supporting THES PTA and our Thunder Hill community!"
+  },
+  {
+    "day": "11",
+    "month": "Dec",
+    "date": "2026-12-11",
+    "title": "Parents\u2019 Night Out \u2013 iCode & THES PTA Fundraiser",
+    "when": "5:30 \u2013 8:00 PM \u00b7 iCode Columbia, MD, 9200 Old Annapolis Rd Ste B, Columbia, MD 21045, USA",
+    "featured": false,
+    "attachments": [
+      {
+        "title": "202612-Parents-Night-out.jpeg",
+        "href": "https://drive.google.com/file/d/1hmmOLBVGDdpk66cF2T01t93TbvFEgaEE"
+      }
+    ],
+    "description": "Enjoy a date night, finish your holiday shopping, or simply take a well-deserved break while your kids enjoy an exciting evening at iCode Columbia! Exclusively for Thunder Hill Elementary School\u2026",
+    "description_full": "Enjoy a date night, finish your holiday shopping, or simply take a well-deserved break while your kids enjoy an exciting evening at iCode Columbia! Exclusively for Thunder Hill Elementary School families, children can choose between two exciting STEM adventures: Minecraft Design or Drone Flight & Programming in a Simulator. Pizza and drinks are included! \ud83d\udcc5 Friday, December 11, 2026 \u23f0 5:30\u20138:00 PM \ud83d\udccd iCode Columbia \u2013 9200 Old Annapolis Rd, Suite B, Columbia, MD 21045 \ud83d\udcb2 $30 per student Best of all, 100% of the registration fee goes directly back to the THES PTA! Give yourself a night off while your kids have fun, learn, and support our school community. Scan the QR code on the event flyer to register."
   }
 ]

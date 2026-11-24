@@ -223,6 +223,20 @@ config-only approach can't do it, rather than silently editing `src/`.
   `deploy.yml`'s push trigger to pick it up — that handoff would silently
   never fire. Keep this in mind before adding any other bot-committing
   workflow that's meant to cascade into another one.
+- **A sync run commits only after the site actually deployed, and every
+  deploy retries once.** `actions/deploy-pages` sometimes fails to find
+  the artifact it was just handed ("Found 0 artifacts", a GitHub-side
+  glitch). When `sync-events.yml` committed *before* deploying, such a
+  failure left the repo updated but the live site behind, and every later
+  run saw "nothing changed" and never redeployed (Nov 2026). Now both
+  workflows retry the deploy after 30s, and `sync-events.yml` commits last
+  so a failed run is simply redone next hour. Its schedule runs at :23
+  plus 04:07/05:07 UTC (just after midnight Eastern), not :00, because
+  GitHub delays top-of-the-hour schedules by hours, which kept expired
+  event pages and their Events-menu links up long after they expired.
+  `test/validate_build.py` also fails the build if any page (nav menus
+  included) links to a page that wasn't built, so a removed event page
+  can never leave a dead menu link behind.
 - **`config/site.json`'s `custom_domain` generates the `CNAME` file
   GitHub Pages needs for the custom domain to work** — `build.py` writes
   `pages/CNAME` from it, and `deploy.yml`/`sync-events.yml` both copy that

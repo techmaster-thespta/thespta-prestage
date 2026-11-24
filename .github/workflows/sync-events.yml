@@ -25,7 +25,13 @@ name: Sync events from Google Calendar
 
 on:
   schedule:
-    - cron: "0 * * * *"  # hourly
+    # Hourly, but at :23 rather than :00: GitHub delays top-of-the-hour
+    # scheduled runs heavily (gaps of 6-11 hours were seen), which left
+    # expired featured pages and their Events-menu links up long after
+    # midnight. The 04:07/05:07 UTC runs land just after midnight Eastern
+    # (EDT/EST), when announcements and event pages expire.
+    - cron: "23 * * * *"
+    - cron: "7 4,5 * * *"
   workflow_dispatch: {}
 
 permissions:
@@ -42,7 +48,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: ${{ steps.deployment.outputs.page_url || steps.deployment_retry.outputs.page_url }}
     steps:
       - name: Checkout
         uses: actions/checkout@v7
@@ -86,15 +92,6 @@ jobs:
         if: steps.diff.outputs.changed == 'true'
         run: python3 test/validate_build.py
 
-      - name: Commit config/events.json and regenerated pages
-        if: steps.diff.outputs.changed == 'true'
-        run: |
-          git config user.name "thespta-bot"
-          git config user.email "actions@users.noreply.github.com"
-          git add -A config/events.json config/pta-meeting-occurrences.json config/fundraiser-occurrences.json config/hcpss-family-events.json config/announcements.json config/event-pages.json assets/flyers/ archive/ pages/
-          git commit -m "chore: sync events from calendar, regenerate pages [skip ci]"
-          git push
-
       - name: Assemble the deployed site
         if: steps.diff.outputs.changed == 'true'
         run: |
@@ -120,7 +117,32 @@ jobs:
         with:
           path: site
 
+      # deploy-pages occasionally fails to find the artifact that was just
+      # uploaded ("Found 0 artifacts", a GitHub-side glitch), so retry once.
       - name: Deploy to GitHub Pages
         if: steps.diff.outputs.changed == 'true'
         id: deployment
+        continue-on-error: true
         uses: actions/deploy-pages@v5
+
+      - name: Wait before retrying the deploy
+        if: steps.diff.outputs.changed == 'true' && steps.deployment.outcome == 'failure'
+        run: sleep 30
+
+      - name: Retry deploy to GitHub Pages
+        if: steps.diff.outputs.changed == 'true' && steps.deployment.outcome == 'failure'
+        id: deployment_retry
+        uses: actions/deploy-pages@v5
+
+      # Committed only after the site actually deployed: if the deploy
+      # fails, nothing is committed, so the next run sees the same changes
+      # (calendar, expired pages/menu links) and deploys them again instead
+      # of finding "nothing changed" and leaving the live site behind.
+      - name: Commit config/events.json and regenerated pages
+        if: steps.diff.outputs.changed == 'true'
+        run: |
+          git config user.name "thespta-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add -A config/events.json config/pta-meeting-occurrences.json config/fundraiser-occurrences.json config/hcpss-family-events.json config/announcements.json config/event-pages.json assets/flyers/ archive/ pages/
+          git commit -m "chore: sync events from calendar, regenerate pages [skip ci]"
+          git push

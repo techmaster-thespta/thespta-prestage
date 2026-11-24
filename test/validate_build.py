@@ -7,6 +7,9 @@ Validates the built site. Run after `python3 src/build.py`:
 Checks, per generated page in /pages:
   1. No unresolved {{placeholder}} markers were left behind.
   2. HTML tags are balanced (no unclosed/mismatched tags).
+  3. Every link to another page on this site (nav menu included) points
+     at a page that was actually built — so an expired featured event
+     page can never be removed while a menu link to it stays behind.
 
 Exits non-zero (and prints what's wrong) if anything fails — this is what
 gates the GitHub Actions workflow before it pushes anything to Drive.
@@ -30,8 +33,13 @@ class TagBalanceChecker(HTMLParser):
         super().__init__()
         self.stack = []
         self.errors = []
+        self.hrefs = []
 
     def handle_starttag(self, tag, attrs):
+        if tag == "a":
+            href = dict(attrs).get("href") or ""
+            if href:
+                self.hrefs.append(href)
         if tag not in VOID_TAGS:
             self.stack.append(tag)
 
@@ -68,7 +76,27 @@ def check_page(path):
     if checker.stack:
         problems.append(f"unclosed tags at end of file: {checker.stack}")
 
+    broken = sorted({h for h in checker.hrefs if is_internal_page_link(h) and not link_target(path, h).exists()})
+    if broken:
+        problems.append(f"links to pages that don't exist: {broken}")
+
     return problems
+
+
+def is_internal_page_link(href):
+    """A relative link to another page here: ends in .html, or is a
+    directory root like "./" or "../" (the Home page). Off-site links,
+    mailto/tel, in-page #anchors and image/flyer files are skipped."""
+    if re.match(r"^[a-z][a-z0-9+.-]*:", href, re.I) or href.startswith(("#", "//", "/")):
+        return False
+    target = href.split("#", 1)[0].split("?", 1)[0]
+    return target.endswith(".html") or target.endswith("/") or target in (".", "..")
+
+
+def link_target(page, href):
+    target = href.split("#", 1)[0].split("?", 1)[0]
+    resolved = (page.parent / target).resolve()
+    return resolved / "index.html" if target.endswith("/") or target in (".", "..") else resolved
 
 
 def main():

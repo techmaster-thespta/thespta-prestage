@@ -2,18 +2,14 @@
   {
     "text": "Parents' Night Out at iCode, Fri Dec 11: register now!",
     "page_url": "event_parents_night_out",
-    "expires": "2026-12-11"
+    "expires": "2026-12-11",
+    "weight": 3
   },
   {
     "text": "Giving Tuesday, Dec 1: give a little, make a big difference",
     "page_url": "event_giving_tuesday",
     "expires": "2026-12-01",
     "weight": 4
-  },
-  {
-    "text": "Staff Appreciation Dinner Nov 23: sign up or donate!",
-    "page_url": "event_staff_appreciation_dinner",
-    "expires": "2026-11-23"
   },
   {
     "text": "Scholastic Book Fair Nov 16–24 in the THES Library!",
@@ -72,11 +68,6 @@
   {
     "text": "Thank you to Best Brains for sponsoring THES!",
     "page_url": "sponsors"
-  },
-  {
-    "text": "iCode Battle Bots camp, Mon Nov 23: register now",
-    "href": "https://icodeschool.com/columbia-md/camps/",
-    "expires": "2026-11-23"
   },
   {
     "text": "iCode Drone Code camp, Tue Nov 24: register now",

@@ -170,5 +170,50 @@
     "register_href": "",
     "contact_name": "Natalie Miskimins",
     "contact_email": "president.thespta@gmail.com"
+  },
+  {
+    "slug": "parents-night-out",
+    "title": "Parents' Night Out at iCode Columbia: December 2026",
+    "nav_label": "Parents' Night Out",
+    "eyebrow": "For Thunder Hill ES Families",
+    "tagline": "Enjoy a date night, finish your holiday shopping, or take a well-deserved break while your kids have fun learning at iCode Columbia.",
+    "summary": "Parents' Night Out for Thunder Hill Elementary families is Friday, December 11, 2026, 5:30–8:00 PM at iCode Columbia in Columbia, Maryland (Howard County). Kids choose Minecraft Design or Drone Flight & Programming, with pizza and drinks. $30 per student, and 100% goes back to the THES PTA.",
+    "start": "2026-12-11T17:30",
+    "end": "2026-12-11T20:00",
+    "expires": "2026-12-11",
+    "location_name": "iCode Columbia",
+    "address_line1": "9200 Old Annapolis Rd, Suite B",
+    "address_line2": "Columbia, MD 21045",
+    "flyer_filename": "events/parents-night-out-2026-12.jpg",
+    "flyer_alt": "iCode Parents' Night Out for Thunder Hill ES families: December 11, 5:30–8:00 PM. $30 per student, 100% of it goes back to your PTA! Pizza and drinks provided. Kids choose their adventure: Minecraft Design, or Drone Flight & Programming in Simulator. Scan the QR code to register. iCode Columbia, 410-454-9878, 9200 Old Annapolis Rd Suite B, Columbia, MD 21045.",
+    "about": [
+      "Give yourself a night off! Drop your kids off at iCode Columbia for an exciting evening of hands-on STEM fun, and enjoy a date night, finish your holiday shopping, or simply take a well-deserved break.",
+      "This evening is exclusively for Thunder Hill Elementary School families, and best of all, 100% of the registration fee goes directly back to the THES PTA."
+    ],
+    "sections": [
+      {
+        "heading": "Kids Choose Their Adventure",
+        "items": [
+          "Minecraft Design: build, create, and design in the world of Minecraft",
+          "Drone Flight & Programming: fly and program drones in a simulator",
+          "Pizza and drinks provided"
+        ]
+      },
+      {
+        "heading": "Details & Registration",
+        "items": [
+          "Friday, December 11, 2026, 5:30–8:00 PM",
+          "iCode Columbia, 9200 Old Annapolis Rd, Suite B, Columbia, MD 21045",
+          "$30 per student, with 100% going back to the THES PTA",
+          "Register online, or scan the QR code on the flyer",
+          "Questions about the evening? Call iCode Columbia at 410-454-9878"
+        ],
+        "button_label": "Register at iCode Columbia",
+        "button_href": "https://icodeschool.com/columbia-md/"
+      }
+    ],
+    "register_href": "",
+    "contact_name": "Natalie Miskimins",
+    "contact_email": "president.thespta@gmail.com"
   }
 ]

@@ -837,7 +837,14 @@ def format_event_when(event):
 
 
 def event_location_address(event, site):
-    return event.get("address") or f'{site.get("address_line1", "")}, {site.get("address_line2", "")}'
+    """The street address shown on an event page's Where line and in its
+    Google Calendar link: an off-site event's own address_line1/2 (the
+    same fields build_event_jsonld uses), else the school's."""
+    if event.get("address"):
+        return event["address"]
+    line1 = event.get("address_line1") or site.get("address_line1", "")
+    line2 = event.get("address_line2") or site.get("address_line2", "")
+    return f"{line1}, {line2}"
 
 
 def build_postal_address(line1, line2):

@@ -1,38 +1,11 @@
 [
   {
-    "day": "24",
-    "month": "Nov",
-    "date": "2026-11-24",
-    "title": "iCode Columbia \u2013 Drone Code: Programming Drones lo",
-    "when": "All Day \u00b7 iCode Columbia, MD, 9200 Old Annapolis Rd Ste B, Columbia, MD 21045, USA",
-    "featured": true,
-    "signup_href": "https://icodeschool.com/columbia-md/camps/",
-    "description": "Take coding to new heights! Campers will explore flight mechanics, aerodynamics, and introductory Python programming while learning to control drones. Students will create flight patterns and\u2026",
-    "description_full": "Take coding to new heights! Campers will explore flight mechanics, aerodynamics, and introductory Python programming while learning to control drones. Students will create flight patterns and navigate obstacle courses, developing problem-solving and decision-making skills along the way. Half-Day Camp Registration:"
-  },
-  {
-    "day": "24",
-    "month": "Nov",
-    "date": "2026-11-24",
-    "title": "Pick up Day for Joe Corbi & Believe Kids",
-    "when": "3:00 \u2013 6:00 PM",
-    "featured": false,
-    "attachments": [
-      {
-        "title": "2026-11-JoeCorbi-Pickup.png",
-        "href": "https://drive.google.com/file/d/19fPikg-jMP6uF1Bu9u4xV45RAsHtb6QG"
-      }
-    ],
-    "description": "Joe Corbi\u2019s & Believe Kids Fundraiser \u2013 Pickup Day! Thank you, THES families, for supporting our PTA fundraiser! Families who placed orders can pick up their items on Tuesday, November 24, from\u2026",
-    "description_full": "Joe Corbi\u2019s & Believe Kids Fundraiser \u2013 Pickup Day! Thank you, THES families, for supporting our PTA fundraiser! Families who placed orders can pick up their items on Tuesday, November 24, from 3:00\u20136:00 PM at the Thunder Hill Elementary School Gym. Please enter through the gym doors, where PTA volunteers will be available to greet you and assist with order pickup. Questions? Contact Natalie Miskimins at president.thespta@gmail.com. Thank you for helping support our students, staff, and school community!"
-  },
-  {
     "day": "25",
     "month": "Nov",
     "date": "2026-11-25",
     "title": "iCode Columbia \u2013 Robot Squads: Engineering Team Challenge",
     "when": "All Day \u00b7 iCode Columbia, MD, 9200 Old Annapolis Rd Ste B, Columbia, MD 21045, USA",
-    "featured": false,
+    "featured": true,
     "signup_href": "https://icodeschool.com/columbia-md/camps/",
     "description": "Get ready for a day of robotics and engineering! Campers will design, build, and improve battle bots while competing in team challenges. Through hands-on activities, students will develop engineering\u2026",
     "description_full": "Get ready for a day of robotics and engineering! Campers will design, build, and improve battle bots while competing in team challenges. Through hands-on activities, students will develop engineering skills, strategic thinking, creativity, and sportsmanship. One-Day Camp Registration:"
@@ -52,23 +25,23 @@
     "day": "27",
     "month": "Nov",
     "date": "2026-11-27",
-    "title": "iCode Columbia \u2013 Jr Creator: Electronics & Game Development",
-    "when": "All Day \u00b7 iCode Columbia, MD, 9200 Old Annapolis Rd Ste B, Columbia, MD 21045, USA",
-    "featured": false,
-    "signup_href": "https://icodeschool.com/columbia-md/camps/",
-    "description": "Young innovators will discover how electronics and video games work together! Using Makey Makey, campers will build circuits, explore basic electrical engineering, and create interactive games that\u2026",
-    "description_full": "Young innovators will discover how electronics and video games work together! Using Makey Makey, campers will build circuits, explore basic electrical engineering, and create interactive games that they can share and play with fellow students. Ages: 5\u20138 Price: $99 Registration:"
-  },
-  {
-    "day": "27",
-    "month": "Nov",
-    "date": "2026-11-27",
     "title": "iCode Columbia \u2013 Roblox Editor: Create and Code Your Own Worldk",
     "when": "All Day \u00b7 iCode Columbia, MD, 9200 Old Annapolis Rd Ste B, Columbia, MD 21045, USA",
     "featured": false,
     "signup_href": "https://icodeschool.com/columbia-md/camps/",
     "description": "Turn a love of Roblox into an opportunity to learn coding and game design! Students will create their own virtual worlds, explore Lua programming, and learn how games are developed and monetized. A\u2026",
     "description_full": "Turn a love of Roblox into an opportunity to learn coding and game design! Students will create their own virtual worlds, explore Lua programming, and learn how games are developed and monetized. A hands-on experience that encourages creativity and technical skills. Time: 9:00 AM \u2013 4:00 PM Ages: 9\u201315 Price: $99 Registration:"
+  },
+  {
+    "day": "27",
+    "month": "Nov",
+    "date": "2026-11-27",
+    "title": "iCode Columbia \u2013 Jr Creator: Electronics & Game Development",
+    "when": "All Day \u00b7 iCode Columbia, MD, 9200 Old Annapolis Rd Ste B, Columbia, MD 21045, USA",
+    "featured": false,
+    "signup_href": "https://icodeschool.com/columbia-md/camps/",
+    "description": "Young innovators will discover how electronics and video games work together! Using Makey Makey, campers will build circuits, explore basic electrical engineering, and create interactive games that\u2026",
+    "description_full": "Young innovators will discover how electronics and video games work together! Using Makey Makey, campers will build circuits, explore basic electrical engineering, and create interactive games that they can share and play with fellow students. Ages: 5\u20138 Price: $99 Registration:"
   },
   {
     "day": "01",
@@ -101,5 +74,33 @@
     ],
     "description": "Enjoy a date night, finish your holiday shopping, or simply take a well-deserved break while your kids enjoy an exciting evening at iCode Columbia! Exclusively for Thunder Hill Elementary School\u2026",
     "description_full": "Enjoy a date night, finish your holiday shopping, or simply take a well-deserved break while your kids enjoy an exciting evening at iCode Columbia! Exclusively for Thunder Hill Elementary School families, children can choose between two exciting STEM adventures: Minecraft Design or Drone Flight & Programming in a Simulator. Pizza and drinks are included! \ud83d\udcc5 Friday, December 11, 2026 \u23f0 5:30\u20138:00 PM \ud83d\udccd iCode Columbia \u2013 9200 Old Annapolis Rd, Suite B, Columbia, MD 21045 \ud83d\udcb2 $30 per student Best of all, 100% of the registration fee goes directly back to the THES PTA! Give yourself a night off while your kids have fun, learn, and support our school community. Scan the QR code on the event flyer to register."
+  },
+  {
+    "day": "17",
+    "month": "Dec",
+    "date": "2026-12-17",
+    "title": "Restaurant Night Out \u2014 BurgerFi",
+    "when": "11:00 AM \u2013 9:00 PM \u00b7 BurgerFi, 6181 Old Dobbin Ln, Columbia, MD 21045, USA",
+    "featured": false,
+    "attachments": [
+      {
+        "title": "202612-r.JPGno-burguerfi",
+        "href": "https://drive.google.com/file/d/1iB4HXlV7rfYYQHfheA6WtImWBig7i2hf"
+      }
+    ]
+  },
+  {
+    "day": "12",
+    "month": "Jan",
+    "date": "2027-01-12",
+    "title": "Restaurant Night Out \u2014 Eataliano",
+    "when": "10:00 AM \u2013 9:30 PM \u00b7 Eataliano",
+    "featured": false,
+    "attachments": [
+      {
+        "title": "2026-eataliano-rno.jpeg",
+        "href": "https://drive.google.com/file/d/19dLv3JU60asIAfhMOA5U7CsHW8vw-E6r"
+      }
+    ]
   }
 ]

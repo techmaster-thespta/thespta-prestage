@@ -1,22 +1,11 @@
 [
   {
-    "day": "25",
-    "month": "Nov",
-    "date": "2026-11-25",
-    "title": "iCode Columbia \u2013 Robot Squads: Engineering Team Challenge",
-    "when": "All Day \u00b7 iCode Columbia, MD, 9200 Old Annapolis Rd Ste B, Columbia, MD 21045, USA",
-    "featured": true,
-    "signup_href": "https://icodeschool.com/columbia-md/camps/",
-    "description": "Get ready for a day of robotics and engineering! Campers will design, build, and improve battle bots while competing in team challenges. Through hands-on activities, students will develop engineering\u2026",
-    "description_full": "Get ready for a day of robotics and engineering! Campers will design, build, and improve battle bots while competing in team challenges. Through hands-on activities, students will develop engineering skills, strategic thinking, creativity, and sportsmanship. One-Day Camp Registration:"
-  },
-  {
     "day": "26",
     "month": "Nov",
     "date": "2026-11-26",
     "title": "iCode Columbia \u2013 Game Builder: Creating with Construct 3",
     "when": "All Day \u00b7 iCode Columbia, MD, 9200 Old Annapolis Rd Ste B, Columbia, MD 21045, USA",
-    "featured": false,
+    "featured": true,
     "signup_href": "https://icodeschool.com/columbia-md/camps/",
     "description": "From playing games to creating them! Students will explore game development using Construct 3, a professional game creation platform. Campers will learn introductory programming concepts while\u2026",
     "description_full": "From playing games to creating them! Students will explore game development using Construct 3, a professional game creation platform. Campers will learn introductory programming concepts while designing their own version of the classic game Asteroids. One-Day Camp Registration:"
@@ -102,5 +91,20 @@
         "href": "https://drive.google.com/file/d/19dLv3JU60asIAfhMOA5U7CsHW8vw-E6r"
       }
     ]
+  },
+  {
+    "day": "26",
+    "month": "Jan",
+    "date": "2027-01-26",
+    "title": "Lion King Jr Performance",
+    "when": "7:00 \u2013 9:00 PM \u00b7 THES Cafeteria",
+    "featured": false,
+    "attachments": [
+      {
+        "title": "20270126-lion-king-jr-performance.png",
+        "href": "https://drive.google.com/open?id=1_6OmWTNrgNK7tP6Gci1LVhb4dlQej-_C"
+      }
+    ],
+    "description": "Disney's The Lion King JR \u2014 the culmination of Thunder Hill Elementary's after-school theatre program with the Columbia Center for Theatrical Arts (CCTA)."
   }
 ]

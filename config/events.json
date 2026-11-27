@@ -1,14 +1,14 @@
 [
   {
-    "day": "26",
+    "day": "27",
     "month": "Nov",
-    "date": "2026-11-26",
-    "title": "iCode Columbia \u2013 Game Builder: Creating with Construct 3",
+    "date": "2026-11-27",
+    "title": "iCode Columbia \u2013 Roblox Editor: Create and Code Your Own Worldk",
     "when": "All Day \u00b7 iCode Columbia, MD, 9200 Old Annapolis Rd Ste B, Columbia, MD 21045, USA",
     "featured": true,
     "signup_href": "https://icodeschool.com/columbia-md/camps/",
-    "description": "From playing games to creating them! Students will explore game development using Construct 3, a professional game creation platform. Campers will learn introductory programming concepts while\u2026",
-    "description_full": "From playing games to creating them! Students will explore game development using Construct 3, a professional game creation platform. Campers will learn introductory programming concepts while designing their own version of the classic game Asteroids. One-Day Camp Registration:"
+    "description": "Turn a love of Roblox into an opportunity to learn coding and game design! Students will create their own virtual worlds, explore Lua programming, and learn how games are developed and monetized. A\u2026",
+    "description_full": "Turn a love of Roblox into an opportunity to learn coding and game design! Students will create their own virtual worlds, explore Lua programming, and learn how games are developed and monetized. A hands-on experience that encourages creativity and technical skills. Time: 9:00 AM \u2013 4:00 PM Ages: 9\u201315 Price: $99 Registration:"
   },
   {
     "day": "27",
@@ -20,17 +20,6 @@
     "signup_href": "https://icodeschool.com/columbia-md/camps/",
     "description": "Young innovators will discover how electronics and video games work together! Using Makey Makey, campers will build circuits, explore basic electrical engineering, and create interactive games that\u2026",
     "description_full": "Young innovators will discover how electronics and video games work together! Using Makey Makey, campers will build circuits, explore basic electrical engineering, and create interactive games that they can share and play with fellow students. Ages: 5\u20138 Price: $99 Registration:"
-  },
-  {
-    "day": "27",
-    "month": "Nov",
-    "date": "2026-11-27",
-    "title": "iCode Columbia \u2013 Roblox Editor: Create and Code Your Own Worldk",
-    "when": "All Day \u00b7 iCode Columbia, MD, 9200 Old Annapolis Rd Ste B, Columbia, MD 21045, USA",
-    "featured": false,
-    "signup_href": "https://icodeschool.com/columbia-md/camps/",
-    "description": "Turn a love of Roblox into an opportunity to learn coding and game design! Students will create their own virtual worlds, explore Lua programming, and learn how games are developed and monetized. A\u2026",
-    "description_full": "Turn a love of Roblox into an opportunity to learn coding and game design! Students will create their own virtual worlds, explore Lua programming, and learn how games are developed and monetized. A hands-on experience that encourages creativity and technical skills. Time: 9:00 AM \u2013 4:00 PM Ages: 9\u201315 Price: $99 Registration:"
   },
   {
     "day": "01",
@@ -106,5 +95,19 @@
       }
     ],
     "description": "Disney's The Lion King JR \u2014 the culmination of Thunder Hill Elementary's after-school theatre program with the Columbia Center for Theatrical Arts (CCTA)."
+  },
+  {
+    "day": "12",
+    "month": "Feb",
+    "date": "2027-02-12",
+    "title": "Winter Pastry Fundraiser",
+    "when": "All Day",
+    "featured": false,
+    "attachments": [
+      {
+        "title": "20270212-winter-pastry-fundraiser.png",
+        "href": "https://drive.google.com/open?id=1ioApDY5OlEN8-ntp0iFWyjUFdfw0jNGx"
+      }
+    ]
   }
 ]

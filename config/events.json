@@ -68,6 +68,22 @@
     ]
   },
   {
+    "day": "21",
+    "month": "Dec",
+    "date": "2026-12-21",
+    "title": "THES PTA Staff Appreciation \u2013 Holiday Dips, Treats & Festive Beverages",
+    "when": "All Day",
+    "featured": false,
+    "attachments": [
+      {
+        "title": "202612-THES-Staff.PNG",
+        "href": "https://drive.google.com/file/d/1H_Jea5i6GDdNhqgMPibpoty6ZUXuelk9"
+      }
+    ],
+    "description": "Join the THES PTA in spreading holiday cheer and celebrating our 100 amazing teachers and staff members with a special holiday treat celebration on Monday, December 21, 2026! Help us show our\u2026",
+    "description_full": "Join the THES PTA in spreading holiday cheer and celebrating our 100 amazing teachers and staff members with a special holiday treat celebration on Monday, December 21, 2026! Help us show our appreciation for everything they do for our students throughout the year. We are seeking donations of: * Holiday dips * Festive beverages * Desserts and sweet treats * Other holiday goodies * Monetary contributions to purchase needed items Volunteers are also needed to assist with setup, restocking throughout the day, and cleanup. Please scan the QR codes on the event flyer to sign up, volunteer, or make a monetary donation. For questions, contact president.thespta@gmail.com. Thank you for helping us make this holiday season extra special for our Thunder Hill teachers and staff!"
+  },
+  {
     "day": "12",
     "month": "Jan",
     "date": "2027-01-12",
@@ -95,19 +111,5 @@
       }
     ],
     "description": "Disney's The Lion King JR \u2014 the culmination of Thunder Hill Elementary's after-school theatre program with the Columbia Center for Theatrical Arts (CCTA)."
-  },
-  {
-    "day": "12",
-    "month": "Feb",
-    "date": "2027-02-12",
-    "title": "Winter Pastry Fundraiser",
-    "when": "All Day",
-    "featured": false,
-    "attachments": [
-      {
-        "title": "20270212-winter-pastry-fundraiser.png",
-        "href": "https://drive.google.com/open?id=1ioApDY5OlEN8-ntp0iFWyjUFdfw0jNGx"
-      }
-    ]
   }
 ]

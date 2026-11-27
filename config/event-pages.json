@@ -97,5 +97,54 @@
     "register_href": "",
     "contact_name": "Natalie Miskimins",
     "contact_email": "president.thespta@gmail.com"
+  },
+  {
+    "slug": "staff-holiday-treats",
+    "title": "THES PTA Staff Appreciation: Holiday Dips, Treats & Festive Beverages",
+    "nav_label": "Staff Holiday Treats",
+    "eyebrow": "Celebrating Our Teachers & Staff",
+    "tagline": "Help the THES PTA thank our 100 amazing teachers and staff with a festive holiday treat celebration.",
+    "summary": "The Thunder Hill Elementary PTA in Columbia, Maryland (Howard County) is celebrating its 100 teachers and staff with Holiday Dips, Treats & Festive Beverages on Monday, December 21, 2026. Donate dips, drinks, or desserts, volunteer, or give online.",
+    "start": "2026-12-21",
+    "expires": "2026-12-21",
+    "location_name": "Thunder Hill Elementary School",
+    "flyer_filename": "events/staff-holiday-treats-2026.png",
+    "flyer_alt": "THES PTA Holiday Dips, Treats & Festive Beverages: Please join the THES PTA in celebrating our THES teachers and staff with a special holiday treat celebration on Monday, December 21, 2026! We will be celebrating and thanking 100 THES teachers and staff for all they do for our students throughout the year. Donations needed: holiday dips, festive beverages, desserts and sweet treats, other holiday goodies, and monetary donations to the PTA to purchase needed items. Volunteers needed to help with set-up, restocking throughout the day, and clean-up. Questions: Natalie Miskimins, THES PTA President, president.thespta@gmail.com. Happy Holidays! Thank you so much for your support!",
+    "about": [
+      "Join the THES PTA in spreading holiday cheer and celebrating our 100 amazing teachers and staff members with a special holiday treat celebration on Monday, December 21!",
+      "Help us show our appreciation for everything they do for our students throughout the year. Every dip, treat, drink, and helping hand makes it extra special."
+    ],
+    "sections": [
+      {
+        "heading": "Donations Needed",
+        "items": [
+          "Holiday dips",
+          "Festive beverages",
+          "Desserts and sweet treats",
+          "Other holiday goodies"
+        ],
+        "note": "To donate food or drinks, use the SignUpGenius QR code on the flyer."
+      },
+      {
+        "heading": "Volunteers Needed",
+        "items": [
+          "Set-up",
+          "Restocking throughout the day",
+          "Clean-up"
+        ],
+        "note": "To volunteer, use the SignUpGenius QR code on the flyer."
+      },
+      {
+        "heading": "Make a Monetary Donation",
+        "items": [
+          "Monetary donations help the PTA purchase needed items for the celebration"
+        ],
+        "button_label": "Donate on Givebacks",
+        "button_href": "https://www.givebacks.com/causes/cfc339ba-4f49-4dc6-91ba-b114c8a772d1/shop/items/0b6085de8b"
+      }
+    ],
+    "register_href": "",
+    "contact_name": "Natalie Miskimins",
+    "contact_email": "president.thespta@gmail.com"
   }
 ]

@@ -1,33 +1,11 @@
 [
   {
-    "day": "27",
-    "month": "Nov",
-    "date": "2026-11-27",
-    "title": "iCode Columbia \u2013 Roblox Editor: Create and Code Your Own Worldk",
-    "when": "All Day \u00b7 iCode Columbia, MD, 9200 Old Annapolis Rd Ste B, Columbia, MD 21045, USA",
-    "featured": true,
-    "signup_href": "https://icodeschool.com/columbia-md/camps/",
-    "description": "Turn a love of Roblox into an opportunity to learn coding and game design! Students will create their own virtual worlds, explore Lua programming, and learn how games are developed and monetized. A\u2026",
-    "description_full": "Turn a love of Roblox into an opportunity to learn coding and game design! Students will create their own virtual worlds, explore Lua programming, and learn how games are developed and monetized. A hands-on experience that encourages creativity and technical skills. Time: 9:00 AM \u2013 4:00 PM Ages: 9\u201315 Price: $99 Registration:"
-  },
-  {
-    "day": "27",
-    "month": "Nov",
-    "date": "2026-11-27",
-    "title": "iCode Columbia \u2013 Jr Creator: Electronics & Game Development",
-    "when": "All Day \u00b7 iCode Columbia, MD, 9200 Old Annapolis Rd Ste B, Columbia, MD 21045, USA",
-    "featured": false,
-    "signup_href": "https://icodeschool.com/columbia-md/camps/",
-    "description": "Young innovators will discover how electronics and video games work together! Using Makey Makey, campers will build circuits, explore basic electrical engineering, and create interactive games that\u2026",
-    "description_full": "Young innovators will discover how electronics and video games work together! Using Makey Makey, campers will build circuits, explore basic electrical engineering, and create interactive games that they can share and play with fellow students. Ages: 5\u20138 Price: $99 Registration:"
-  },
-  {
     "day": "01",
     "month": "Dec",
     "date": "2026-12-01",
     "title": "GIVING TUESDAY \u2013 GIVE A LITTLE. MAKE A BIG DIFFERENCE!",
     "when": "All Day",
-    "featured": false,
+    "featured": true,
     "attachments": [
       {
         "title": "2026-Giving-Tuesday8.PNG",
@@ -111,5 +89,28 @@
       }
     ],
     "description": "Disney's The Lion King JR \u2014 the culmination of Thunder Hill Elementary's after-school theatre program with the Columbia Center for Theatrical Arts (CCTA)."
+  },
+  {
+    "day": "12",
+    "month": "Feb",
+    "date": "2027-02-12",
+    "title": "Winter Pastry Fundraiser",
+    "when": "All Day",
+    "featured": false,
+    "attachments": [
+      {
+        "title": "20270212-winter-pastry-fundraiser.png",
+        "href": "https://drive.google.com/open?id=1ioApDY5OlEN8-ntp0iFWyjUFdfw0jNGx"
+      }
+    ]
+  },
+  {
+    "day": "18",
+    "month": "Feb",
+    "date": "2027-02-18",
+    "title": "THES PTA General Meeting",
+    "when": "7:00 \u2013 8:00 PM \u00b7 Online",
+    "featured": false,
+    "description": "Join us throughout the school year! PTA meetings are a great way to stay informed, meet other families, and help make a difference in our Thunder Hill community. Everyone is welcome."
   }
 ]
